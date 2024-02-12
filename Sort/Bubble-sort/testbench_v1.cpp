@@ -6,7 +6,7 @@
 int main(int argc, char* argv[]) {
     // Check if the number of command line arguments is correct
     if(argc != SIZE + 1) {
-        std::cout << "Please enter " << SIZE << " integers." << std::endl;
+        std::cout << "Please enter " << SIZE << " integers." << std::endl; //input the integars during C SIMULATION and C/RTL COSIMULATION
         return 1;  // Return an error code
     }
 
