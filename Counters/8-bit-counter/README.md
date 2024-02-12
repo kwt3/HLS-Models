@@ -1,1 +1,1 @@
-Performs the bubble sort algorithm on an array, input_arr, by repeatedly swapping adjacent elements if they are in the wrong order.
+Defines a function 8 bit counter that increments a static variable count_internal up to a specified upper limit, then resets it to zero, and assigns its value to the variable pointed to by count.
