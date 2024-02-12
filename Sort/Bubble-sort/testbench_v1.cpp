@@ -1,6 +1,6 @@
 #include <iostream>
 #include "bubble_sort_v1.hpp"
-/*                                                                                   */
+
 #define SIZE 10
 
 int main(int argc, char* argv[]) {
@@ -10,8 +10,7 @@ int main(int argc, char* argv[]) {
         return 1;  // Return an error code
     }
 
-    ap_uint<32> input_arr[SIZE];  // Array to hold the input numbers
-    ap_uint<32> output_arr[SIZE];  // Array to hold the sorted numbers
+    data_t input_arr[SIZE];  // Array to hold the input numbers
 
     // Convert command line arguments to integers and store them in the input array
     for(int i = 0; i < SIZE; i++) {
@@ -19,11 +18,11 @@ int main(int argc, char* argv[]) {
     }
 
     // Call the bubble sort function
-    bubble_sort(input_arr, output_arr);
+    bubble_sort(input_arr);
 
     // Print the sorted array
     for(int i = 0; i < SIZE; i++) {
-        std::cout << output_arr[i] << " ";
+        std::cout << input_arr[i] << " ";
     }
     return 0;  // Return a success code
 }
