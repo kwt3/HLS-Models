@@ -3,7 +3,7 @@
 
 #include <ap_int.h>
 
-void bubble_sort(ap_uint<32> input_arr[10], ap_uint<32> output_arr[10]);
+void bubble_sort(data_t input_arr[input_size]);
 
 #endif // BUBBLE_SORT_HPP
 
