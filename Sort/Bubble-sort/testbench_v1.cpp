@@ -1,28 +1,39 @@
-#include <iostream>
 #include "bubble_sort_v1.hpp"
+#include <iostream>
+#include <cstdlib>
 
-#define SIZE 10
+typedef int data_t; // Define data_t if it's not already defined
 
 int main(int argc, char* argv[]) {
     // Check if the number of command line arguments is correct
-    if(argc != SIZE + 1) {
-        std::cout << "Please enter " << SIZE << " integers." << std::endl; //input the integars during C SIMULATION and C/RTL COSIMULATION
-        return 1;  // Return an error code
+    if(argc < 2) {
+        std::cout << "Usage: " << argv[0] << " <size> <integer1> <integer2> ... <integerN>" << std::endl;
+        return 1;
     }
 
-    data_t input_arr[SIZE];  // Array to hold the input numbers
+    int size = std::atoi(argv[1]); // Get the size from command line arguments
+    if (argc != size + 2) {
+        std::cout << "Invalid number of integers provided. Expected " << size << " integers." << std::endl;
+        return 1;
+    }
+
+    data_t* input_arr = new data_t[size]; // Declare input_arr with dynamically allocated memory
 
     // Convert command line arguments to integers and store them in the input array
-    for(int i = 0; i < SIZE; i++) {
-        input_arr[i] = std::stoi(argv[i + 1]);
+    for(int i = 0; i < size; i++) {
+        input_arr[i] = std::stoi(argv[i + 2]);
     }
-
+    
     // Call the bubble sort function
-    bubble_sort(input_arr);
+    bubble_sort(input_arr, size);
 
     // Print the sorted array
-    for(int i = 0; i < SIZE; i++) {
+    std::cout << "Sorted Array: ";
+    for(int i = 0; i < size; i++) {
         std::cout << input_arr[i] << " ";
     }
-    return 0;  // Return a success code
+    std::cout << std::endl;
+
+    delete[] input_arr; // Free dynamically allocated memory
+    return 0;
 }
