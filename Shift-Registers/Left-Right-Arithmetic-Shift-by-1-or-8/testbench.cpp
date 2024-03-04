@@ -1,4 +1,4 @@
-#include "arithmetic_shift_register.h"
+#include "arithmetic_shift_register.hpp"
 #include <iostream>
 
 int main() {
