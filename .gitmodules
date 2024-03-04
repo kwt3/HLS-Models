@@ -1,0 +1,3 @@
+[submodule "Simple-Modeling-Designs/Simple-Modeling-Designs/Vitis-HLS-Introductory-Examples"]
+	path = Simple-Modeling-Designs/Simple-Modeling-Designs/Vitis-HLS-Introductory-Examples
+	url = https://github.com/Xilinx/Vitis-HLS-Introductory-Examples
