@@ -43,3 +43,6 @@
 [submodule "Simple-Designs/Vitis-HLS-Introductory-Examples"]
 	path = Simple-Designs/Vitis-HLS-Introductory-Examples
 	url = https://github.com/Xilinx/Vitis-HLS-Introductory-Examples
+[submodule "Simple-Designs/Sequential/Vitis-HLS-Sequential"]
+	path = Simple-Designs/Sequential/Vitis-HLS-Sequential
+	url = https://github.com/salemsajjad/Vitis-HLS-Sequential
