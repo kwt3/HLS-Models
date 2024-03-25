@@ -16,3 +16,6 @@
 [submodule "ML-Acceleration/HLS-CNN"]
 	path = ML-Acceleration/HLS-CNN
 	url = https://github.com/FedericoSerafini/HLS-CNN
+[submodule "ML-Acceleration/neural_network_hls"]
+	path = ML-Acceleration/neural_network_hls
+	url = https://github.com/twendt97/neural_network_hls
