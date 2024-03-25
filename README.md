@@ -45,6 +45,8 @@ Matrix Multiplication: https://github.com/wickedb/matmult_hls
 
 Lawson-Hanson Implementation in HLS: https://github.com/hengty/LawsonHanson_VitisHLS
 
+Matrix Multiplication: https://github.com/khei4/mmult_KV260
+
 ## Additional Resources
 
 ### LLM4EDA: Emerging Progress in Large Language Models for Electronic Design Automation
