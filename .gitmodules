@@ -34,3 +34,9 @@
 [submodule "RISC-V/vhls-riscv"]
 	path = RISC-V/vhls-riscv
 	url = https://github.com/anjn/vhls-riscv
+[submodule "Simple-Designs/vitisfft"]
+	path = Simple-Designs/vitisfft
+	url = https://github.com/hansemandse/vitisfft
+[submodule "Simple-Designs/encoder_block"]
+	path = Simple-Designs/encoder_block
+	url = https://github.com/soujanya006/encoder_block
