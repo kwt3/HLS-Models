@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="counter.cpp" path="C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-digit-decimal-counter\counter.cpp"/>
+    <originFiles name="counter.hpp" path="C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-digit-decimal-counter\counter.hpp"/>
+  </source>
+  <testbench>
+    <originFiles name="tb_counter.cpp" path="C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-digit-decimal-counter\tb_counter.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

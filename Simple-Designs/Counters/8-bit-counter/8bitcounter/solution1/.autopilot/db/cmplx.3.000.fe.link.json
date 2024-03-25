@@ -1,0 +1,18 @@
+{
+  "0": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "counter.cpp",
+    "fileloc": 7,
+    "instructions": 15,
+    "loads": {
+      "G": 2
+    },
+    "name": "counter",
+    "stores": {
+      "G": 2,
+      "T": 1
+    },
+    "total_instructions": 15
+  }
+}
