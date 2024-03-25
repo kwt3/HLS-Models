@@ -83,6 +83,8 @@ HLS Development Methodology: https://github.com/huhanvictory/Vitis-HLS-developme
 
 Encoder Block Layer Normalization: https://github.com/soujanya006/master-thesis-transformer_layerNorm
 
+Rapid Design and Verification: https://github.com/Hwangshuo/Rapid-design-and-verification-of-Vitis-HLS-IP-based-on-PYNQ
+
 
 ## Additional Resources
 
