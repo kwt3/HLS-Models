@@ -2,7 +2,7 @@
 
 This repository is a collection of Vitis HLS Models from the community to aid in acquiring examples for machine learning purposes.
 
-The folder called Simple Designs includes models such as basic sequential and combinational circuits that were synthesized in Vitis HLS.
+The Simple Designs folder includes models such as basic sequential and combinational circuits that were synthesized in Vitis HLS.
 
 Below are a list of publically available designs:
 
