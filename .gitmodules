@@ -4,3 +4,6 @@
 [submodule "ML-Acceleration/DeepPoint-V2-FPGA"]
 	path = ML-Acceleration/DeepPoint-V2-FPGA
 	url = https://github.com/salehjg/DeepPoint-V2-FPGA
+[submodule "ML-Acceleration/finn-hlslib"]
+	path = ML-Acceleration/finn-hlslib
+	url = https://github.com/Xilinx/finn-hlslib
