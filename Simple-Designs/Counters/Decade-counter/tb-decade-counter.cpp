@@ -1,20 +1,21 @@
 #include "decade-counter.hpp"
+#include <iostream>
 
-void counter(ap_uint<1> &reset, ap_uint<4> &out) {
-    // Static variable retains its value between invocations
-    static ap_uint<4> count = 0;
+int main() {
+    ap_uint<1> reset;
+    ap_uint<4> out;
 
-    // Check for reset signal
-    if (reset == 1) {
-        count = 0;
-    } else {
-        if (count == 9) {
-            count = 0;
-        } else {
-            count++;
-        }
+    // Test with reset signal
+    reset = 1;
+    counter(reset, out);
+    std::cout << "Output with reset: " << out.to_uint() << std::endl;
+
+    // Test without reset signal
+    reset = 0;
+    for (int i = 0; i < 15; i++) {
+        counter(reset, out);
+        std::cout << "Output at count " << i << ": " << out.to_uint() << std::endl;
     }
 
-    // Output the current count
-    out = count;
+    return 0;
 }

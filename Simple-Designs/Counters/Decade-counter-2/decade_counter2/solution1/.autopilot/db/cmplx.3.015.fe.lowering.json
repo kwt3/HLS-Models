@@ -1,0 +1,19 @@
+{
+  "0": {
+    "basicblocks": 6,
+    "calls": "",
+    "file": "decade_counter.cpp",
+    "fileloc": 3,
+    "instructions": 21,
+    "loads": {
+      "G": 1,
+      "T": 1
+    },
+    "name": "decade_counter",
+    "stores": {
+      "G": 3,
+      "T": 1
+    },
+    "total_instructions": 21
+  }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="decade_counter.cpp" path="C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\Decade-counter-2\decade_counter.cpp"/>
+    <originFiles name="decade_counter.hpp" path="C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\Decade-counter-2\decade_counter.hpp"/>
+  </source>
+  <testbench>
+    <originFiles name="tb_decade_counter.cpp" path="C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\Decade-counter-2\tb_decade_counter.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

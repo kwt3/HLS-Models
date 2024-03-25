@@ -1,0 +1,102 @@
+Output with reset: 0
+Output at count 0: 1
+Output at count 1: 2
+Output at count 2: 3
+Output at count 3: 4
+Output at count 4: 5
+Output at count 5: 6
+Output at count 6: 7
+Output at count 7: 8
+Output at count 8: 9
+Output at count 9: 0
+Output at count 10: 1
+Output at count 11: 2
+Output at count 12: 3
+Output at count 13: 4
+Output at count 14: 5
+
+C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\Decade-counter\decade_counter\solution1\sim\verilog>set PATH= 
+
+C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\Decade-counter\decade_counter\solution1\sim\verilog>call C:/Xilinx/Vivado/2023.2/bin/xelab xil_defaultlib.apatb_counter_top glbl -Oenable_linking_all_libraries  -prj counter.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_1_16 -L floating_point_v7_0_21 --lib "ieee_proposed=./ieee_proposed" -s counter  
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_counter_top glbl -Oenable_linking_all_libraries -prj counter.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_16 -L floating_point_v7_0_21 --lib ieee_proposed=./ieee_proposed -s counter 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Decade-counter/decade_counter/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Decade-counter/decade_counter/solution1/sim/verilog/counter.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_counter_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Decade-counter/decade_counter/solution1/sim/verilog/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Decade-counter/decade_counter/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_counter_top
+Compiling module work.glbl
+Built simulation snapshot counter
+
+****** xsim v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/counter/xsim_script.tcl
+# xsim {counter} -autoloadwcfg -tclbatch {counter.tcl}
+Time resolution is 1 ps
+source counter.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 16 [n/a] @ "125000"
+// RTL Simulation : 1 / 16 [n/a] @ "145000"
+// RTL Simulation : 2 / 16 [n/a] @ "155000"
+// RTL Simulation : 3 / 16 [n/a] @ "165000"
+// RTL Simulation : 4 / 16 [n/a] @ "175000"
+// RTL Simulation : 5 / 16 [n/a] @ "185000"
+// RTL Simulation : 6 / 16 [n/a] @ "195000"
+// RTL Simulation : 7 / 16 [n/a] @ "205000"
+// RTL Simulation : 8 / 16 [n/a] @ "215000"
+// RTL Simulation : 9 / 16 [n/a] @ "225000"
+// RTL Simulation : 10 / 16 [n/a] @ "235000"
+// RTL Simulation : 11 / 16 [n/a] @ "245000"
+// RTL Simulation : 12 / 16 [n/a] @ "255000"
+// RTL Simulation : 13 / 16 [n/a] @ "265000"
+// RTL Simulation : 14 / 16 [n/a] @ "275000"
+// RTL Simulation : 15 / 16 [n/a] @ "285000"
+// RTL Simulation : 16 / 16 [n/a] @ "295000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 355 ns : File "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Decade-counter/decade_counter/solution1/sim/verilog/counter.autotb.v" Line 283
+## quit
+INFO: [Common 17-206] Exiting xsim at Mon Mar 25 04:58:36 2024...
+Output with reset: 0
+Output at count 0: 1
+Output at count 1: 2
+Output at count 2: 3
+Output at count 3: 4
+Output at count 4: 5
+Output at count 5: 6
+Output at count 6: 7
+Output at count 7: 8
+Output at count 8: 9
+Output at count 9: 0
+Output at count 10: 1
+Output at count 11: 2
+Output at count 12: 3
+Output at count 13: 4
+Output at count 14: 5

@@ -1,0 +1,23 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../tb-decade-counter.cpp in debug mode
+   Compiling ../../../../decade-counter.cpp in debug mode
+   Generating csim.exe
+Output with reset: 0
+Output at count 0: 1
+Output at count 1: 2
+Output at count 2: 3
+Output at count 3: 4
+Output at count 4: 5
+Output at count 5: 6
+Output at count 6: 7
+Output at count 7: 8
+Output at count 8: 9
+Output at count 9: 0
+Output at count 10: 1
+Output at count 11: 2
+Output at count 12: 3
+Output at count 13: 4
+Output at count 14: 5
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

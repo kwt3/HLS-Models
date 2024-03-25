@@ -1,0 +1,6 @@
+   Build using "C:/Xilinx/Vitis_HLS/2023.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling decade-counter.cpp_pre.cpp.tb.cpp
+   Compiling apatb_counter.cpp
+   Compiling tb-decade-counter.cpp_pre.cpp.tb.cpp
+   Compiling apatb_counter_ir.ll
+   Generating cosim.tv.exe

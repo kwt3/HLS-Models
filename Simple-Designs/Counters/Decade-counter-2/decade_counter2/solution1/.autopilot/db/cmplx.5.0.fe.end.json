@@ -1,0 +1,17 @@
+{
+    "0": {
+        "name": "decade_counter",
+        "file": "decade_counter.cpp",
+        "fileloc": "3",
+        "instructions": "20",
+        "total_instructions": "20",
+        "calls": "",
+        "basicblocks": "6",
+        "loads": {
+            "G": "1"
+        },
+        "stores": {
+            "G": "3"
+        }
+    }
+}

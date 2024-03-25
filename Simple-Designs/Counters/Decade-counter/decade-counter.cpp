@@ -1,4 +1,4 @@
-#include "counter.hpp"
+#include "decade-counter.hpp"
 
 void counter(ap_uint<1> &reset, ap_uint<4> &out) {
     // Static variable retains its value between invocations
