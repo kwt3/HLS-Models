@@ -30,3 +30,6 @@ finn hlslib:
 HLS CNN:
 
 Neural Network HLS:
+
+## LLM4EDA: Emerging Progress in Large Language Models for Electronic Design Automation
+This includes of resources for Large Language Models to solve problems in Electronic Design Automation: https://github.com/Thinklab-SJTU/Awesome-LLM4EDA
