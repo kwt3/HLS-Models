@@ -40,6 +40,7 @@ Neural Network HLS: https://github.com/twendt97/neural_network_hls
 
 ## Matrix Multiplication
 PYNQ Vectorized Matrix Multiplier: https://github.com/nick-nuti/PYNQ-Vectorized-Matrix-Multiplier
+
 Matrix Multiplication: https://github.com/wickedb/matmult_hls
 
 ## Additional Resources
