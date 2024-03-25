@@ -44,6 +44,15 @@ Neural Network HLS: https://github.com/twendt97/neural_network_hls
 
 Densely Squeeze-and-Excitation Network (DSENet Convolution Vitis HLS: https://github.com/Asmita-Zjigyasu/DSE-convolution-Vitis-HLS
 
+GEMM & SPMM: https://github.com/eejlny/gemm_spmm
+
+SPMM Accelerator Vitis HLS: https://github.com/RhysHuo/spmm_Vitis_Version_HLS
+
+2D CNN Forward Propagation: https://github.com/pushkal1234/2D-CNN-Forward-Propagation
+
+Convolutional Layer HLS: https://github.com/rabbitdeng/conv_accelerator_HLS
+
+
 ## Matrix Multiplication
 PYNQ Vectorized Matrix Multiplier: https://github.com/nick-nuti/PYNQ-Vectorized-Matrix-Multiplier
 
@@ -66,6 +75,14 @@ SVM Algorithm: https://github.com/brunojaciel/SVM-Vitis-HLS
 ## Divide
 
 Divide Vitis HLS: https://github.com/LakhalEngineering/Divide-Vitis-HLS
+
+## Unsorted
+HLS Crash Course: https://github.com/jsloan256/HLSCrashCourse
+
+HLS Development Methodology: https://github.com/huhanvictory/Vitis-HLS-development-methodology
+
+Encoder Block Layer Normalization: https://github.com/soujanya006/master-thesis-transformer_layerNorm
+
 
 ## Additional Resources
 
