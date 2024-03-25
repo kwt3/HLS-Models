@@ -47,6 +47,8 @@ Lawson-Hanson Implementation in HLS: https://github.com/hengty/LawsonHanson_Viti
 
 Matrix Multiplication: https://github.com/khei4/mmult_KV260
 
+Implement Matrix Multiplication on Vitis HLS and PYNQ: https://github.com/b07901181/AAHLS-Lab-B-10
+
 ## Additional Resources
 
 ### LLM4EDA: Emerging Progress in Large Language Models for Electronic Design Automation
