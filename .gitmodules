@@ -31,3 +31,6 @@
 [submodule "RISC-V/Comet"]
 	path = RISC-V/Comet
 	url = https://gitlab.inria.fr/srokicki/Comet
+[submodule "RISC-V/vhls-riscv"]
+	path = RISC-V/vhls-riscv
+	url = https://github.com/anjn/vhls-riscv
