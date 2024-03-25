@@ -46,3 +46,6 @@
 [submodule "Simple-Designs/Sequential/Vitis-HLS-Sequential"]
 	path = Simple-Designs/Sequential/Vitis-HLS-Sequential
 	url = https://github.com/salemsajjad/Vitis-HLS-Sequential
+[submodule "Simple-Designs/Combinational/Vitis-HLS-Combinational"]
+	path = Simple-Designs/Combinational/Vitis-HLS-Combinational
+	url = https://github.com/salemsajjad/Vitis-HLS-Combinational
