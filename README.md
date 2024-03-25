@@ -38,6 +38,9 @@ HLS CNN: https://github.com/FedericoSerafini/HLS-CNN
 
 Neural Network HLS: https://github.com/twendt97/neural_network_hls
 
+## Matrix
+PYNQ Vectorized Matrix Multiplier: https://github.com/nick-nuti/PYNQ-Vectorized-Matrix-Multiplier
+
 ## Additional Resources
 
 ### LLM4EDA: Emerging Progress in Large Language Models for Electronic Design Automation
