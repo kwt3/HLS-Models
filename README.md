@@ -72,6 +72,8 @@ N-Body: https://github.com/ZhengYuhe/nbody_vitis_hls
 
 SVM Algorithm: https://github.com/brunojaciel/SVM-Vitis-HLS
 
+Gaussian Filter: https://github.com/muhammedkocaoglu/Gaussian-Filter-Implementation-Using-Vitis-HLS
+
 ## Divide
 
 Divide Vitis HLS: https://github.com/LakhalEngineering/Divide-Vitis-HLS
