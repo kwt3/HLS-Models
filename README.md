@@ -28,6 +28,8 @@ Image Processing on ZCU104: https://github.com/chuchu0512/image-processing-on-ZC
 
 HLS Sobel Filter: https://github.com/millertheripper/hls_sobel_axi_stream
 
+YUV RGB Stream: https://github.com/koderchina/YUV_HLS
+
 ## Machine Learning Acceleration
 
 apfp: https://github.com/spcl/apfp
