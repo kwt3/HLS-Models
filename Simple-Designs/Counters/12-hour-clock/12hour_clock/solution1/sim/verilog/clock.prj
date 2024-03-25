@@ -1,0 +1,5 @@
+sv work "glbl.v"
+sv xil_defaultlib "clock.autotb.v"
+sv xil_defaultlib "clock.v"
+sv xil_defaultlib "dataflow_monitor.sv"
+

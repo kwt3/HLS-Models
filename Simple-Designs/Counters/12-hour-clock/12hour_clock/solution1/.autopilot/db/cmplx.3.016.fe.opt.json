@@ -1,0 +1,19 @@
+{
+  "0": {
+    "basicblocks": 14,
+    "calls": "",
+    "file": "clock.cpp",
+    "fileloc": 3,
+    "instructions": 64,
+    "loads": {
+      "G": 8,
+      "T": 2
+    },
+    "name": "clock",
+    "stores": {
+      "G": 11,
+      "T": 4
+    },
+    "total_instructions": 64
+  }
+}
