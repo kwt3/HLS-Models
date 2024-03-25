@@ -10,3 +10,6 @@
 [submodule "ML-Acceleration/apfp"]
 	path = ML-Acceleration/apfp
 	url = https://github.com/spcl/apfp
+[submodule "ML-Acceleration/GCN-Inference-Acceleration-HLS"]
+	path = ML-Acceleration/GCN-Inference-Acceleration-HLS
+	url = https://github.com/jasonlin316/GCN-Inference-Acceleration-HLS
