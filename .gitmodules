@@ -13,3 +13,6 @@
 [submodule "ML-Acceleration/GCN-Inference-Acceleration-HLS"]
 	path = ML-Acceleration/GCN-Inference-Acceleration-HLS
 	url = https://github.com/jasonlin316/GCN-Inference-Acceleration-HLS
+[submodule "ML-Acceleration/HLS-CNN"]
+	path = ML-Acceleration/HLS-CNN
+	url = https://github.com/FedericoSerafini/HLS-CNN
