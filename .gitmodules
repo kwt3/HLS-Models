@@ -40,3 +40,6 @@
 [submodule "Simple-Designs/encoder_block"]
 	path = Simple-Designs/encoder_block
 	url = https://github.com/soujanya006/encoder_block
+[submodule "Simple-Designs/Vitis-HLS-Introductory-Examples"]
+	path = Simple-Designs/Vitis-HLS-Introductory-Examples
+	url = https://github.com/Xilinx/Vitis-HLS-Introductory-Examples
