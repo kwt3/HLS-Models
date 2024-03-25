@@ -66,6 +66,8 @@ Implement Matrix Multiplication on Vitis HLS and PYNQ: https://github.com/b07901
 
 Sparse Matrix-Vector Multiplication: https://github.com/aishwarya-2720/SPMV-using-VITIS-HLS
 
+Matrix Profile Computation: https://github.com/jlscheerer/matrix-profile-hls
+
 ## Algorithms
 
 N-Body: https://github.com/ZhengYuhe/nbody_vitis_hls
@@ -91,6 +93,11 @@ Rapid Design and Verification: https://github.com/Hwangshuo/Rapid-design-and-ver
 
 4-bit binary adder: https://github.com/pushkal1234/4-bit-binary-adder
 
+AES-128 Encryption and Decryption using Python and Vitis HLS: https://github.com/SergeyNEU/FPGA-AES-128
+
+Linear Layer for Key Query & Value Block: https://github.com/soujanya006/master-thesis-transformer_linearKQV
+
+Comparator Digital Circuit: https://github.com/pushkal1234/Comparator-Digital-circuit
 
 ## Additional Resources
 
