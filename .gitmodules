@@ -28,3 +28,6 @@
 [submodule "NoC/Vitis-HLS-2D-Mesh-NoC-Implementation"]
 	path = NoC/Vitis-HLS-2D-Mesh-NoC-Implementation
 	url = https://github.com/andy39866821/Vitis-HLS-2D-Mesh-NoC-Implementation
+[submodule "RISC-V/Comet"]
+	path = RISC-V/Comet
+	url = https://gitlab.inria.fr/srokicki/Comet
