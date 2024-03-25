@@ -87,6 +87,8 @@ Encoder Block Layer Normalization: https://github.com/soujanya006/master-thesis-
 
 Rapid Design and Verification: https://github.com/Hwangshuo/Rapid-design-and-verification-of-Vitis-HLS-IP-based-on-PYNQ
 
+4-bit binary adder: https://github.com/pushkal1234/4-bit-binary-adder
+
 
 ## Additional Resources
 
