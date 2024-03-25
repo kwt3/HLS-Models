@@ -19,3 +19,12 @@
 [submodule "ML-Acceleration/neural_network_hls"]
 	path = ML-Acceleration/neural_network_hls
 	url = https://github.com/twendt97/neural_network_hls
+[submodule "NoC/HLS_NoC"]
+	path = NoC/HLS_NoC
+	url = https://github.com/zhipengzhaocmu/HLS_NoC
+[submodule "NoC/Proteus"]
+	path = NoC/Proteus
+	url = https://github.com/synergy-noc-generators/Proteus
+[submodule "NoC/Vitis-HLS-2D-Mesh-NoC-Implementation"]
+	path = NoC/Vitis-HLS-2D-Mesh-NoC-Implementation
+	url = https://github.com/andy39866821/Vitis-HLS-2D-Mesh-NoC-Implementation
