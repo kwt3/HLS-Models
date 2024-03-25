@@ -1,16 +1,16 @@
 #include "bubble_sort_v1.hpp"
 
+void bubbleSort(data_t *array, int size) {
+    #pragma HLS INTERFACE m_axi depth=MAX_SIZE port=array offset=slave
+    #pragma HLS INTERFACE s_axilite port=size
+    #pragma HLS INTERFACE s_axilite port=return
 
-void bubble_sort(data_t input_arr[input_size])
-{
-    // Perform bubble sort on the output array
-    for(int i = 0; i < input_size; i++) {
-        for(int j = 0; j < input_size - i; j++) {
-            if(input_arr[j] > input_arr[j + 1]) {
-                // Swap output_arr[j] and output_arr[j + 1]
-                ap_uint<32> temp = input_arr[j];
-                input_arr[j] = input_arr[j + 1];
-                input_arr[j + 1] = temp;
+    for (int i = 0; i < size-1; i++) {
+        for (int j = 0; j < size-i-1; j++) {
+            if (array[j] > array[j+1]) {
+                data_t temp = array[j];
+                array[j] = array[j+1];
+                array[j+1] = temp;
             }
         }
     }

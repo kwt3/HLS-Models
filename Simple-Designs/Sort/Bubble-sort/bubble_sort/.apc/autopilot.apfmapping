@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="bubble_sort.cpp" path="C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Sort\Bubble-sort\bubble_sort.cpp"/>
+    <originFiles name="bubble_sort_v1.hpp" path="C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Sort\Bubble-sort\bubble_sort_v1.hpp"/>
+  </source>
+  <testbench>
+    <originFiles name="testbench_v1.cpp" path="C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Sort\Bubble-sort\testbench_v1.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
