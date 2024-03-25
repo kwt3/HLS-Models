@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "shift_register",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "shift_register"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Shift-Registers/4-bit-shift-register/4shift_register/solution1/csynth.tcl",
+    "sourceLine": 16,
+    "success": true
+  }
+]

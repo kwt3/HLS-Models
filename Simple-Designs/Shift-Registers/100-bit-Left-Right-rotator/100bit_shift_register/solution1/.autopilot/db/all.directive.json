@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "rotator",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "rotator"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Shift-Registers/100-bit-Left-Right-rotator/100bit_shift_register/solution1/csynth.tcl",
+    "sourceLine": 16,
+    "success": true
+  }
+]

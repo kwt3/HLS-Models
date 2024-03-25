@@ -1,0 +1,654 @@
+At time 0, q = 0
+At time 1, q = 0
+At time 2, q = 0
+At time 3, q = 0
+At time 4, q = 0
+At time 5, q = 0
+At time 6, q = 0
+At time 7, q = 0
+At time 8, q = 0
+At time 9, q = 0
+At time 10, q = 0
+At time 11, q = 0
+At time 12, q = 0
+At time 13, q = 0
+At time 14, q = 0
+At time 15, q = 0
+At time 16, q = 0
+At time 17, q = 0
+At time 18, q = 0
+At time 19, q = 0
+At time 20, q = 0
+At time 21, q = 0
+At time 22, q = 0
+At time 23, q = 0
+At time 24, q = 0
+At time 25, q = 0
+At time 26, q = 0
+At time 27, q = 0
+At time 28, q = 0
+At time 29, q = 0
+At time 30, q = 0
+At time 31, q = 0
+At time 32, q = 0
+At time 33, q = 0
+At time 34, q = 0
+At time 35, q = 0
+At time 36, q = 0
+At time 37, q = 0
+At time 38, q = 0
+At time 39, q = 0
+At time 40, q = 0
+At time 41, q = 0
+At time 42, q = 0
+At time 43, q = 0
+At time 44, q = 0
+At time 45, q = 0
+At time 46, q = 0
+At time 47, q = 0
+At time 48, q = 0
+At time 49, q = 0
+At time 50, q = 18446744073709551615
+At time 51, q = 9223372036854775807
+At time 52, q = 4611686018427387903
+At time 53, q = 2305843009213693951
+At time 54, q = 1152921504606846975
+At time 55, q = 576460752303423487
+At time 56, q = 288230376151711743
+At time 57, q = 144115188075855871
+At time 58, q = 72057594037927935
+At time 59, q = 36028797018963967
+At time 60, q = 18014398509481983
+At time 61, q = 9007199254740991
+At time 62, q = 4503599627370495
+At time 63, q = 2251799813685247
+At time 64, q = 1125899906842623
+At time 65, q = 562949953421311
+At time 66, q = 281474976710655
+At time 67, q = 140737488355327
+At time 68, q = 70368744177663
+At time 69, q = 35184372088831
+At time 70, q = 17592186044415
+At time 71, q = 8796093022207
+At time 72, q = 4398046511103
+At time 73, q = 2199023255551
+At time 74, q = 1099511627775
+At time 75, q = 549755813887
+At time 76, q = 274877906943
+At time 77, q = 137438953471
+At time 78, q = 68719476735
+At time 79, q = 34359738367
+At time 80, q = 17179869183
+At time 81, q = 8589934591
+At time 82, q = 4294967295
+At time 83, q = 2147483647
+At time 84, q = 1073741823
+At time 85, q = 536870911
+At time 86, q = 268435455
+At time 87, q = 134217727
+At time 88, q = 67108863
+At time 89, q = 33554431
+At time 90, q = 16777215
+At time 91, q = 8388607
+At time 92, q = 4194303
+At time 93, q = 2097151
+At time 94, q = 1048575
+At time 95, q = 524287
+At time 96, q = 262143
+At time 97, q = 131071
+At time 98, q = 65535
+At time 99, q = 32767
+At time 100, q = 65534
+At time 101, q = 131068
+At time 102, q = 262136
+At time 103, q = 524272
+At time 104, q = 1048544
+At time 105, q = 2097088
+At time 106, q = 4194176
+At time 107, q = 8388352
+At time 108, q = 16776704
+At time 109, q = 33553408
+At time 110, q = 67106816
+At time 111, q = 134213632
+At time 112, q = 268427264
+At time 113, q = 536854528
+At time 114, q = 1073709056
+At time 115, q = 2147418112
+At time 116, q = 4294836224
+At time 117, q = 8589672448
+At time 118, q = 17179344896
+At time 119, q = 34358689792
+At time 120, q = 68717379584
+At time 121, q = 137434759168
+At time 122, q = 274869518336
+At time 123, q = 549739036672
+At time 124, q = 1099478073344
+At time 125, q = 2198956146688
+At time 126, q = 4397912293376
+At time 127, q = 8795824586752
+At time 128, q = 17591649173504
+At time 129, q = 35183298347008
+At time 130, q = 70366596694016
+At time 131, q = 140733193388032
+At time 132, q = 281466386776064
+At time 133, q = 562932773552128
+At time 134, q = 1125865547104256
+At time 135, q = 2251731094208512
+At time 136, q = 4503462188417024
+At time 137, q = 9006924376834048
+At time 138, q = 18013848753668096
+At time 139, q = 36027697507336192
+At time 140, q = 72055395014672384
+At time 141, q = 144110790029344768
+At time 142, q = 288221580058689536
+At time 143, q = 576443160117379072
+At time 144, q = 1152886320234758144
+At time 145, q = 2305772640469516288
+At time 146, q = 4611545280939032576
+At time 147, q = 9223090561878065152
+At time 148, q = 18446181123756130304
+At time 149, q = 18445618173802708992
+At time 150, q = 18444492273895866368
+At time 151, q = 18442240474082181120
+At time 152, q = 18437736874454810624
+At time 153, q = 18428729675200069632
+At time 154, q = 18410715276690587648
+At time 155, q = 18374686479671623680
+At time 156, q = 18302628885633695744
+At time 157, q = 18158513697557839872
+At time 158, q = 17870283321406128128
+At time 159, q = 17293822569102704640
+At time 160, q = 16140901064495857664
+At time 161, q = 13835058055282163712
+At time 162, q = 9223372036854775808
+At time 163, q = 0
+At time 164, q = 0
+At time 165, q = 0
+At time 166, q = 0
+At time 167, q = 0
+At time 168, q = 0
+At time 169, q = 0
+At time 170, q = 0
+At time 171, q = 0
+At time 172, q = 0
+At time 173, q = 0
+At time 174, q = 0
+At time 175, q = 0
+At time 176, q = 0
+At time 177, q = 0
+At time 178, q = 0
+At time 179, q = 0
+At time 180, q = 0
+At time 181, q = 0
+At time 182, q = 0
+At time 183, q = 0
+At time 184, q = 0
+At time 185, q = 0
+At time 186, q = 0
+At time 187, q = 0
+At time 188, q = 0
+At time 189, q = 0
+At time 190, q = 0
+At time 191, q = 0
+At time 192, q = 0
+At time 193, q = 0
+At time 194, q = 0
+At time 195, q = 0
+At time 196, q = 0
+At time 197, q = 0
+At time 198, q = 0
+At time 199, q = 0
+
+C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Shift-Registers\100-bit-Left-Right-rotator\100bit_shift_register\solution1\sim\verilog>set PATH= 
+
+C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Shift-Registers\100-bit-Left-Right-rotator\100bit_shift_register\solution1\sim\verilog>call C:/Xilinx/Vivado/2023.2/bin/xelab xil_defaultlib.apatb_rotator_top glbl -Oenable_linking_all_libraries  -prj rotator.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_1_16 -L floating_point_v7_0_21 --lib "ieee_proposed=./ieee_proposed" -s rotator  
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_rotator_top glbl -Oenable_linking_all_libraries -prj rotator.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_16 -L floating_point_v7_0_21 --lib ieee_proposed=./ieee_proposed -s rotator 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Shift-Registers/100-bit-Left-Right-rotator/100bit_shift_register/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Shift-Registers/100-bit-Left-Right-rotator/100bit_shift_register/solution1/sim/verilog/rotator.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_rotator_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Shift-Registers/100-bit-Left-Right-rotator/100bit_shift_register/solution1/sim/verilog/rotator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rotator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Shift-Registers/100-bit-Left-Right-rotator/100bit_shift_register/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.rotator
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_rotator_top
+Compiling module work.glbl
+Built simulation snapshot rotator
+
+****** xsim v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/rotator/xsim_script.tcl
+# xsim {rotator} -autoloadwcfg -tclbatch {rotator.tcl}
+Time resolution is 1 ps
+source rotator.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 200 [n/a] @ "125000"
+// RTL Simulation : 1 / 200 [n/a] @ "145000"
+// RTL Simulation : 2 / 200 [n/a] @ "155000"
+// RTL Simulation : 3 / 200 [n/a] @ "165000"
+// RTL Simulation : 4 / 200 [n/a] @ "175000"
+// RTL Simulation : 5 / 200 [n/a] @ "185000"
+// RTL Simulation : 6 / 200 [n/a] @ "195000"
+// RTL Simulation : 7 / 200 [n/a] @ "205000"
+// RTL Simulation : 8 / 200 [n/a] @ "215000"
+// RTL Simulation : 9 / 200 [n/a] @ "225000"
+// RTL Simulation : 10 / 200 [n/a] @ "235000"
+// RTL Simulation : 11 / 200 [n/a] @ "245000"
+// RTL Simulation : 12 / 200 [n/a] @ "255000"
+// RTL Simulation : 13 / 200 [n/a] @ "265000"
+// RTL Simulation : 14 / 200 [n/a] @ "275000"
+// RTL Simulation : 15 / 200 [n/a] @ "285000"
+// RTL Simulation : 16 / 200 [n/a] @ "295000"
+// RTL Simulation : 17 / 200 [n/a] @ "305000"
+// RTL Simulation : 18 / 200 [n/a] @ "315000"
+// RTL Simulation : 19 / 200 [n/a] @ "325000"
+// RTL Simulation : 20 / 200 [n/a] @ "335000"
+// RTL Simulation : 21 / 200 [n/a] @ "345000"
+// RTL Simulation : 22 / 200 [n/a] @ "355000"
+// RTL Simulation : 23 / 200 [n/a] @ "365000"
+// RTL Simulation : 24 / 200 [n/a] @ "375000"
+// RTL Simulation : 25 / 200 [n/a] @ "385000"
+// RTL Simulation : 26 / 200 [n/a] @ "395000"
+// RTL Simulation : 27 / 200 [n/a] @ "405000"
+// RTL Simulation : 28 / 200 [n/a] @ "415000"
+// RTL Simulation : 29 / 200 [n/a] @ "425000"
+// RTL Simulation : 30 / 200 [n/a] @ "435000"
+// RTL Simulation : 31 / 200 [n/a] @ "445000"
+// RTL Simulation : 32 / 200 [n/a] @ "455000"
+// RTL Simulation : 33 / 200 [n/a] @ "465000"
+// RTL Simulation : 34 / 200 [n/a] @ "475000"
+// RTL Simulation : 35 / 200 [n/a] @ "485000"
+// RTL Simulation : 36 / 200 [n/a] @ "495000"
+// RTL Simulation : 37 / 200 [n/a] @ "505000"
+// RTL Simulation : 38 / 200 [n/a] @ "515000"
+// RTL Simulation : 39 / 200 [n/a] @ "525000"
+// RTL Simulation : 40 / 200 [n/a] @ "535000"
+// RTL Simulation : 41 / 200 [n/a] @ "545000"
+// RTL Simulation : 42 / 200 [n/a] @ "555000"
+// RTL Simulation : 43 / 200 [n/a] @ "565000"
+// RTL Simulation : 44 / 200 [n/a] @ "575000"
+// RTL Simulation : 45 / 200 [n/a] @ "585000"
+// RTL Simulation : 46 / 200 [n/a] @ "595000"
+// RTL Simulation : 47 / 200 [n/a] @ "605000"
+// RTL Simulation : 48 / 200 [n/a] @ "615000"
+// RTL Simulation : 49 / 200 [n/a] @ "625000"
+// RTL Simulation : 50 / 200 [n/a] @ "635000"
+// RTL Simulation : 51 / 200 [n/a] @ "645000"
+// RTL Simulation : 52 / 200 [n/a] @ "655000"
+// RTL Simulation : 53 / 200 [n/a] @ "665000"
+// RTL Simulation : 54 / 200 [n/a] @ "675000"
+// RTL Simulation : 55 / 200 [n/a] @ "685000"
+// RTL Simulation : 56 / 200 [n/a] @ "695000"
+// RTL Simulation : 57 / 200 [n/a] @ "705000"
+// RTL Simulation : 58 / 200 [n/a] @ "715000"
+// RTL Simulation : 59 / 200 [n/a] @ "725000"
+// RTL Simulation : 60 / 200 [n/a] @ "735000"
+// RTL Simulation : 61 / 200 [n/a] @ "745000"
+// RTL Simulation : 62 / 200 [n/a] @ "755000"
+// RTL Simulation : 63 / 200 [n/a] @ "765000"
+// RTL Simulation : 64 / 200 [n/a] @ "775000"
+// RTL Simulation : 65 / 200 [n/a] @ "785000"
+// RTL Simulation : 66 / 200 [n/a] @ "795000"
+// RTL Simulation : 67 / 200 [n/a] @ "805000"
+// RTL Simulation : 68 / 200 [n/a] @ "815000"
+// RTL Simulation : 69 / 200 [n/a] @ "825000"
+// RTL Simulation : 70 / 200 [n/a] @ "835000"
+// RTL Simulation : 71 / 200 [n/a] @ "845000"
+// RTL Simulation : 72 / 200 [n/a] @ "855000"
+// RTL Simulation : 73 / 200 [n/a] @ "865000"
+// RTL Simulation : 74 / 200 [n/a] @ "875000"
+// RTL Simulation : 75 / 200 [n/a] @ "885000"
+// RTL Simulation : 76 / 200 [n/a] @ "895000"
+// RTL Simulation : 77 / 200 [n/a] @ "905000"
+// RTL Simulation : 78 / 200 [n/a] @ "915000"
+// RTL Simulation : 79 / 200 [n/a] @ "925000"
+// RTL Simulation : 80 / 200 [n/a] @ "935000"
+// RTL Simulation : 81 / 200 [n/a] @ "945000"
+// RTL Simulation : 82 / 200 [n/a] @ "955000"
+// RTL Simulation : 83 / 200 [n/a] @ "965000"
+// RTL Simulation : 84 / 200 [n/a] @ "975000"
+// RTL Simulation : 85 / 200 [n/a] @ "985000"
+// RTL Simulation : 86 / 200 [n/a] @ "995000"
+// RTL Simulation : 87 / 200 [n/a] @ "1005000"
+// RTL Simulation : 88 / 200 [n/a] @ "1015000"
+// RTL Simulation : 89 / 200 [n/a] @ "1025000"
+// RTL Simulation : 90 / 200 [n/a] @ "1035000"
+// RTL Simulation : 91 / 200 [n/a] @ "1045000"
+// RTL Simulation : 92 / 200 [n/a] @ "1055000"
+// RTL Simulation : 93 / 200 [n/a] @ "1065000"
+// RTL Simulation : 94 / 200 [n/a] @ "1075000"
+// RTL Simulation : 95 / 200 [n/a] @ "1085000"
+// RTL Simulation : 96 / 200 [n/a] @ "1095000"
+// RTL Simulation : 97 / 200 [n/a] @ "1105000"
+// RTL Simulation : 98 / 200 [n/a] @ "1115000"
+// RTL Simulation : 99 / 200 [n/a] @ "1125000"
+// RTL Simulation : 100 / 200 [n/a] @ "1135000"
+// RTL Simulation : 101 / 200 [n/a] @ "1145000"
+// RTL Simulation : 102 / 200 [n/a] @ "1155000"
+// RTL Simulation : 103 / 200 [n/a] @ "1165000"
+// RTL Simulation : 104 / 200 [n/a] @ "1175000"
+// RTL Simulation : 105 / 200 [n/a] @ "1185000"
+// RTL Simulation : 106 / 200 [n/a] @ "1195000"
+// RTL Simulation : 107 / 200 [n/a] @ "1205000"
+// RTL Simulation : 108 / 200 [n/a] @ "1215000"
+// RTL Simulation : 109 / 200 [n/a] @ "1225000"
+// RTL Simulation : 110 / 200 [n/a] @ "1235000"
+// RTL Simulation : 111 / 200 [n/a] @ "1245000"
+// RTL Simulation : 112 / 200 [n/a] @ "1255000"
+// RTL Simulation : 113 / 200 [n/a] @ "1265000"
+// RTL Simulation : 114 / 200 [n/a] @ "1275000"
+// RTL Simulation : 115 / 200 [n/a] @ "1285000"
+// RTL Simulation : 116 / 200 [n/a] @ "1295000"
+// RTL Simulation : 117 / 200 [n/a] @ "1305000"
+// RTL Simulation : 118 / 200 [n/a] @ "1315000"
+// RTL Simulation : 119 / 200 [n/a] @ "1325000"
+// RTL Simulation : 120 / 200 [n/a] @ "1335000"
+// RTL Simulation : 121 / 200 [n/a] @ "1345000"
+// RTL Simulation : 122 / 200 [n/a] @ "1355000"
+// RTL Simulation : 123 / 200 [n/a] @ "1365000"
+// RTL Simulation : 124 / 200 [n/a] @ "1375000"
+// RTL Simulation : 125 / 200 [n/a] @ "1385000"
+// RTL Simulation : 126 / 200 [n/a] @ "1395000"
+// RTL Simulation : 127 / 200 [n/a] @ "1405000"
+// RTL Simulation : 128 / 200 [n/a] @ "1415000"
+// RTL Simulation : 129 / 200 [n/a] @ "1425000"
+// RTL Simulation : 130 / 200 [n/a] @ "1435000"
+// RTL Simulation : 131 / 200 [n/a] @ "1445000"
+// RTL Simulation : 132 / 200 [n/a] @ "1455000"
+// RTL Simulation : 133 / 200 [n/a] @ "1465000"
+// RTL Simulation : 134 / 200 [n/a] @ "1475000"
+// RTL Simulation : 135 / 200 [n/a] @ "1485000"
+// RTL Simulation : 136 / 200 [n/a] @ "1495000"
+// RTL Simulation : 137 / 200 [n/a] @ "1505000"
+// RTL Simulation : 138 / 200 [n/a] @ "1515000"
+// RTL Simulation : 139 / 200 [n/a] @ "1525000"
+// RTL Simulation : 140 / 200 [n/a] @ "1535000"
+// RTL Simulation : 141 / 200 [n/a] @ "1545000"
+// RTL Simulation : 142 / 200 [n/a] @ "1555000"
+// RTL Simulation : 143 / 200 [n/a] @ "1565000"
+// RTL Simulation : 144 / 200 [n/a] @ "1575000"
+// RTL Simulation : 145 / 200 [n/a] @ "1585000"
+// RTL Simulation : 146 / 200 [n/a] @ "1595000"
+// RTL Simulation : 147 / 200 [n/a] @ "1605000"
+// RTL Simulation : 148 / 200 [n/a] @ "1615000"
+// RTL Simulation : 149 / 200 [n/a] @ "1625000"
+// RTL Simulation : 150 / 200 [n/a] @ "1635000"
+// RTL Simulation : 151 / 200 [n/a] @ "1645000"
+// RTL Simulation : 152 / 200 [n/a] @ "1655000"
+// RTL Simulation : 153 / 200 [n/a] @ "1665000"
+// RTL Simulation : 154 / 200 [n/a] @ "1675000"
+// RTL Simulation : 155 / 200 [n/a] @ "1685000"
+// RTL Simulation : 156 / 200 [n/a] @ "1695000"
+// RTL Simulation : 157 / 200 [n/a] @ "1705000"
+// RTL Simulation : 158 / 200 [n/a] @ "1715000"
+// RTL Simulation : 159 / 200 [n/a] @ "1725000"
+// RTL Simulation : 160 / 200 [n/a] @ "1735000"
+// RTL Simulation : 161 / 200 [n/a] @ "1745000"
+// RTL Simulation : 162 / 200 [n/a] @ "1755000"
+// RTL Simulation : 163 / 200 [n/a] @ "1765000"
+// RTL Simulation : 164 / 200 [n/a] @ "1775000"
+// RTL Simulation : 165 / 200 [n/a] @ "1785000"
+// RTL Simulation : 166 / 200 [n/a] @ "1795000"
+// RTL Simulation : 167 / 200 [n/a] @ "1805000"
+// RTL Simulation : 168 / 200 [n/a] @ "1815000"
+// RTL Simulation : 169 / 200 [n/a] @ "1825000"
+// RTL Simulation : 170 / 200 [n/a] @ "1835000"
+// RTL Simulation : 171 / 200 [n/a] @ "1845000"
+// RTL Simulation : 172 / 200 [n/a] @ "1855000"
+// RTL Simulation : 173 / 200 [n/a] @ "1865000"
+// RTL Simulation : 174 / 200 [n/a] @ "1875000"
+// RTL Simulation : 175 / 200 [n/a] @ "1885000"
+// RTL Simulation : 176 / 200 [n/a] @ "1895000"
+// RTL Simulation : 177 / 200 [n/a] @ "1905000"
+// RTL Simulation : 178 / 200 [n/a] @ "1915000"
+// RTL Simulation : 179 / 200 [n/a] @ "1925000"
+// RTL Simulation : 180 / 200 [n/a] @ "1935000"
+// RTL Simulation : 181 / 200 [n/a] @ "1945000"
+// RTL Simulation : 182 / 200 [n/a] @ "1955000"
+// RTL Simulation : 183 / 200 [n/a] @ "1965000"
+// RTL Simulation : 184 / 200 [n/a] @ "1975000"
+// RTL Simulation : 185 / 200 [n/a] @ "1985000"
+// RTL Simulation : 186 / 200 [n/a] @ "1995000"
+// RTL Simulation : 187 / 200 [n/a] @ "2005000"
+// RTL Simulation : 188 / 200 [n/a] @ "2015000"
+// RTL Simulation : 189 / 200 [n/a] @ "2025000"
+// RTL Simulation : 190 / 200 [n/a] @ "2035000"
+// RTL Simulation : 191 / 200 [n/a] @ "2045000"
+// RTL Simulation : 192 / 200 [n/a] @ "2055000"
+// RTL Simulation : 193 / 200 [n/a] @ "2065000"
+// RTL Simulation : 194 / 200 [n/a] @ "2075000"
+// RTL Simulation : 195 / 200 [n/a] @ "2085000"
+// RTL Simulation : 196 / 200 [n/a] @ "2095000"
+// RTL Simulation : 197 / 200 [n/a] @ "2105000"
+// RTL Simulation : 198 / 200 [n/a] @ "2115000"
+// RTL Simulation : 199 / 200 [n/a] @ "2125000"
+// RTL Simulation : 200 / 200 [n/a] @ "2135000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 2195 ns : File "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Shift-Registers/100-bit-Left-Right-rotator/100bit_shift_register/solution1/sim/verilog/rotator.autotb.v" Line 403
+## quit
+INFO: [Common 17-206] Exiting xsim at Mon Mar 25 05:16:04 2024...
+At time 0, q = 0
+At time 1, q = 0
+At time 2, q = 0
+At time 3, q = 0
+At time 4, q = 0
+At time 5, q = 0
+At time 6, q = 0
+At time 7, q = 0
+At time 8, q = 0
+At time 9, q = 0
+At time 10, q = 0
+At time 11, q = 0
+At time 12, q = 0
+At time 13, q = 0
+At time 14, q = 0
+At time 15, q = 0
+At time 16, q = 0
+At time 17, q = 0
+At time 18, q = 0
+At time 19, q = 0
+At time 20, q = 0
+At time 21, q = 0
+At time 22, q = 0
+At time 23, q = 0
+At time 24, q = 0
+At time 25, q = 0
+At time 26, q = 0
+At time 27, q = 0
+At time 28, q = 0
+At time 29, q = 0
+At time 30, q = 0
+At time 31, q = 0
+At time 32, q = 0
+At time 33, q = 0
+At time 34, q = 0
+At time 35, q = 0
+At time 36, q = 0
+At time 37, q = 0
+At time 38, q = 0
+At time 39, q = 0
+At time 40, q = 0
+At time 41, q = 0
+At time 42, q = 0
+At time 43, q = 0
+At time 44, q = 0
+At time 45, q = 0
+At time 46, q = 0
+At time 47, q = 0
+At time 48, q = 0
+At time 49, q = 0
+At time 50, q = 18446744073709551615
+At time 51, q = 9223372036854775807
+At time 52, q = 4611686018427387903
+At time 53, q = 2305843009213693951
+At time 54, q = 1152921504606846975
+At time 55, q = 576460752303423487
+At time 56, q = 288230376151711743
+At time 57, q = 144115188075855871
+At time 58, q = 72057594037927935
+At time 59, q = 36028797018963967
+At time 60, q = 18014398509481983
+At time 61, q = 9007199254740991
+At time 62, q = 4503599627370495
+At time 63, q = 2251799813685247
+At time 64, q = 1125899906842623
+At time 65, q = 562949953421311
+At time 66, q = 281474976710655
+At time 67, q = 140737488355327
+At time 68, q = 70368744177663
+At time 69, q = 35184372088831
+At time 70, q = 17592186044415
+At time 71, q = 8796093022207
+At time 72, q = 4398046511103
+At time 73, q = 2199023255551
+At time 74, q = 1099511627775
+At time 75, q = 549755813887
+At time 76, q = 274877906943
+At time 77, q = 137438953471
+At time 78, q = 68719476735
+At time 79, q = 34359738367
+At time 80, q = 17179869183
+At time 81, q = 8589934591
+At time 82, q = 4294967295
+At time 83, q = 2147483647
+At time 84, q = 1073741823
+At time 85, q = 536870911
+At time 86, q = 268435455
+At time 87, q = 134217727
+At time 88, q = 67108863
+At time 89, q = 33554431
+At time 90, q = 16777215
+At time 91, q = 8388607
+At time 92, q = 4194303
+At time 93, q = 2097151
+At time 94, q = 1048575
+At time 95, q = 524287
+At time 96, q = 262143
+At time 97, q = 131071
+At time 98, q = 65535
+At time 99, q = 32767
+At time 100, q = 65534
+At time 101, q = 131068
+At time 102, q = 262136
+At time 103, q = 524272
+At time 104, q = 1048544
+At time 105, q = 2097088
+At time 106, q = 4194176
+At time 107, q = 8388352
+At time 108, q = 16776704
+At time 109, q = 33553408
+At time 110, q = 67106816
+At time 111, q = 134213632
+At time 112, q = 268427264
+At time 113, q = 536854528
+At time 114, q = 1073709056
+At time 115, q = 2147418112
+At time 116, q = 4294836224
+At time 117, q = 8589672448
+At time 118, q = 17179344896
+At time 119, q = 34358689792
+At time 120, q = 68717379584
+At time 121, q = 137434759168
+At time 122, q = 274869518336
+At time 123, q = 549739036672
+At time 124, q = 1099478073344
+At time 125, q = 2198956146688
+At time 126, q = 4397912293376
+At time 127, q = 8795824586752
+At time 128, q = 17591649173504
+At time 129, q = 35183298347008
+At time 130, q = 70366596694016
+At time 131, q = 140733193388032
+At time 132, q = 281466386776064
+At time 133, q = 562932773552128
+At time 134, q = 1125865547104256
+At time 135, q = 2251731094208512
+At time 136, q = 4503462188417024
+At time 137, q = 9006924376834048
+At time 138, q = 18013848753668096
+At time 139, q = 36027697507336192
+At time 140, q = 72055395014672384
+At time 141, q = 144110790029344768
+At time 142, q = 288221580058689536
+At time 143, q = 576443160117379072
+At time 144, q = 1152886320234758144
+At time 145, q = 2305772640469516288
+At time 146, q = 4611545280939032576
+At time 147, q = 9223090561878065152
+At time 148, q = 18446181123756130304
+At time 149, q = 18445618173802708992
+At time 150, q = 18444492273895866368
+At time 151, q = 18442240474082181120
+At time 152, q = 18437736874454810624
+At time 153, q = 18428729675200069632
+At time 154, q = 18410715276690587648
+At time 155, q = 18374686479671623680
+At time 156, q = 18302628885633695744
+At time 157, q = 18158513697557839872
+At time 158, q = 17870283321406128128
+At time 159, q = 17293822569102704640
+At time 160, q = 16140901064495857664
+At time 161, q = 13835058055282163712
+At time 162, q = 9223372036854775808
+At time 163, q = 0
+At time 164, q = 0
+At time 165, q = 0
+At time 166, q = 0
+At time 167, q = 0
+At time 168, q = 0
+At time 169, q = 0
+At time 170, q = 0
+At time 171, q = 0
+At time 172, q = 0
+At time 173, q = 0
+At time 174, q = 0
+At time 175, q = 0
+At time 176, q = 0
+At time 177, q = 0
+At time 178, q = 0
+At time 179, q = 0
+At time 180, q = 0
+At time 181, q = 0
+At time 182, q = 0
+At time 183, q = 0
+At time 184, q = 0
+At time 185, q = 0
+At time 186, q = 0
+At time 187, q = 0
+At time 188, q = 0
+At time 189, q = 0
+At time 190, q = 0
+At time 191, q = 0
+At time 192, q = 0
+At time 193, q = 0
+At time 194, q = 0
+At time 195, q = 0
+At time 196, q = 0
+At time 197, q = 0
+At time 198, q = 0
+At time 199, q = 0

@@ -1,0 +1,12 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="" msg_id="207-5167" msg_severity="WARNING" msg_loc="rotator.cpp:12:33" msg_body="shift count &gt;= width of type">
+        <args ClangWarningOption="shift-count-overflow"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5167" msg_severity="WARNING" msg_loc="rotator.cpp:15:34" msg_body="shift count &gt;= width of type">
+        <args ClangWarningOption="shift-count-overflow"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Shift-Registers/100-bit-Left-Right-rotator/100bit_shift_register/solution1/csynth.tcl:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="rotator" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=rotator" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

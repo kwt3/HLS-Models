@@ -1,0 +1,6 @@
+   Build using "C:/Xilinx/Vitis_HLS/2023.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling shift_register.cpp_pre.cpp.tb.cpp
+   Compiling apatb_shift_register.cpp
+   Compiling tb_shift_register.cpp_pre.cpp.tb.cpp
+   Compiling apatb_shift_register_ir.ll
+   Generating cosim.tv.exe

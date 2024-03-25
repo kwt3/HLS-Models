@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="rotator.cpp" path="C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Shift-Registers\100-bit-Left-Right-rotator\rotator.cpp"/>
+    <originFiles name="rotator.hpp" path="C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Shift-Registers\100-bit-Left-Right-rotator\rotator.hpp"/>
+  </source>
+  <testbench>
+    <originFiles name="tb_rotator.cpp" path="C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Shift-Registers\100-bit-Left-Right-rotator\tb_rotator.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

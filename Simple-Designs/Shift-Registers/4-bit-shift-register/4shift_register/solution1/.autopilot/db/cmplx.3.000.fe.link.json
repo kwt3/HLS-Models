@@ -1,0 +1,20 @@
+{
+  "0": {
+    "basicblocks": 11,
+    "calls": "",
+    "file": "shift_register.cpp",
+    "fileloc": 3,
+    "instructions": 34,
+    "loads": {
+      "G": 2,
+      "L": 1,
+      "T": 1
+    },
+    "name": "shift_register",
+    "stores": {
+      "G": 3,
+      "T": 1
+    },
+    "total_instructions": 336
+  }
+}

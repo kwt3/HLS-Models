@@ -1,0 +1,7 @@
+rotator.cpp:12:33: warning: shift count >= width of type [-Wshift-count-overflow]
+        reg = reg >> 1 | reg[0] << 99;
+                                ^  ~~
+rotator.cpp:15:34: warning: shift count >= width of type [-Wshift-count-overflow]
+        reg = reg << 1 | reg[99] >> 99;
+                                 ^  ~~
+2 warnings generated.

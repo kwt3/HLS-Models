@@ -1,0 +1,135 @@
+
+
+================================================================
+== Vitis HLS Report for 'rotator'
+================================================================
+* Date:           Mon Mar 25 05:15:37 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        100bit_shift_register
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu11p-flga2577-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  1.426 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.42>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%spectopmodule_ln3 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [rotator.cpp:3]   --->   Operation 2 'spectopmodule' 'spectopmodule_ln3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %load"   --->   Operation 3 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %load, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 4 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i2 %ena"   --->   Operation 5 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i2 %ena, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 6 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i100 %data"   --->   Operation 7 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i100 %data, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i100 %q"   --->   Operation 9 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i100 %q, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%load_read = read i1 @_ssdm_op_Read.ap_auto.i1P0A, i1 %load" [rotator.cpp:8]   --->   Operation 11 'read' 'load_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%reg_load = load i100 %reg_r" [rotator.cpp:12]   --->   Operation 12 'load' 'reg_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%br_ln8 = br i1 %load_read, void %if.else, void %if.then" [rotator.cpp:8]   --->   Operation 13 'br' 'br_ln8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%ena_read = read i2 @_ssdm_op_Read.ap_auto.i2P0A, i2 %ena" [rotator.cpp:10]   --->   Operation 14 'read' 'ena_read' <Predicate = (!load_read)> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.88ns)   --->   "%switch_ln10 = switch i2 %ena_read, void %if.end16, i2 1, void %if.then2, i2 2, void %if.then8" [rotator.cpp:10]   --->   Operation 15 'switch' 'switch_ln10' <Predicate = (!load_read)> <Delay = 0.88>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%shl_ln15 = shl i100 %reg_load, i100 1" [rotator.cpp:15]   --->   Operation 16 'shl' 'shl_ln15' <Predicate = (!load_read & ena_read == 2)> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.50ns)   --->   "%store_ln15 = store i100 %shl_ln15, i100 %reg_r" [rotator.cpp:15]   --->   Operation 17 'store' 'store_ln15' <Predicate = (!load_read & ena_read == 2)> <Delay = 0.50>
+ST_1 : Operation 18 [1/1] (0.54ns)   --->   "%br_ln16 = br void %if.end16" [rotator.cpp:16]   --->   Operation 18 'br' 'br_ln16' <Predicate = (!load_read & ena_read == 2)> <Delay = 0.54>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%lshr_ln = partselect i99 @_ssdm_op_PartSelect.i99.i100.i32.i32, i100 %reg_load, i32 1, i32 99" [rotator.cpp:12]   --->   Operation 19 'partselect' 'lshr_ln' <Predicate = (!load_read & ena_read == 1)> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%zext_ln12 = zext i99 %lshr_ln" [rotator.cpp:12]   --->   Operation 20 'zext' 'zext_ln12' <Predicate = (!load_read & ena_read == 1)> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.50ns)   --->   "%store_ln12 = store i100 %zext_ln12, i100 %reg_r" [rotator.cpp:12]   --->   Operation 21 'store' 'store_ln12' <Predicate = (!load_read & ena_read == 1)> <Delay = 0.50>
+ST_1 : Operation 22 [1/1] (0.54ns)   --->   "%br_ln13 = br void %if.end16" [rotator.cpp:13]   --->   Operation 22 'br' 'br_ln13' <Predicate = (!load_read & ena_read == 1)> <Delay = 0.54>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%data_read = read i100 @_ssdm_op_Read.ap_auto.i100P0A, i100 %data" [rotator.cpp:9]   --->   Operation 23 'read' 'data_read' <Predicate = (load_read)> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.50ns)   --->   "%store_ln9 = store i100 %data_read, i100 %reg_r" [rotator.cpp:9]   --->   Operation 24 'store' 'store_ln9' <Predicate = (load_read)> <Delay = 0.50>
+ST_1 : Operation 25 [1/1] (0.54ns)   --->   "%br_ln10 = br void %if.end16" [rotator.cpp:10]   --->   Operation 25 'br' 'br_ln10' <Predicate = (load_read)> <Delay = 0.54>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%reg_loc_2 = phi i100 %data_read, void %if.then, i100 %zext_ln12, void %if.then2, i100 %reg_load, void %if.else, i100 %shl_ln15, void %if.then8" [rotator.cpp:9]   --->   Operation 26 'phi' 'reg_loc_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%write_ln19 = write void @_ssdm_op_Write.ap_auto.i100P0A, i100 %q, i100 %reg_loc_2" [rotator.cpp:19]   --->   Operation 27 'write' 'write_ln19' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%ret_ln20 = ret" [rotator.cpp:20]   --->   Operation 28 'ret' 'ret_ln20' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 1.426ns
+The critical path consists of the following:
+	wire read operation ('load_read', rotator.cpp:8) on port 'load' (rotator.cpp:8) [15]  (0.000 ns)
+	wire read operation ('ena_read', rotator.cpp:10) on port 'ena' (rotator.cpp:10) [19]  (0.000 ns)
+	multiplexor before 'phi' operation 100 bit ('reg_loc_2', rotator.cpp:9) with incoming values : ('reg_load', rotator.cpp:12) ('shl_ln15', rotator.cpp:15) ('zext_ln12', rotator.cpp:12) ('data_read', rotator.cpp:9) [35]  (0.882 ns)
+	multiplexor before 'phi' operation 100 bit ('reg_loc_2', rotator.cpp:9) with incoming values : ('reg_load', rotator.cpp:12) ('shl_ln15', rotator.cpp:15) ('zext_ln12', rotator.cpp:12) ('data_read', rotator.cpp:9) [35]  (0.544 ns)
+	'phi' operation 100 bit ('reg_loc_2', rotator.cpp:9) with incoming values : ('reg_load', rotator.cpp:12) ('shl_ln15', rotator.cpp:15) ('zext_ln12', rotator.cpp:12) ('data_read', rotator.cpp:9) [35]  (0.000 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

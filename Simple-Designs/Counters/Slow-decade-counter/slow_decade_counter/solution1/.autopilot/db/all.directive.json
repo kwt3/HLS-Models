@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "decade_counter",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "decade_counter"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Slow-decade-counter/slow_decade_counter/solution1/csynth.tcl",
+    "sourceLine": 16,
+    "success": true
+  }
+]
