@@ -40,5 +40,5 @@ Neural Network HLS: https://github.com/twendt97/neural_network_hls
 
 ## Additional Resources
 
-# LLM4EDA: Emerging Progress in Large Language Models for Electronic Design Automation
+### LLM4EDA: Emerging Progress in Large Language Models for Electronic Design Automation
 List of resources for Large Language Models to solve problems in Electronic Design Automation: https://github.com/Thinklab-SJTU/Awesome-LLM4EDA
