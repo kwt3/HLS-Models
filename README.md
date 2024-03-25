@@ -74,6 +74,8 @@ SVM Algorithm: https://github.com/brunojaciel/SVM-Vitis-HLS
 
 Gaussian Filter: https://github.com/muhammedkocaoglu/Gaussian-Filter-Implementation-Using-Vitis-HLS
 
+HLS SIFT subkernel Accelerator: https://github.com/ahonorat/HLS_SIFT_subkernel
+
 ## Divide
 
 Divide Vitis HLS: https://github.com/LakhalEngineering/Divide-Vitis-HLS
