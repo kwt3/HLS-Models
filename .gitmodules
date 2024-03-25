@@ -1,3 +1,6 @@
 [submodule "Image-Processor/image-processing-on-ZCU104"]
 	path = Image-Processor/image-processing-on-ZCU104
 	url = https://github.com/chuchu0512/image-processing-on-ZCU104
+[submodule "ML-Acceleration/DeepPoint-V2-FPGA"]
+	path = ML-Acceleration/DeepPoint-V2-FPGA
+	url = https://github.com/salehjg/DeepPoint-V2-FPGA
