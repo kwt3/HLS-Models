@@ -2,11 +2,14 @@
 <vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
   <errorLogs>
     <logs>
-      <synLog>
-        <logs message="Error in linking the design.&#xD;&#xA;    while executing&#xD;&#xA;&quot;source C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer_N_to_1/multiplexer/solution1/csynth.tcl&quot;&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls::main C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer_N_to_1/multiplexer/solution1/csynth.tcl&quot;&#xD;&#xA;    (&quot;uplevel&quot; body line 1)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;uplevel 1 hls::main {*}$newargs&quot;&#xD;&#xA;    (procedure &quot;hls_proc&quot; line 16)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls_proc [info nameofexecutable] $argv&quot;" projectName="multiplexer" solutionName="solution1" date="2024-04-01T06:08:59.202-0400"/>
-        <logs message="ERROR: [HLS 200-70] Cannot find any design unit to elaborate." projectName="multiplexer" solutionName="solution1" date="2024-04-01T06:08:59.192-0400"/>
-      </synLog>
-      <simLog/>
+      <synLog/>
+      <simLog>
+        <logs message="ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***" projectName="multiplexer" solutionName="solution1" date="2024-04-01T10:11:51.883-0400"/>
+        <logs message="ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***" projectName="multiplexer" solutionName="solution1" date="2024-04-01T10:11:51.788-0400"/>
+        <logs message="ERROR: [COSIM 212-331] Aborting co-simulation: C simulation failed, compilation errors." projectName="multiplexer" solutionName="solution1" date="2024-04-01T10:11:51.778-0400"/>
+        <logs message="ERROR: [COSIM 212-321] EXE file generate failed." projectName="multiplexer" solutionName="solution1" date="2024-04-01T10:11:51.700-0400"/>
+        <logs message="ERROR: [COSIM 212-317] C++ compile error." projectName="multiplexer" solutionName="solution1" date="2024-04-01T10:11:51.686-0400"/>
+      </simLog>
       <mgLog/>
       <packageLog/>
       <csimLog/>
@@ -14,9 +17,7 @@
   </errorLogs>
   <warningLogs>
     <logs>
-      <synLog>
-        <logs message="WARNING: [HLS 200-1986] Could not apply TOP directive, invalid function, label, or variable (C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer_N_to_1/multiplexer/solution1/csynth.tcl:16)" projectName="multiplexer" solutionName="solution1" date="2024-04-01T06:08:59.184-0400" type="Warning"/>
-      </synLog>
+      <synLog/>
       <simLog/>
       <mgLog/>
       <packageLog/>

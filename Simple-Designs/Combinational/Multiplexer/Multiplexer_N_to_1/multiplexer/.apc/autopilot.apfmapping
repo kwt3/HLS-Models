@@ -2,6 +2,7 @@
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source/>
   <testbench>
-    <originFiles name="tb_multiplexer.cpp" path="C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Multiplexer_N_to_1\tb_multiplexer.cpp"/>
+    <originFiles name="tb_multiplexer.cpp" path="C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Multiplexer\Multiplexer_N_to_1\tb_multiplexer.cpp"/>
+    <originFiles name="csynth.tcl" path="C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Multiplexer\Multiplexer_N_to_1\csynth.tcl"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

@@ -29,42 +29,52 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer_N_to_1/multiplexer/.apc/.src</location>
+			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer/Multiplexer_N_to_1/multiplexer/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer_N_to_1/multiplexer/.apc/.tb</location>
+			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer/Multiplexer_N_to_1/multiplexer/.apc/.tb</location>
 		</link>
 		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
-			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer_N_to_1/multiplexer/solution1/.tcls</location>
+			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer/Multiplexer_N_to_1/multiplexer/solution1/.tcls</location>
+		</link>
+		<link>
+			<name>source/multiplexer.cpp</name>
+			<type>1</type>
+			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer/Multiplexer_N_to_1/multiplexer.cpp</location>
 		</link>
 		<link>
 			<name>source/multiplexer.hpp</name>
 			<type>1</type>
-			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer_N_to_1/multiplexer.hpp</location>
+			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer/Multiplexer_N_to_1/multiplexer.hpp</location>
+		</link>
+		<link>
+			<name>testbench/csynth.tcl</name>
+			<type>1</type>
+			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer/Multiplexer_N_to_1/csynth.tcl</location>
 		</link>
 		<link>
 			<name>testbench/tb_multiplexer.cpp</name>
 			<type>1</type>
-			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer_N_to_1/tb_multiplexer.cpp</location>
+			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer/Multiplexer_N_to_1/tb_multiplexer.cpp</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer_N_to_1/multiplexer/solution1/solution1.directive</location>
+			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer/Multiplexer_N_to_1/multiplexer/solution1/solution1.directive</location>
 		</link>
 		<link>
 			<name>solution1/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer_N_to_1/multiplexer/solution1/directives.tcl</location>
+			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer/Multiplexer_N_to_1/multiplexer/solution1/directives.tcl</location>
 		</link>
 		<link>
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
-			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer_N_to_1/multiplexer/solution1/script.tcl</location>
+			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer/Multiplexer_N_to_1/multiplexer/solution1/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

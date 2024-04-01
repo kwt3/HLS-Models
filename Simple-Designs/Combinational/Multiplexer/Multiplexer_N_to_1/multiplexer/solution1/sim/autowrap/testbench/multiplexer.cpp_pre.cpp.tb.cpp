@@ -5,11 +5,11 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // 
 // ==============================================================
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer_N_to_1/multiplexer.cpp"
+# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer/Multiplexer_N_to_1/multiplexer.cpp"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer_N_to_1/multiplexer.cpp"
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer_N_to_1/multiplexer.hpp" 1
+# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer/Multiplexer_N_to_1/multiplexer.cpp"
+# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer/Multiplexer_N_to_1/multiplexer.hpp" 1
 
 
 
@@ -279,13 +279,12 @@ namespace std
 
   using ::max_align_t;
 }
-# 5 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer_N_to_1/multiplexer.hpp" 2
+# 5 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer/Multiplexer_N_to_1/multiplexer.hpp" 2
 
 
-# 6 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer_N_to_1/multiplexer.hpp"
+# 6 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer/Multiplexer_N_to_1/multiplexer.hpp"
 template<typename T, size_t N>
 T multiplexer(const T inputs[N], size_t sel) {
-#pragma HLS INLINE
     if (sel < N) {
         return inputs[sel];
     } else {
@@ -318,12 +317,12 @@ type-parameter-0-0 _ret = apatb_multiplexer_ir(inputs, sel);
 return _ret;
 }
 #endif
-# 15 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer_N_to_1/multiplexer.hpp"
+# 14 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer/Multiplexer_N_to_1/multiplexer.hpp"
 
 
 
 extern template int multiplexer<int, 5>(const int inputs[5], size_t sel);
-# 2 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer_N_to_1/multiplexer.cpp" 2
+# 2 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer/Multiplexer_N_to_1/multiplexer.cpp" 2
 
 
 template int multiplexer<int, 5>(const int inputs[5], size_t sel);

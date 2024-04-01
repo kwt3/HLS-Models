@@ -1,7 +1,7 @@
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer_N_to_1/tb_multiplexer.cpp"
+# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer/Multiplexer_N_to_1/tb_multiplexer.cpp"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer_N_to_1/tb_multiplexer.cpp"
+# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer/Multiplexer_N_to_1/tb_multiplexer.cpp"
 # 1 "C:/Xilinx/Vitis_HLS/2023.2/tps/win64/msys64/mingw64/include/c++/6.2.0/iostream" 1 3
 # 36 "C:/Xilinx/Vitis_HLS/2023.2/tps/win64/msys64/mingw64/include/c++/6.2.0/iostream" 3
        
@@ -25505,8 +25505,8 @@ namespace std
 
 
 }
-# 2 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer_N_to_1/tb_multiplexer.cpp" 2
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer_N_to_1/multiplexer.hpp" 1
+# 2 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer/Multiplexer_N_to_1/tb_multiplexer.cpp" 2
+# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer/Multiplexer_N_to_1/multiplexer.hpp" 1
 
 
 
@@ -25533,13 +25533,12 @@ namespace std
 
   using ::max_align_t;
 }
-# 5 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer_N_to_1/multiplexer.hpp" 2
+# 5 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer/Multiplexer_N_to_1/multiplexer.hpp" 2
 
 
-# 6 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer_N_to_1/multiplexer.hpp"
+# 6 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer/Multiplexer_N_to_1/multiplexer.hpp"
 template<typename T, size_t N>
 T multiplexer(const T inputs[N], size_t sel) {
-#pragma HLS INLINE
     if (sel < N) {
         return inputs[sel];
     } else {
@@ -25550,10 +25549,10 @@ T multiplexer(const T inputs[N], size_t sel) {
 
 
 extern template int multiplexer<int, 5>(const int inputs[5], size_t sel);
-# 3 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer_N_to_1/tb_multiplexer.cpp" 2
+# 3 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer/Multiplexer_N_to_1/tb_multiplexer.cpp" 2
 
 
-
+template int multiplexer<int, 5>(const int inputs[5], size_t sel);
 
 
 template <typename T, size_t N>

@@ -1,9 +1,8 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
-   Compiling ../../../../tb_multiplexer.cpp in debug mode
-   Generating csim.exe
-Inputs: 10 20 30 40 50 
+make: 'csim.exe' is up to date.
+Inputs: 1 2 3 4 5 
 Selection: 2
-Result: 30
+Result: 3
 INFO: [SIM 1] CSim done with 0 errors.
 INFO: [SIM 3] *************** CSIM finish ***************

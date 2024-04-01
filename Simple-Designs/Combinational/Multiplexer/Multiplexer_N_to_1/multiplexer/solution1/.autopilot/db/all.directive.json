@@ -1,19 +1,44 @@
-[{
-    "id": 0,
-    "insert_position": "",
-    "functionName": "multiplexer",
-    "label": "",
+[
+  {
     "functionLabel": "",
-    "success": false,
-    "slx": false,
+    "functionName": "multiplexer",
+    "id": 0,
     "ifcond": "",
-    "sourceFile": "C:\/Users\/kwokt\/Desktop\/Clone_HLS-Models\/HLS-Models\/Simple-Designs\/Combinational\/Multiplexer_N_to_1\/multiplexer\/solution1\/csynth.tcl",
-    "sourceLine": 16,
+    "insert_position": "",
+    "label": "",
     "pragma": {
       "name": "TOP",
-      "option": [{
+      "option": [
+        {
           "name": "name",
           "value": "multiplexer"
-        }]
-    }
-  }]
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer/Multiplexer_N_to_1/multiplexer/solution1/directives.tcl",
+    "sourceLine": 7,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "multiplexer",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "multiplexer"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Multiplexer/Multiplexer_N_to_1/multiplexer/solution1/csynth.tcl",
+    "sourceLine": 18,
+    "success": true
+  }
+]

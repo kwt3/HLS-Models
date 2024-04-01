@@ -1,0 +1,14 @@
+{
+    "0": {
+        "name": "multiplexer<int, 5>",
+        "file": "multiplexer.hpp",
+        "fileloc": "7",
+        "instructions": "14",
+        "total_instructions": "14",
+        "calls": "",
+        "basicblocks": "1",
+        "loads": {
+            "T": "1"
+        }
+    }
+}

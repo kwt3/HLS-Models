@@ -19,7 +19,7 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../../tb_multiplexer.cpp
+HLS_SOURCES = ../../../../tb_multiplexer.cpp ../../../../multiplexer.cpp
 
 override TARGET := csim.exe
 
@@ -80,3 +80,9 @@ $(ObjDir)/tb_multiplexer.o: ../../../../tb_multiplexer.cpp $(ObjDir)/.dir
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/tb_multiplexer.d
+
+$(ObjDir)/multiplexer.o: ../../../../multiplexer.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../multiplexer.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/multiplexer.d
