@@ -1,0 +1,9 @@
+sv work "glbl.v"
+sv xil_defaultlib "two_complement_adder.autotb.v"
+sv xil_defaultlib "two_complement_adder.v"
+sv xil_defaultlib "two_complement_adder_flow_control_loop_pipe_sequential_init.v"
+sv xil_defaultlib "two_complement_adder_temp_sum_RAM_AUTO_1R1W.v"
+sv xil_defaultlib "two_complement_adder_two_complement_adder_Pipeline_VITIS_LOOP_16_2.v"
+sv xil_defaultlib "two_complement_adder_two_complement_adder_Pipeline_VITIS_LOOP_8_1.v"
+sv xil_defaultlib "dataflow_monitor.sv"
+

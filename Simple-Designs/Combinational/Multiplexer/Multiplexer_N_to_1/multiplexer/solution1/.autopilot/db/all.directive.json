@@ -1,0 +1,19 @@
+[{
+    "id": 0,
+    "insert_position": "",
+    "functionName": "multiplexer",
+    "label": "",
+    "functionLabel": "",
+    "success": false,
+    "slx": false,
+    "ifcond": "",
+    "sourceFile": "C:\/Users\/kwokt\/Desktop\/Clone_HLS-Models\/HLS-Models\/Simple-Designs\/Combinational\/Multiplexer_N_to_1\/multiplexer\/solution1\/csynth.tcl",
+    "sourceLine": 16,
+    "pragma": {
+      "name": "TOP",
+      "option": [{
+          "name": "name",
+          "value": "multiplexer"
+        }]
+    }
+  }]

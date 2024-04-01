@@ -1,0 +1,17 @@
+{
+  "0": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "binary_adder_100.cpp",
+    "fileloc": 3,
+    "instructions": 41,
+    "loads": {
+      "T": 3
+    },
+    "name": "binary_adder_100",
+    "stores": {
+      "T": 3
+    },
+    "total_instructions": 44
+  }
+}

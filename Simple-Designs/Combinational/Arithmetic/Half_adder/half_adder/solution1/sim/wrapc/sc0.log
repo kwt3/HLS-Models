@@ -1,0 +1,6 @@
+   Build using "C:/Xilinx/Vitis_HLS/2023.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling tb_half_adder.cpp_pre.cpp.tb.cpp
+   Compiling half_adder.cpp_pre.cpp.tb.cpp
+   Compiling apatb_half_adder.cpp
+   Compiling apatb_half_adder_ir.ll
+   Generating cosim.tv.exe

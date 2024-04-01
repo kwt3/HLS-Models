@@ -1,0 +1,168 @@
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array', 
+                   Line: 190, Column: 0 }
+Function:        _ZNKSt5arrayIjLm4EEixEm
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::__array_traits<unsigned int, 4ul>::_S_ref(unsigned int const (&) [4], unsigned long)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array', 
+                       Line: 56, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'std::array<unsigned int, 4ul>::operator[](unsigned long) const'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array', 
+                       Line: 190, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array', 
+                   Line: 186, Column: 0 }
+Function:        _ZNSt5arrayIbLm4EEixEm
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::__array_traits<bool, 4ul>::_S_ref(bool const (&) [4], unsigned long)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array', 
+                       Line: 56, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'std::array<bool, 4ul>::operator[](unsigned long)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array', 
+                       Line: 186, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array', 
+                   Line: 186, Column: 0 }
+Function:        _ZNSt5arrayIjLm4EEixEm
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::__array_traits<unsigned int, 4ul>::_S_ref(unsigned int const (&) [4], unsigned long)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array', 
+                       Line: 56, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'std::array<unsigned int, 4ul>::operator[](unsigned long)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array', 
+                       Line: 186, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: bcd_4_digit_adder.cpp, Line: 19, Column: 0 }
+Function:        _Z17bcd_4_digit_adderRKSt5arrayIjLm4EES2_bRbRS0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::array<unsigned int, 4ul>::operator[](unsigned long) const'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array', 
+                       Line: 190, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'bcd_4_digit_adder(std::array<unsigned int, 4ul> const&, std::array<unsigned int, 4ul> const&, bool, bool&, std::array<unsigned int, 4ul>&)'
+    DebugLoc:        { File: bcd_4_digit_adder.cpp, Line: 19, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: bcd_4_digit_adder.cpp, Line: 19, Column: 0 }
+Function:        _Z17bcd_4_digit_adderRKSt5arrayIjLm4EES2_bRbRS0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::array<bool, 4ul>::operator[](unsigned long)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array', 
+                       Line: 186, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'bcd_4_digit_adder(std::array<unsigned int, 4ul> const&, std::array<unsigned int, 4ul> const&, bool, bool&, std::array<unsigned int, 4ul>&)'
+    DebugLoc:        { File: bcd_4_digit_adder.cpp, Line: 19, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: bcd_4_digit_adder.cpp, Line: 19, Column: 0 }
+Function:        _Z17bcd_4_digit_adderRKSt5arrayIjLm4EES2_bRbRS0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::array<unsigned int, 4ul>::operator[](unsigned long)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array', 
+                       Line: 186, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'bcd_4_digit_adder(std::array<unsigned int, 4ul> const&, std::array<unsigned int, 4ul> const&, bool, bool&, std::array<unsigned int, 4ul>&)'
+    DebugLoc:        { File: bcd_4_digit_adder.cpp, Line: 19, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: bcd_4_digit_adder.cpp, Line: 19, Column: 0 }
+Function:        _Z17bcd_4_digit_adderRKSt5arrayIjLm4EES2_bRbRS0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'bcd_fadd(unsigned int, unsigned int, bool, bool&, unsigned int&)'
+    DebugLoc:        { File: bcd_4_digit_adder.cpp, Line: 3, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'bcd_4_digit_adder(std::array<unsigned int, 4ul> const&, std::array<unsigned int, 4ul> const&, bool, bool&, std::array<unsigned int, 4ul>&)'
+    DebugLoc:        { File: bcd_4_digit_adder.cpp, Line: 19, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: bcd_4_digit_adder.cpp, Line: 19, Column: 0 }
+Function:        _Z17bcd_4_digit_adderRKSt5arrayIjLm4EES2_bRbRS0_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        scalar
+  - String:          ' variable '''
+  - Name:            sum
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '128'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: bcd_4_digit_adder.cpp, Line: 19, Column: 0 }
+Function:        _Z17bcd_4_digit_adderRKSt5arrayIjLm4EES2_bRbRS0_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        scalar
+  - String:          ' variable '''
+  - Name:            b
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '128'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: bcd_4_digit_adder.cpp, Line: 19, Column: 0 }
+Function:        _Z17bcd_4_digit_adderRKSt5arrayIjLm4EES2_bRbRS0_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        scalar
+  - String:          ' variable '''
+  - Name:            a
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '128'
+  - String:          '-bits'
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_26_1
+  - String:          '> at '
+  - LoopLoc:         'bcd_4_digit_adder.cpp:26:22'
+  - String:          ' '
+...

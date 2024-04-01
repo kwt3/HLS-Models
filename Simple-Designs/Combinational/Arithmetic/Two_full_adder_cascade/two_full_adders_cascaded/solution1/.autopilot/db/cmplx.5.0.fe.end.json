@@ -1,0 +1,11 @@
+{
+    "0": {
+        "name": "two_full_adders_cascaded",
+        "file": "two_full_adders_cascaded.cpp",
+        "fileloc": "3",
+        "instructions": "28",
+        "total_instructions": "28",
+        "calls": "",
+        "basicblocks": "1"
+    }
+}

@@ -1,0 +1,74 @@
+{
+  "0": {
+    "basicblocks": 3,
+    "calls": "1 1 4 2 3 1 1 4 4 2 3 4",
+    "file": "bcd_4_digit_adder.cpp",
+    "fileloc": 19,
+    "instructions": 29,
+    "loads": {
+      "L": 6
+    },
+    "name": "bcd_4_digit_adder",
+    "stores": {
+      "T": 1
+    },
+    "total_instructions": 93
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "5",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "5",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "bcd_4_digit_adder.cpp",
+    "fileloc": 3,
+    "instructions": 9,
+    "name": "bcd_fadd",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 9
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "6",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 2,
+    "name": "operator[]",
+    "total_instructions": 4
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  }
+}

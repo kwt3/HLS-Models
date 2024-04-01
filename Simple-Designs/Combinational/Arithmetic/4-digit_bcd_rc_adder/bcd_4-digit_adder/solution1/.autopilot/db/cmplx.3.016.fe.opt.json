@@ -1,0 +1,19 @@
+{
+  "0": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "bcd_4_digit_adder.cpp",
+    "fileloc": 19,
+    "instructions": 65,
+    "loads": {
+      "L": 1,
+      "T": 3
+    },
+    "name": "bcd_4_digit_adder",
+    "stores": {
+      "L": 2,
+      "T": 3
+    },
+    "total_instructions": 65
+  }
+}

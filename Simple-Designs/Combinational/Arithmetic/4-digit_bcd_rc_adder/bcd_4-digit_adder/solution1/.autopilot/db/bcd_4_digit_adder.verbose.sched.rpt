@@ -1,0 +1,158 @@
+
+
+================================================================
+== Vitis HLS Report for 'bcd_4_digit_adder'
+================================================================
+* Date:           Mon Apr  1 07:33:38 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        bcd_4-digit_adder
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu11p-flga2577-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.526 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        7|        7|  70.000 ns|  70.000 ns|    8|    8|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.79>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%cin_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %cin"   --->   Operation 4 'read' 'cin_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%p_loc = alloca i64 1"   --->   Operation 5 'alloca' 'p_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%cout_tmp_3_015_loc = alloca i64 1"   --->   Operation 6 'alloca' 'cout_tmp_3_015_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%a_read = read i128 @_ssdm_op_Read.ap_auto.i128P0A, i128 %a" [bcd_4_digit_adder.cpp:23]   --->   Operation 7 'read' 'a_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%trunc_ln23 = trunc i128 %a_read" [bcd_4_digit_adder.cpp:23]   --->   Operation 8 'trunc' 'trunc_ln23' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%b_read = read i128 @_ssdm_op_Read.ap_auto.i128P0A, i128 %b" [bcd_4_digit_adder.cpp:23]   --->   Operation 9 'read' 'b_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%trunc_ln23_1 = trunc i128 %b_read" [bcd_4_digit_adder.cpp:23]   --->   Operation 10 'trunc' 'trunc_ln23_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%zext_ln5 = zext i1 %cin_read" [bcd_4_digit_adder.cpp:5->bcd_4_digit_adder.cpp:23]   --->   Operation 11 'zext' 'zext_ln5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln5 = add i32 %trunc_ln23_1, i32 %zext_ln5" [bcd_4_digit_adder.cpp:5->bcd_4_digit_adder.cpp:23]   --->   Operation 12 'add' 'add_ln5' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.45> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 13 [1/1] (0.90ns) (root node of TernaryAdder)   --->   "%temp_sum = add i32 %add_ln5, i32 %trunc_ln23" [bcd_4_digit_adder.cpp:5->bcd_4_digit_adder.cpp:23]   --->   Operation 13 'add' 'temp_sum' <Predicate = true> <Delay = 0.90> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.45> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 14 [1/1] (1.14ns)   --->   "%icmp_ln8 = icmp_ugt  i32 %temp_sum, i32 9" [bcd_4_digit_adder.cpp:8->bcd_4_digit_adder.cpp:23]   --->   Operation 14 'icmp' 'icmp_ln8' <Predicate = true> <Delay = 1.14> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 15 [1/1] (1.14ns)   --->   "%add_ln12 = add i32 %temp_sum, i32 4294967286" [bcd_4_digit_adder.cpp:12->bcd_4_digit_adder.cpp:23]   --->   Operation 15 'add' 'add_ln12' <Predicate = true> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 16 [1/1] (0.28ns)   --->   "%temp_sum_2 = select i1 %icmp_ln8, i32 %add_ln12, i32 %temp_sum" [bcd_4_digit_adder.cpp:11->bcd_4_digit_adder.cpp:23]   --->   Operation 16 'select' 'temp_sum_2' <Predicate = true> <Delay = 0.28> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%sum_read = read i128 @_ssdm_op_Read.ap_auto.i128P0A, i128 %sum" [bcd_4_digit_adder.cpp:16->bcd_4_digit_adder.cpp:23]   --->   Operation 17 'read' 'sum_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%tmp = partselect i96 @_ssdm_op_PartSelect.i96.i128.i32.i32, i128 %sum_read, i32 32, i32 127" [bcd_4_digit_adder.cpp:16->bcd_4_digit_adder.cpp:23]   --->   Operation 18 'partselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%or_ln = bitconcatenate i128 @_ssdm_op_BitConcatenate.i128.i96.i32, i96 %tmp, i32 %temp_sum_2" [bcd_4_digit_adder.cpp:16->bcd_4_digit_adder.cpp:23]   --->   Operation 19 'bitconcatenate' 'or_ln' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [2/2] (0.46ns)   --->   "%call_ln8 = call void @bcd_4_digit_adder_Pipeline_VITIS_LOOP_26_1, i1 %icmp_ln8, i128 %or_ln, i128 %a_read, i128 %b_read, i1 %cout_tmp_3_015_loc, i128 %p_loc" [bcd_4_digit_adder.cpp:8->bcd_4_digit_adder.cpp:23]   --->   Operation 20 'call' 'call_ln8' <Predicate = true> <Delay = 0.46> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.71>
+ST_2 : Operation 21 [1/2] (0.71ns)   --->   "%call_ln8 = call void @bcd_4_digit_adder_Pipeline_VITIS_LOOP_26_1, i1 %icmp_ln8, i128 %or_ln, i128 %a_read, i128 %b_read, i1 %cout_tmp_3_015_loc, i128 %p_loc" [bcd_4_digit_adder.cpp:8->bcd_4_digit_adder.cpp:23]   --->   Operation 21 'call' 'call_ln8' <Predicate = true> <Delay = 0.71> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 22 [1/1] (0.00ns)   --->   "%spectopmodule_ln19 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [bcd_4_digit_adder.cpp:19]   --->   Operation 22 'spectopmodule' 'spectopmodule_ln19' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i128 %a"   --->   Operation 23 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %a, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 24 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i128 %b"   --->   Operation 25 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %b, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 26 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %cin"   --->   Operation 27 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 28 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %cin, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 28 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 29 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %cout"   --->   Operation 29 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 30 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %cout, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 30 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i128 %sum"   --->   Operation 31 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %sum, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 32 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%cout_tmp_3_015_loc_load = load i1 %cout_tmp_3_015_loc"   --->   Operation 33 'load' 'cout_tmp_3_015_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 34 [1/1] (0.00ns)   --->   "%p_loc_load = load i128 %p_loc"   --->   Operation 34 'load' 'p_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%write_ln16 = write void @_ssdm_op_Write.ap_auto.i128P0A, i128 %sum, i128 %p_loc_load" [bcd_4_digit_adder.cpp:16->bcd_4_digit_adder.cpp:27]   --->   Operation 35 'write' 'write_ln16' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%write_ln31 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %cout, i1 %cout_tmp_3_015_loc_load" [bcd_4_digit_adder.cpp:31]   --->   Operation 36 'write' 'write_ln31' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%ret_ln32 = ret" [bcd_4_digit_adder.cpp:32]   --->   Operation 37 'ret' 'ret_ln32' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 2.795ns
+The critical path consists of the following:
+	wire read operation ('cin_read') on port 'cin' [6]  (0.000 ns)
+	'add' operation 32 bit ('add_ln5', bcd_4_digit_adder.cpp:5->bcd_4_digit_adder.cpp:23) [25]  (0.000 ns)
+	'add' operation 32 bit ('temp_sum', bcd_4_digit_adder.cpp:5->bcd_4_digit_adder.cpp:23) [26]  (0.907 ns)
+	'add' operation 32 bit ('add_ln12', bcd_4_digit_adder.cpp:12->bcd_4_digit_adder.cpp:23) [28]  (1.142 ns)
+	'select' operation 32 bit ('temp_sum', bcd_4_digit_adder.cpp:11->bcd_4_digit_adder.cpp:23) [29]  (0.286 ns)
+	'call' operation 0 bit ('call_ln8', bcd_4_digit_adder.cpp:8->bcd_4_digit_adder.cpp:23) to 'bcd_4_digit_adder_Pipeline_VITIS_LOOP_26_1' [33]  (0.460 ns)
+
+ <State 2>: 0.715ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln8', bcd_4_digit_adder.cpp:8->bcd_4_digit_adder.cpp:23) to 'bcd_4_digit_adder_Pipeline_VITIS_LOOP_26_1' [33]  (0.715 ns)
+
+ <State 3>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

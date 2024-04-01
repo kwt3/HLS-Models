@@ -1,0 +1,11 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../tb_half_adder.cpp in debug mode
+   Compiling ../../../../half_adder.cpp in debug mode
+   Generating csim.exe
+When a=0, b=0, sum=0, carry_out=0
+When a=0, b=1, sum=1, carry_out=0
+When a=1, b=0, sum=1, carry_out=0
+When a=1, b=1, sum=0, carry_out=1
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

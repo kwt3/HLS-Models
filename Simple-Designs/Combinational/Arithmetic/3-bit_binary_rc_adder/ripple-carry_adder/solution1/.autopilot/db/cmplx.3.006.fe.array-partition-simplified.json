@@ -1,0 +1,17 @@
+{
+  "0": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "ripple_carry_adder.cpp",
+    "fileloc": 4,
+    "instructions": 24,
+    "loads": {
+      "T": 2
+    },
+    "name": "ripple_carry_adder",
+    "stores": {
+      "T": 2
+    },
+    "total_instructions": 24
+  }
+}

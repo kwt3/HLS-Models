@@ -1,0 +1,77 @@
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+   Build using "C:/Xilinx/Vitis_HLS/2023.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling full_adder.cpp_pre.cpp.tb.cpp
+   Compiling tb_two_full_adders_cascaded.cpp_pre.cpp.tb.cpp
+   Compiling apatb_two_full_adders_cascaded.cpp
+   Compiling two_full_adders_cascaded.cpp_pre.cpp.tb.cpp
+   Compiling apatb_two_full_adders_cascaded_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM-302] Starting C TB testing ... 
+INFO: [COSIM-333] Generating C post check test bench ...
+INFO: [COSIM-12] Generating RTL test bench ...
+INFO: [COSIM-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM-323] Starting verilog simulation. 
+INFO: [COSIM-15] Starting XSIM ...
+INFO: [COSIM-316] Starting C post checking ...
+Sum: 1111
+Carry-out: 0
+
+C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\2_Full_adder_cascade\two_full_adders_cascaded\solution1\sim\verilog>set PATH= 
+
+C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\2_Full_adder_cascade\two_full_adders_cascaded\solution1\sim\verilog>call C:/Xilinx/Vivado/2023.2/bin/xelab xil_defaultlib.apatb_two_full_adders_cascaded_top glbl -Oenable_linking_all_libraries  -prj two_full_adders_cascaded.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_1_16 -L floating_point_v7_0_21 --lib "ieee_proposed=./ieee_proposed" -s two_full_adders_cascaded  
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_two_full_adders_cascaded_top glbl -Oenable_linking_all_libraries -prj two_full_adders_cascaded.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_16 -L floating_point_v7_0_21 --lib ieee_proposed=./ieee_proposed -s two_full_adders_cascaded 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/2_Full_adder_cascade/two_full_adders_cascaded/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/2_Full_adder_cascade/two_full_adders_cascaded/solution1/sim/verilog/two_full_adders_cascaded.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_two_full_adders_cascaded_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/2_Full_adder_cascade/two_full_adders_cascaded/solution1/sim/verilog/two_full_adders_cascaded.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module two_full_adders_cascaded
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/2_Full_adder_cascade/two_full_adders_cascaded/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.two_full_adders_cascaded
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_two_full_adders_cascaded_t...
+Compiling module work.glbl
+Built simulation snapshot two_full_adders_cascaded
+
+****** xsim v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/two_full_adders_cascaded/xsim_script.tcl
+# xsim {two_full_adders_cascaded} -autoloadwcfg -tclbatch {two_full_adders_cascaded.tcl}
+Time resolution is 1 ps
+source two_full_adders_cascaded.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [n/a] @ "125000"
+// RTL Simulation : 1 / 1 [n/a] @ "145000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 205 ns : File "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/2_Full_adder_cascade/two_full_adders_cascaded/solution1/sim/verilog/two_full_adders_cascaded.autotb.v" Line 459
+## quit
+INFO: [Common 17-206] Exiting xsim at Mon Apr  1 06:59:43 2024...
+Sum: 1111
+Carry-out: 0
+INFO: [COSIM-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM-210] Design is translated to an combinational logic. II and Latency will be marked as all 0.

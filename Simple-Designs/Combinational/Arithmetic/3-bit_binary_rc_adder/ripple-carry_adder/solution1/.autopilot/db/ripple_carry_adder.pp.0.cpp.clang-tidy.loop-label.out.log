@@ -1,0 +1,5 @@
+C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\3-bit_binary_ripple-carry_adder\ripple-carry_adder\solution1\.autopilot\db\ripple_carry_adder.pp.0.cpp:18000:5: warning: Added loop label VITIS_LOOP_7_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < 3; ++i) {
+    ^~~
+    VITIS_LOOP_7_1: 
+C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\3-bit_binary_ripple-carry_adder\ripple-carry_adder\solution1\.autopilot\db\ripple_carry_adder.pp.0.cpp:18000:5: note: FIX-IT applied suggested code changes

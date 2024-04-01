@@ -1,0 +1,13 @@
+---
+MainSourceFile:  'C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/3-bit_binary_ripple-carry_adder/ripple-carry_adder/solution1/.autopilot/db/ripple_carry_adder.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_7_1:  '
+    FileOffset:      7
+    FilePath:        ripple_carry_adder.cpp
+    Replacements:    
+      - FilePath:        'C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\3-bit_binary_ripple-carry_adder\ripple-carry_adder\solution1\.autopilot\db\ripple_carry_adder.pp.0.cpp'
+        Offset:          542678
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_7_1: '
+...

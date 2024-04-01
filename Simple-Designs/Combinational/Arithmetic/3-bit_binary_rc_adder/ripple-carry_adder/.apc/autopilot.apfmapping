@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="full_adder.hpp" path="C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\3-bit_binary_ripple-carry_adder\full_adder.hpp"/>
+    <originFiles name="ripple_carry_adder.cpp" path="C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\3-bit_binary_ripple-carry_adder\ripple_carry_adder.cpp"/>
+    <originFiles name="ripple_carry_adder.hpp" path="C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\3-bit_binary_ripple-carry_adder\ripple_carry_adder.hpp"/>
+  </source>
+  <testbench>
+    <originFiles name="tb_ripple_carry_adder.cpp" path="C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\3-bit_binary_ripple-carry_adder\tb_ripple_carry_adder.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

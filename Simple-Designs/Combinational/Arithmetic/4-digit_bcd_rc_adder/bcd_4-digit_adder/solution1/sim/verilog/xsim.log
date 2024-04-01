@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# xsim v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Apr  1 07:34:02 2024
+# Process ID: 9808
+# Current directory: C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/4-digit_bcd_ripple-carry_adder/bcd_4-digit_adder/solution1/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/bcd_4_digit_adder/xsim_script.tcl}
+# Log file: C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/4-digit_bcd_ripple-carry_adder/bcd_4-digit_adder/solution1/sim/verilog/xsim.log
+# Journal file: C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/4-digit_bcd_ripple-carry_adder/bcd_4-digit_adder/solution1/sim/verilog\xsim.jou
+# Running On: billy, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 16, Host memory: 16542 MB
+#-----------------------------------------------------------
+source xsim.dir/bcd_4_digit_adder/xsim_script.tcl
+# xsim {bcd_4_digit_adder} -autoloadwcfg -tclbatch {bcd_4_digit_adder.tcl}
+Time resolution is 1 ps
+source bcd_4_digit_adder.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "205000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 265 ns : File "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/4-digit_bcd_ripple-carry_adder/bcd_4-digit_adder/solution1/sim/verilog/bcd_4_digit_adder.autotb.v" Line 527
+## quit
+INFO: [Common 17-206] Exiting xsim at Mon Apr  1 07:34:04 2024...

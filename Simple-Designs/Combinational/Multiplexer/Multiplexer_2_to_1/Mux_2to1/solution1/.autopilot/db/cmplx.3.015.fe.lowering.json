@@ -1,0 +1,11 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "mux2to1.cpp",
+    "fileloc": 4,
+    "instructions": 8,
+    "name": "mux<bool>",
+    "total_instructions": 8
+  }
+}

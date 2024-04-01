@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "two_full_adders_cascaded",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "two_full_adders_cascaded"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/2_Full_adder_cascade/two_full_adders_cascaded/solution1/csynth.tcl",
+    "sourceLine": 18,
+    "success": true
+  }
+]

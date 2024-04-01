@@ -1,0 +1,63 @@
+{
+  "0": {
+    "basicblocks": 7,
+    "calls": "4 4 5 5 5 1 4 4 1",
+    "file": "two_complement_adder.cpp",
+    "fileloc": 3,
+    "instructions": 56,
+    "loads": {
+      "L": 8
+    },
+    "name": "two_complement_adder",
+    "stores": {
+      "L": 3,
+      "T": 1
+    },
+    "total_instructions": 98
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "3",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "3",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "2",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 2,
+    "name": "operator[]",
+    "total_instructions": 4
+  }
+}

@@ -1,0 +1,4 @@
+C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/2_Full_adder_cascade/two_full_adders_cascaded/solution1/csynth.tcl:18:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=two_full_adders_cascaded_XLX_SEP_ PragmaOptions=name=two_full_adders_cascaded_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=two_full_adders_cascaded
+        ^
+1 warning generated.

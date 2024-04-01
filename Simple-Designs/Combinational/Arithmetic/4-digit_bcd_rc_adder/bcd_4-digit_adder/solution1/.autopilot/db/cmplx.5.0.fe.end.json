@@ -1,0 +1,32 @@
+{
+    "0": {
+        "name": "bcd_4_digit_adder",
+        "file": "bcd_4_digit_adder.cpp",
+        "fileloc": "19",
+        "instructions": "33",
+        "total_instructions": "84",
+        "calls": "1",
+        "basicblocks": "1",
+        "loads": {
+            "L": "2"
+        }
+    },
+    "1": {
+        "name": "bcd_4_digit_adder_Pipeline_VITIS_LOOP_26_1",
+        "file": "bcd_4_digit_adder.cpp",
+        "fileloc": "26",
+        "instructions": "51",
+        "total_instructions": "51",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "5"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

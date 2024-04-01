@@ -1,0 +1,48 @@
+{
+  "0": {
+    "basicblocks": 5,
+    "calls": "3 3 3 2",
+    "file": "ripple_carry_adder.cpp",
+    "fileloc": 4,
+    "instructions": 22,
+    "loads": {
+      "L": 4
+    },
+    "name": "ripple_carry_adder",
+    "stores": {
+      "L": 1,
+      "T": 1
+    },
+    "total_instructions": 50
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "full_adder.cpp",
+    "fileloc": 4,
+    "instructions": 13,
+    "name": "full_adder",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 13
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  }
+}

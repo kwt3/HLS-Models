@@ -1,0 +1,122 @@
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array', 
+                   Line: 190, Column: 0 }
+Function:        _ZNKSt5arrayIbLm100EEixEm
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::__array_traits<bool, 100ul>::_S_ref(bool const (&) [100], unsigned long)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array', 
+                       Line: 56, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'std::array<bool, 100ul>::operator[](unsigned long) const'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array', 
+                       Line: 190, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array', 
+                   Line: 186, Column: 0 }
+Function:        _ZNSt5arrayIbLm100EEixEm
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::__array_traits<bool, 100ul>::_S_ref(bool const (&) [100], unsigned long)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array', 
+                       Line: 56, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'std::array<bool, 100ul>::operator[](unsigned long)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array', 
+                       Line: 186, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: binary_adder_100.cpp, Line: 3, Column: 0 }
+Function:        _Z16binary_adder_100RKSt5arrayIbLm100EES2_bRS0_Rb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::array<bool, 100ul>::operator[](unsigned long) const'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array', 
+                       Line: 190, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'binary_adder_100(std::array<bool, 100ul> const&, std::array<bool, 100ul> const&, bool, std::array<bool, 100ul>&, bool&)'
+    DebugLoc:        { File: binary_adder_100.cpp, Line: 3, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: binary_adder_100.cpp, Line: 3, Column: 0 }
+Function:        _Z16binary_adder_100RKSt5arrayIbLm100EES2_bRS0_Rb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::array<bool, 100ul>::operator[](unsigned long)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array', 
+                       Line: 186, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'binary_adder_100(std::array<bool, 100ul> const&, std::array<bool, 100ul> const&, bool, std::array<bool, 100ul>&, bool&)'
+    DebugLoc:        { File: binary_adder_100.cpp, Line: 3, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: binary_adder_100.cpp, Line: 3, Column: 0 }
+Function:        _Z16binary_adder_100RKSt5arrayIbLm100EES2_bRS0_Rb
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        scalar
+  - String:          ' variable '''
+  - Name:            sum
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '100'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: binary_adder_100.cpp, Line: 3, Column: 0 }
+Function:        _Z16binary_adder_100RKSt5arrayIbLm100EES2_bRS0_Rb
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        scalar
+  - String:          ' variable '''
+  - Name:            b
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '100'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: binary_adder_100.cpp, Line: 3, Column: 0 }
+Function:        _Z16binary_adder_100RKSt5arrayIbLm100EES2_bRS0_Rb
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        scalar
+  - String:          ' variable '''
+  - Name:            a
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '100'
+  - String:          '-bits'
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_5_1
+  - String:          '> at '
+  - LoopLoc:         'binary_adder_100.cpp:5:21'
+  - String:          ' '
+...

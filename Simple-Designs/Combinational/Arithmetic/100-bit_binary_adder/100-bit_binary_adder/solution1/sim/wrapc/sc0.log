@@ -1,0 +1,6 @@
+   Build using "C:/Xilinx/Vitis_HLS/2023.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling tb_binary_adder_100.cpp_pre.cpp.tb.cpp
+   Compiling binary_adder_100.cpp_pre.cpp.tb.cpp
+   Compiling apatb_binary_adder_100.cpp
+   Compiling apatb_binary_adder_100_ir.ll
+   Generating cosim.tv.exe

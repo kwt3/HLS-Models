@@ -1,0 +1,27 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/100-bit_binary_adder/100-bit_binary_adder/solution1/csynth.tcl:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="binary_adder_100" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=binary_adder_100" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:190:0" msg_body="Inlining function 'std::__array_traits&lt;bool, 100ul&gt;::_S_ref(bool const (&amp;) [100], unsigned long)' into 'std::array&lt;bool, 100ul&gt;::operator[](unsigned long) const'">
+        <args Callee="std::__array_traits&lt;bool, 100ul&gt;::_S_ref(bool const (&amp;) [100], unsigned long)" Callee-DebugLoc="File {C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array} Line 56 Column 0" Caller="std::array&lt;bool, 100ul&gt;::operator[](unsigned long) const" Caller-DebugLoc="File {C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array} Line 190 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:186:0" msg_body="Inlining function 'std::__array_traits&lt;bool, 100ul&gt;::_S_ref(bool const (&amp;) [100], unsigned long)' into 'std::array&lt;bool, 100ul&gt;::operator[](unsigned long)'">
+        <args Callee="std::__array_traits&lt;bool, 100ul&gt;::_S_ref(bool const (&amp;) [100], unsigned long)" Callee-DebugLoc="File {C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array} Line 56 Column 0" Caller="std::array&lt;bool, 100ul&gt;::operator[](unsigned long)" Caller-DebugLoc="File {C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array} Line 186 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="binary_adder_100.cpp:3:0" msg_body="Inlining function 'std::array&lt;bool, 100ul&gt;::operator[](unsigned long) const' into 'binary_adder_100(std::array&lt;bool, 100ul&gt; const&amp;, std::array&lt;bool, 100ul&gt; const&amp;, bool, std::array&lt;bool, 100ul&gt;&amp;, bool&amp;)'">
+        <args Callee="std::array&lt;bool, 100ul&gt;::operator[](unsigned long) const" Callee-DebugLoc="File {C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array} Line 190 Column 0" Caller="binary_adder_100(std::array&lt;bool, 100ul&gt; const&amp;, std::array&lt;bool, 100ul&gt; const&amp;, bool, std::array&lt;bool, 100ul&gt;&amp;, bool&amp;)" Caller-DebugLoc="File binary_adder_100.cpp Line 3 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="binary_adder_100.cpp:3:0" msg_body="Inlining function 'std::array&lt;bool, 100ul&gt;::operator[](unsigned long)' into 'binary_adder_100(std::array&lt;bool, 100ul&gt; const&amp;, std::array&lt;bool, 100ul&gt; const&amp;, bool, std::array&lt;bool, 100ul&gt;&amp;, bool&amp;)'">
+        <args Callee="std::array&lt;bool, 100ul&gt;::operator[](unsigned long)" Callee-DebugLoc="File {C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array} Line 186 Column 0" Caller="binary_adder_100(std::array&lt;bool, 100ul&gt; const&amp;, std::array&lt;bool, 100ul&gt; const&amp;, bool, std::array&lt;bool, 100ul&gt;&amp;, bool&amp;)" Caller-DebugLoc="File binary_adder_100.cpp Line 3 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="binary_adder_100.cpp:3:0" msg_body="Aggregating scalar variable 'sum' with compact=bit mode in 100-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="100" HwTyName="scalar" Name="sum"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="binary_adder_100.cpp:3:0" msg_body="Aggregating scalar variable 'b' with compact=bit mode in 100-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="100" HwTyName="scalar" Name="b"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="binary_adder_100.cpp:3:0" msg_body="Aggregating scalar variable 'a' with compact=bit mode in 100-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="100" HwTyName="scalar" Name="a"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+
