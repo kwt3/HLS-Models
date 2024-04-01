@@ -1,3 +1,1 @@
-##  Not complete
-
-# 2 to 1 Mux
+# 2 to 1 Mux (Incomplete)
