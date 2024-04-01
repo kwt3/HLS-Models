@@ -17,8 +17,6 @@ void printMultiplexerResult(const T (&inputs)[N], size_t sel, T result) {
 }
 
 int main() {
-    // Test your multiplexer function here
-    // Example usage:
     int inputs[5] = {1, 2, 3, 4, 5};
     size_t selection = 2;
     int result = multiplexer<int, 5>(inputs, selection);
