@@ -3,9 +3,9 @@
 #include "bcd_4_digit_adder.hpp"
 
 int main() {
-    std::array<unsigned int, 4> a = {1, 2, 3, 4}; // Example packed BCD input a
-    std::array<unsigned int, 4> b = {5, 6, 7, 8}; // Example packed BCD input b
-    bool cin = false; // Example carry-in value
+    std::array<unsigned int, 4> a = {1, 2, 3, 4}; // Packed BCD input a
+    std::array<unsigned int, 4> b = {5, 6, 7, 8}; // Packed BCD input b
+    bool cin = false; // Carry-in value
     bool cout; // Output carry-out
     std::array<unsigned int, 4> sum; // Output sum
 
