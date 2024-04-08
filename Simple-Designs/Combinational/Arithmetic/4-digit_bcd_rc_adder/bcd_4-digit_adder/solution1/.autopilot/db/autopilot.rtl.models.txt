@@ -1,3 +1,0 @@
-bcd_4_digit_adder_flow_control_loop_pipe_sequential_init
-bcd_4_digit_adder_Pipeline_VITIS_LOOP_26_1
-bcd_4_digit_adder

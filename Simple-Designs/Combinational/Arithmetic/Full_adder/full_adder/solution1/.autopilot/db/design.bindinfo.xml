@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<BindInfo>
-	<BindNode BINDTYPE="op" DISPLAY="bind_op xor" ID="" IMPL="auto" LATENCY="0" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln4_fu_62_p2" SOURCE="full_adder.cpp:4" VARIABLE="xor_ln4" MODULE="full_adder" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
-	<BindNode BINDTYPE="op" DISPLAY="bind_op xor" ID="" IMPL="auto" LATENCY="0" OPTYPE="xor" PRAGMA="" RTLNAME="sum" SOURCE="full_adder.cpp:4" VARIABLE="xor_ln4_1" MODULE="full_adder" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
-	<BindNode BINDTYPE="op" DISPLAY="bind_op and" ID="" IMPL="auto" LATENCY="0" OPTYPE="and" PRAGMA="" RTLNAME="and_ln5_fu_75_p2" SOURCE="full_adder.cpp:5" VARIABLE="and_ln5" MODULE="full_adder" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
-	<BindNode BINDTYPE="op" DISPLAY="bind_op and" ID="" IMPL="auto" LATENCY="0" OPTYPE="and" PRAGMA="" RTLNAME="and_ln5_1_fu_81_p2" SOURCE="full_adder.cpp:5" VARIABLE="and_ln5_1" MODULE="full_adder" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
-	<BindNode BINDTYPE="op" DISPLAY="bind_op or" ID="" IMPL="auto" LATENCY="0" OPTYPE="or" PRAGMA="" RTLNAME="carry_out" SOURCE="full_adder.cpp:5" VARIABLE="or_ln5" MODULE="full_adder" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
-</BindInfo>

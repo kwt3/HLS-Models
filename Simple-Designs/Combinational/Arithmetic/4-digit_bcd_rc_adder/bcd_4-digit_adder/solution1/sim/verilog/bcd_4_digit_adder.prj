@@ -1,7 +1,0 @@
-sv work "glbl.v"
-sv xil_defaultlib "bcd_4_digit_adder.autotb.v"
-sv xil_defaultlib "bcd_4_digit_adder.v"
-sv xil_defaultlib "bcd_4_digit_adder_bcd_4_digit_adder_Pipeline_VITIS_LOOP_26_1.v"
-sv xil_defaultlib "bcd_4_digit_adder_flow_control_loop_pipe_sequential_init.v"
-sv xil_defaultlib "dataflow_monitor.sv"
-

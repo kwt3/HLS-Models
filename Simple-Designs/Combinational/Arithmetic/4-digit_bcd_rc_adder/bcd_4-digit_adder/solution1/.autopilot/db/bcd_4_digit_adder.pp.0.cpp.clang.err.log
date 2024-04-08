@@ -1,4 +1,0 @@
-C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/4-digit_bcd_ripple-carry_adder/bcd_4-digit_adder/solution1/csynth.tcl:16:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=bcd_4_digit_adder_XLX_SEP_ PragmaOptions=name=bcd_4_digit_adder_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLSDIRECTIVE TOP name=bcd_4_digit_adder
-        ^
-1 warning generated.

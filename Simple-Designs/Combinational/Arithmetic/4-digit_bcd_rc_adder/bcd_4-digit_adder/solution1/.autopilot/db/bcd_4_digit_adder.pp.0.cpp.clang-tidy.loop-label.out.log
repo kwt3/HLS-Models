@@ -1,5 +1,0 @@
-C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\4-digit_bcd_ripple-carry_adder\bcd_4-digit_adder\solution1\.autopilot\db\bcd_4_digit_adder.pp.0.cpp:18013:5: warning: Added loop label VITIS_LOOP_26_1:   [xilinx-label-all-loops]
-    for (int i = 1; i < 4; ++i) {
-    ^~~
-    VITIS_LOOP_26_1: 
-C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\4-digit_bcd_ripple-carry_adder\bcd_4-digit_adder\solution1\.autopilot\db\bcd_4_digit_adder.pp.0.cpp:18013:5: note: FIX-IT applied suggested code changes

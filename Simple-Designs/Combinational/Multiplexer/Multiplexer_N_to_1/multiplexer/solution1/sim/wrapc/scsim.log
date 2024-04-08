@@ -1,3 +1,0 @@
-   Build using "C:/Xilinx/Vitis_HLS/2023.2/tps/win64/msys64/mingw64/bin/g++"
-   Compiling multiplexer.cpp_pre.cpp.tb.cpp
-cosim.tv.mk:81: recipe for target 'obj/multiplexer.cpp_pre.cpp.tb.o' failed

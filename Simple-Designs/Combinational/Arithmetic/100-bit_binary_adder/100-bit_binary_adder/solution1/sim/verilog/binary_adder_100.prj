@@ -1,5 +1,0 @@
-sv work "glbl.v"
-sv xil_defaultlib "binary_adder_100.autotb.v"
-sv xil_defaultlib "binary_adder_100.v"
-sv xil_defaultlib "dataflow_monitor.sv"
-

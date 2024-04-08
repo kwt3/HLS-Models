@@ -1,5 +1,0 @@
-C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\100-bit_binary_adder\100-bit_binary_adder\solution1\.autopilot\db\binary_adder_100.pp.0.cpp:17990:5: warning: Added loop label VITIS_LOOP_5_1:   [xilinx-label-all-loops]
-    for (int i = 0; i < 100; ++i) {
-    ^~~
-    VITIS_LOOP_5_1: 
-C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\100-bit_binary_adder\100-bit_binary_adder\solution1\.autopilot\db\binary_adder_100.pp.0.cpp:17990:5: note: FIX-IT applied suggested code changes

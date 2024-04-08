@@ -1,5 +1,0 @@
-sv work "glbl.v"
-sv xil_defaultlib "two_full_adders_cascaded.autotb.v"
-sv xil_defaultlib "two_full_adders_cascaded.v"
-sv xil_defaultlib "dataflow_monitor.sv"
-
