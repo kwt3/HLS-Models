@@ -1,0 +1,131 @@
+
+
+================================================================
+== Vitis HLS Report for 'perform_logic_operation'
+================================================================
+* Date:           Mon Apr  8 10:40:40 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        logic_op
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu11p-flga2577-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  1.311 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.31>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%op_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %op"   --->   Operation 2 'read' 'op_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%B_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %B"   --->   Operation 3 'read' 'B_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%A_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %A"   --->   Operation 4 'read' 'A_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%empty = trunc i32 %op_read"   --->   Operation 5 'trunc' 'empty' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 0"   --->   Operation 6 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%spectopmodule_ln3 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [logic_op.cpp:3]   --->   Operation 7 'spectopmodule' 'spectopmodule_ln3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %A"   --->   Operation 8 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %A, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %B"   --->   Operation 10 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %B, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %op"   --->   Operation 12 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %op, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.14ns)   --->   "%and_ln6 = and i1 %A_read, i1 %B_read" [logic_op.cpp:6]   --->   Operation 14 'and' 'and_ln6' <Predicate = true> <Delay = 0.14> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.14> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 15 [1/1] (0.00ns) (grouped into LUT with out node select_ln4_1)   --->   "%xor_ln12 = xor i1 %and_ln6, i1 1" [logic_op.cpp:12]   --->   Operation 15 'xor' 'xor_ln12' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.14> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 16 [1/1] (0.00ns) (grouped into LUT with out node select_ln4)   --->   "%or_ln8 = or i1 %A_read, i1 %B_read" [logic_op.cpp:8]   --->   Operation 16 'or' 'or_ln8' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.14> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 17 [1/1] (0.00ns) (grouped into LUT with out node select_ln4)   --->   "%xor_ln10 = xor i1 %A_read, i1 %B_read" [logic_op.cpp:10]   --->   Operation 17 'xor' 'xor_ln10' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.14> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 18 [1/1] (0.62ns)   --->   "%icmp_ln4 = icmp_eq  i2 %empty, i2 3" [logic_op.cpp:4]   --->   Operation 18 'icmp' 'icmp_ln4' <Predicate = true> <Delay = 0.62> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 19 [1/1] (0.62ns)   --->   "%icmp_ln4_1 = icmp_eq  i2 %empty, i2 2" [logic_op.cpp:4]   --->   Operation 19 'icmp' 'icmp_ln4_1' <Predicate = true> <Delay = 0.62> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 20 [1/1] (0.62ns)   --->   "%icmp_ln4_2 = icmp_eq  i2 %empty, i2 1" [logic_op.cpp:4]   --->   Operation 20 'icmp' 'icmp_ln4_2' <Predicate = true> <Delay = 0.62> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 21 [1/1] (0.34ns) (out node of the LUT)   --->   "%select_ln4 = select i1 %icmp_ln4_2, i1 %or_ln8, i1 %xor_ln10" [logic_op.cpp:4]   --->   Operation 21 'select' 'select_ln4' <Predicate = true> <Delay = 0.34> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 22 [1/1] (0.00ns) (grouped into LUT with out node select_ln4_2)   --->   "%or_ln4 = or i1 %icmp_ln4_2, i1 %icmp_ln4_1" [logic_op.cpp:4]   --->   Operation 22 'or' 'or_ln4' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.14> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 23 [1/1] (0.34ns) (out node of the LUT)   --->   "%select_ln4_1 = select i1 %icmp_ln4, i1 %xor_ln12, i1 %and_ln6" [logic_op.cpp:4]   --->   Operation 23 'select' 'select_ln4_1' <Predicate = true> <Delay = 0.34> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 24 [1/1] (0.34ns) (out node of the LUT)   --->   "%select_ln4_2 = select i1 %or_ln4, i1 %select_ln4, i1 %select_ln4_1" [logic_op.cpp:4]   --->   Operation 24 'select' 'select_ln4_2' <Predicate = true> <Delay = 0.34> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%ret_ln16 = ret i1 %select_ln4_2" [logic_op.cpp:16]   --->   Operation 25 'ret' 'ret_ln16' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 1.311ns
+The critical path consists of the following:
+	wire read operation ('op') on port 'op' [4]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln4_2', logic_op.cpp:4) [22]  (0.621 ns)
+	'select' operation 1 bit ('select_ln4', logic_op.cpp:4) [23]  (0.345 ns)
+	'select' operation 1 bit ('select_ln4_2', logic_op.cpp:4) [26]  (0.345 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

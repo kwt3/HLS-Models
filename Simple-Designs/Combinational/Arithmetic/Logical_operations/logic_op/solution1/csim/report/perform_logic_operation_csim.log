@@ -1,0 +1,11 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../tb_logic_op.cpp in debug mode
+   Compiling ../../../../logic_op.cpp in debug mode
+   Generating csim.exe
+Result of AND operation: 0
+Result of OR operation: 1
+Result of XOR operation: 1
+Result of NAND operation: 1
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************
