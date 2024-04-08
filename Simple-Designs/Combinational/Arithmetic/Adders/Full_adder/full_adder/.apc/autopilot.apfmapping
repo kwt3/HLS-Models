@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="full_adder.cpp" path="C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Full_adder\full_adder.cpp"/>
+    <originFiles name="full_adder.hpp" path="C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Full_adder\full_adder.hpp"/>
+    <originFiles name="half_adder.hpp" path="C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Full_adder\half_adder.hpp"/>
+    <originFiles name="hafl_adder.cpp" path="C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Full_adder\hafl_adder.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="tb_full_adder.cpp" path="C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Full_adder\tb_full_adder.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

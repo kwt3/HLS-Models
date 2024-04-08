@@ -1,0 +1,14 @@
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: full_adder.cpp, Line: 4, Column: 0 }
+Function:        _Z10full_adderIbEvT_S0_S0_RS0_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void half_adder<bool>(bool, bool, bool&, bool&)'
+    DebugLoc:        { File: hafl_adder.cpp, Line: 4, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void full_adder<bool>(bool, bool, bool, bool&, bool&)'
+    DebugLoc:        { File: full_adder.cpp, Line: 4, Column: 0 }
+  - String:          ''''
+...

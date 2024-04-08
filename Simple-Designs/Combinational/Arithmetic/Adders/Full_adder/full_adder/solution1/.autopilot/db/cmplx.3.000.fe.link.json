@@ -1,0 +1,29 @@
+{
+  "0": {
+    "basicblocks": 3,
+    "calls": "1 1",
+    "file": "full_adder.cpp",
+    "fileloc": 4,
+    "instructions": 25,
+    "loads": {
+      "L": 3
+    },
+    "name": "full_adder<bool>",
+    "stores": {
+      "T": 1
+    },
+    "total_instructions": 47
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hafl_adder.cpp",
+    "fileloc": 4,
+    "instructions": 11,
+    "name": "half_adder<bool>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 11
+  }
+}

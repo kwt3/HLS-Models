@@ -1,0 +1,14 @@
+{
+  "0": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "half_adder_sub.cpp",
+    "fileloc": 4,
+    "instructions": 30,
+    "name": "half_adder<bool>",
+    "stores": {
+      "T": 4
+    },
+    "total_instructions": 30
+  }
+}
