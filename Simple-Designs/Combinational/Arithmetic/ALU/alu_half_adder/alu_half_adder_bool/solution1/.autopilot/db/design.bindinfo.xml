@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op xor" ID="" IMPL="auto" LATENCY="0" OPTYPE="xor" PRAGMA="" RTLNAME="sum" SOURCE="alu_half_add-sub_bool.cpp:10" VARIABLE="xor_ln10" MODULE="half_add_sub" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op xor" ID="" IMPL="auto" LATENCY="0" OPTYPE="xor" PRAGMA="" RTLNAME="sum" SOURCE="alu_half_add-sub_bool.cpp:6" VARIABLE="xor_ln6" MODULE="half_add_sub" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op and" ID="" IMPL="auto" LATENCY="0" OPTYPE="and" PRAGMA="" RTLNAME="and_ln7_fu_76_p2" SOURCE="alu_half_add-sub_bool.cpp:7" VARIABLE="and_ln7" MODULE="half_add_sub" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+</BindInfo>

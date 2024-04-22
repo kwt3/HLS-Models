@@ -70,7 +70,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1702129263</coreId>
+              <coreId>446508480</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -167,14 +167,14 @@
               <name>B_read</name>
               <fileName>half_adder.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>4</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>half_adder&amp;lt;bool&amp;gt;</contextFuncName>
               <contextNormFuncName>half_adder_bool_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item class_id="10" tracking_level="0" version="0">
-                  <first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Half_adder</first>
+                  <first>C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Half_adder</first>
                   <second class_id="11" tracking_level="0" version="0">
                     <count>1</count>
                     <item_version>0</item_version>
@@ -183,7 +183,7 @@
                         <first>half_adder.cpp</first>
                         <second>half_adder&amp;lt;bool&amp;gt;</second>
                       </first>
-                      <second>4</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -196,7 +196,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>3951953904</coreId>
+              <coreId>287764136</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -224,14 +224,14 @@
               <name>A_read</name>
               <fileName>half_adder.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>4</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>half_adder&amp;lt;bool&amp;gt;</contextFuncName>
               <contextNormFuncName>half_adder_bool_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Half_adder</first>
+                  <first>C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Half_adder</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -240,7 +240,7 @@
                         <first>half_adder.cpp</first>
                         <second>half_adder&amp;lt;bool&amp;gt;</second>
                       </first>
-                      <second>4</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -253,7 +253,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1769234798</coreId>
+              <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -278,17 +278,17 @@
             <Obj>
               <type>0</type>
               <id>16</id>
-              <name>xor_ln5</name>
+              <name>xor_ln7</name>
               <fileName>half_adder.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>5</lineNumber>
+              <lineNumber>7</lineNumber>
               <contextFuncName>half_adder&amp;lt;bool&amp;gt;</contextFuncName>
               <contextNormFuncName>half_adder_bool_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Half_adder</first>
+                  <first>C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Half_adder</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -297,7 +297,7 @@
                         <first>half_adder.cpp</first>
                         <second>half_adder&amp;lt;bool&amp;gt;</second>
                       </first>
-                      <second>5</second>
+                      <second>7</second>
                     </item>
                   </second>
                 </item>
@@ -335,17 +335,17 @@
             <Obj>
               <type>0</type>
               <id>17</id>
-              <name>sum_write_ln5</name>
+              <name>sum_write_ln7</name>
               <fileName>half_adder.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>5</lineNumber>
+              <lineNumber>7</lineNumber>
               <contextFuncName>half_adder&amp;lt;bool&amp;gt;</contextFuncName>
               <contextNormFuncName>half_adder_bool_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Half_adder</first>
+                  <first>C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Half_adder</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -354,7 +354,7 @@
                         <first>half_adder.cpp</first>
                         <second>half_adder&amp;lt;bool&amp;gt;</second>
                       </first>
-                      <second>5</second>
+                      <second>7</second>
                     </item>
                   </second>
                 </item>
@@ -367,7 +367,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1769234798</coreId>
+              <coreId>544433253</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -393,17 +393,17 @@
             <Obj>
               <type>0</type>
               <id>18</id>
-              <name>and_ln6</name>
+              <name>and_ln8</name>
               <fileName>half_adder.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>6</lineNumber>
+              <lineNumber>8</lineNumber>
               <contextFuncName>half_adder&amp;lt;bool&amp;gt;</contextFuncName>
               <contextNormFuncName>half_adder_bool_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Half_adder</first>
+                  <first>C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Half_adder</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -412,7 +412,7 @@
                         <first>half_adder.cpp</first>
                         <second>half_adder&amp;lt;bool&amp;gt;</second>
                       </first>
-                      <second>6</second>
+                      <second>8</second>
                     </item>
                   </second>
                 </item>
@@ -450,17 +450,17 @@
             <Obj>
               <type>0</type>
               <id>19</id>
-              <name>carry_write_ln6</name>
+              <name>carry_write_ln8</name>
               <fileName>half_adder.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>6</lineNumber>
+              <lineNumber>8</lineNumber>
               <contextFuncName>half_adder&amp;lt;bool&amp;gt;</contextFuncName>
               <contextNormFuncName>half_adder_bool_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Half_adder</first>
+                  <first>C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Half_adder</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -469,7 +469,7 @@
                         <first>half_adder.cpp</first>
                         <second>half_adder&amp;lt;bool&amp;gt;</second>
                       </first>
-                      <second>6</second>
+                      <second>8</second>
                     </item>
                   </second>
                 </item>
@@ -482,7 +482,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>64</coreId>
+              <coreId>1819243365</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -508,17 +508,17 @@
             <Obj>
               <type>0</type>
               <id>20</id>
-              <name>_ln7</name>
+              <name>_ln9</name>
               <fileName>half_adder.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>9</lineNumber>
               <contextFuncName>half_adder&amp;lt;bool&amp;gt;</contextFuncName>
               <contextNormFuncName>half_adder_bool_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Half_adder</first>
+                  <first>C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Half_adder</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -527,7 +527,7 @@
                         <first>half_adder.cpp</first>
                         <second>half_adder&amp;lt;bool&amp;gt;</second>
                       </first>
-                      <second>7</second>
+                      <second>9</second>
                     </item>
                   </second>
                 </item>
@@ -540,7 +540,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>6422620</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -588,7 +588,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>3843399600</coreId>
+            <coreId>0</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -1035,7 +1035,7 @@
       <count>2</count>
       <item_version>0</item_version>
       <item class_id="47" tracking_level="0" version="0">
-        <first>and_ln6_fu_61</first>
+        <first>and_ln8_fu_61</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1043,7 +1043,7 @@
         </second>
       </item>
       <item>
-        <first>xor_ln5_fu_54</first>
+        <first>xor_ln7_fu_54</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1075,7 +1075,7 @@
         </second>
       </item>
       <item>
-        <first>write_ln5_write_fu_40</first>
+        <first>write_ln7_write_fu_40</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1083,7 +1083,7 @@
         </second>
       </item>
       <item>
-        <first>write_ln6_write_fu_47</first>
+        <first>write_ln8_write_fu_47</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

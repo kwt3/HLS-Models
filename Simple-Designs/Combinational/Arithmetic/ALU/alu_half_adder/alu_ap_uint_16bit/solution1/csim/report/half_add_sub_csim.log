@@ -1,0 +1,16 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../tb_ap_uint_16bit.cpp in debug mode
+   Compiling ../../../../alu_ap_uint_16bit.cpp in debug mode
+   Generating csim.exe
+Testing with ap_uint:
+Addition: Input: A=500, B=300 | Output: Sum=216, Carry=292
+Subtraction: Input: A=500, B=300 | Output: Sum=216, Carry=65235
+Addition: Input: A=1000, B=600 | Output: Sum=432, Carry=584
+Subtraction: Input: A=1000, B=600 | Output: Sum=432, Carry=64935
+Addition: Input: A=1500, B=900 | Output: Sum=1624, Carry=388
+Subtraction: Input: A=1500, B=900 | Output: Sum=1624, Carry=64635
+Addition: Input: A=2000, B=1200 | Output: Sum=864, Carry=1168
+Subtraction: Input: A=2000, B=1200 | Output: Sum=864, Carry=64335
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

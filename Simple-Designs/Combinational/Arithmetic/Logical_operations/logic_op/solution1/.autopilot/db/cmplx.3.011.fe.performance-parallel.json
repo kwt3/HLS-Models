@@ -1,11 +1,11 @@
 {
   "0": {
-    "basicblocks": 6,
+    "basicblocks": 8,
     "calls": "",
     "file": "logic_op.cpp",
     "fileloc": 3,
-    "instructions": 15,
+    "instructions": 25,
     "name": "perform_logic_operation",
-    "total_instructions": 15
+    "total_instructions": 25
   }
 }

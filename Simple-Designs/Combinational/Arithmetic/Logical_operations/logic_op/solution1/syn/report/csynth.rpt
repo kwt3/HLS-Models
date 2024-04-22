@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'perform_logic_operation'
 ================================================================
 + General Information: 
-    * Date:           Mon Apr  8 10:40:40 2024
+    * Date:           Mon Apr 22 10:04:24 2024
     * Version:        2023.2 (Build 4023990 on Oct 11 2023)
     * Project:        logic_op
     * Solution:       solution1 (Vivado IP Flow Target)
@@ -19,7 +19,7 @@
     |          Modules          | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |    |   |          |     |
     |          & Loops          | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP| FF|    LUT   | URAM|
     +---------------------------+------+------+---------+--------+----------+---------+------+----------+------+----+---+----------+-----+
-    |+ perform_logic_operation  |     -|  5.99|        0|   0.000|         -|        1|     -|        no|     -|   -|  -|  44 (~0%)|    -|
+    |+ perform_logic_operation  |     -|  5.06|        0|   0.000|         -|        1|     -|        no|     -|   -|  -|  95 (~0%)|    -|
     +---------------------------+------+------+---------+--------+----------+---------+------+----------+------+----+---+----------+-----+
 
 

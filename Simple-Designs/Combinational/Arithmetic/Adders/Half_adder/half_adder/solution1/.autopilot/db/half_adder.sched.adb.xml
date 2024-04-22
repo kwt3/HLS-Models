@@ -19,10 +19,10 @@
 
 <Node id="5" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-entry:0 %spectopmodule_ln4 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1
+entry:0 %spectopmodule_ln6 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1
 
 ]]></Node>
-<StgValue><ssdm name="spectopmodule_ln4"/></StgValue>
+<StgValue><ssdm name="spectopmodule_ln6"/></StgValue>
 </operation>
 
 <operation id="3" st_id="1" stage="1" lat="1">
@@ -184,10 +184,10 @@ entry:10 %A_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %A
 
 <Node id="16" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-entry:11 %xor_ln5 = xor i1 %A_read, i1 %B_read
+entry:11 %xor_ln7 = xor i1 %A_read, i1 %B_read
 
 ]]></Node>
-<StgValue><ssdm name="xor_ln5"/></StgValue>
+<StgValue><ssdm name="xor_ln7"/></StgValue>
 </operation>
 
 <operation id="14" st_id="1" stage="1" lat="1">
@@ -199,10 +199,10 @@ entry:11 %xor_ln5 = xor i1 %A_read, i1 %B_read
 
 <Node id="17" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1">
 <![CDATA[
-entry:12 %write_ln5 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %sum, i1 %xor_ln5
+entry:12 %write_ln7 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %sum, i1 %xor_ln7
 
 ]]></Node>
-<StgValue><ssdm name="write_ln5"/></StgValue>
+<StgValue><ssdm name="write_ln7"/></StgValue>
 </operation>
 
 <operation id="15" st_id="1" stage="1" lat="1">
@@ -214,10 +214,10 @@ entry:12 %write_ln5 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %sum, i1 %xor
 
 <Node id="18" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-entry:13 %and_ln6 = and i1 %A_read, i1 %B_read
+entry:13 %and_ln8 = and i1 %A_read, i1 %B_read
 
 ]]></Node>
-<StgValue><ssdm name="and_ln6"/></StgValue>
+<StgValue><ssdm name="and_ln8"/></StgValue>
 </operation>
 
 <operation id="16" st_id="1" stage="1" lat="1">
@@ -229,10 +229,10 @@ entry:13 %and_ln6 = and i1 %A_read, i1 %B_read
 
 <Node id="19" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1">
 <![CDATA[
-entry:14 %write_ln6 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %carry, i1 %and_ln6
+entry:14 %write_ln8 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %carry, i1 %and_ln8
 
 ]]></Node>
-<StgValue><ssdm name="write_ln6"/></StgValue>
+<StgValue><ssdm name="write_ln8"/></StgValue>
 </operation>
 
 <operation id="17" st_id="1" stage="1" lat="1">
@@ -244,10 +244,10 @@ entry:14 %write_ln6 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %carry, i1 %a
 
 <Node id="20" bw="0">
 <![CDATA[
-entry:15 %ret_ln7 = ret
+entry:15 %ret_ln9 = ret
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln7"/></StgValue>
+<StgValue><ssdm name="ret_ln9"/></StgValue>
 </operation>
 </state>
 </state_list>

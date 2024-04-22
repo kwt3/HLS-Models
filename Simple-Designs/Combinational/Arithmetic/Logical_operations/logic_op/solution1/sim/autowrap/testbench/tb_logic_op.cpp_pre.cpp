@@ -1,7 +1,7 @@
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/tb_logic_op.cpp"
+# 1 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/tb_logic_op.cpp"
+# 1 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp"
 # 1 "C:/Xilinx/Vitis_HLS/2023.2/tps/win64/msys64/mingw64/include/c++/6.2.0/iostream" 1 3
 # 36 "C:/Xilinx/Vitis_HLS/2023.2/tps/win64/msys64/mingw64/include/c++/6.2.0/iostream" 3
        
@@ -25505,24 +25505,26 @@ namespace std
 
 
 }
-# 2 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/tb_logic_op.cpp" 2
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/logic_op.hpp" 1
+# 2 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp" 2
+# 1 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op.hpp" 1
 
 
 
 
 
 
-# 6 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/logic_op.hpp"
+# 6 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op.hpp"
 enum class LogicOperator {
     AND,
     OR,
     XOR,
-    NAND
+    NAND,
+    LEFT_SHIFT,
+    RIGHT_SHIFT
 };
 
 bool perform_logic_operation(bool A, bool B, LogicOperator op);
-# 3 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/tb_logic_op.cpp" 2
+# 3 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp" 2
 
 int main() {
     bool A = true;
@@ -25543,6 +25545,14 @@ int main() {
 
     LogicOperator op4 = LogicOperator::NAND;
     std::cout << "Result of NAND operation: " << perform_logic_operation(A, B, op4) << std::endl;
+
+
+    LogicOperator op5 = LogicOperator::LEFT_SHIFT;
+    std::cout << "Result of LEFT SHIFT operation: " << perform_logic_operation(A, B, op5) << std::endl;
+
+
+    LogicOperator op6 = LogicOperator::RIGHT_SHIFT;
+    std::cout << "Result of RIGHT SHIFT operation: " << perform_logic_operation(A, B, op6) << std::endl;
 
     return 0;
 }

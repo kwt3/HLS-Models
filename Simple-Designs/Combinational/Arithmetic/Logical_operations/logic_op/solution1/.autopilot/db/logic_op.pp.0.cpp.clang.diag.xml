@@ -1,13 +1,13 @@
 <dict>
   <key>main-file</key>
-  <string>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/logic_op/solution1/.autopilot/db/logic_op.pp.0.cpp</string>
+  <string>C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op/solution1/.autopilot/db/logic_op.pp.0.cpp</string>
   <key>diagnostics</key>
   <array>
     <dict>
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/logic_op/solution1/csynth.tcl</string>
+      <string>C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op/solution1/csynth.tcl</string>
       <key>line</key>
       <integer>17</integer>
       <key>column</key>
@@ -23,7 +23,7 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/logic_op/solution1/directives.tcl</string>
+      <string>C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op/solution1/directives.tcl</string>
       <key>line</key>
       <integer>7</integer>
       <key>column</key>

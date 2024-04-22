@@ -3,7 +3,7 @@
     "basicblocks": 1,
     "calls": "",
     "file": "half_adder.cpp",
-    "fileloc": 4,
+    "fileloc": 6,
     "instructions": 16,
     "name": "half_adder<bool>",
     "stores": {

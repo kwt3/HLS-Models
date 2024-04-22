@@ -20,6 +20,14 @@ int main() {
     // Test NAND operator
     LogicOperator op4 = LogicOperator::NAND;
     std::cout << "Result of NAND operation: " << perform_logic_operation(A, B, op4) << std::endl;
+/*
+    // Test LEFT SHIFT operator
+    LogicOperator op5 = LogicOperator::LEFT_SHIFT;
+    std::cout << "Result of LEFT SHIFT operation: " << perform_logic_operation(A, B, op5) << std::endl;
 
+    // Test RIGHT SHIFT operator
+    LogicOperator op6 = LogicOperator::RIGHT_SHIFT;
+    std::cout << "Result of RIGHT SHIFT operation: " << perform_logic_operation(A, B, op6) << std::endl;
+*/
     return 0;
 }

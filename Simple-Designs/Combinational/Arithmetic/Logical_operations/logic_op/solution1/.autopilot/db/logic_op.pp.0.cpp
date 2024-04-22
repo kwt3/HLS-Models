@@ -25715,18 +25715,20 @@ enum class LogicOperator {
     AND,
     OR,
     XOR,
-    NAND
+    NAND,
+    LEFT_SHIFT,
+    RIGHT_SHIFT
 };
 
 __attribute__((sdx_kernel("perform_logic_operation", 0))) bool perform_logic_operation(bool A, bool B, LogicOperator op);
 # 2 "logic_op.cpp" 2
 
 __attribute__((sdx_kernel("perform_logic_operation", 0))) bool perform_logic_operation(bool A, bool B, LogicOperator op) {
-#line 17 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/logic_op/solution1/csynth.tcl"
+#line 17 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op/solution1/csynth.tcl"
 #pragma HLSDIRECTIVE TOP name=perform_logic_operation
 # 3 "logic_op.cpp"
 
-#line 7 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/logic_op/solution1/directives.tcl"
+#line 7 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op/solution1/directives.tcl"
 #pragma HLSDIRECTIVE TOP name=perform_logic_operation
 # 3 "logic_op.cpp"
 
@@ -25739,6 +25741,10 @@ __attribute__((sdx_kernel("perform_logic_operation", 0))) bool perform_logic_ope
             return A ^ B;
         case LogicOperator::NAND:
             return !(A && B);
+        case LogicOperator::LEFT_SHIFT:
+            return A << B;
+        case LogicOperator::RIGHT_SHIFT:
+            return A >> B;
         default:
             return false;
     }

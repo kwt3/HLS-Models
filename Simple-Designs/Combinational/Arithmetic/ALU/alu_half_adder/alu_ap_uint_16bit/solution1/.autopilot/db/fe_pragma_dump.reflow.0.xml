@@ -1,0 +1,8 @@
+<pragmas>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<16, false>::RType<16, false>::logic operator^<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<16, false>::operator~() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<16, false>::RType<16, false>::logic operator&<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\etc/ap_common.h" line="523" pragmaType="inline" parentfunction="ssdm_int<16, false>::ssdm_int(unsigned short)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<16>::ap_uint<16, false>(ap_int_base<16, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<16, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+</pragmas>

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'half_adder'
 ================================================================
-* Date:           Mon Apr  8 10:05:07 2024
+* Date:           Mon Apr 22 10:21:55 2024
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        half_adder
@@ -153,7 +153,7 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 0.14>
-ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%spectopmodule_ln4 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [half_adder.cpp:4]   --->   Operation 2 'spectopmodule' 'spectopmodule_ln4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%spectopmodule_ln6 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [half_adder.cpp:6]   --->   Operation 2 'spectopmodule' 'spectopmodule_ln6' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %A"   --->   Operation 3 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %A, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 4 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %B"   --->   Operation 5 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
@@ -162,13 +162,13 @@ ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void 
 ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %sum, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %carry"   --->   Operation 9 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %carry, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%B_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %B" [half_adder.cpp:4]   --->   Operation 11 'read' 'B_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%A_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %A" [half_adder.cpp:4]   --->   Operation 12 'read' 'A_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.14ns)   --->   "%xor_ln5 = xor i1 %A_read, i1 %B_read" [half_adder.cpp:5]   --->   Operation 13 'xor' 'xor_ln5' <Predicate = true> <Delay = 0.14> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.14> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%write_ln5 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %sum, i1 %xor_ln5" [half_adder.cpp:5]   --->   Operation 14 'write' 'write_ln5' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 15 [1/1] (0.14ns)   --->   "%and_ln6 = and i1 %A_read, i1 %B_read" [half_adder.cpp:6]   --->   Operation 15 'and' 'and_ln6' <Predicate = true> <Delay = 0.14> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.14> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%write_ln6 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %carry, i1 %and_ln6" [half_adder.cpp:6]   --->   Operation 16 'write' 'write_ln6' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%ret_ln7 = ret" [half_adder.cpp:7]   --->   Operation 17 'ret' 'ret_ln7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%B_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %B" [half_adder.cpp:6]   --->   Operation 11 'read' 'B_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%A_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %A" [half_adder.cpp:6]   --->   Operation 12 'read' 'A_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.14ns)   --->   "%xor_ln7 = xor i1 %A_read, i1 %B_read" [half_adder.cpp:7]   --->   Operation 13 'xor' 'xor_ln7' <Predicate = true> <Delay = 0.14> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.14> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%write_ln7 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %sum, i1 %xor_ln7" [half_adder.cpp:7]   --->   Operation 14 'write' 'write_ln7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.14ns)   --->   "%and_ln8 = and i1 %A_read, i1 %B_read" [half_adder.cpp:8]   --->   Operation 15 'and' 'and_ln8' <Predicate = true> <Delay = 0.14> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.14> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%write_ln8 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %carry, i1 %and_ln8" [half_adder.cpp:8]   --->   Operation 16 'write' 'write_ln8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%ret_ln9 = ret" [half_adder.cpp:9]   --->   Operation 17 'ret' 'ret_ln9' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -192,7 +192,7 @@ Port [ carry]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; exte
 
 <LifeTime>
 <method=bitvector/>
-spectopmodule_ln4 (spectopmodule) [ 00]
+spectopmodule_ln6 (spectopmodule) [ 00]
 specbitsmap_ln0   (specbitsmap  ) [ 00]
 specinterface_ln0 (specinterface) [ 00]
 specbitsmap_ln0   (specbitsmap  ) [ 00]
@@ -203,11 +203,11 @@ specbitsmap_ln0   (specbitsmap  ) [ 00]
 specinterface_ln0 (specinterface) [ 00]
 B_read            (read         ) [ 00]
 A_read            (read         ) [ 00]
-xor_ln5           (xor          ) [ 00]
-write_ln5         (write        ) [ 00]
-and_ln6           (and          ) [ 00]
-write_ln6         (write        ) [ 00]
-ret_ln7           (ret          ) [ 00]
+xor_ln7           (xor          ) [ 00]
+write_ln7         (write        ) [ 00]
+and_ln8           (and          ) [ 00]
+write_ln8         (write        ) [ 00]
+ret_ln9           (ret          ) [ 00]
 </LifeTime>
 
 <model>
@@ -363,7 +363,7 @@ ret_ln7           (ret          ) [ 00]
 </bind>
 </comp>
 
-<comp id="40" class="1004" name="write_ln5_write_fu_40">
+<comp id="40" class="1004" name="write_ln7_write_fu_40">
 <pin_list>
 <pin id="41" dir="0" index="0" bw="0" slack="0"/>
 <pin id="42" dir="0" index="1" bw="1" slack="0"/>
@@ -372,11 +372,11 @@ ret_ln7           (ret          ) [ 00]
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
-<opset="write_ln5/1 "/>
+<opset="write_ln7/1 "/>
 </bind>
 </comp>
 
-<comp id="47" class="1004" name="write_ln6_write_fu_47">
+<comp id="47" class="1004" name="write_ln8_write_fu_47">
 <pin_list>
 <pin id="48" dir="0" index="0" bw="0" slack="0"/>
 <pin id="49" dir="0" index="1" bw="1" slack="0"/>
@@ -385,11 +385,11 @@ ret_ln7           (ret          ) [ 00]
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
-<opset="write_ln6/1 "/>
+<opset="write_ln8/1 "/>
 </bind>
 </comp>
 
-<comp id="54" class="1004" name="xor_ln5_fu_54">
+<comp id="54" class="1004" name="xor_ln7_fu_54">
 <pin_list>
 <pin id="55" dir="0" index="0" bw="1" slack="0"/>
 <pin id="56" dir="0" index="1" bw="1" slack="0"/>
@@ -397,11 +397,11 @@ ret_ln7           (ret          ) [ 00]
 </pin_list>
 <bind>
 <opcode="xor(25) " fcode="xor"/>
-<opset="xor_ln5/1 "/>
+<opset="xor_ln7/1 "/>
 </bind>
 </comp>
 
-<comp id="61" class="1004" name="and_ln6_fu_61">
+<comp id="61" class="1004" name="and_ln8_fu_61">
 <pin_list>
 <pin id="62" dir="0" index="0" bw="1" slack="0"/>
 <pin id="63" dir="0" index="1" bw="1" slack="0"/>
@@ -409,7 +409,7 @@ ret_ln7           (ret          ) [ 00]
 </pin_list>
 <bind>
 <opcode="and(23) " fcode="and"/>
-<opset="and_ln6/1 "/>
+<opset="and_ln8/1 "/>
 </bind>
 </comp>
 
@@ -468,15 +468,15 @@ ret_ln7           (ret          ) [ 00]
 |----------|-----------------------|---------|---------|
 | Operation|    Functional Unit    |    FF   |   LUT   |
 |----------|-----------------------|---------|---------|
-|    xor   |     xor_ln5_fu_54     |    0    |    2    |
+|    xor   |     xor_ln7_fu_54     |    0    |    2    |
 |----------|-----------------------|---------|---------|
-|    and   |     and_ln6_fu_61     |    0    |    2    |
+|    and   |     and_ln8_fu_61     |    0    |    2    |
 |----------|-----------------------|---------|---------|
 |   read   |   B_read_read_fu_28   |    0    |    0    |
 |          |   A_read_read_fu_34   |    0    |    0    |
 |----------|-----------------------|---------|---------|
-|   write  | write_ln5_write_fu_40 |    0    |    0    |
-|          | write_ln6_write_fu_47 |    0    |    0    |
+|   write  | write_ln7_write_fu_40 |    0    |    0    |
+|          | write_ln8_write_fu_47 |    0    |    0    |
 |----------|-----------------------|---------|---------|
 |   Total  |                       |    0    |    4    |
 |----------|-----------------------|---------|---------|

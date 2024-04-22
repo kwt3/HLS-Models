@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="logic_op.cpp" path="C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\Logical_operators\logic_op.cpp"/>
-    <originFiles name="logic_op.hpp" path="C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\Logical_operators\logic_op.hpp"/>
+    <originFiles name="logic_op.cpp" path="C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Logical_operations\logic_op.cpp"/>
+    <originFiles name="logic_op.hpp" path="C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Logical_operations\logic_op.hpp"/>
   </source>
   <testbench>
-    <originFiles name="tb_logic_op.cpp" path="C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\Logical_operators\tb_logic_op.cpp"/>
+    <originFiles name="tb_logic_op.cpp" path="C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Logical_operations\tb_logic_op.cpp"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

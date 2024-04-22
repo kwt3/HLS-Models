@@ -2,7 +2,7 @@
     <includePaths/>
     <libraryPaths/>
     <Simulation>
-        <SimFlow name="csim" csimMode="0" lastCsimMode="2"/>
+        <SimFlow name="csim" csimMode="0" lastCsimMode="0"/>
     </Simulation>
     <files xmlns="">
         <file name="half_adder.cpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>

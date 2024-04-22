@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'half_adder'
 ================================================================
-* Date:           Mon Apr  8 10:05:07 2024
+* Date:           Mon Apr 22 10:21:55 2024
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        half_adder
@@ -75,7 +75,7 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 0.14>
-ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%spectopmodule_ln4 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [half_adder.cpp:4]   --->   Operation 2 'spectopmodule' 'spectopmodule_ln4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%spectopmodule_ln6 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [half_adder.cpp:6]   --->   Operation 2 'spectopmodule' 'spectopmodule_ln6' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %A"   --->   Operation 3 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %A, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 4 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %B"   --->   Operation 5 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
@@ -84,13 +84,13 @@ ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void 
 ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %sum, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %carry"   --->   Operation 9 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %carry, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%B_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %B" [half_adder.cpp:4]   --->   Operation 11 'read' 'B_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%A_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %A" [half_adder.cpp:4]   --->   Operation 12 'read' 'A_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.14ns)   --->   "%xor_ln5 = xor i1 %A_read, i1 %B_read" [half_adder.cpp:5]   --->   Operation 13 'xor' 'xor_ln5' <Predicate = true> <Delay = 0.14> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.14> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%write_ln5 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %sum, i1 %xor_ln5" [half_adder.cpp:5]   --->   Operation 14 'write' 'write_ln5' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 15 [1/1] (0.14ns)   --->   "%and_ln6 = and i1 %A_read, i1 %B_read" [half_adder.cpp:6]   --->   Operation 15 'and' 'and_ln6' <Predicate = true> <Delay = 0.14> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.14> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%write_ln6 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %carry, i1 %and_ln6" [half_adder.cpp:6]   --->   Operation 16 'write' 'write_ln6' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%ret_ln7 = ret" [half_adder.cpp:7]   --->   Operation 17 'ret' 'ret_ln7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%B_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %B" [half_adder.cpp:6]   --->   Operation 11 'read' 'B_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%A_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %A" [half_adder.cpp:6]   --->   Operation 12 'read' 'A_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.14ns)   --->   "%xor_ln7 = xor i1 %A_read, i1 %B_read" [half_adder.cpp:7]   --->   Operation 13 'xor' 'xor_ln7' <Predicate = true> <Delay = 0.14> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.14> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%write_ln7 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %sum, i1 %xor_ln7" [half_adder.cpp:7]   --->   Operation 14 'write' 'write_ln7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.14ns)   --->   "%and_ln8 = and i1 %A_read, i1 %B_read" [half_adder.cpp:8]   --->   Operation 15 'and' 'and_ln8' <Predicate = true> <Delay = 0.14> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.14> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%write_ln8 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %carry, i1 %and_ln8" [half_adder.cpp:8]   --->   Operation 16 'write' 'write_ln8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%ret_ln9 = ret" [half_adder.cpp:9]   --->   Operation 17 'ret' 'ret_ln9' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -100,8 +100,8 @@ Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 
  <State 1>: 0.148ns
 The critical path consists of the following:
-	wire read operation ('B', half_adder.cpp:4) on port 'B' (half_adder.cpp:4) [14]  (0.000 ns)
-	'xor' operation 1 bit ('xor_ln5', half_adder.cpp:5) [16]  (0.148 ns)
+	wire read operation ('B', half_adder.cpp:6) on port 'B' (half_adder.cpp:6) [14]  (0.000 ns)
+	'xor' operation 1 bit ('xor_ln7', half_adder.cpp:7) [16]  (0.148 ns)
 
 
 ============================================================

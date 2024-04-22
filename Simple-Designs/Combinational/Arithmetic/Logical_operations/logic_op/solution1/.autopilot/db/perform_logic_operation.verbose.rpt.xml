@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'perform_logic_operation'" level="0">
-<item name = "Date">Mon Apr  8 10:40:40 2024
+<item name = "Date">Mon Apr 22 10:04:24 2024
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">logic_op</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 1.311 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 2.236 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -47,7 +47,7 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 44, -</column>
+<column name="Expression">-, -, 0, 95, -</column>
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, -, -, -, -</column>
 <column name="Memory">-, -, -, -, -</column>
@@ -79,17 +79,26 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="and_ln6_fu_58_p2">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln4_1_fu_88_p2">icmp, 0, 0, 10, 2, 3</column>
-<column name="icmp_ln4_2_fu_94_p2">icmp, 0, 0, 9, 2, 1</column>
-<column name="icmp_ln4_fu_82_p2">icmp, 0, 0, 9, 2, 2</column>
-<column name="or_ln4_fu_108_p2">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln8_fu_70_p2">or, 0, 0, 2, 1, 1</column>
+<column name="and_ln6_fu_64_p2">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln14_fu_108_p2">icmp, 0, 0, 9, 2, 1</column>
+<column name="icmp_ln4_1_fu_120_p2">icmp, 0, 0, 12, 3, 4</column>
+<column name="icmp_ln4_2_fu_126_p2">icmp, 0, 0, 10, 3, 2</column>
+<column name="icmp_ln4_3_fu_132_p2">icmp, 0, 0, 10, 3, 2</column>
+<column name="icmp_ln4_4_fu_138_p2">icmp, 0, 0, 10, 3, 1</column>
+<column name="icmp_ln4_fu_114_p2">icmp, 0, 0, 10, 3, 3</column>
+<column name="lshr_ln16_fu_78_p2">lshr, 0, 0, 5, 1, 1</column>
+<column name="or_ln4_1_fu_166_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln4_2_fu_188_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln4_fu_152_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln8_fu_84_p2">or, 0, 0, 2, 1, 1</column>
 <column name="ap_return">select, 0, 0, 2, 1, 1</column>
-<column name="select_ln4_1_fu_114_p3">select, 0, 0, 2, 1, 1</column>
-<column name="select_ln4_fu_100_p3">select, 0, 0, 2, 1, 1</column>
-<column name="xor_ln10_fu_76_p2">xor, 0, 0, 2, 1, 1</column>
-<column name="xor_ln12_fu_64_p2">xor, 0, 0, 2, 2, 1</column>
+<column name="select_ln4_1_fu_158_p3">select, 0, 0, 2, 1, 1</column>
+<column name="select_ln4_2_fu_172_p3">select, 0, 0, 2, 1, 1</column>
+<column name="select_ln4_3_fu_180_p3">select, 0, 0, 2, 1, 1</column>
+<column name="select_ln4_fu_144_p3">select, 0, 0, 2, 1, 1</column>
+<column name="shl_ln14_fu_102_p2">shl, 0, 0, 5, 2, 2</column>
+<column name="xor_ln10_fu_90_p2">xor, 0, 0, 2, 1, 1</column>
+<column name="xor_ln12_fu_96_p2">xor, 0, 0, 2, 2, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">

@@ -7,7 +7,9 @@ enum class LogicOperator {
     AND,
     OR,
     XOR,
-    NAND
+    NAND/*,
+    LEFT_SHIFT,
+    RIGHT_SHIFT*/
 };
 
 bool perform_logic_operation(bool A, bool B, LogicOperator op);

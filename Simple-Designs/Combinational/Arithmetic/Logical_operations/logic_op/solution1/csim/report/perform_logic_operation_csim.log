@@ -7,5 +7,7 @@ Result of AND operation: 0
 Result of OR operation: 1
 Result of XOR operation: 1
 Result of NAND operation: 1
+Result of LEFT SHIFT operation: 1
+Result of RIGHT SHIFT operation: 1
 INFO: [SIM 1] CSim done with 0 errors.
 INFO: [SIM 3] *************** CSIM finish ***************

@@ -5,10 +5,10 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // 
 // ==============================================================
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/tb_logic_op.cpp"
+# 1 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/tb_logic_op.cpp"
+# 1 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp"
 # 1 "C:/Xilinx/Vitis_HLS/2023.2/tps/win64/msys64/mingw64/include/c++/6.2.0/iostream" 1 3
 # 36 "C:/Xilinx/Vitis_HLS/2023.2/tps/win64/msys64/mingw64/include/c++/6.2.0/iostream" 3
        
@@ -25512,20 +25512,22 @@ namespace std
 
 
 }
-# 2 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/tb_logic_op.cpp" 2
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/logic_op.hpp" 1
+# 2 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp" 2
+# 1 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op.hpp" 1
 
 
 
 
 
 
-# 6 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/logic_op.hpp"
+# 6 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op.hpp"
 enum class LogicOperator {
     AND,
     OR,
     XOR,
-    NAND
+    NAND,
+    LEFT_SHIFT,
+    RIGHT_SHIFT
 };
 
 
@@ -25535,13 +25537,13 @@ extern "C"
 #endif
 bool apatb_perform_logic_operation_sw(bool, bool, LogicOperator);
 #endif
-# 13 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/logic_op.hpp"
+# 15 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op.hpp"
 bool perform_logic_operation(bool A, bool B, LogicOperator op);
-# 3 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/tb_logic_op.cpp" 2
+# 3 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp" 2
 
 
 #ifndef HLS_FASTSIM
-# 4 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/tb_logic_op.cpp"
+# 4 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp"
 int main() {
     bool A = true;
     bool B = false;
@@ -25552,10 +25554,10 @@ int main() {
 #ifndef HLS_FASTSIM
 #define perform_logic_operation apatb_perform_logic_operation_sw
 #endif
-# 10 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/tb_logic_op.cpp"
+# 10 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp"
 perform_logic_operation(A, B, op1)
 #undef perform_logic_operation
-# 10 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/tb_logic_op.cpp"
+# 10 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp"
  << std::endl;
 
 
@@ -25564,10 +25566,10 @@ perform_logic_operation(A, B, op1)
 #ifndef HLS_FASTSIM
 #define perform_logic_operation apatb_perform_logic_operation_sw
 #endif
-# 14 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/tb_logic_op.cpp"
+# 14 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp"
 perform_logic_operation(A, B, op2)
 #undef perform_logic_operation
-# 14 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/tb_logic_op.cpp"
+# 14 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp"
  << std::endl;
 
 
@@ -25576,10 +25578,10 @@ perform_logic_operation(A, B, op2)
 #ifndef HLS_FASTSIM
 #define perform_logic_operation apatb_perform_logic_operation_sw
 #endif
-# 18 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/tb_logic_op.cpp"
+# 18 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp"
 perform_logic_operation(A, B, op3)
 #undef perform_logic_operation
-# 18 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/tb_logic_op.cpp"
+# 18 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp"
  << std::endl;
 
 
@@ -25588,14 +25590,38 @@ perform_logic_operation(A, B, op3)
 #ifndef HLS_FASTSIM
 #define perform_logic_operation apatb_perform_logic_operation_sw
 #endif
-# 22 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/tb_logic_op.cpp"
+# 22 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp"
 perform_logic_operation(A, B, op4)
 #undef perform_logic_operation
-# 22 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/tb_logic_op.cpp"
+# 22 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp"
+ << std::endl;
+
+
+    LogicOperator op5 = LogicOperator::LEFT_SHIFT;
+    std::cout << "Result of LEFT SHIFT operation: " << 
+#ifndef HLS_FASTSIM
+#define perform_logic_operation apatb_perform_logic_operation_sw
+#endif
+# 26 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp"
+perform_logic_operation(A, B, op5)
+#undef perform_logic_operation
+# 26 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp"
+ << std::endl;
+
+
+    LogicOperator op6 = LogicOperator::RIGHT_SHIFT;
+    std::cout << "Result of RIGHT SHIFT operation: " << 
+#ifndef HLS_FASTSIM
+#define perform_logic_operation apatb_perform_logic_operation_sw
+#endif
+# 30 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp"
+perform_logic_operation(A, B, op6)
+#undef perform_logic_operation
+# 30 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp"
  << std::endl;
 
     return 0;
 }
 #endif
-# 25 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/tb_logic_op.cpp"
+# 33 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp"
 

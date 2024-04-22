@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source/>
+  <testbench>
+    <originFiles name="tb_alu_half_add-sub_bool.cpp" path="C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\ALU\alu_half_adder\tb_alu_half_add-sub_bool.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

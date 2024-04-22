@@ -1,0 +1,133 @@
+
+
+================================================================
+== Vitis HLS Report for 'half_add_sub'
+================================================================
+* Date:           Fri Apr 19 22:18:50 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        alu_ap_uint_16bit
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu11p-flga2577-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  0.983 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.98>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%spectopmodule_ln5 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [alu_ap_uint_16bit.cpp:5]   --->   Operation 2 'spectopmodule' 'spectopmodule_ln5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %A"   --->   Operation 3 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %A, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 4 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %B"   --->   Operation 5 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %B, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 6 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %sum"   --->   Operation 7 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %sum, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %carry"   --->   Operation 9 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %carry, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %op"   --->   Operation 11 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %op, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%op_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %op" [alu_ap_uint_16bit.cpp:5]   --->   Operation 13 'read' 'op_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%B_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %B" [alu_ap_uint_16bit.cpp:5]   --->   Operation 14 'read' 'B_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%A_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %A" [alu_ap_uint_16bit.cpp:5]   --->   Operation 15 'read' 'A_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.98ns)   --->   "%switch_ln6 = switch i32 %op_read, void %if.end, i32 0, void %if.then, i32 1, void %if.then5" [alu_ap_uint_16bit.cpp:6]   --->   Operation 16 'switch' 'switch_ln6' <Predicate = true> <Delay = 0.98>
+ST_1 : Operation 17 [1/1] (0.36ns)   --->   "%xor_ln11 = xor i16 %B_read, i16 %A_read" [alu_ap_uint_16bit.cpp:11]   --->   Operation 17 'xor' 'xor_ln11' <Predicate = (op_read == 1)> <Delay = 0.36> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.36> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%write_ln11 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %sum, i16 %xor_ln11" [alu_ap_uint_16bit.cpp:11]   --->   Operation 18 'write' 'write_ln11' <Predicate = (op_read == 1)> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.36ns)   --->   "%xor_ln12 = xor i16 %B_read, i16 65535" [alu_ap_uint_16bit.cpp:12]   --->   Operation 19 'xor' 'xor_ln12' <Predicate = (op_read == 1)> <Delay = 0.36> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.36> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%write_ln12 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %carry, i16 %xor_ln12" [alu_ap_uint_16bit.cpp:12]   --->   Operation 20 'write' 'write_ln12' <Predicate = (op_read == 1)> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%br_ln13 = br void %if.end" [alu_ap_uint_16bit.cpp:13]   --->   Operation 21 'br' 'br_ln13' <Predicate = (op_read == 1)> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.36ns)   --->   "%xor_ln7 = xor i16 %B_read, i16 %A_read" [alu_ap_uint_16bit.cpp:7]   --->   Operation 22 'xor' 'xor_ln7' <Predicate = (op_read == 0)> <Delay = 0.36> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.36> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%write_ln7 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %sum, i16 %xor_ln7" [alu_ap_uint_16bit.cpp:7]   --->   Operation 23 'write' 'write_ln7' <Predicate = (op_read == 0)> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.36ns)   --->   "%and_ln8 = and i16 %B_read, i16 %A_read" [alu_ap_uint_16bit.cpp:8]   --->   Operation 24 'and' 'and_ln8' <Predicate = (op_read == 0)> <Delay = 0.36> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.36> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%write_ln8 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %carry, i16 %and_ln8" [alu_ap_uint_16bit.cpp:8]   --->   Operation 25 'write' 'write_ln8' <Predicate = (op_read == 0)> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%br_ln9 = br void %if.end10" [alu_ap_uint_16bit.cpp:9]   --->   Operation 26 'br' 'br_ln9' <Predicate = (op_read == 0)> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%br_ln0 = br void %if.end10"   --->   Operation 27 'br' 'br_ln0' <Predicate = (op_read != 0)> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%ret_ln16 = ret" [alu_ap_uint_16bit.cpp:16]   --->   Operation 28 'ret' 'ret_ln16' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.983ns
+The critical path consists of the following:
+	wire read operation ('op_read', alu_ap_uint_16bit.cpp:5) on port 'op' (alu_ap_uint_16bit.cpp:5) [17]  (0.000 ns)
+	wire write operation ('write_ln11', alu_ap_uint_16bit.cpp:11) on port 'sum' (alu_ap_uint_16bit.cpp:11) [23]  (0.000 ns)
+	blocking operation 0.983 ns on control path)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

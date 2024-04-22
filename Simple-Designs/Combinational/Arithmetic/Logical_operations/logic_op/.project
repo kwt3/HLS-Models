@@ -29,47 +29,47 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/logic_op/.apc/.src</location>
+			<location>C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/logic_op/.apc/.tb</location>
+			<location>C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op/.apc/.tb</location>
 		</link>
 		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
-			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/logic_op/solution1/.tcls</location>
+			<location>C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op/solution1/.tcls</location>
 		</link>
 		<link>
 			<name>source/logic_op.cpp</name>
 			<type>1</type>
-			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/logic_op.cpp</location>
+			<location>C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op.cpp</location>
 		</link>
 		<link>
 			<name>source/logic_op.hpp</name>
 			<type>1</type>
-			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/logic_op.hpp</location>
+			<location>C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op.hpp</location>
 		</link>
 		<link>
 			<name>testbench/tb_logic_op.cpp</name>
 			<type>1</type>
-			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/tb_logic_op.cpp</location>
+			<location>C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/logic_op/solution1/solution1.directive</location>
+			<location>C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op/solution1/solution1.directive</location>
 		</link>
 		<link>
 			<name>solution1/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/logic_op/solution1/directives.tcl</location>
+			<location>C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op/solution1/directives.tcl</location>
 		</link>
 		<link>
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
-			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/logic_op/solution1/script.tcl</location>
+			<location>C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op/solution1/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

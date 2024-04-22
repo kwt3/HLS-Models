@@ -1,8 +1,8 @@
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/logic_op.cpp"
+# 1 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op.cpp"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/logic_op.cpp"
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/logic_op.hpp" 1
+# 1 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op.cpp"
+# 1 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op.hpp" 1
 
 
 
@@ -25509,19 +25509,21 @@ namespace std
 
 
 }
-# 5 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/logic_op.hpp" 2
+# 5 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op.hpp" 2
 
 
-# 6 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/logic_op.hpp"
+# 6 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op.hpp"
 enum class LogicOperator {
     AND,
     OR,
     XOR,
-    NAND
+    NAND,
+    LEFT_SHIFT,
+    RIGHT_SHIFT
 };
 
 bool perform_logic_operation(bool A, bool B, LogicOperator op);
-# 2 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/logic_op.cpp" 2
+# 2 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op.cpp" 2
 
 bool perform_logic_operation(bool A, bool B, LogicOperator op) {
     switch (op) {
@@ -25533,6 +25535,10 @@ bool perform_logic_operation(bool A, bool B, LogicOperator op) {
             return A ^ B;
         case LogicOperator::NAND:
             return !(A && B);
+        case LogicOperator::LEFT_SHIFT:
+            return A << B;
+        case LogicOperator::RIGHT_SHIFT:
+            return A >> B;
         default:
             return false;
     }

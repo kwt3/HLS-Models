@@ -4,4 +4,4 @@ set depth_list {
   {ap_return 1}
   {op 1}
 }
-set trans_num 4
+set trans_num 6

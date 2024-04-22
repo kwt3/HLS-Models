@@ -30,7 +30,7 @@
 `define AUTOTB_TVOUT_ap_return_out_wrapc  "../tv/rtldatafile/rtl.perform_logic_operation.autotvout_ap_return.dat"
 module `AUTOTB_TOP;
 
-parameter AUTOTB_TRANSACTION_NUM = 4;
+parameter AUTOTB_TRANSACTION_NUM = 6;
 parameter PROGRESS_TIMEOUT = 10000000;
 parameter LATENCY_ESTIMATION = 0;
 parameter LENGTH_A = 1;

@@ -1,0 +1,18 @@
+{
+  "0": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "alu_ap_uint_16bit.cpp",
+    "fileloc": 5,
+    "instructions": 54,
+    "loads": {
+      "L": 4
+    },
+    "name": "half_add_sub<ap_uint<16> >",
+    "stores": {
+      "L": 2,
+      "T": 4
+    },
+    "total_instructions": 236
+  }
+}

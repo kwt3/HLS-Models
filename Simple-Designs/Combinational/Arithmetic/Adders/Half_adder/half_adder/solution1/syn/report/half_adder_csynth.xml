@@ -34,7 +34,7 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>half_adder.cpp:4</SourceLocation>
+<SourceLocation>half_adder.cpp:6</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 

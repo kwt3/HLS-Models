@@ -16,7 +16,7 @@
       ]
     },
     "slx": false,
-    "sourceFile": "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/logic_op/solution1/directives.tcl",
+    "sourceFile": "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op/solution1/directives.tcl",
     "sourceLine": 7,
     "success": true
   },
@@ -37,7 +37,7 @@
       ]
     },
     "slx": false,
-    "sourceFile": "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operators/logic_op/solution1/csynth.tcl",
+    "sourceFile": "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op/solution1/csynth.tcl",
     "sourceLine": 17,
     "success": true
   }

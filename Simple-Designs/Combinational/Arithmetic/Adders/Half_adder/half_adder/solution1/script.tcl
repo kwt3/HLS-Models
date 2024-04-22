@@ -12,7 +12,8 @@ add_files -tb tb_half_adder.cpp -cflags "-Wno-unknown-pragmas"
 open_solution "solution1" -flow_target vivado
 set_part {xcvu11p-flga2577-1-e}
 create_clock -period 10 -name default
-#source "./half_adder/solution1/directives.tcl"
+config_cosim -tool xsim
+source "./half_adder/solution1/directives.tcl"
 csim_design
 csynth_design
 cosim_design

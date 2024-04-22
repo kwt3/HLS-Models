@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'perform_logic_operation'" level="0">
-<item name = "Date">Mon Apr  8 10:40:40 2024
+<item name = "Date">Mon Apr 22 10:04:23 2024
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">logic_op</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 1.311 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 2.236 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
