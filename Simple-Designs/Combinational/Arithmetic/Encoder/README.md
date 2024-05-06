@@ -2,4 +2,4 @@
 
 Simple implementation of an implemental encoder by + 1.
 
-## Work-in-progress, ostream implement needed
+Work-in-progress, ostream implement needed.
