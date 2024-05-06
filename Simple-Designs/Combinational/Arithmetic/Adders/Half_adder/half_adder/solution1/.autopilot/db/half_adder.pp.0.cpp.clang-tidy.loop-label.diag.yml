@@ -7,7 +7,7 @@ Diagnostics:
     FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_int_base.h'
     Replacements:    
       - FilePath:        'C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Half_adder\half_adder\solution1\.autopilot\db\half_adder.pp.0.cpp'
-        Offset:          799065
+        Offset:          798930
         Length:          0
         ReplacementText: 'VITIS_LOOP_1207_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -16,7 +16,7 @@ Diagnostics:
     FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_int_ref.h'
     Replacements:    
       - FilePath:        'C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Half_adder\half_adder\solution1\.autopilot\db\half_adder.pp.0.cpp'
-        Offset:          1026389
+        Offset:          1026254
         Length:          0
         ReplacementText: 'VITIS_LOOP_676_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -25,7 +25,7 @@ Diagnostics:
     FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_int_ref.h'
     Replacements:    
       - FilePath:        'C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Half_adder\half_adder\solution1\.autopilot\db\half_adder.pp.0.cpp'
-        Offset:          1026853
+        Offset:          1026718
         Length:          0
         ReplacementText: 'VITIS_LOOP_690_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -34,7 +34,7 @@ Diagnostics:
     FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_int_ref.h'
     Replacements:    
       - FilePath:        'C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Half_adder\half_adder\solution1\.autopilot\db\half_adder.pp.0.cpp'
-        Offset:          1027318
+        Offset:          1027183
         Length:          0
         ReplacementText: 'VITIS_LOOP_704_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -43,7 +43,7 @@ Diagnostics:
     FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_fixed_base.h'
     Replacements:    
       - FilePath:        'C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Half_adder\half_adder\solution1\.autopilot\db\half_adder.pp.0.cpp'
-        Offset:          1310600
+        Offset:          1310465
         Length:          0
         ReplacementText: 'VITIS_LOOP_1247_1: '
 ...

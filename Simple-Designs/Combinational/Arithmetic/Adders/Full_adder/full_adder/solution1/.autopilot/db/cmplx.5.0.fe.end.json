@@ -1,8 +1,8 @@
 {
     "0": {
-        "name": "full_adder<bool>",
+        "name": "full_adder<int>",
         "file": "full_adder.cpp",
-        "fileloc": "4",
+        "fileloc": "5",
         "instructions": "22",
         "total_instructions": "22",
         "calls": "",

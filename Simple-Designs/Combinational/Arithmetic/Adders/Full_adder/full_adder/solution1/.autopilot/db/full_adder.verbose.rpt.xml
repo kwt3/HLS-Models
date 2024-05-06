@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'full_adder'" level="0">
-<item name = "Date">Mon Apr  8 10:10:45 2024
+<item name = "Date">Mon May  6 10:21:56 2024
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">full_adder</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 0.296 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 0.578 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -47,7 +47,7 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 10, -</column>
+<column name="Expression">-, -, 0, 160, -</column>
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, -, -, -, -</column>
 <column name="Memory">-, -, -, -, -</column>
@@ -79,11 +79,11 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="s1_fu_68_p2">and, 0, 0, 2, 1, 1</column>
-<column name="sum">and, 0, 0, 2, 1, 1</column>
-<column name="carry">or, 0, 0, 2, 1, 1</column>
-<column name="c1_fu_62_p2">xor, 0, 0, 2, 1, 1</column>
-<column name="c2_fu_74_p2">xor, 0, 0, 2, 1, 1</column>
+<column name="c1_fu_68_p2">and, 0, 0, 32, 32, 32</column>
+<column name="c2_fu_81_p2">and, 0, 0, 32, 32, 32</column>
+<column name="carry">or, 0, 0, 32, 32, 32</column>
+<column name="s1_fu_62_p2">xor, 0, 0, 32, 32, 32</column>
+<column name="sum">xor, 0, 0, 32, 32, 32</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -101,16 +101,16 @@
 <section name = "Interface" level="0">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
-<column name="ap_start">in, 1, ap_ctrl_hs, full_adder&lt;bool&gt;, return value</column>
-<column name="ap_done">out, 1, ap_ctrl_hs, full_adder&lt;bool&gt;, return value</column>
-<column name="ap_idle">out, 1, ap_ctrl_hs, full_adder&lt;bool&gt;, return value</column>
-<column name="ap_ready">out, 1, ap_ctrl_hs, full_adder&lt;bool&gt;, return value</column>
-<column name="A">in, 1, ap_none, A, scalar</column>
-<column name="B">in, 1, ap_none, B, scalar</column>
-<column name="C_In">in, 1, ap_none, C_In, scalar</column>
-<column name="sum">out, 1, ap_vld, sum, pointer</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, full_adder&lt;int&gt;, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, full_adder&lt;int&gt;, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, full_adder&lt;int&gt;, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, full_adder&lt;int&gt;, return value</column>
+<column name="A">in, 32, ap_none, A, scalar</column>
+<column name="B">in, 32, ap_none, B, scalar</column>
+<column name="C_In">in, 32, ap_none, C_In, scalar</column>
+<column name="sum">out, 32, ap_vld, sum, pointer</column>
 <column name="sum_ap_vld">out, 1, ap_vld, sum, pointer</column>
-<column name="carry">out, 1, ap_vld, carry, pointer</column>
+<column name="carry">out, 32, ap_vld, carry, pointer</column>
 <column name="carry_ap_vld">out, 1, ap_vld, carry, pointer</column>
 </table>
 </item>

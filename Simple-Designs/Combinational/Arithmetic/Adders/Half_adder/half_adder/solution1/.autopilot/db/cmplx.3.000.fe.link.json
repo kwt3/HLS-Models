@@ -4,11 +4,15 @@
     "calls": "",
     "file": "half_adder.cpp",
     "fileloc": 6,
-    "instructions": 11,
-    "name": "half_adder<bool>",
+    "instructions": 25,
+    "loads": {
+      "L": 2
+    },
+    "name": "half_adder<ap_uint<8> >",
     "stores": {
+      "L": 2,
       "T": 2
     },
-    "total_instructions": 11
+    "total_instructions": 125
   }
 }

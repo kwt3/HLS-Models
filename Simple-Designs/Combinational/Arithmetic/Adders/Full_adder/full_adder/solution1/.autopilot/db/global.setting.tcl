@@ -42,8 +42,8 @@ set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
 set TargetInfo xcvu11p:-flga2577:-1-e
-set SourceFiles {sc {} c {../../full_adder.cpp ../../hafl_adder.cpp}}
-set SourceFlags {sc {} c {{} {}}}
+set SourceFiles {sc {} c ../../full_adder.cpp}
+set SourceFlags {sc {} c {{}}}
 set DirectiveFile {}
 set TBFiles {verilog ../../tb_full_adder.cpp bc ../../tb_full_adder.cpp vhdl ../../tb_full_adder.cpp sc ../../tb_full_adder.cpp cas ../../tb_full_adder.cpp c {}}
 set SpecLanguage C

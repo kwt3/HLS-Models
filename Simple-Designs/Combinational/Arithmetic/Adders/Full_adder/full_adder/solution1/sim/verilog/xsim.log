@@ -3,12 +3,12 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Mon Apr  8 10:11:20 2024
-# Process ID: 23424
-# Current directory: C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder/solution1/sim/verilog
+# Start of session at: Mon May  6 10:22:22 2024
+# Process ID: 21388
+# Current directory: C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder/solution1/sim/verilog
 # Command line: xsim.exe -mode tcl -source {xsim.dir/full_adder/xsim_script.tcl}
-# Log file: C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder/solution1/sim/verilog/xsim.log
-# Journal file: C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder/solution1/sim/verilog\xsim.jou
+# Log file: C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder/solution1/sim/verilog/xsim.log
+# Journal file: C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder/solution1/sim/verilog\xsim.jou
 # Running On: billy, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 16, Host memory: 16542 MB
 #-----------------------------------------------------------
 source xsim.dir/full_adder/xsim_script.tcl
@@ -22,12 +22,9 @@ source full_adder.tcl
 //
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
-// RTL Simulation : 0 / 4 [n/a] @ "125000"
-// RTL Simulation : 1 / 4 [n/a] @ "145000"
-// RTL Simulation : 2 / 4 [n/a] @ "155000"
-// RTL Simulation : 3 / 4 [n/a] @ "165000"
-// RTL Simulation : 4 / 4 [n/a] @ "175000"
+// RTL Simulation : 0 / 1 [n/a] @ "125000"
+// RTL Simulation : 1 / 1 [n/a] @ "145000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 235 ns : File "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder/solution1/sim/verilog/full_adder.autotb.v" Line 456
+$finish called at time : 205 ns : File "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder/solution1/sim/verilog/full_adder.autotb.v" Line 456
 ## quit
-INFO: [Common 17-206] Exiting xsim at Mon Apr  8 10:11:24 2024...
+INFO: [Common 17-206] Exiting xsim at Mon May  6 10:22:24 2024...

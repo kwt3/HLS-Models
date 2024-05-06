@@ -15,4 +15,4 @@ Test case(s) have been verified in Vitis HLS 2023.2.
 
 ## All other test cases
 
-All other test cases are work in progress due to failing the cosimulation.
+All other test cases are work in progress due to failing the cosimulation as ostream needs to be implemented.

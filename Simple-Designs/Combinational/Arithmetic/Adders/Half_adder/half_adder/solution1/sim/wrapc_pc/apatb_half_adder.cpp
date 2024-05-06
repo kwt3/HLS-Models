@@ -1031,36 +1031,36 @@ namespace hls::sim
 
 
 extern "C"
-void half_adder_hw_stub_wrapper(hls::sim::Byte<1>, hls::sim::Byte<1>, void*, void*);
+void half_adder_hw_stub_wrapper(hls::sim::Byte<1>*, hls::sim::Byte<1>*, void*, void*);
 
 extern "C"
-void apatb_half_adder_hw(hls::sim::Byte<1> __xlx_apatb_param_A, hls::sim::Byte<1> __xlx_apatb_param_B, void* __xlx_apatb_param_sum, void* __xlx_apatb_param_carry)
+void apatb_half_adder_hw(hls::sim::Byte<1>* __xlx_apatb_param_A, hls::sim::Byte<1>* __xlx_apatb_param_B, void* __xlx_apatb_param_sum, void* __xlx_apatb_param_carry)
 {
   static hls::sim::Register port0 {
     .name = "A",
-    .width = 1,
+    .width = 8,
 #ifdef POST_CHECK
 #else
     .owriter = nullptr,
     .iwriter = new hls::sim::Writer(AUTOTB_TVIN_A),
 #endif
   };
-  port0.param = &__xlx_apatb_param_A;
+  port0.param = __xlx_apatb_param_A;
 
   static hls::sim::Register port1 {
     .name = "B",
-    .width = 1,
+    .width = 8,
 #ifdef POST_CHECK
 #else
     .owriter = nullptr,
     .iwriter = new hls::sim::Writer(AUTOTB_TVIN_B),
 #endif
   };
-  port1.param = &__xlx_apatb_param_B;
+  port1.param = __xlx_apatb_param_B;
 
   static hls::sim::Register port2 {
     .name = "sum",
-    .width = 1,
+    .width = 8,
 #ifdef POST_CHECK
     .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_sum),
 #else
@@ -1072,7 +1072,7 @@ void apatb_half_adder_hw(hls::sim::Byte<1> __xlx_apatb_param_A, hls::sim::Byte<1
 
   static hls::sim::Register port3 {
     .name = "carry",
-    .width = 1,
+    .width = 8,
 #ifdef POST_CHECK
     .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_carry),
 #else

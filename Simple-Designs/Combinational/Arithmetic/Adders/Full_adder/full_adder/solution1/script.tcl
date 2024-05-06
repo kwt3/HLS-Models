@@ -8,9 +8,7 @@ open_project full_adder
 set_top full_adder
 add_files full_adder.cpp
 add_files full_adder.hpp
-add_files hafl_adder.cpp
-add_files half_adder.hpp
-add_files -tb tb_full_adder.cpp -cflags "-Wno-unknown-pragmas"
+add_files -tb tb_full_adder.cpp
 open_solution "solution1" -flow_target vivado
 set_part {xcvu11p-flga2577-1-e}
 create_clock -period 10 -name default

@@ -37,7 +37,7 @@
 						<coreId>1702129263</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>1</bitwidth>
+					<bitwidth>8</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>0</if_type>
@@ -70,10 +70,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>446508480</coreId>
+						<coreId>2666297360</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>1</bitwidth>
+					<bitwidth>8</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>0</if_type>
@@ -106,10 +106,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1702129263</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>1</bitwidth>
+					<bitwidth>8</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>0</if_type>
@@ -142,10 +142,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1702129263</coreId>
+						<coreId>1852270963</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>1</bitwidth>
+					<bitwidth>8</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>0</if_type>
@@ -168,8 +168,8 @@
 						<fileName>half_adder.cpp</fileName>
 						<fileDirectory>C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Half_adder</fileDirectory>
 						<lineNumber>6</lineNumber>
-						<contextFuncName>half_adder&amp;lt;bool&amp;gt;</contextFuncName>
-						<contextNormFuncName>half_adder_bool_s</contextNormFuncName>
+						<contextFuncName>half_adder&amp;lt;ap_uint&amp;lt;8&amp;gt; &amp;gt;</contextFuncName>
+						<contextNormFuncName>half_adder_ap_uint_8_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -181,14 +181,14 @@
 									<item class_id="12" tracking_level="0" version="0">
 										<first class_id="13" tracking_level="0" version="0">
 											<first>half_adder.cpp</first>
-											<second>half_adder&amp;lt;bool&amp;gt;</second>
+											<second>half_adder&amp;lt;ap_uint&amp;lt;8&amp;gt; &amp;gt;</second>
 										</first>
 										<second>6</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName>B</originalName>
+						<originalName></originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -196,10 +196,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>287764136</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>1</bitwidth>
+					<bitwidth>8</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -225,8 +225,8 @@
 						<fileName>half_adder.cpp</fileName>
 						<fileDirectory>C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Half_adder</fileDirectory>
 						<lineNumber>6</lineNumber>
-						<contextFuncName>half_adder&amp;lt;bool&amp;gt;</contextFuncName>
-						<contextNormFuncName>half_adder_bool_s</contextNormFuncName>
+						<contextFuncName>half_adder&amp;lt;ap_uint&amp;lt;8&amp;gt; &amp;gt;</contextFuncName>
+						<contextNormFuncName>half_adder_ap_uint_8_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -238,14 +238,14 @@
 									<item>
 										<first>
 											<first>half_adder.cpp</first>
-											<second>half_adder&amp;lt;bool&amp;gt;</second>
+											<second>half_adder&amp;lt;ap_uint&amp;lt;8&amp;gt; &amp;gt;</second>
 										</first>
 										<second>6</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName>A</originalName>
+						<originalName></originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -253,10 +253,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>1</bitwidth>
+					<bitwidth>8</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -282,8 +282,8 @@
 						<fileName>half_adder.cpp</fileName>
 						<fileDirectory>C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Half_adder</fileDirectory>
 						<lineNumber>7</lineNumber>
-						<contextFuncName>half_adder&amp;lt;bool&amp;gt;</contextFuncName>
-						<contextNormFuncName>half_adder_bool_s</contextNormFuncName>
+						<contextFuncName>half_adder&amp;lt;ap_uint&amp;lt;8&amp;gt; &amp;gt;</contextFuncName>
+						<contextNormFuncName>half_adder_ap_uint_8_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -295,7 +295,7 @@
 									<item>
 										<first>
 											<first>half_adder.cpp</first>
-											<second>half_adder&amp;lt;bool&amp;gt;</second>
+											<second>half_adder&amp;lt;ap_uint&amp;lt;8&amp;gt; &amp;gt;</second>
 										</first>
 										<second>7</second>
 									</item>
@@ -310,10 +310,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>446698256</coreId>
+						<coreId>6452480</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>1</bitwidth>
+					<bitwidth>8</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -326,7 +326,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.14</m_delay>
+				<m_delay>0.28</m_delay>
 				<m_topoIndex>3</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -339,8 +339,8 @@
 						<fileName>half_adder.cpp</fileName>
 						<fileDirectory>C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Half_adder</fileDirectory>
 						<lineNumber>7</lineNumber>
-						<contextFuncName>half_adder&amp;lt;bool&amp;gt;</contextFuncName>
-						<contextNormFuncName>half_adder_bool_s</contextNormFuncName>
+						<contextFuncName>half_adder&amp;lt;ap_uint&amp;lt;8&amp;gt; &amp;gt;</contextFuncName>
+						<contextNormFuncName>half_adder_ap_uint_8_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -352,7 +352,7 @@
 									<item>
 										<first>
 											<first>half_adder.cpp</first>
-											<second>half_adder&amp;lt;bool&amp;gt;</second>
+											<second>half_adder&amp;lt;ap_uint&amp;lt;8&amp;gt; &amp;gt;</second>
 										</first>
 										<second>7</second>
 									</item>
@@ -367,7 +367,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>544433253</coreId>
+						<coreId>2481590648</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -397,8 +397,8 @@
 						<fileName>half_adder.cpp</fileName>
 						<fileDirectory>C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Half_adder</fileDirectory>
 						<lineNumber>8</lineNumber>
-						<contextFuncName>half_adder&amp;lt;bool&amp;gt;</contextFuncName>
-						<contextNormFuncName>half_adder_bool_s</contextNormFuncName>
+						<contextFuncName>half_adder&amp;lt;ap_uint&amp;lt;8&amp;gt; &amp;gt;</contextFuncName>
+						<contextNormFuncName>half_adder_ap_uint_8_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -410,7 +410,7 @@
 									<item>
 										<first>
 											<first>half_adder.cpp</first>
-											<second>half_adder&amp;lt;bool&amp;gt;</second>
+											<second>half_adder&amp;lt;ap_uint&amp;lt;8&amp;gt; &amp;gt;</second>
 										</first>
 										<second>8</second>
 									</item>
@@ -425,10 +425,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>1</bitwidth>
+					<bitwidth>8</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -441,7 +441,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.14</m_delay>
+				<m_delay>0.28</m_delay>
 				<m_topoIndex>5</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -454,8 +454,8 @@
 						<fileName>half_adder.cpp</fileName>
 						<fileDirectory>C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Half_adder</fileDirectory>
 						<lineNumber>8</lineNumber>
-						<contextFuncName>half_adder&amp;lt;bool&amp;gt;</contextFuncName>
-						<contextNormFuncName>half_adder_bool_s</contextNormFuncName>
+						<contextFuncName>half_adder&amp;lt;ap_uint&amp;lt;8&amp;gt; &amp;gt;</contextFuncName>
+						<contextNormFuncName>half_adder_ap_uint_8_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -467,7 +467,7 @@
 									<item>
 										<first>
 											<first>half_adder.cpp</first>
-											<second>half_adder&amp;lt;bool&amp;gt;</second>
+											<second>half_adder&amp;lt;ap_uint&amp;lt;8&amp;gt; &amp;gt;</second>
 										</first>
 										<second>8</second>
 									</item>
@@ -482,7 +482,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1819243365</coreId>
+						<coreId>2757353248</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -512,8 +512,8 @@
 						<fileName>half_adder.cpp</fileName>
 						<fileDirectory>C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Half_adder</fileDirectory>
 						<lineNumber>9</lineNumber>
-						<contextFuncName>half_adder&amp;lt;bool&amp;gt;</contextFuncName>
-						<contextNormFuncName>half_adder_bool_s</contextNormFuncName>
+						<contextFuncName>half_adder&amp;lt;ap_uint&amp;lt;8&amp;gt; &amp;gt;</contextFuncName>
+						<contextNormFuncName>half_adder_ap_uint_8_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -525,7 +525,7 @@
 									<item>
 										<first>
 											<first>half_adder.cpp</first>
-											<second>half_adder&amp;lt;bool&amp;gt;</second>
+											<second>half_adder&amp;lt;ap_uint&amp;lt;8&amp;gt; &amp;gt;</second>
 										</first>
 										<second>9</second>
 									</item>
@@ -540,7 +540,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>6422620</coreId>
+						<coreId>1601662828</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -570,7 +570,7 @@
 				<Obj>
 					<type>3</type>
 					<id>21</id>
-					<name>half_adder&lt;bool&gt;</name>
+					<name>half_adder&lt;ap_uint&lt;8&gt; &gt;</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -624,14 +624,14 @@
 			<item class_id_reference="19" object_id="_15">
 				<id>27</id>
 				<edge_type>1</edge_type>
-				<source_obj>15</source_obj>
+				<source_obj>14</source_obj>
 				<sink_obj>16</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="19" object_id="_16">
 				<id>28</id>
 				<edge_type>1</edge_type>
-				<source_obj>14</source_obj>
+				<source_obj>15</source_obj>
 				<sink_obj>16</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -652,14 +652,14 @@
 			<item class_id_reference="19" object_id="_19">
 				<id>33</id>
 				<edge_type>1</edge_type>
-				<source_obj>15</source_obj>
+				<source_obj>14</source_obj>
 				<sink_obj>18</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="19" object_id="_20">
 				<id>34</id>
 				<edge_type>1</edge_type>
-				<source_obj>14</source_obj>
+				<source_obj>15</source_obj>
 				<sink_obj>18</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -684,8 +684,8 @@
 		<item_version>0</item_version>
 		<item class_id="21" tracking_level="1" version="0" object_id="_23">
 			<mId>1</mId>
-			<mTag>half_adder&lt;bool&gt;</mTag>
-			<mNormTag>half_adder_bool_s</mNormTag>
+			<mTag>half_adder&lt;ap_uint&lt;8&gt; &gt;</mTag>
+			<mNormTag>half_adder_ap_uint_8_s</mNormTag>
 			<mType>0</mType>
 			<sub_regions>
 				<count>0</count>

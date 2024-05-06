@@ -25710,9 +25710,6 @@ namespace std
 
 
 
-template <typename T>
-__attribute__((sdx_kernel("half_adder", 0))) void half_adder(T A, T B, T& sum, T& carry);
-# 3 "half_adder.cpp" 2
 # 1 "C:/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\\ap_int.h" 1
 # 10 "C:/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\\ap_int.h"
 # 1 "C:/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\\etc/ap_common.h" 1
@@ -31273,10 +31270,16 @@ inline __attribute__((nodebug)) bool operator!=(
 }
 # 366 "C:/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\\ap_fixed.h" 2
 # 361 "C:/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\\ap_int.h" 2
+# 5 "./half_adder.hpp" 2
+
+template <typename T>
+__attribute__((sdx_kernel("half_adder", 0))) void half_adder(T A, T B, T& sum, T& carry);
+# 3 "half_adder.cpp" 2
+# 1 "C:/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\\ap_int.h" 1
 # 4 "half_adder.cpp" 2
 
 template <typename T>
-__attribute__((sdx_kernel("half_adder", 0))) void half_adder(T A, T B, T& sum, T& carry) {
+__attribute__((sdx_kernel("half_adder", 0))) void half_adder(T A, T B, T& sum, T& carry){
 #line 17 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Half_adder/half_adder/solution1/csynth.tcl"
 #pragma HLSDIRECTIVE TOP name=half_adder
 # 6 "half_adder.cpp"
@@ -31288,6 +31291,5 @@ __attribute__((sdx_kernel("half_adder", 0))) void half_adder(T A, T B, T& sum, T
     sum = A ^ B;
     carry = A & B;
 }
-
-
-template void half_adder<bool>(bool A, bool B, bool& sum, bool& carry);
+# 18 "half_adder.cpp"
+template void half_adder<ap_uint<8>>(ap_uint<8> A, ap_uint<8> B, ap_uint<8>& sum, ap_uint<8>& carry);

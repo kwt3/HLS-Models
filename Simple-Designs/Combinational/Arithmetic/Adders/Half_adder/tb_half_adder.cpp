@@ -2,7 +2,23 @@
 #include "half_adder.hpp"
 #include "ap_int.h"
 
+// Used for ap_int<8> output formatting
+std::ostream& operator<<(std::ostream& os, const ap_int<8>& val) {
+    //os << val.to_string(); // Outputting the value using its binary representation
+	os << static_cast<int>(val);
+	return os;
+}
+
+/*
+// Used for ap_uint<8> output formatting
+std::ostream& operator<<(std::ostream& os, const ap_uint<8>& val) {
+    os << static_cast<unsigned int>(val); // Outputting the integer value
+    return os;
+}
+*/
+
 int main() {
+/*
     // Test cases for bool
     bool A_bool = true;
     bool B_bool = false;
@@ -22,12 +38,12 @@ int main() {
     bool expected_carry_bool = A_bool & B_bool;
 
     if (sum_result_bool == expected_sum_bool && carry_result_bool == expected_carry_bool) {
-        std::cout << "Test Passed for bool!" << std::endl;
+        std::cout << "Test Passed for bool." << std::endl;
     } else {
-        std::cout << "Test Failed for bool!" << std::endl;
+        std::cout << "Test Failed for bool." << std::endl;
     }
+*/
 
-/*
     // Test cases for ap_int<8>
     ap_int<8> A_apint8 = 5;
     ap_int<8> B_apint8 = 3;
@@ -38,20 +54,21 @@ int main() {
     half_adder(A_apint8, B_apint8, sum_result_apint8, carry_result_apint8);
 
     // Print result for ap_int<8>
-    std::cout << "Input (ap_int<8>): A=" << A_apint8.to_int() << ", B=" << B_apint8.to_int() << std::endl;
-    std::cout << "Sum: " << sum_result_apint8.to_int() << std::endl;
-    std::cout << "Carry: " << carry_result_apint8.to_int() << std::endl;
+    std::cout << "Input (ap_int<8>): A=" << A_apint8 << ", B=" << B_apint8 << std::endl;
+    std::cout << "Sum: " << sum_result_apint8 << std::endl;
+    std::cout << "Carry: " << carry_result_apint8 << std::endl;
 
     // Verify the results for ap_int<8>
     ap_int<8> expected_sum_apint8 = A_apint8 ^ B_apint8;
     ap_int<8> expected_carry_apint8 = A_apint8 & B_apint8;
 
     if (sum_result_apint8 == expected_sum_apint8 && carry_result_apint8 == expected_carry_apint8) {
-        std::cout << "Test Passed for ap_int<8>!" << std::endl;
+        std::cout << "Test Passed for ap_int<8>." << std::endl;
     } else {
-        std::cout << "Test Failed for ap_int<8>!" << std::endl;
+        std::cout << "Test Failed for ap_int<8>." << std::endl;
     }
-*/
+
+
 /*
     // Test cases for ap_uint<8>
     ap_uint<8> A_apuint8 = 5;
@@ -64,17 +81,17 @@ int main() {
 
     // Print result for ap_uint<8>
     std::cout << "Input (ap_uint<8>): A=" << A_apuint8.to_uint() << ", B=" << B_apuint8.to_uint() << std::endl;
-    std::cout << "Sum: " << sum_result_apuint8.to_uint() << std::endl;
-    std::cout << "Carry: " << carry_result_apuint8.to_uint() << std::endl;
+    std::cout << "Sum: " << sum_result_apuint8 << std::endl;
+    std::cout << "Carry: " << carry_result_apuint8 << std::endl;
 
     // Verify the results for ap_uint<8>
     ap_uint<8> expected_sum_apuint8 = A_apuint8 ^ B_apuint8;
     ap_uint<8> expected_carry_apuint8 = A_apuint8 & B_apuint8;
 
     if (sum_result_apuint8 == expected_sum_apuint8 && carry_result_apuint8 == expected_carry_apuint8) {
-        std::cout << "Test Passed for ap_uint<8>!" << std::endl;
+        std::cout << "Test Passed for ap_uint<8>." << std::endl;
     } else {
-        std::cout << "Test Failed for ap_uint<8>!" << std::endl;
+        std::cout << "Test Failed for ap_uint<8>." << std::endl;
     }
 */
     return 0;

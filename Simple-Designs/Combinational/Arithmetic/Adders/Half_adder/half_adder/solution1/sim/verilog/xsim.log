@@ -3,8 +3,8 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Mon Apr 22 10:22:15 2024
-# Process ID: 19908
+# Start of session at: Mon May  6 03:30:59 2024
+# Process ID: 23708
 # Current directory: C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Half_adder/half_adder/solution1/sim/verilog
 # Command line: xsim.exe -mode tcl -source {xsim.dir/half_adder/xsim_script.tcl}
 # Log file: C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Half_adder/half_adder/solution1/sim/verilog/xsim.log
@@ -27,4 +27,4 @@ source half_adder.tcl
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 205 ns : File "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Half_adder/half_adder/solution1/sim/verilog/half_adder.autotb.v" Line 396
 ## quit
-INFO: [Common 17-206] Exiting xsim at Mon Apr 22 10:22:17 2024...
+INFO: [Common 17-206] Exiting xsim at Mon May  6 03:31:01 2024...

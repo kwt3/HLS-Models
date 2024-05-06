@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'full_adder'
 ================================================================
 + General Information: 
-    * Date:           Mon Apr  8 10:10:45 2024
+    * Date:           Mon May  6 10:21:56 2024
     * Version:        2023.2 (Build 4023990 on Oct 11 2023)
     * Project:        full_adder
     * Solution:       solution1 (Vivado IP Flow Target)
@@ -15,12 +15,12 @@
 + Performance & Resource Estimates: 
     
     PS: '+' for module; 'o' for loop; '*' for dataflow
-    +--------------+------+------+---------+--------+----------+---------+------+----------+------+----+---+----------+-----+
-    |    Modules   | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |    |   |          |     |
-    |    & Loops   | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP| FF|    LUT   | URAM|
-    +--------------+------+------+---------+--------+----------+---------+------+----------+------+----+---+----------+-----+
-    |+ full_adder  |     -|  7.00|        0|   0.000|         -|        1|     -|        no|     -|   -|  -|  10 (~0%)|    -|
-    +--------------+------+------+---------+--------+----------+---------+------+----------+------+----+---+----------+-----+
+    +--------------+------+------+---------+--------+----------+---------+------+----------+------+----+---+-----------+-----+
+    |    Modules   | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |    |   |           |     |
+    |    & Loops   | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP| FF|    LUT    | URAM|
+    +--------------+------+------+---------+--------+----------+---------+------+----------+------+----+---+-----------+-----+
+    |+ full_adder  |     -|  6.72|        0|   0.000|         -|        1|     -|        no|     -|   -|  -|  160 (~0%)|    -|
+    +--------------+------+------+---------+--------+----------+---------+------+----------+------+----+---+-----------+-----+
 
 
 ================================================================
@@ -30,11 +30,11 @@
 +-------+---------+-----------+----------+
 | Port  | Mode    | Direction | Bitwidth |
 +-------+---------+-----------+----------+
-| A     | ap_none | in        | 1        |
-| B     | ap_none | in        | 1        |
-| C_In  | ap_none | in        | 1        |
-| carry | ap_vld  | out       | 1        |
-| sum   | ap_vld  | out       | 1        |
+| A     | ap_none | in        | 32       |
+| B     | ap_none | in        | 32       |
+| C_In  | ap_none | in        | 32       |
+| carry | ap_vld  | out       | 32       |
+| sum   | ap_vld  | out       | 32       |
 +-------+---------+-----------+----------+
 
 * TOP LEVEL CONTROL
@@ -52,11 +52,11 @@
 +----------+-----------+----------+
 | Argument | Direction | Datatype |
 +----------+-----------+----------+
-| A        | in        | bool     |
-| B        | in        | bool     |
-| C_In     | in        | bool     |
-| sum      | out       | bool&    |
-| carry    | out       | bool&    |
+| A        | in        | int      |
+| B        | in        | int      |
+| C_In     | in        | int      |
+| sum      | out       | int&     |
+| carry    | out       | int&     |
 +----------+-----------+----------+
 
 * SW-to-HW Mapping

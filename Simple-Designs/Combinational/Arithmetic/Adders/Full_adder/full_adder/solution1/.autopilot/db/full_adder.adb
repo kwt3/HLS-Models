@@ -34,10 +34,10 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1953391988</coreId>
+              <coreId>1873571258</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>1</bitwidth>
+            <bitwidth>32</bitwidth>
           </Value>
           <direction>0</direction>
           <if_type>0</if_type>
@@ -70,10 +70,10 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1953391988</coreId>
+              <coreId>1702129263</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>1</bitwidth>
+            <bitwidth>32</bitwidth>
           </Value>
           <direction>0</direction>
           <if_type>0</if_type>
@@ -106,10 +106,10 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1953391988</coreId>
+              <coreId>1873570720</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>1</bitwidth>
+            <bitwidth>32</bitwidth>
           </Value>
           <direction>0</direction>
           <if_type>0</if_type>
@@ -142,10 +142,10 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1953391988</coreId>
+              <coreId>1873569232</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>1</bitwidth>
+            <bitwidth>32</bitwidth>
           </Value>
           <direction>1</direction>
           <if_type>0</if_type>
@@ -178,10 +178,10 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1953391988</coreId>
+              <coreId>1702129263</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>1</bitwidth>
+            <bitwidth>32</bitwidth>
           </Value>
           <direction>1</direction>
           <if_type>0</if_type>
@@ -203,23 +203,23 @@
               <name>C_In_read</name>
               <fileName>full_adder.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>4</lineNumber>
-              <contextFuncName>full_adder&amp;lt;bool&amp;gt;</contextFuncName>
-              <contextNormFuncName>full_adder_bool_s</contextNormFuncName>
+              <lineNumber>5</lineNumber>
+              <contextFuncName>full_adder&amp;lt;int&amp;gt;</contextFuncName>
+              <contextNormFuncName>full_adder_int_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item class_id="10" tracking_level="0" version="0">
-                  <first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Full_adder</first>
+                  <first>C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Full_adder</first>
                   <second class_id="11" tracking_level="0" version="0">
                     <count>1</count>
                     <item_version>0</item_version>
                     <item class_id="12" tracking_level="0" version="0">
                       <first class_id="13" tracking_level="0" version="0">
                         <first>full_adder.cpp</first>
-                        <second>full_adder&amp;lt;bool&amp;gt;</second>
+                        <second>full_adder&amp;lt;int&amp;gt;</second>
                       </first>
-                      <second>4</second>
+                      <second>5</second>
                     </item>
                   </second>
                 </item>
@@ -232,10 +232,10 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967292</coreId>
+              <coreId>6029432</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>1</bitwidth>
+            <bitwidth>32</bitwidth>
           </Value>
           <oprand_edges>
             <count>2</count>
@@ -260,23 +260,23 @@
               <name>B_read</name>
               <fileName>full_adder.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>4</lineNumber>
-              <contextFuncName>full_adder&amp;lt;bool&amp;gt;</contextFuncName>
-              <contextNormFuncName>full_adder_bool_s</contextNormFuncName>
+              <lineNumber>5</lineNumber>
+              <contextFuncName>full_adder&amp;lt;int&amp;gt;</contextFuncName>
+              <contextNormFuncName>full_adder_int_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Full_adder</first>
+                  <first>C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Full_adder</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
                         <first>full_adder.cpp</first>
-                        <second>full_adder&amp;lt;bool&amp;gt;</second>
+                        <second>full_adder&amp;lt;int&amp;gt;</second>
                       </first>
-                      <second>4</second>
+                      <second>5</second>
                     </item>
                   </second>
                 </item>
@@ -289,10 +289,10 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967292</coreId>
+              <coreId>3276848</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>1</bitwidth>
+            <bitwidth>32</bitwidth>
           </Value>
           <oprand_edges>
             <count>2</count>
@@ -317,23 +317,23 @@
               <name>A_read</name>
               <fileName>full_adder.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>4</lineNumber>
-              <contextFuncName>full_adder&amp;lt;bool&amp;gt;</contextFuncName>
-              <contextNormFuncName>full_adder_bool_s</contextNormFuncName>
+              <lineNumber>5</lineNumber>
+              <contextFuncName>full_adder&amp;lt;int&amp;gt;</contextFuncName>
+              <contextNormFuncName>full_adder_int_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Full_adder</first>
+                  <first>C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Full_adder</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
                         <first>full_adder.cpp</first>
-                        <second>full_adder&amp;lt;bool&amp;gt;</second>
+                        <second>full_adder&amp;lt;int&amp;gt;</second>
                       </first>
-                      <second>4</second>
+                      <second>5</second>
                     </item>
                   </second>
                 </item>
@@ -346,10 +346,10 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967292</coreId>
+              <coreId>7209065</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>1</bitwidth>
+            <bitwidth>32</bitwidth>
           </Value>
           <oprand_edges>
             <count>2</count>
@@ -371,39 +371,32 @@
             <Obj>
               <type>0</type>
               <id>20</id>
-              <name>c1</name>
-              <fileName>hafl_adder.cpp</fileName>
+              <name>s1</name>
+              <fileName>full_adder.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>5</lineNumber>
-              <contextFuncName>half_adder&amp;lt;bool&amp;gt;</contextFuncName>
-              <contextNormFuncName>half_adder_bool_s</contextNormFuncName>
+              <lineNumber>7</lineNumber>
+              <contextFuncName>full_adder&amp;lt;int&amp;gt;</contextFuncName>
+              <contextNormFuncName>full_adder_int_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Full_adder</first>
+                  <first>C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Full_adder</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
                         <first>full_adder.cpp</first>
-                        <second>full_adder&amp;lt;bool&amp;gt;</second>
+                        <second>full_adder&amp;lt;int&amp;gt;</second>
                       </first>
                       <second>7</second>
-                    </item>
-                    <item>
-                      <first>
-                        <first>hafl_adder.cpp</first>
-                        <second>half_adder&amp;lt;bool&amp;gt;</second>
-                      </first>
-                      <second>5</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName>c1</originalName>
-              <rtlName>c1_fu_62_p2</rtlName>
+              <originalName>s1</originalName>
+              <rtlName>s1_fu_62_p2</rtlName>
               <control>auto</control>
               <opType>xor</opType>
               <implIndex>auto</implIndex>
@@ -413,7 +406,7 @@
               <coreId>74</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>1</bitwidth>
+            <bitwidth>32</bitwidth>
           </Value>
           <oprand_edges>
             <count>2</count>
@@ -426,48 +419,41 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.00</m_delay>
+          <m_delay>0.28</m_delay>
           <m_topoIndex>4</m_topoIndex>
-          <m_clusterGroupNumber>1</m_clusterGroupNumber>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
         <item class_id_reference="9" object_id="_10">
           <Value>
             <Obj>
               <type>0</type>
               <id>21</id>
-              <name>s1</name>
-              <fileName>hafl_adder.cpp</fileName>
+              <name>c1</name>
+              <fileName>full_adder.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>6</lineNumber>
-              <contextFuncName>half_adder&amp;lt;bool&amp;gt;</contextFuncName>
-              <contextNormFuncName>half_adder_bool_s</contextNormFuncName>
+              <lineNumber>8</lineNumber>
+              <contextFuncName>full_adder&amp;lt;int&amp;gt;</contextFuncName>
+              <contextNormFuncName>full_adder_int_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Full_adder</first>
+                  <first>C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Full_adder</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
                         <first>full_adder.cpp</first>
-                        <second>full_adder&amp;lt;bool&amp;gt;</second>
+                        <second>full_adder&amp;lt;int&amp;gt;</second>
                       </first>
-                      <second>7</second>
-                    </item>
-                    <item>
-                      <first>
-                        <first>hafl_adder.cpp</first>
-                        <second>half_adder&amp;lt;bool&amp;gt;</second>
-                      </first>
-                      <second>6</second>
+                      <second>8</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName>s1</originalName>
-              <rtlName>s1_fu_68_p2</rtlName>
+              <originalName>c1</originalName>
+              <rtlName>c1_fu_68_p2</rtlName>
               <control>auto</control>
               <opType>and</opType>
               <implIndex>auto</implIndex>
@@ -477,7 +463,7 @@
               <coreId>74</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>1</bitwidth>
+            <bitwidth>32</bitwidth>
           </Value>
           <oprand_edges>
             <count>2</count>
@@ -490,48 +476,41 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.14</m_delay>
+          <m_delay>0.00</m_delay>
           <m_topoIndex>5</m_topoIndex>
-          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+          <m_clusterGroupNumber>1</m_clusterGroupNumber>
         </item>
         <item class_id_reference="9" object_id="_11">
           <Value>
             <Obj>
               <type>0</type>
               <id>22</id>
-              <name>c2</name>
-              <fileName>hafl_adder.cpp</fileName>
+              <name>xor_ln11</name>
+              <fileName>full_adder.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>5</lineNumber>
-              <contextFuncName>half_adder&amp;lt;bool&amp;gt;</contextFuncName>
-              <contextNormFuncName>half_adder_bool_s</contextNormFuncName>
+              <lineNumber>11</lineNumber>
+              <contextFuncName>full_adder&amp;lt;int&amp;gt;</contextFuncName>
+              <contextNormFuncName>full_adder_int_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Full_adder</first>
+                  <first>C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Full_adder</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
                         <first>full_adder.cpp</first>
-                        <second>full_adder&amp;lt;bool&amp;gt;</second>
+                        <second>full_adder&amp;lt;int&amp;gt;</second>
                       </first>
-                      <second>9</second>
-                    </item>
-                    <item>
-                      <first>
-                        <first>hafl_adder.cpp</first>
-                        <second>half_adder&amp;lt;bool&amp;gt;</second>
-                      </first>
-                      <second>5</second>
+                      <second>11</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName>c2</originalName>
-              <rtlName>c2_fu_74_p2</rtlName>
+              <originalName/>
+              <rtlName>sum</rtlName>
               <control>auto</control>
               <opType>xor</opType>
               <implIndex>auto</implIndex>
@@ -541,7 +520,7 @@
               <coreId>74</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>1</bitwidth>
+            <bitwidth>32</bitwidth>
           </Value>
           <oprand_edges>
             <count>2</count>
@@ -554,106 +533,35 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.00</m_delay>
+          <m_delay>0.28</m_delay>
           <m_topoIndex>6</m_topoIndex>
-          <m_clusterGroupNumber>1</m_clusterGroupNumber>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
         <item class_id_reference="9" object_id="_12">
           <Value>
             <Obj>
               <type>0</type>
               <id>23</id>
-              <name>and_ln6</name>
-              <fileName>hafl_adder.cpp</fileName>
+              <name>sum_write_ln11</name>
+              <fileName>full_adder.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>6</lineNumber>
-              <contextFuncName>half_adder&amp;lt;bool&amp;gt;</contextFuncName>
-              <contextNormFuncName>half_adder_bool_s</contextNormFuncName>
+              <lineNumber>11</lineNumber>
+              <contextFuncName>full_adder&amp;lt;int&amp;gt;</contextFuncName>
+              <contextNormFuncName>full_adder_int_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Full_adder</first>
+                  <first>C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Full_adder</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
                         <first>full_adder.cpp</first>
-                        <second>full_adder&amp;lt;bool&amp;gt;</second>
+                        <second>full_adder&amp;lt;int&amp;gt;</second>
                       </first>
-                      <second>9</second>
-                    </item>
-                    <item>
-                      <first>
-                        <first>hafl_adder.cpp</first>
-                        <second>half_adder&amp;lt;bool&amp;gt;</second>
-                      </first>
-                      <second>6</second>
-                    </item>
-                  </second>
-                </item>
-              </inlineStackInfo>
-              <originalName/>
-              <rtlName>sum</rtlName>
-              <control>auto</control>
-              <opType>and</opType>
-              <implIndex>auto</implIndex>
-              <coreName>LogicGate</coreName>
-              <isStorage>0</isStorage>
-              <storageDepth>0</storageDepth>
-              <coreId>74</coreId>
-              <rtlModuleName/>
-            </Obj>
-            <bitwidth>1</bitwidth>
-          </Value>
-          <oprand_edges>
-            <count>2</count>
-            <item_version>0</item_version>
-            <item>42</item>
-            <item>43</item>
-          </oprand_edges>
-          <opcode>and</opcode>
-          <m_Display>0</m_Display>
-          <m_isOnCriticalPath>0</m_isOnCriticalPath>
-          <m_isLCDNode>0</m_isLCDNode>
-          <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.14</m_delay>
-          <m_topoIndex>7</m_topoIndex>
-          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
-        </item>
-        <item class_id_reference="9" object_id="_13">
-          <Value>
-            <Obj>
-              <type>0</type>
-              <id>24</id>
-              <name>sum_write_ln6</name>
-              <fileName>hafl_adder.cpp</fileName>
-              <fileDirectory>../.</fileDirectory>
-              <lineNumber>6</lineNumber>
-              <contextFuncName>half_adder&amp;lt;bool&amp;gt;</contextFuncName>
-              <contextNormFuncName>half_adder_bool_s</contextNormFuncName>
-              <inlineStackInfo>
-                <count>1</count>
-                <item_version>0</item_version>
-                <item>
-                  <first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Full_adder</first>
-                  <second>
-                    <count>2</count>
-                    <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>full_adder.cpp</first>
-                        <second>full_adder&amp;lt;bool&amp;gt;</second>
-                      </first>
-                      <second>9</second>
-                    </item>
-                    <item>
-                      <first>
-                        <first>hafl_adder.cpp</first>
-                        <second>half_adder&amp;lt;bool&amp;gt;</second>
-                      </first>
-                      <second>6</second>
+                      <second>11</second>
                     </item>
                   </second>
                 </item>
@@ -666,7 +574,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967292</coreId>
+              <coreId>6029426</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -674,9 +582,9 @@
           <oprand_edges>
             <count>3</count>
             <item_version>0</item_version>
+            <item>43</item>
+            <item>44</item>
             <item>45</item>
-            <item>46</item>
-            <item>47</item>
           </oprand_edges>
           <opcode>write</opcode>
           <m_Display>0</m_Display>
@@ -684,34 +592,91 @@
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.00</m_delay>
-          <m_topoIndex>8</m_topoIndex>
+          <m_topoIndex>7</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_14">
+        <item class_id_reference="9" object_id="_13">
           <Value>
             <Obj>
               <type>0</type>
-              <id>25</id>
-              <name>or_ln11</name>
+              <id>24</id>
+              <name>c2</name>
               <fileName>full_adder.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>11</lineNumber>
-              <contextFuncName>full_adder&amp;lt;bool&amp;gt;</contextFuncName>
-              <contextNormFuncName>full_adder_bool_s</contextNormFuncName>
+              <lineNumber>12</lineNumber>
+              <contextFuncName>full_adder&amp;lt;int&amp;gt;</contextFuncName>
+              <contextNormFuncName>full_adder_int_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Full_adder</first>
+                  <first>C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Full_adder</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
                         <first>full_adder.cpp</first>
-                        <second>full_adder&amp;lt;bool&amp;gt;</second>
+                        <second>full_adder&amp;lt;int&amp;gt;</second>
                       </first>
-                      <second>11</second>
+                      <second>12</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName>c2</originalName>
+              <rtlName>c2_fu_81_p2</rtlName>
+              <control>auto</control>
+              <opType>and</opType>
+              <implIndex>auto</implIndex>
+              <coreName>LogicGate</coreName>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>74</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>32</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>2</count>
+            <item_version>0</item_version>
+            <item>46</item>
+            <item>47</item>
+          </oprand_edges>
+          <opcode>and</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>8</m_topoIndex>
+          <m_clusterGroupNumber>1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_14">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>25</id>
+              <name>or_ln15</name>
+              <fileName>full_adder.cpp</fileName>
+              <fileDirectory>../.</fileDirectory>
+              <lineNumber>15</lineNumber>
+              <contextFuncName>full_adder&amp;lt;int&amp;gt;</contextFuncName>
+              <contextNormFuncName>full_adder_int_s</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Full_adder</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>full_adder.cpp</first>
+                        <second>full_adder&amp;lt;int&amp;gt;</second>
+                      </first>
+                      <second>15</second>
                     </item>
                   </second>
                 </item>
@@ -727,7 +692,7 @@
               <coreId>74</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>1</bitwidth>
+            <bitwidth>32</bitwidth>
           </Value>
           <oprand_edges>
             <count>2</count>
@@ -740,7 +705,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.14</m_delay>
+          <m_delay>0.28</m_delay>
           <m_topoIndex>9</m_topoIndex>
           <m_clusterGroupNumber>1</m_clusterGroupNumber>
         </item>
@@ -749,26 +714,26 @@
             <Obj>
               <type>0</type>
               <id>26</id>
-              <name>carry_write_ln11</name>
+              <name>carry_write_ln15</name>
               <fileName>full_adder.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>11</lineNumber>
-              <contextFuncName>full_adder&amp;lt;bool&amp;gt;</contextFuncName>
-              <contextNormFuncName>full_adder_bool_s</contextNormFuncName>
+              <lineNumber>15</lineNumber>
+              <contextFuncName>full_adder&amp;lt;int&amp;gt;</contextFuncName>
+              <contextNormFuncName>full_adder_int_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Full_adder</first>
+                  <first>C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Full_adder</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
                         <first>full_adder.cpp</first>
-                        <second>full_adder&amp;lt;bool&amp;gt;</second>
+                        <second>full_adder&amp;lt;int&amp;gt;</second>
                       </first>
-                      <second>11</second>
+                      <second>15</second>
                     </item>
                   </second>
                 </item>
@@ -781,7 +746,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967292</coreId>
+              <coreId>7274608</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -807,26 +772,26 @@
             <Obj>
               <type>0</type>
               <id>27</id>
-              <name>_ln12</name>
+              <name>_ln16</name>
               <fileName>full_adder.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>12</lineNumber>
-              <contextFuncName>full_adder&amp;lt;bool&amp;gt;</contextFuncName>
-              <contextNormFuncName>full_adder_bool_s</contextNormFuncName>
+              <lineNumber>16</lineNumber>
+              <contextFuncName>full_adder&amp;lt;int&amp;gt;</contextFuncName>
+              <contextNormFuncName>full_adder_int_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Full_adder</first>
+                  <first>C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Full_adder</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
                         <first>full_adder.cpp</first>
-                        <second>full_adder&amp;lt;bool&amp;gt;</second>
+                        <second>full_adder&amp;lt;int&amp;gt;</second>
                       </first>
-                      <second>12</second>
+                      <second>16</second>
                     </item>
                   </second>
                 </item>
@@ -839,7 +804,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967292</coreId>
+              <coreId>6226035</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -869,7 +834,7 @@
           <Obj>
             <type>3</type>
             <id>28</id>
-            <name>full_adder&lt;bool&gt;</name>
+            <name>full_adder&lt;int&gt;</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -887,7 +852,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>19833408</coreId>
+            <coreId>1702129263</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -934,35 +899,35 @@
         <item class_id_reference="19" object_id="_21">
           <id>36</id>
           <edge_type>1</edge_type>
-          <source_obj>19</source_obj>
+          <source_obj>18</source_obj>
           <sink_obj>20</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="19" object_id="_22">
           <id>37</id>
           <edge_type>1</edge_type>
-          <source_obj>18</source_obj>
+          <source_obj>19</source_obj>
           <sink_obj>20</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="19" object_id="_23">
           <id>38</id>
           <edge_type>1</edge_type>
-          <source_obj>19</source_obj>
+          <source_obj>18</source_obj>
           <sink_obj>21</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="19" object_id="_24">
           <id>39</id>
           <edge_type>1</edge_type>
-          <source_obj>18</source_obj>
+          <source_obj>19</source_obj>
           <sink_obj>21</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="19" object_id="_25">
           <id>40</id>
           <edge_type>1</edge_type>
-          <source_obj>21</source_obj>
+          <source_obj>20</source_obj>
           <sink_obj>22</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -974,44 +939,44 @@
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="19" object_id="_27">
-          <id>42</id>
+          <id>44</id>
           <edge_type>1</edge_type>
-          <source_obj>21</source_obj>
+          <source_obj>4</source_obj>
           <sink_obj>23</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="19" object_id="_28">
-          <id>43</id>
+          <id>45</id>
           <edge_type>1</edge_type>
-          <source_obj>17</source_obj>
+          <source_obj>22</source_obj>
           <sink_obj>23</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="19" object_id="_29">
           <id>46</id>
           <edge_type>1</edge_type>
-          <source_obj>4</source_obj>
+          <source_obj>20</source_obj>
           <sink_obj>24</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="19" object_id="_30">
           <id>47</id>
           <edge_type>1</edge_type>
-          <source_obj>23</source_obj>
+          <source_obj>17</source_obj>
           <sink_obj>24</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="19" object_id="_31">
           <id>48</id>
           <edge_type>1</edge_type>
-          <source_obj>20</source_obj>
+          <source_obj>24</source_obj>
           <sink_obj>25</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="19" object_id="_32">
           <id>49</id>
           <edge_type>1</edge_type>
-          <source_obj>22</source_obj>
+          <source_obj>21</source_obj>
           <sink_obj>25</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -1036,8 +1001,8 @@
       <item_version>0</item_version>
       <item class_id="21" tracking_level="1" version="0" object_id="_35">
         <mId>1</mId>
-        <mTag>full_adder&lt;bool&gt;</mTag>
-        <mNormTag>full_adder_bool_s</mNormTag>
+        <mTag>full_adder&lt;int&gt;</mTag>
+        <mNormTag>full_adder_int_s</mNormTag>
         <mType>0</mType>
         <sub_regions>
           <count>0</count>
@@ -1194,17 +1159,17 @@
         <count>5</count>
         <item_version>0</item_version>
         <item class_id="31" tracking_level="0" version="0">
-          <first>c1_fu_62_p2 ( xor ) </first>
+          <first>c1_fu_68_p2 ( and ) </first>
           <second class_id="32" tracking_level="0" version="0">
             <count>4</count>
             <item_version>0</item_version>
             <item class_id="33" tracking_level="0" version="0">
               <first>(0P0)</first>
-              <second>1</second>
+              <second>32</second>
             </item>
             <item>
               <first>(1P1)</first>
-              <second>1</second>
+              <second>32</second>
             </item>
             <item>
               <first>FF</first>
@@ -1212,22 +1177,22 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>2</second>
+              <second>32</second>
             </item>
           </second>
         </item>
         <item>
-          <first>c2_fu_74_p2 ( xor ) </first>
+          <first>c2_fu_81_p2 ( and ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
             <item>
               <first>(0P0)</first>
-              <second>1</second>
+              <second>32</second>
             </item>
             <item>
               <first>(1P1)</first>
-              <second>1</second>
+              <second>32</second>
             </item>
             <item>
               <first>FF</first>
@@ -1235,7 +1200,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>2</second>
+              <second>32</second>
             </item>
           </second>
         </item>
@@ -1246,11 +1211,11 @@
             <item_version>0</item_version>
             <item>
               <first>(0P0)</first>
-              <second>1</second>
+              <second>32</second>
             </item>
             <item>
               <first>(1P1)</first>
-              <second>1</second>
+              <second>32</second>
             </item>
             <item>
               <first>FF</first>
@@ -1258,22 +1223,22 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>2</second>
+              <second>32</second>
             </item>
           </second>
         </item>
         <item>
-          <first>s1_fu_68_p2 ( and ) </first>
+          <first>s1_fu_62_p2 ( xor ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
             <item>
               <first>(0P0)</first>
-              <second>1</second>
+              <second>32</second>
             </item>
             <item>
               <first>(1P1)</first>
-              <second>1</second>
+              <second>32</second>
             </item>
             <item>
               <first>FF</first>
@@ -1281,22 +1246,22 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>2</second>
+              <second>32</second>
             </item>
           </second>
         </item>
         <item>
-          <first>sum ( and ) </first>
+          <first>sum ( xor ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
             <item>
               <first>(0P0)</first>
-              <second>1</second>
+              <second>32</second>
             </item>
             <item>
               <first>(1P1)</first>
-              <second>1</second>
+              <second>32</second>
             </item>
             <item>
               <first>FF</first>
@@ -1304,7 +1269,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>2</second>
+              <second>32</second>
             </item>
           </second>
         </item>
@@ -1337,19 +1302,19 @@
         <count>5</count>
         <item_version>0</item_version>
         <item class_id="35" tracking_level="0" version="0">
-          <first>c1_fu_62_p2 ( xor ) </first>
+          <first>c1_fu_68_p2 ( and ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>20</item>
+            <item>21</item>
           </second>
         </item>
         <item>
-          <first>c2_fu_74_p2 ( xor ) </first>
+          <first>c2_fu_81_p2 ( and ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>22</item>
+            <item>24</item>
           </second>
         </item>
         <item>
@@ -1361,19 +1326,19 @@
           </second>
         </item>
         <item>
-          <first>s1_fu_68_p2 ( and ) </first>
+          <first>s1_fu_62_p2 ( xor ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>21</item>
+            <item>20</item>
           </second>
         </item>
         <item>
-          <first>sum ( and ) </first>
+          <first>sum ( xor ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>23</item>
+            <item>22</item>
           </second>
         </item>
       </dp_expression_map>
@@ -1514,7 +1479,7 @@
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>24</item>
+          <item>23</item>
         </second>
       </item>
       <item>
@@ -1550,11 +1515,11 @@
         </second>
       </item>
       <item>
-        <first>80</first>
+        <first>81</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>23</item>
+          <item>24</item>
         </second>
       </item>
       <item>
@@ -1570,31 +1535,23 @@
       <count>5</count>
       <item_version>0</item_version>
       <item class_id="47" tracking_level="0" version="0">
-        <first>and_ln6_fu_80</first>
+        <first>c1_fu_68</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>23</item>
+          <item>21</item>
         </second>
       </item>
       <item>
-        <first>c1_fu_62</first>
+        <first>c2_fu_81</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>20</item>
+          <item>24</item>
         </second>
       </item>
       <item>
-        <first>c2_fu_74</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>22</item>
-        </second>
-      </item>
-      <item>
-        <first>or_ln11_fu_87</first>
+        <first>or_ln15_fu_87</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1602,11 +1559,19 @@
         </second>
       </item>
       <item>
-        <first>s1_fu_68</first>
+        <first>s1_fu_62</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>21</item>
+          <item>20</item>
+        </second>
+      </item>
+      <item>
+        <first>xor_ln11_fu_74</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>22</item>
         </second>
       </item>
     </dp_fu_nodes_expression>
@@ -1642,19 +1607,19 @@
         </second>
       </item>
       <item>
-        <first>write_ln11_write_fu_55</first>
+        <first>write_ln11_write_fu_48</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>23</item>
+        </second>
+      </item>
+      <item>
+        <first>write_ln15_write_fu_55</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
           <item>26</item>
-        </second>
-      </item>
-      <item>
-        <first>write_ln6_write_fu_48</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>24</item>
         </second>
       </item>
     </dp_fu_nodes_io>
@@ -1755,7 +1720,7 @@
             <second>
               <count>1</count>
               <item_version>0</item_version>
-              <item>24</item>
+              <item>23</item>
             </second>
           </item>
         </second>
@@ -1790,7 +1755,7 @@
         </second>
       </item>
       <item>
-        <first>23</first>
+        <first>24</first>
         <second>
           <first>23</first>
           <second>0</second>

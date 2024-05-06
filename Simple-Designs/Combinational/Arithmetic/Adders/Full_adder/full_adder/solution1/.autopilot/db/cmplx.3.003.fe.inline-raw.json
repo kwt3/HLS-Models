@@ -3,16 +3,12 @@
     "basicblocks": 1,
     "calls": "",
     "file": "full_adder.cpp",
-    "fileloc": 4,
-    "instructions": 23,
-    "loads": {
-      "L": 3
-    },
-    "name": "full_adder<bool>",
+    "fileloc": 5,
+    "instructions": 8,
+    "name": "full_adder<int>",
     "stores": {
-      "L": 3,
       "T": 2
     },
-    "total_instructions": 23
+    "total_instructions": 8
   }
 }

@@ -13,7 +13,7 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>10.00</TargetClockPeriod>
 <ClockUncertainty>2.70</ClockUncertainty>
-<EstimatedClockPeriod>0.296</EstimatedClockPeriod>
+<EstimatedClockPeriod>0.578</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>0</Best-caseLatency>
@@ -28,7 +28,7 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>full_adder.cpp:4</SourceLocation>
+<SourceLocation>full_adder.cpp:5</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -36,7 +36,7 @@
 <FF>0</FF>
 <AVAIL_FF>2592000</AVAIL_FF>
 <UTIL_FF>0</UTIL_FF>
-<LUT>10</LUT>
+<LUT>160</LUT>
 <AVAIL_LUT>1296000</AVAIL_LUT>
 <UTIL_LUT>~0</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -53,7 +53,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_start</name>
-<Object>full_adder&lt;bool&gt;</Object>
+<Object>full_adder&lt;int&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -64,7 +64,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>full_adder&lt;bool&gt;</Object>
+<Object>full_adder&lt;int&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -75,7 +75,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>full_adder&lt;bool&gt;</Object>
+<Object>full_adder&lt;int&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -86,7 +86,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>full_adder&lt;bool&gt;</Object>
+<Object>full_adder&lt;int&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -103,9 +103,9 @@
 <IOProtocol>ap_none</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>1</Bits>
+<Bits>32</Bits>
 <Attribute>data</Attribute>
-<CType>bool</CType>
+<CType>int</CType>
 </RtlPorts>
 <RtlPorts>
 <name>B</name>
@@ -115,9 +115,9 @@
 <IOProtocol>ap_none</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>1</Bits>
+<Bits>32</Bits>
 <Attribute>data</Attribute>
-<CType>bool</CType>
+<CType>int</CType>
 </RtlPorts>
 <RtlPorts>
 <name>C_In</name>
@@ -127,9 +127,9 @@
 <IOProtocol>ap_none</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>1</Bits>
+<Bits>32</Bits>
 <Attribute>data</Attribute>
-<CType>bool</CType>
+<CType>int</CType>
 </RtlPorts>
 <RtlPorts>
 <name>sum</name>
@@ -139,9 +139,9 @@
 <IOProtocol>ap_vld</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>1</Bits>
+<Bits>32</Bits>
 <Attribute>data</Attribute>
-<CType>bool</CType>
+<CType>int</CType>
 </RtlPorts>
 <RtlPorts>
 <name>sum_ap_vld</name>
@@ -153,7 +153,7 @@
 <Dir>out</Dir>
 <Bits>1</Bits>
 <Attribute>control</Attribute>
-<CType>bool</CType>
+<CType>int</CType>
 </RtlPorts>
 <RtlPorts>
 <name>carry</name>
@@ -163,9 +163,9 @@
 <IOProtocol>ap_vld</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>1</Bits>
+<Bits>32</Bits>
 <Attribute>data</Attribute>
-<CType>bool</CType>
+<CType>int</CType>
 </RtlPorts>
 <RtlPorts>
 <name>carry_ap_vld</name>
@@ -177,7 +177,7 @@
 <Dir>out</Dir>
 <Bits>1</Bits>
 <Attribute>control</Attribute>
-<CType>bool</CType>
+<CType>int</CType>
 </RtlPorts>
 </InterfaceSummary>
 </Module>

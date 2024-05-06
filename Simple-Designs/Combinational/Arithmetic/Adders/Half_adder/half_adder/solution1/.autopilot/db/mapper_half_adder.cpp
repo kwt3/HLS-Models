@@ -242,9 +242,10 @@ class AESL_RUNTIME_BC {
     string mName;
 };
 using hls::sim::Byte;
-extern "C" void half_adder(char, char, volatile void *, volatile void *);
-extern "C" void apatb_half_adder_hw(char __xlx_apatb_param_A, char __xlx_apatb_param_B, volatile void * __xlx_apatb_param_sum, volatile void * __xlx_apatb_param_carry) {
+struct __cosim_s1__ { char data[1]; };
+extern "C" void half_adder(__cosim_s1__, __cosim_s1__, volatile void *, volatile void *);
+extern "C" void apatb_half_adder_hw(__cosim_s1__* __xlx_apatb_param_A, __cosim_s1__* __xlx_apatb_param_B, volatile void * __xlx_apatb_param_sum, volatile void * __xlx_apatb_param_carry) {
 using hls::sim::createStream;
   // DUT call
-  half_adder(__xlx_apatb_param_A, __xlx_apatb_param_B, __xlx_apatb_param_sum, __xlx_apatb_param_carry);
+  half_adder(*__xlx_apatb_param_A, *__xlx_apatb_param_B, __xlx_apatb_param_sum, __xlx_apatb_param_carry);
 }

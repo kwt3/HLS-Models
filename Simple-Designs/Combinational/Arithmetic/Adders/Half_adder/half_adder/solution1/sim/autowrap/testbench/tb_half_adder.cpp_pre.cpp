@@ -25510,16 +25510,13 @@ namespace std
 
 
 
-
-# 4 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Half_adder/half_adder.hpp"
-template <typename T>
-void half_adder(T A, T B, T& sum, T& carry);
-# 3 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Half_adder/tb_half_adder.cpp" 2
 # 1 "C:/Xilinx/Vitis_HLS/2023.2/include/ap_int.h" 1
 # 10 "C:/Xilinx/Vitis_HLS/2023.2/include/ap_int.h"
 # 1 "C:/Xilinx/Vitis_HLS/2023.2/include/etc/ap_common.h" 1
 # 41 "C:/Xilinx/Vitis_HLS/2023.2/include/etc/ap_common.h"
 # 1 "C:/Xilinx/Vitis_HLS/2023.2/include/etc/ap_decl.h" 1
+# 54 "C:/Xilinx/Vitis_HLS/2023.2/include/etc/ap_decl.h"
+
 # 54 "C:/Xilinx/Vitis_HLS/2023.2/include/etc/ap_decl.h"
 enum ap_q_mode {
   AP_RND,
@@ -55391,32 +55388,44 @@ inline bool operator!=(
 }
 # 366 "C:/Xilinx/Vitis_HLS/2023.2/include/ap_fixed.h" 2
 # 361 "C:/Xilinx/Vitis_HLS/2023.2/include/ap_int.h" 2
+# 5 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Half_adder/half_adder.hpp" 2
+
+template <typename T>
+void half_adder(T A, T B, T& sum, T& carry);
+# 3 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Half_adder/tb_half_adder.cpp" 2
+# 1 "C:/Xilinx/Vitis_HLS/2023.2/include/ap_int.h" 1
 # 4 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Half_adder/tb_half_adder.cpp" 2
+# 15 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Half_adder/tb_half_adder.cpp"
+std::ostream& operator<<(std::ostream& os, const ap_uint<8>& val) {
+    os << static_cast<unsigned int>(val);
+    return os;
+}
+
 
 int main() {
-
-    bool A_bool = true;
-    bool B_bool = false;
-    bool sum_result_bool = false;
-    bool carry_result_bool = false;
-
-
-    half_adder(A_bool, B_bool, sum_result_bool, carry_result_bool);
+# 79 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Half_adder/tb_half_adder.cpp"
+    ap_uint<8> A_apuint8 = 5;
+    ap_uint<8> B_apuint8 = 3;
+    ap_uint<8> sum_result_apuint8 = 0;
+    ap_uint<8> carry_result_apuint8 = 0;
 
 
-    std::cout << "Input (bool): A=" << A_bool << ", B=" << B_bool << std::endl;
-    std::cout << "Sum: " << sum_result_bool << std::endl;
-    std::cout << "Carry: " << carry_result_bool << std::endl;
+    half_adder(A_apuint8, B_apuint8, sum_result_apuint8, carry_result_apuint8);
 
 
-    bool expected_sum_bool = A_bool ^ B_bool;
-    bool expected_carry_bool = A_bool & B_bool;
+    std::cout << "Input (ap_uint<8>): A=" << A_apuint8.to_uint() << ", B=" << B_apuint8.to_uint() << std::endl;
+    std::cout << "Sum: " << sum_result_apuint8 << std::endl;
+    std::cout << "Carry: " << carry_result_apuint8 << std::endl;
 
-    if (sum_result_bool == expected_sum_bool && carry_result_bool == expected_carry_bool) {
-        std::cout << "Test Passed for bool!" << std::endl;
+
+    ap_uint<8> expected_sum_apuint8 = A_apuint8 ^ B_apuint8;
+    ap_uint<8> expected_carry_apuint8 = A_apuint8 & B_apuint8;
+
+    if (sum_result_apuint8 == expected_sum_apuint8 && carry_result_apuint8 == expected_carry_apuint8) {
+        std::cout << "Test Passed for ap_uint<8>." << std::endl;
     } else {
-        std::cout << "Test Failed for bool!" << std::endl;
+        std::cout << "Test Failed for ap_uint<8>." << std::endl;
     }
-# 80 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Half_adder/tb_half_adder.cpp"
+
     return 0;
 }

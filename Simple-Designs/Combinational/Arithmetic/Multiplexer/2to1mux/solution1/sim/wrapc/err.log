@@ -1,0 +1,7 @@
+In file included from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Multiplexer/tb_mux.cpp:2:0:
+C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Multiplexer/mux.hpp:8:8: error: expected unqualified-id before string constant
+In file included from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Multiplexer/tb_mux.cpp:2:0:
+C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Multiplexer/mux.hpp:5:1: error: 'T' does not name a type
+ T mux(T data0, T data1, bool select);
+ ^
+make: *** [obj/tb_mux.cpp_pre.cpp.tb.o] Error 1

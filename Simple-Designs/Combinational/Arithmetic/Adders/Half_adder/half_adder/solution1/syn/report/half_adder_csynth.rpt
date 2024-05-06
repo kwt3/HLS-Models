@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'half_adder'
 ================================================================
-* Date:           Mon Apr 22 10:21:55 2024
+* Date:           Mon May  6 03:30:37 2024
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        half_adder
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  0.148 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  0.282 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -49,14 +49,14 @@
 |         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
 +---------------------+---------+------+---------+---------+-----+
 |DSP                  |        -|     -|        -|        -|    -|
-|Expression           |        -|     -|        0|        4|    -|
+|Expression           |        -|     -|        0|       16|    -|
 |FIFO                 |        -|     -|        -|        -|    -|
 |Instance             |        -|     -|        -|        -|    -|
 |Memory               |        -|     -|        -|        -|    -|
 |Multiplexer          |        -|     -|        -|        -|    -|
 |Register             |        -|     -|        -|        -|    -|
 +---------------------+---------+------+---------+---------+-----+
-|Total                |        0|     0|        0|        4|    0|
+|Total                |        0|     0|        0|       16|    0|
 +---------------------+---------+------+---------+---------+-----+
 |Available SLR        |     1344|  3072|   864000|   432000|  320|
 +---------------------+---------+------+---------+---------+-----+
@@ -84,10 +84,10 @@
     +--------------+----------+----+---+----+------------+------------+
     | Variable Name| Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +--------------+----------+----+---+----+------------+------------+
-    |carry         |       and|   0|  0|   2|           1|           1|
-    |sum           |       xor|   0|  0|   2|           1|           1|
+    |carry         |       and|   0|  0|   8|           8|           8|
+    |sum           |       xor|   0|  0|   8|           8|           8|
     +--------------+----------+----+---+----+------------+------------+
-    |Total         |          |   0|  0|   4|           2|           2|
+    |Total         |          |   0|  0|  16|          16|          16|
     +--------------+----------+----+---+----+------------+------------+
 
     * Multiplexer: 
@@ -102,18 +102,18 @@
 == Interface
 ================================================================
 * Summary: 
-+--------------+-----+-----+------------+------------------+--------------+
-|   RTL Ports  | Dir | Bits|  Protocol  |   Source Object  |    C Type    |
-+--------------+-----+-----+------------+------------------+--------------+
-|ap_start      |   in|    1|  ap_ctrl_hs|  half_adder<bool>|  return value|
-|ap_done       |  out|    1|  ap_ctrl_hs|  half_adder<bool>|  return value|
-|ap_idle       |  out|    1|  ap_ctrl_hs|  half_adder<bool>|  return value|
-|ap_ready      |  out|    1|  ap_ctrl_hs|  half_adder<bool>|  return value|
-|A             |   in|    1|     ap_none|                 A|        scalar|
-|B             |   in|    1|     ap_none|                 B|        scalar|
-|sum           |  out|    1|      ap_vld|               sum|       pointer|
-|sum_ap_vld    |  out|    1|      ap_vld|               sum|       pointer|
-|carry         |  out|    1|      ap_vld|             carry|       pointer|
-|carry_ap_vld  |  out|    1|      ap_vld|             carry|       pointer|
-+--------------+-----+-----+------------+------------------+--------------+
++--------------+-----+-----+------------+-------------------------+--------------+
+|   RTL Ports  | Dir | Bits|  Protocol  |      Source Object      |    C Type    |
++--------------+-----+-----+------------+-------------------------+--------------+
+|ap_start      |   in|    1|  ap_ctrl_hs|  half_adder<ap_uint<8> >|  return value|
+|ap_done       |  out|    1|  ap_ctrl_hs|  half_adder<ap_uint<8> >|  return value|
+|ap_idle       |  out|    1|  ap_ctrl_hs|  half_adder<ap_uint<8> >|  return value|
+|ap_ready      |  out|    1|  ap_ctrl_hs|  half_adder<ap_uint<8> >|  return value|
+|A             |   in|    8|     ap_none|                        A|        scalar|
+|B             |   in|    8|     ap_none|                        B|        scalar|
+|sum           |  out|    8|      ap_vld|                      sum|       pointer|
+|sum_ap_vld    |  out|    1|      ap_vld|                      sum|       pointer|
+|carry         |  out|    8|      ap_vld|                    carry|       pointer|
+|carry_ap_vld  |  out|    1|      ap_vld|                    carry|       pointer|
++--------------+-----+-----+------------+-------------------------+--------------+
 

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'full_adder'
 ================================================================
-* Date:           Mon Apr  8 10:10:45 2024
+* Date:           Mon May  6 10:21:56 2024
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        full_adder
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  0.296 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  0.578 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -49,14 +49,14 @@
 |         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
 +---------------------+---------+------+---------+---------+-----+
 |DSP                  |        -|     -|        -|        -|    -|
-|Expression           |        -|     -|        0|       10|    -|
+|Expression           |        -|     -|        0|      160|    -|
 |FIFO                 |        -|     -|        -|        -|    -|
 |Instance             |        -|     -|        -|        -|    -|
 |Memory               |        -|     -|        -|        -|    -|
 |Multiplexer          |        -|     -|        -|        -|    -|
 |Register             |        -|     -|        -|        -|    -|
 +---------------------+---------+------+---------+---------+-----+
-|Total                |        0|     0|        0|       10|    0|
+|Total                |        0|     0|        0|      160|    0|
 +---------------------+---------+------+---------+---------+-----+
 |Available SLR        |     1344|  3072|   864000|   432000|  320|
 +---------------------+---------+------+---------+---------+-----+
@@ -84,13 +84,13 @@
     +--------------+----------+----+---+----+------------+------------+
     | Variable Name| Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +--------------+----------+----+---+----+------------+------------+
-    |s1_fu_68_p2   |       and|   0|  0|   2|           1|           1|
-    |sum           |       and|   0|  0|   2|           1|           1|
-    |carry         |        or|   0|  0|   2|           1|           1|
-    |c1_fu_62_p2   |       xor|   0|  0|   2|           1|           1|
-    |c2_fu_74_p2   |       xor|   0|  0|   2|           1|           1|
+    |c1_fu_68_p2   |       and|   0|  0|  32|          32|          32|
+    |c2_fu_81_p2   |       and|   0|  0|  32|          32|          32|
+    |carry         |        or|   0|  0|  32|          32|          32|
+    |s1_fu_62_p2   |       xor|   0|  0|  32|          32|          32|
+    |sum           |       xor|   0|  0|  32|          32|          32|
     +--------------+----------+----+---+----+------------+------------+
-    |Total         |          |   0|  0|  10|           5|           5|
+    |Total         |          |   0|  0| 160|         160|         160|
     +--------------+----------+----+---+----+------------+------------+
 
     * Multiplexer: 
@@ -105,19 +105,19 @@
 == Interface
 ================================================================
 * Summary: 
-+--------------+-----+-----+------------+------------------+--------------+
-|   RTL Ports  | Dir | Bits|  Protocol  |   Source Object  |    C Type    |
-+--------------+-----+-----+------------+------------------+--------------+
-|ap_start      |   in|    1|  ap_ctrl_hs|  full_adder<bool>|  return value|
-|ap_done       |  out|    1|  ap_ctrl_hs|  full_adder<bool>|  return value|
-|ap_idle       |  out|    1|  ap_ctrl_hs|  full_adder<bool>|  return value|
-|ap_ready      |  out|    1|  ap_ctrl_hs|  full_adder<bool>|  return value|
-|A             |   in|    1|     ap_none|                 A|        scalar|
-|B             |   in|    1|     ap_none|                 B|        scalar|
-|C_In          |   in|    1|     ap_none|              C_In|        scalar|
-|sum           |  out|    1|      ap_vld|               sum|       pointer|
-|sum_ap_vld    |  out|    1|      ap_vld|               sum|       pointer|
-|carry         |  out|    1|      ap_vld|             carry|       pointer|
-|carry_ap_vld  |  out|    1|      ap_vld|             carry|       pointer|
-+--------------+-----+-----+------------+------------------+--------------+
++--------------+-----+-----+------------+-----------------+--------------+
+|   RTL Ports  | Dir | Bits|  Protocol  |  Source Object  |    C Type    |
++--------------+-----+-----+------------+-----------------+--------------+
+|ap_start      |   in|    1|  ap_ctrl_hs|  full_adder<int>|  return value|
+|ap_done       |  out|    1|  ap_ctrl_hs|  full_adder<int>|  return value|
+|ap_idle       |  out|    1|  ap_ctrl_hs|  full_adder<int>|  return value|
+|ap_ready      |  out|    1|  ap_ctrl_hs|  full_adder<int>|  return value|
+|A             |   in|   32|     ap_none|                A|        scalar|
+|B             |   in|   32|     ap_none|                B|        scalar|
+|C_In          |   in|   32|     ap_none|             C_In|        scalar|
+|sum           |  out|   32|      ap_vld|              sum|       pointer|
+|sum_ap_vld    |  out|    1|      ap_vld|              sum|       pointer|
+|carry         |  out|   32|      ap_vld|            carry|       pointer|
+|carry_ap_vld  |  out|    1|      ap_vld|            carry|       pointer|
++--------------+-----+-----+------------+-----------------+--------------+
 

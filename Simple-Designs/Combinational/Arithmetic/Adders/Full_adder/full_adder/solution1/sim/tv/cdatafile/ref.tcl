@@ -5,4 +5,4 @@ set depth_list {
   {carry 1}
   {sum 1}
 }
-set trans_num 4
+set trans_num 1

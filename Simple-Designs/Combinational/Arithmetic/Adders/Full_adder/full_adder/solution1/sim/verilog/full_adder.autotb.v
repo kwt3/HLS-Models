@@ -34,7 +34,7 @@
 `define AUTOTB_TVOUT_carry_out_wrapc  "../tv/rtldatafile/rtl.full_adder.autotvout_carry.dat"
 module `AUTOTB_TOP;
 
-parameter AUTOTB_TRANSACTION_NUM = 4;
+parameter AUTOTB_TRANSACTION_NUM = 1;
 parameter PROGRESS_TIMEOUT = 10000000;
 parameter LATENCY_ESTIMATION = 0;
 parameter LENGTH_A = 1;
@@ -76,12 +76,12 @@ wire ap_start;
 wire ap_done;
 wire ap_idle;
 wire ap_ready;
-wire [0 : 0] A;
-wire [0 : 0] B;
-wire [0 : 0] C_In;
-wire [0 : 0] sum;
+wire [31 : 0] A;
+wire [31 : 0] B;
+wire [31 : 0] C_In;
+wire [31 : 0] sum;
 wire  sum_ap_vld;
-wire [0 : 0] carry;
+wire [31 : 0] carry;
 wire  carry_ap_vld;
 integer done_cnt = 0;
 integer AESL_ready_cnt = 0;
@@ -136,7 +136,7 @@ assign AESL_continue = tb_continue;
         end
     end
 // The signal of port A
-reg [0: 0] AESL_REG_A = 0;
+reg [31: 0] AESL_REG_A = 0;
 assign A = AESL_REG_A;
 initial begin : read_file_process_A
     integer fp;
@@ -190,7 +190,7 @@ end
 
 
 // The signal of port B
-reg [0: 0] AESL_REG_B = 0;
+reg [31: 0] AESL_REG_B = 0;
 assign B = AESL_REG_B;
 initial begin : read_file_process_B
     integer fp;
@@ -244,7 +244,7 @@ end
 
 
 // The signal of port C_In
-reg [0: 0] AESL_REG_C_In = 0;
+reg [31: 0] AESL_REG_C_In = 0;
 assign C_In = AESL_REG_C_In;
 initial begin : read_file_process_C_In
     integer fp;
@@ -299,7 +299,7 @@ end
 
 reg AESL_REG_sum_ap_vld = 0;
 // The signal of port sum
-reg [0: 0] AESL_REG_sum = 0;
+reg [31: 0] AESL_REG_sum = 0;
 always @(posedge AESL_clock)
 begin
     if(AESL_reset)
@@ -352,7 +352,7 @@ end
 
 reg AESL_REG_carry_ap_vld = 0;
 // The signal of port carry
-reg [0: 0] AESL_REG_carry = 0;
+reg [31: 0] AESL_REG_carry = 0;
 always @(posedge AESL_clock)
 begin
     if(AESL_reset)

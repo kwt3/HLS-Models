@@ -1,0 +1,11 @@
+{
+    "0": {
+        "name": "encoder<bool>",
+        "file": "encoder.cpp",
+        "fileloc": "12",
+        "instructions": "5",
+        "total_instructions": "5",
+        "calls": "",
+        "basicblocks": "1"
+    }
+}

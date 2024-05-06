@@ -2,6 +2,5 @@
    Compiling full_adder.cpp_pre.cpp.tb.cpp
    Compiling tb_full_adder.cpp_pre.cpp.tb.cpp
    Compiling apatb_full_adder.cpp
-   Compiling hafl_adder.cpp_pre.cpp.tb.cpp
    Compiling apatb_full_adder_ir.ll
    Generating cosim.tv.exe

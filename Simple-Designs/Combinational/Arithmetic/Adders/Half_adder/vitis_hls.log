@@ -1,5 +1,5 @@
 INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/win64.o/vitis_hls.exe'
-INFO: [HLS 200-10] For user 'kwokt' on host 'billy' (Windows NT_amd64 version 6.2) on Mon Apr 22 10:22:01 -0400 2024
+INFO: [HLS 200-10] For user 'kwokt' on host 'billy' (Windows NT_amd64 version 6.2) on Mon May 06 03:30:44 -0400 2024
 INFO: [HLS 200-10] In directory 'C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Half_adder'
 INFO: [HLS 200-2053] The vitis_hls executable is being deprecated. Consider using vitis-run --mode hls --tcl
 Sourcing Tcl script 'C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Half_adder/half_adder/solution1/cosim.tcl'
@@ -35,10 +35,10 @@ INFO: [COSIM 212-14] Instrumenting C test bench ...
    Compiling apatb_half_adder_ir.ll
    Generating cosim.tv.exe
 INFO: [COSIM 212-302] Starting C TB testing ... 
-Input (bool): A=1, B=0
-Sum: 1
-Carry: 0
-Test Passed for bool!
+Input (ap_uint<8>): A=5, B=3
+Sum: 6
+Carry: 1
+Test Passed for ap_uint<8>.
 INFO: [COSIM 212-333] Generating C post check test bench ...
 INFO: [COSIM 212-12] Generating RTL test bench ...
 INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
@@ -98,13 +98,13 @@ source half_adder.tcl
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 205 ns : File "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Half_adder/half_adder/solution1/sim/verilog/half_adder.autotb.v" Line 396
 ## quit
-INFO: [Common 17-206] Exiting xsim at Mon Apr 22 10:22:17 2024...
+INFO: [Common 17-206] Exiting xsim at Mon May  6 03:31:01 2024...
 INFO: [COSIM 212-316] Starting C post checking ...
-Input (bool): A=1, B=0
-Sum: 1
-Carry: 0
-Test Passed for bool!
+Input (ap_uint<8>): A=5, B=3
+Sum: 6
+Carry: 1
+Test Passed for ap_uint<8>.
 INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
 INFO: [COSIM 212-210] Design is translated to an combinational logic. II and Latency will be marked as all 0.
-INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 13.924 seconds; current allocated memory: 10.730 MB.
-INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 16.286 seconds; peak allocated memory: 204.047 MB.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 15.659 seconds; current allocated memory: 10.801 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 18.361 seconds; peak allocated memory: 204.559 MB.

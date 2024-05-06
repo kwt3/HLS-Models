@@ -80,7 +80,3 @@ $(ObjDir)/tb_full_adder.cpp_pre.cpp.tb.o : tb_full_adder.cpp_pre.cpp.tb.cpp $(Ob
 $(ObjDir)/full_adder.cpp_pre.cpp.tb.o : full_adder.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling full_adder.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
 	$(Verb) $(CC) ${CCFLAG} ${TOOLCHAIN}  -fno-builtin-isinf -fno-builtin-isnan -c  $(IFLAG) $(DFLAG) $< -o $@; \
-
-$(ObjDir)/hafl_adder.cpp_pre.cpp.tb.o : hafl_adder.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling hafl_adder.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
-	$(Verb) $(CC) ${CCFLAG} ${TOOLCHAIN}  -fno-builtin-isinf -fno-builtin-isnan -c  $(IFLAG) $(DFLAG) $< -o $@; \

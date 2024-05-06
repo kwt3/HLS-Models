@@ -5,7 +5,7 @@
     "file": "half_adder.cpp",
     "fileloc": 6,
     "instructions": 16,
-    "name": "half_adder<bool>",
+    "name": "half_adder<ap_uint<8> >",
     "stores": {
       "T": 2
     },

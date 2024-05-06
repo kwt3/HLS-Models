@@ -19,7 +19,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_A \
     op interface \
-    ports { A { I 1 vector } } \
+    ports { A { I 8 vector } } \
 } "
 }
 
@@ -34,7 +34,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_B \
     op interface \
-    ports { B { I 1 vector } } \
+    ports { B { I 8 vector } } \
 } "
 }
 
@@ -49,7 +49,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_sum \
     op interface \
-    ports { sum { O 1 vector } sum_ap_vld { O 1 bit } } \
+    ports { sum { O 8 vector } sum_ap_vld { O 1 bit } } \
 } "
 }
 
@@ -64,7 +64,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_carry \
     op interface \
-    ports { carry { O 1 vector } carry_ap_vld { O 1 bit } } \
+    ports { carry { O 8 vector } carry_ap_vld { O 1 bit } } \
 } "
 }
 

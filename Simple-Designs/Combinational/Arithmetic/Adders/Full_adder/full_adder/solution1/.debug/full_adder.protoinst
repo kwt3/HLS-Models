@@ -1,9 +1,9 @@
 {
 	"version": "1.0",
 	"modules": {
-		"full_adder<bool>": {
+		"full_adder<int>": {
 			"proto_instances": {
-				"/AESL_inst_full_adder<bool>_activity": {
+				"/AESL_inst_full_adder<int>_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},

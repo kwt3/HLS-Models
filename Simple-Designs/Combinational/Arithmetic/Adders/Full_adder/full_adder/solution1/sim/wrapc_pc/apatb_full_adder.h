@@ -7,8 +7,8 @@
 // ==============================================================
 
 extern "C" void AESL_WRAP_full_adder (
-char A,
-char B,
-char C_In,
+int A,
+int B,
+int C_In,
 volatile void* sum,
 volatile void* carry);

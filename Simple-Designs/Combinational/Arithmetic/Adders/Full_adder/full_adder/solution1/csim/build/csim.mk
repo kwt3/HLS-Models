@@ -19,7 +19,7 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../../tb_full_adder.cpp ../../../../full_adder.cpp ../../../../hafl_adder.cpp
+HLS_SOURCES = ../../../../tb_full_adder.cpp ../../../../full_adder.cpp
 
 override TARGET := csim.exe
 
@@ -86,9 +86,3 @@ $(ObjDir)/full_adder.o: ../../../../full_adder.cpp $(ObjDir)/.dir
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/full_adder.d
-
-$(ObjDir)/hafl_adder.o: ../../../../hafl_adder.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../hafl_adder.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/hafl_adder.d
