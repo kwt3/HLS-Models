@@ -2,5 +2,6 @@
 
 Implementation of a half adder, a fundamental digital circuit that adds two bits without considering any carry-in, producing a sum and carry-out. This design showcases basic logic operations such as XOR and AND, fundamental to understanding digital arithmetic and circuit design
 
-## Edit
-Work-in-progress. Test case int needed.
+## Test cases
+
+Include cases for bool, ap_int<8>, & ap_uint<8>. Test case int needed.
