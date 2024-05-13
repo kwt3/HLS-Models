@@ -32,6 +32,12 @@ YUV RGB Stream: https://github.com/koderchina/YUV_HLS
 
 ## Machine Learning Acceleration
 
+https://github.com/cornell-zhang/rosetta
+
+https://github.com/breagen/MachSuite
+
+https://github.com/MatthiasJReisinger/PolyBenchC-4.2.1
+
 HLSFactory: https://github.com/sharc-lab/HLSFactory
 
 apfp: https://github.com/spcl/apfp
