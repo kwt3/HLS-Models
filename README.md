@@ -34,24 +34,24 @@ YUV RGB Stream: https://github.com/koderchina/YUV_HLS
 
 PolyBench: https://github.com/MatthiasJReisinger/PolyBenchC-4.2.1
 
-CHStone
+CHStone: https://github.com/ferrandi/CHStone
 
 MachSuite: https://github.com/breagen/MachSuite
+
+Kastner's et al.’s Parallel Programming for FPGAs: https://github.com/KastnerRG/hls4ml-accum-opt
 
 
 ## Datasets (Intel/AMD)
 
 Rosetta: https://github.com/cornell-zhang/rosetta
 
-Dai:
-
 MLSBench:
 
-DB4HLS:
+DB4HLS: https://github.com/lorenzoferretti/db4hls
 
-HLSDataset:
+HLSDataset: https://github.com/UT-LCA/ML4Accel-Dataset
 
-Spector:
+Spector: https://github.com/KastnerRG/spector
 
 
 ## Machine Learning Acceleration
@@ -80,6 +80,7 @@ Convolutional Layer HLS: https://github.com/rabbitdeng/conv_accelerator_HLS
 
 
 ## Matrix Multiplication
+
 PYNQ Vectorized Matrix Multiplier: https://github.com/nick-nuti/PYNQ-Vectorized-Matrix-Multiplier
 
 Matrix Multiplication: https://github.com/wickedb/matmult_hls
