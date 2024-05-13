@@ -1,3 +1,3 @@
 #  RISC-V Resources
 
-Bridge of Life Education: https://www.boledu.org/
+Comet: HLS RISC-V by LK Lin https://www.boledu.org/
