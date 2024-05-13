@@ -32,6 +32,8 @@ YUV RGB Stream: https://github.com/koderchina/YUV_HLS
 
 ## Machine Learning Acceleration
 
+HLSFactory: https://github.com/sharc-lab/HLSFactory
+
 apfp: https://github.com/spcl/apfp
 
 DeepPoint V2 FPGA: https://github.com/salehjg/DeepPoint-V2-FPGA
