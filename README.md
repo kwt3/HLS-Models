@@ -47,7 +47,7 @@ Kastner's et al.’s Parallel Programming for FPGAs: https://github.com/KastnerR
 
 Rosetta: https://github.com/cornell-zhang/rosetta
 
-MLSBench:
+MLSBench: https://personal.utdallas.edu/~dinesh/Data/MLSBench/
 
 DB4HLS: https://github.com/lorenzoferretti/db4hls
 
