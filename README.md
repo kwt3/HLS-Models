@@ -12,6 +12,8 @@ Comet: https://gitlab.inria.fr/srokicki/Comet
 
 RISC-V in Vitis HLS: https://github.com/anjn/vhls-riscv
 
+HL5: https://github.com/sld-columbia/hl5
+
 ## NoC
 
 HLS_ NoC: https://github.com/zhipengzhaocmu/HLS_NoC
