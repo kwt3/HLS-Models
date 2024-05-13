@@ -30,13 +30,31 @@ HLS Sobel Filter: https://github.com/millertheripper/hls_sobel_axi_stream
 
 YUV RGB Stream: https://github.com/koderchina/YUV_HLS
 
+## Frameworks for ML Training
+
+PolyBench: https://github.com/MatthiasJReisinger/PolyBenchC-4.2.1
+
+CHStone
+
+MachSuite: https://github.com/breagen/MachSuite
+
+
+## Datasets (Intel/AMD)
+
+Rosetta: https://github.com/cornell-zhang/rosetta
+
+Dai:
+
+MLSBench:
+
+DB4HLS:
+
+HLSDataset:
+
+Spector:
+
+
 ## Machine Learning Acceleration
-
-https://github.com/cornell-zhang/rosetta
-
-https://github.com/breagen/MachSuite
-
-https://github.com/MatthiasJReisinger/PolyBenchC-4.2.1
 
 HLSFactory: https://github.com/sharc-lab/HLSFactory
 
