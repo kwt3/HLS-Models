@@ -32,7 +32,7 @@ HLS Sobel Filter: https://github.com/millertheripper/hls_sobel_axi_stream
 
 YUV RGB Stream: https://github.com/koderchina/YUV_HLS
 
-## Frameworks for ML Training
+## Benchmarks for ML Training
 
 PolyBench: https://github.com/MatthiasJReisinger/PolyBenchC-4.2.1
 
