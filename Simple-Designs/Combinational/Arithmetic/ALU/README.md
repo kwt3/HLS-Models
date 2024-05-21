@@ -1,6 +1,6 @@
 # Simple ALU
 
-Implementation of an ALU half adder-subtractor, a digital circuit enabling addition and subtraction of binary numbers. This design incorporates fundamental logic operations, including XOR and AND, to compute sum and carry outputs. Understanding the Half Adder Subtractor is essential for mastering digital arithmetic and sequential logic circuits.
+Implementation of a simple ALU, a digital circuit enabling addition and subtraction of binary numbers. This design incorporates fundamental logic operations, including XOR and AND, to compute sum and carry outputs. Understanding the Half Adder Subtractor is essential for mastering digital arithmetic and sequential logic circuits.
 
 
 ## Header File
