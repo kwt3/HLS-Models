@@ -5,6 +5,11 @@
                 <option name="name" value="half_adder"/>
             </pragma>
         </directive>
+        <directive functionName="half_adder" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="half_adder"/>
+            </pragma>
+        </directive>
     </sourceFile>
 </AutoPilot:ProjectResources>
 

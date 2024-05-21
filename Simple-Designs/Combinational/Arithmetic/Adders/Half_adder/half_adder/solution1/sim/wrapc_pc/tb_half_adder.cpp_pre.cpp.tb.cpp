@@ -55402,7 +55402,7 @@ inline bool operator!=(
 #ifdef __cplusplus
 extern "C"
 #endif
-void apatb_half_adder_sw(ap_uint<8>, ap_uint<8>, ap_uint<8> &, ap_uint<8> &);
+void apatb_half_adder_sw(ap_int<8>, ap_int<8>, ap_int<8> &, ap_int<8> &);
 #endif
 # 6 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Half_adder/half_adder.hpp"
 template <typename T>
@@ -55410,51 +55410,52 @@ void half_adder(T A, T B, T& sum, T& carry);
 # 3 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Half_adder/tb_half_adder.cpp" 2
 # 1 "C:/Xilinx/Vitis_HLS/2023.2/include/ap_int.h" 1
 # 4 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Half_adder/tb_half_adder.cpp" 2
-# 15 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Half_adder/tb_half_adder.cpp"
-std::ostream& operator<<(std::ostream& os, const ap_uint<8>& val) {
-    os << static_cast<unsigned int>(val);
-    return os;
+
+
+std::ostream& operator<<(std::ostream& os, const ap_int<8>& val) {
+
+ os << static_cast<int>(val);
+ return os;
 }
-
-
+# 20 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Half_adder/tb_half_adder.cpp"
 
 #ifndef HLS_FASTSIM
-# 21 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Half_adder/tb_half_adder.cpp"
+# 20 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Half_adder/tb_half_adder.cpp"
 int main() {
-# 79 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Half_adder/tb_half_adder.cpp"
-    ap_uint<8> A_apuint8 = 5;
-    ap_uint<8> B_apuint8 = 3;
-    ap_uint<8> sum_result_apuint8 = 0;
-    ap_uint<8> carry_result_apuint8 = 0;
+# 47 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Half_adder/tb_half_adder.cpp"
+    ap_int<8> A_apint8 = 5;
+    ap_int<8> B_apint8 = 3;
+    ap_int<8> sum_result_apint8 = 0;
+    ap_int<8> carry_result_apint8 = 0;
 
 
     
 #ifndef HLS_FASTSIM
 #define half_adder apatb_half_adder_sw
 #endif
-# 85 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Half_adder/tb_half_adder.cpp"
-half_adder(A_apuint8, B_apuint8, sum_result_apuint8, carry_result_apuint8);
+# 53 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Half_adder/tb_half_adder.cpp"
+half_adder(A_apint8, B_apint8, sum_result_apint8, carry_result_apint8);
 #undef half_adder
-# 85 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Half_adder/tb_half_adder.cpp"
+# 53 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Half_adder/tb_half_adder.cpp"
 
 
 
-    std::cout << "Input (ap_uint<8>): A=" << A_apuint8.to_uint() << ", B=" << B_apuint8.to_uint() << std::endl;
-    std::cout << "Sum: " << sum_result_apuint8 << std::endl;
-    std::cout << "Carry: " << carry_result_apuint8 << std::endl;
+    std::cout << "Input (ap_int<8>): A=" << A_apint8 << ", B=" << B_apint8 << std::endl;
+    std::cout << "Sum: " << sum_result_apint8 << std::endl;
+    std::cout << "Carry: " << carry_result_apint8 << std::endl;
 
 
-    ap_uint<8> expected_sum_apuint8 = A_apuint8 ^ B_apuint8;
-    ap_uint<8> expected_carry_apuint8 = A_apuint8 & B_apuint8;
+    ap_int<8> expected_sum_apint8 = A_apint8 ^ B_apint8;
+    ap_int<8> expected_carry_apint8 = A_apint8 & B_apint8;
 
-    if (sum_result_apuint8 == expected_sum_apuint8 && carry_result_apuint8 == expected_carry_apuint8) {
-        std::cout << "Test Passed for ap_uint<8>." << std::endl;
+    if (sum_result_apint8 == expected_sum_apint8 && carry_result_apint8 == expected_carry_apint8) {
+        std::cout << "Test Passed for ap_int<8>." << std::endl;
     } else {
-        std::cout << "Test Failed for ap_uint<8>." << std::endl;
+        std::cout << "Test Failed for ap_int<8>." << std::endl;
     }
-
+# 95 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Half_adder/tb_half_adder.cpp"
     return 0;
 }
 #endif
-# 103 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Half_adder/tb_half_adder.cpp"
+# 96 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Half_adder/tb_half_adder.cpp"
 

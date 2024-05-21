@@ -1,0 +1,47 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'kwokt' on host 'billy' (Windows NT_amd64 version 6.2) on Mon May 13 09:47:08 -0400 2024
+INFO: [HLS 200-10] In directory 'C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/ALU/alu_half_adder'
+INFO: [HLS 200-2053] The vitis_hls executable is being deprecated. Consider using vitis-run --mode hls --tcl
+Sourcing Tcl script 'C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/ALU/alu_half_adder/alu_ap_uint_16bit/solution1/csim.tcl'
+INFO: [HLS 200-1510] Running: source C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/ALU/alu_half_adder/alu_ap_uint_16bit/solution1/csim.tcl
+INFO: [HLS 200-1510] Running: open_project alu_ap_uint_16bit 
+INFO: [HLS 200-10] Opening project 'C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/ALU/alu_half_adder/alu_ap_uint_16bit'.
+INFO: [HLS 200-1510] Running: set_top half_add_sub 
+INFO: [HLS 200-1510] Running: add_files alu_ap_uint_16bit.cpp 
+WARNING: [HLS 200-40] Cannot find design file 'alu_ap_uint_16bit.cpp'
+INFO: [HLS 200-1510] Running: add_files alu_ap_uint_16bit/alu_half_add_sub.hpp 
+INFO: [HLS 200-10] Adding design file 'alu_ap_uint_16bit/alu_half_add_sub.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb alu_ap_uint_16bit/tb_ap_uint_16bit.cpp 
+INFO: [HLS 200-10] Adding test bench file 'alu_ap_uint_16bit/tb_ap_uint_16bit.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/ALU/alu_half_adder/alu_ap_uint_16bit/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: source ./alu_ap_uint_16bit/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name half_add_sub half_add_sub 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+make: *** No rule to make target '../../../../tb_ap_uint_16bit.cpp', needed by 'obj/tb_ap_uint_16bit.o'.  Stop.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.18 seconds; current allocated memory: 0.336 MB.
+4
+    while executing
+"source C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/ALU/alu_half_adder/alu_ap_uint_16bit/solution1/csim.tcl"
+    invoked from within
+"hls::main C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/ALU/alu_half_adder/alu_ap_uint_16bit/solution1/csim.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$newargs"
+    (procedure "hls_proc" line 16)
+    invoked from within
+"hls_proc [info nameofexecutable] $argv"
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 4.517 seconds; peak allocated memory: 199.047 MB.

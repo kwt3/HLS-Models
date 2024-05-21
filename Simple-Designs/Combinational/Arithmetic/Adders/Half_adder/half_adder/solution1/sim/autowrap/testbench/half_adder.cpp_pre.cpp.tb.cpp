@@ -55409,17 +55409,17 @@ void half_adder(T A, T B, T& sum, T& carry){
     carry = A & B;
 }
 #ifndef HLS_FASTSIM
-struct __cosim_s1__{char data[sizeof(ap_uint<8>)];};
-struct __cosim_s2__{char data[sizeof(ap_uint<8>)];};
+struct __cosim_s1__{char data[sizeof(ap_int<8>)];};
+struct __cosim_s2__{char data[sizeof(ap_int<8>)];};
 #ifdef __cplusplus
 extern "C"
 #endif
-void apatb_half_adder_ir(struct __cosim_s1__*, struct __cosim_s2__*, ap_uint<8> &, ap_uint<8> &);
+void apatb_half_adder_ir(struct __cosim_s1__*, struct __cosim_s2__*, ap_int<8> &, ap_int<8> &);
 #ifdef __cplusplus
 extern "C"
 #endif
-void half_adder_hw_stub(struct __cosim_s1__* A, struct __cosim_s2__* B, ap_uint<8> &sum, ap_uint<8> &carry){
-half_adder(*((ap_uint<8>*)A), *((ap_uint<8>*)B), sum, carry);
+void half_adder_hw_stub(struct __cosim_s1__* A, struct __cosim_s2__* B, ap_int<8> &sum, ap_int<8> &carry){
+half_adder(*((ap_int<8>*)A), *((ap_int<8>*)B), sum, carry);
 return ;
 }
 #ifdef __cplusplus
@@ -55429,7 +55429,7 @@ void refine_signal_handler();
 #ifdef __cplusplus
 extern "C"
 #endif
-void apatb_half_adder_sw(ap_uint<8> A, ap_uint<8> B, ap_uint<8> &sum, ap_uint<8> &carry){
+void apatb_half_adder_sw(ap_int<8> A, ap_int<8> B, ap_int<8> &sum, ap_int<8> &carry){
 refine_signal_handler();
 apatb_half_adder_ir(((struct __cosim_s1__*)&A), ((struct __cosim_s2__*)&B), sum, carry);
 return ;
@@ -55437,5 +55437,9 @@ return ;
 #endif
 # 9 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Half_adder/half_adder.cpp"
 
-# 18 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Half_adder/half_adder.cpp"
-template void half_adder<ap_uint<8>>(ap_uint<8> A, ap_uint<8> B, ap_uint<8>& sum, ap_uint<8>& carry);
+
+
+
+
+
+template void half_adder<ap_int<8>>(ap_int<8> A, ap_int<8> B, ap_int<8>& sum, ap_int<8>& carry);

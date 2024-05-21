@@ -1,7 +1,7 @@
-Input (ap_uint<8>): A=5, B=3
+Input (ap_int<8>): A=5, B=3
 Sum: 6
 Carry: 1
-Test Passed for ap_uint<8>.
+Test Passed for ap_int<8>.
 
 C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Half_adder\half_adder\solution1\sim\verilog>set PATH= 
 
@@ -56,8 +56,8 @@ source half_adder.tcl
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 205 ns : File "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Half_adder/half_adder/solution1/sim/verilog/half_adder.autotb.v" Line 396
 ## quit
-INFO: [Common 17-206] Exiting xsim at Mon May  6 03:31:01 2024...
-Input (ap_uint<8>): A=5, B=3
+INFO: [Common 17-206] Exiting xsim at Mon May 13 01:29:44 2024...
+Input (ap_int<8>): A=5, B=3
 Sum: 6
 Carry: 1
-Test Passed for ap_uint<8>.
+Test Passed for ap_int<8>.

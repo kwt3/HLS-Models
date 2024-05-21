@@ -1,0 +1,14 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "full_adder.cpp",
+    "fileloc": 5,
+    "instructions": 19,
+    "name": "full_adder<int>",
+    "stores": {
+      "T": 2
+    },
+    "total_instructions": 19
+  }
+}

@@ -1,0 +1,128 @@
+
+
+================================================================
+== Vitis HLS Report for 'full_adder'
+================================================================
+* Date:           Mon May 13 00:52:17 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        full_adder
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu11p-flga2577-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  0.578 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.57>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%spectopmodule_ln5 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.cpp:5]   --->   Operation 2 'spectopmodule' 'spectopmodule_ln5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %A"   --->   Operation 3 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %A, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 4 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %B"   --->   Operation 5 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %B, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 6 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %C_In"   --->   Operation 7 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %C_In, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %sum"   --->   Operation 9 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %sum, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %carry"   --->   Operation 11 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %carry, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%C_In_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %C_In" [C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.cpp:5]   --->   Operation 13 'read' 'C_In_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%B_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %B" [C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.cpp:5]   --->   Operation 14 'read' 'B_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%A_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A" [C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.cpp:5]   --->   Operation 15 'read' 'A_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.28ns)   --->   "%s1 = xor i32 %B_read, i32 %A_read" [C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.cpp:7]   --->   Operation 16 'xor' 's1' <Predicate = true> <Delay = 0.28> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 17 [1/1] (0.00ns) (grouped into LUT with out node or_ln15)   --->   "%c1 = and i32 %B_read, i32 %A_read" [C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.cpp:8]   --->   Operation 17 'and' 'c1' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 18 [1/1] (0.28ns)   --->   "%xor_ln11 = xor i32 %s1, i32 %C_In_read" [C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.cpp:11]   --->   Operation 18 'xor' 'xor_ln11' <Predicate = true> <Delay = 0.28> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%write_ln11 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %sum, i32 %xor_ln11" [C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.cpp:11]   --->   Operation 19 'write' 'write_ln11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns) (grouped into LUT with out node or_ln15)   --->   "%c2 = and i32 %s1, i32 %C_In_read" [C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.cpp:12]   --->   Operation 20 'and' 'c2' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 21 [1/1] (0.28ns) (out node of the LUT)   --->   "%or_ln15 = or i32 %c2, i32 %c1" [C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.cpp:15]   --->   Operation 21 'or' 'or_ln15' <Predicate = true> <Delay = 0.28> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%write_ln15 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %carry, i32 %or_ln15" [C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.cpp:15]   --->   Operation 22 'write' 'write_ln15' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%ret_ln16 = ret" [C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.cpp:16]   --->   Operation 23 'ret' 'ret_ln16' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.578ns
+The critical path consists of the following:
+	wire read operation ('B', C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.cpp:5) on port 'B' (C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.cpp:5) [18]  (0.000 ns)
+	'xor' operation 32 bit ('s1', C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.cpp:7) [20]  (0.289 ns)
+	'xor' operation 32 bit ('xor_ln11', C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.cpp:11) [22]  (0.289 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
