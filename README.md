@@ -12,6 +12,8 @@ Comet: https://gitlab.inria.fr/srokicki/Comet
 
 RISC-V in Vitis HLS: https://github.com/anjn/vhls-riscv
 
+HL5: https://github.com/sld-columbia/hl5
+
 ## NoC
 
 HLS_ NoC: https://github.com/zhipengzhaocmu/HLS_NoC
@@ -30,7 +32,33 @@ HLS Sobel Filter: https://github.com/millertheripper/hls_sobel_axi_stream
 
 YUV RGB Stream: https://github.com/koderchina/YUV_HLS
 
+## Benchmarks for ML Training
+
+PolyBench: https://github.com/MatthiasJReisinger/PolyBenchC-4.2.1
+
+CHStone: https://github.com/ferrandi/CHStone
+
+MachSuite: https://github.com/breagen/MachSuite
+
+Kastner's et al.’s Parallel Programming for FPGAs: https://github.com/KastnerRG/hls4ml-accum-opt
+
+
+## Datasets (Intel/AMD)
+
+Rosetta: https://github.com/cornell-zhang/rosetta
+
+MLSBench: https://personal.utdallas.edu/~dinesh/Data/MLSBench/
+
+DB4HLS: https://github.com/lorenzoferretti/db4hls
+
+HLSDataset: https://github.com/UT-LCA/ML4Accel-Dataset
+
+Spector: https://github.com/KastnerRG/spector
+
+
 ## Machine Learning Acceleration
+
+HLSFactory: https://github.com/sharc-lab/HLSFactory
 
 apfp: https://github.com/spcl/apfp
 
@@ -54,6 +82,7 @@ Convolutional Layer HLS: https://github.com/rabbitdeng/conv_accelerator_HLS
 
 
 ## Matrix Multiplication
+
 PYNQ Vectorized Matrix Multiplier: https://github.com/nick-nuti/PYNQ-Vectorized-Matrix-Multiplier
 
 Matrix Multiplication: https://github.com/wickedb/matmult_hls
