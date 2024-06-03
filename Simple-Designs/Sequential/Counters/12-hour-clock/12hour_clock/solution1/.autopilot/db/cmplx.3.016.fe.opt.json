@@ -4,16 +4,15 @@
     "calls": "",
     "file": "clock.cpp",
     "fileloc": 3,
-    "instructions": 64,
+    "instructions": 75,
     "loads": {
-      "G": 8,
-      "T": 2
+      "G": 8
     },
     "name": "clock",
     "stores": {
       "G": 11,
-      "T": 4
+      "L": 4
     },
-    "total_instructions": 64
+    "total_instructions": 75
   }
 }

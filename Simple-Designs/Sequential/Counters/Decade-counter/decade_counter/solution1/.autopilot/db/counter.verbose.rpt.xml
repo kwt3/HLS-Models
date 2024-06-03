@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'counter'" level="0">
-<item name = "Date">Mon Mar 25 04:58:08 2024
+<item name = "Date">Mon Jun  3 00:26:32 2024
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">decade_counter</item>
@@ -79,8 +79,8 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln14_fu_69_p2">+, 0, 0, 12, 4, 1</column>
-<column name="icmp_ln11_fu_63_p2">icmp, 0, 0, 12, 4, 4</column>
+<column name="add_ln15_fu_69_p2">+, 0, 0, 12, 4, 1</column>
+<column name="icmp_ln12_fu_63_p2">icmp, 0, 0, 12, 4, 4</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">

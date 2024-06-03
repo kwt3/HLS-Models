@@ -12,7 +12,9 @@
   <warningLogs>
     <logs>
       <synLog/>
-      <simLog/>
+      <simLog>
+        <logs message="WARNING: [COSIM] found non-self-synchronizing top I/O reset" projectName="slow_decade_counter" solutionName="solution1" date="2024-06-03T00:37:38.732-0400" type="Warning"/>
+      </simLog>
       <mgLog/>
       <packageLog/>
       <csimLog/>

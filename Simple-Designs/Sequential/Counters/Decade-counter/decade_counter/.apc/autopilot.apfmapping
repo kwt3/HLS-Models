@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="decade-counter.cpp" path="C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\Decade-counter\decade-counter.cpp"/>
-    <originFiles name="decade-counter.hpp" path="C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\Decade-counter\decade-counter.hpp"/>
+    <originFiles name="decade-counter.cpp" path="C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\Decade-counter\decade-counter.cpp"/>
+    <originFiles name="decade-counter.hpp" path="C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\Decade-counter\decade-counter.hpp"/>
   </source>
   <testbench>
-    <originFiles name="tb-decade-counter.cpp" path="C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\Decade-counter\tb-decade-counter.cpp"/>
+    <originFiles name="tb-decade-counter.cpp" path="C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\Decade-counter\tb-decade-counter.cpp"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

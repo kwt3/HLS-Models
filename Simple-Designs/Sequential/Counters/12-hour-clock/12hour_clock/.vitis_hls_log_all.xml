@@ -12,7 +12,16 @@
   <warningLogs>
     <logs>
       <synLog/>
-      <simLog/>
+      <simLog>
+        <logs message="WARNING [HLS SIM]: hls::stream 'hls::stream&lt;ap_uint&lt;8>, 0>0' contains leftover data, which may result in RTL simulation hanging." projectName="12hour_clock" solutionName="solution1" date="2024-06-03T00:05:57.525-0400" type="Warning"/>
+        <logs message="WARNING [HLS SIM]: hls::stream 'hls::stream&lt;ap_uint&lt;8>, 0>1' contains leftover data, which may result in RTL simulation hanging." projectName="12hour_clock" solutionName="solution1" date="2024-06-03T00:05:57.490-0400" type="Warning"/>
+        <logs message="WARNING [HLS SIM]: hls::stream 'hls::stream&lt;ap_uint&lt;8>, 0>2' contains leftover data, which may result in RTL simulation hanging." projectName="12hour_clock" solutionName="solution1" date="2024-06-03T00:05:57.485-0400" type="Warning"/>
+        <logs message="WARNING [HLS SIM]: hls::stream 'hls::stream&lt;ap_uint&lt;1>, 0>0' contains leftover data, which may result in RTL simulation hanging." projectName="12hour_clock" solutionName="solution1" date="2024-06-03T00:05:57.475-0400" type="Warning"/>
+        <logs message="WARNING [HLS SIM]: hls::stream 'hls::stream&lt;ap_uint&lt;8>, 0>0' contains leftover data, which may result in RTL simulation hanging." projectName="12hour_clock" solutionName="solution1" date="2024-06-03T00:03:58.638-0400" type="Warning"/>
+        <logs message="WARNING [HLS SIM]: hls::stream 'hls::stream&lt;ap_uint&lt;8>, 0>1' contains leftover data, which may result in RTL simulation hanging." projectName="12hour_clock" solutionName="solution1" date="2024-06-03T00:03:58.623-0400" type="Warning"/>
+        <logs message="WARNING [HLS SIM]: hls::stream 'hls::stream&lt;ap_uint&lt;8>, 0>2' contains leftover data, which may result in RTL simulation hanging." projectName="12hour_clock" solutionName="solution1" date="2024-06-03T00:03:58.607-0400" type="Warning"/>
+        <logs message="WARNING [HLS SIM]: hls::stream 'hls::stream&lt;ap_uint&lt;1>, 0>0' contains leftover data, which may result in RTL simulation hanging." projectName="12hour_clock" solutionName="solution1" date="2024-06-03T00:03:58.592-0400" type="Warning"/>
+      </simLog>
       <mgLog/>
       <packageLog/>
       <csimLog/>

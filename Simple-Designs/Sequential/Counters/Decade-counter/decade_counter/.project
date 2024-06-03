@@ -29,47 +29,47 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Decade-counter/decade_counter/.apc/.src</location>
+			<location>C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Decade-counter/decade_counter/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Decade-counter/decade_counter/.apc/.tb</location>
+			<location>C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Decade-counter/decade_counter/.apc/.tb</location>
 		</link>
 		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
-			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Decade-counter/decade_counter/solution1/.tcls</location>
+			<location>C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Decade-counter/decade_counter/solution1/.tcls</location>
 		</link>
 		<link>
 			<name>source/decade-counter.cpp</name>
 			<type>1</type>
-			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Decade-counter/decade-counter.cpp</location>
+			<location>C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Decade-counter/decade-counter.cpp</location>
 		</link>
 		<link>
 			<name>source/decade-counter.hpp</name>
 			<type>1</type>
-			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Decade-counter/decade-counter.hpp</location>
+			<location>C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Decade-counter/decade-counter.hpp</location>
 		</link>
 		<link>
 			<name>testbench/tb-decade-counter.cpp</name>
 			<type>1</type>
-			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Decade-counter/tb-decade-counter.cpp</location>
+			<location>C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Decade-counter/tb-decade-counter.cpp</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Decade-counter/decade_counter/solution1/solution1.directive</location>
+			<location>C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Decade-counter/decade_counter/solution1/solution1.directive</location>
 		</link>
 		<link>
 			<name>solution1/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Decade-counter/decade_counter/solution1/directives.tcl</location>
+			<location>C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Decade-counter/decade_counter/solution1/directives.tcl</location>
 		</link>
 		<link>
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
-			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Decade-counter/decade_counter/solution1/script.tcl</location>
+			<location>C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Decade-counter/decade_counter/solution1/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

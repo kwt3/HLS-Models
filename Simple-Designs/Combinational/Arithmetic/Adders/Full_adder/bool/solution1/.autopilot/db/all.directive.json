@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "full_adder",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "full_adder"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/bool/solution1/csynth.tcl",
+    "sourceLine": 16,
+    "success": true
+  }
+]

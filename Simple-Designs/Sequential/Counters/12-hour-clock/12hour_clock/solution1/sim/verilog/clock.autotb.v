@@ -19,10 +19,14 @@
 
 `define AESL_DEPTH_reset 1
 `define AESL_DEPTH_ena 1
-`define AESL_DEPTH_hh 1
-`define AESL_DEPTH_mm 1
-`define AESL_DEPTH_ss 1
-`define AESL_DEPTH_pm 1
+`define AESL_FIFO_hh AESL_autofifo_hh
+`define AESL_FIFO_INST_hh AESL_autofifo_inst_hh
+`define AESL_FIFO_mm AESL_autofifo_mm
+`define AESL_FIFO_INST_mm AESL_autofifo_inst_mm
+`define AESL_FIFO_ss AESL_autofifo_ss
+`define AESL_FIFO_INST_ss AESL_autofifo_inst_ss
+`define AESL_FIFO_pm AESL_autofifo_pm
+`define AESL_FIFO_INST_pm AESL_autofifo_inst_pm
 `define AUTOTB_TVIN_reset  "../tv/cdatafile/c.clock.autotvin_reset.dat"
 `define AUTOTB_TVIN_ena  "../tv/cdatafile/c.clock.autotvin_ena.dat"
 `define AUTOTB_TVIN_reset_out_wrapc  "../tv/rtldatafile/rtl.clock.autotvin_reset.dat"
@@ -37,7 +41,7 @@
 `define AUTOTB_TVOUT_pm_out_wrapc  "../tv/rtldatafile/rtl.clock.autotvout_pm.dat"
 module `AUTOTB_TOP;
 
-parameter AUTOTB_TRANSACTION_NUM = 10001;
+parameter AUTOTB_TRANSACTION_NUM = 86401;
 parameter PROGRESS_TIMEOUT = 10000000;
 parameter LATENCY_ESTIMATION = 0;
 parameter LENGTH_ena = 1;
@@ -82,14 +86,18 @@ wire ap_idle;
 wire ap_ready;
 wire [0 : 0] reset;
 wire [0 : 0] ena;
-wire [7 : 0] hh;
-wire  hh_ap_vld;
-wire [7 : 0] mm;
-wire  mm_ap_vld;
-wire [7 : 0] ss;
-wire  ss_ap_vld;
-wire [0 : 0] pm;
-wire  pm_ap_vld;
+wire [7 : 0] hh_din;
+wire  hh_full_n;
+wire  hh_write;
+wire [7 : 0] mm_din;
+wire  mm_full_n;
+wire  mm_write;
+wire [7 : 0] ss_din;
+wire  ss_full_n;
+wire  ss_write;
+wire [0 : 0] pm_din;
+wire  pm_full_n;
+wire  pm_write;
 integer done_cnt = 0;
 integer AESL_ready_cnt = 0;
 integer ready_cnt = 0;
@@ -114,14 +122,18 @@ wire ap_rst_n;
     .ap_ready(ap_ready),
     .reset(reset),
     .ena(ena),
-    .hh(hh),
-    .hh_ap_vld(hh_ap_vld),
-    .mm(mm),
-    .mm_ap_vld(mm_ap_vld),
-    .ss(ss),
-    .ss_ap_vld(ss_ap_vld),
-    .pm(pm),
-    .pm_ap_vld(pm_ap_vld));
+    .hh_din(hh_din),
+    .hh_full_n(hh_full_n),
+    .hh_write(hh_write),
+    .mm_din(mm_din),
+    .mm_full_n(mm_full_n),
+    .mm_write(mm_write),
+    .ss_din(ss_din),
+    .ss_full_n(ss_full_n),
+    .ss_write(ss_write),
+    .pm_din(pm_din),
+    .pm_full_n(pm_full_n),
+    .pm_write(pm_write));
 
 // Assignment for control signal
 assign ap_clk = AESL_clock;
@@ -261,216 +273,176 @@ initial begin : read_file_process_ena
 end
 
 
-reg AESL_REG_hh_ap_vld = 0;
-// The signal of port hh
-reg [7: 0] AESL_REG_hh = 0;
-always @(posedge AESL_clock)
-begin
-    if(AESL_reset)
-        AESL_REG_hh = 0; 
-    else if(hh_ap_vld) begin
-        AESL_REG_hh <= hh;
-        AESL_REG_hh_ap_vld <= 1;
-    end
-end 
+//------------------------Fifohh Instantiation--------------
 
-initial begin : write_file_process_hh
-    integer fp;
-    integer fp_size;
-    integer err;
-    integer ret;
-    integer i;
-    integer hls_stream_size;
+// The input and output of fifohh
+wire  fifohh_wr;
+wire  [7 : 0] fifohh_din;
+wire  fifohh_full_n;
+wire  fifohh_ready;
+wire  fifohh_done;
+
+`AESL_FIFO_hh `AESL_FIFO_INST_hh(
+    .clk          (AESL_clock),
+    .reset        (AESL_reset),
+    .if_write     (fifohh_wr),
+    .if_din       (fifohh_din),
+    .if_full_n    (fifohh_full_n),
+    .if_read      (),
+    .if_dout      (),
+    .if_empty_n   (),
+    .ready        (fifohh_ready),
+    .done         (fifohh_done)
+);
+
+// Assignment between dut and fifohh
+
+// Assign input of fifohh
+assign      fifohh_wr        =   hh_write & hh_full_n;
+assign      fifohh_din        =   hh_din;
+assign    fifohh_ready   =  0;   //ready_initial | AESL_done_delay;
+assign    fifohh_done    =   AESL_done_delay;
+// Assign input of dut
+reg   reg_fifohh_full_n;
+initial begin : gen_reg_fifohh_full_n_process
     integer proc_rand;
-    integer hh_count;
-    reg [127:0] token;
-    integer transaction_idx;
-    reg [8 * 5:1] str;
-    wait(AESL_reset === 0);
-    fp = $fopen(`AUTOTB_TVOUT_hh_out_wrapc,"w");
-    if(fp == 0) begin       // Failed to open file
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_hh_out_wrapc);
-        $display("ERROR: Simulation using HLS TB failed.");
-        $finish;
+    reg_fifohh_full_n = fifohh_full_n;
+    while (1) begin
+        @ (fifohh_full_n);
+        reg_fifohh_full_n = fifohh_full_n;
     end
-    $fdisplay(fp,"[[[runtime]]]");
-    transaction_idx = 0;
-    while (transaction_idx != AUTOTB_TRANSACTION_NUM) begin
-        @(posedge AESL_clock);
-          while(AESL_done !== 1) begin
-              @(posedge AESL_clock);
-          end
-        # 0.4;
-        $fdisplay(fp,"[[transaction]] %d", transaction_idx);
-        if(AESL_REG_hh_ap_vld)  begin
-          $fdisplay(fp,"0x%x", AESL_REG_hh);
-        AESL_REG_hh_ap_vld = 0;
-        end
-    transaction_idx = transaction_idx + 1;
-      $fdisplay(fp,"[[/transaction]]");
-    end
-    $fdisplay(fp,"[[[/runtime]]]");
-    $fclose(fp);
 end
 
+assign      hh_full_n    =   reg_fifohh_full_n;
 
-reg AESL_REG_mm_ap_vld = 0;
-// The signal of port mm
-reg [7: 0] AESL_REG_mm = 0;
-always @(posedge AESL_clock)
-begin
-    if(AESL_reset)
-        AESL_REG_mm = 0; 
-    else if(mm_ap_vld) begin
-        AESL_REG_mm <= mm;
-        AESL_REG_mm_ap_vld <= 1;
-    end
-end 
 
-initial begin : write_file_process_mm
-    integer fp;
-    integer fp_size;
-    integer err;
-    integer ret;
-    integer i;
-    integer hls_stream_size;
+//------------------------Fifomm Instantiation--------------
+
+// The input and output of fifomm
+wire  fifomm_wr;
+wire  [7 : 0] fifomm_din;
+wire  fifomm_full_n;
+wire  fifomm_ready;
+wire  fifomm_done;
+
+`AESL_FIFO_mm `AESL_FIFO_INST_mm(
+    .clk          (AESL_clock),
+    .reset        (AESL_reset),
+    .if_write     (fifomm_wr),
+    .if_din       (fifomm_din),
+    .if_full_n    (fifomm_full_n),
+    .if_read      (),
+    .if_dout      (),
+    .if_empty_n   (),
+    .ready        (fifomm_ready),
+    .done         (fifomm_done)
+);
+
+// Assignment between dut and fifomm
+
+// Assign input of fifomm
+assign      fifomm_wr        =   mm_write & mm_full_n;
+assign      fifomm_din        =   mm_din;
+assign    fifomm_ready   =  0;   //ready_initial | AESL_done_delay;
+assign    fifomm_done    =   AESL_done_delay;
+// Assign input of dut
+reg   reg_fifomm_full_n;
+initial begin : gen_reg_fifomm_full_n_process
     integer proc_rand;
-    integer mm_count;
-    reg [127:0] token;
-    integer transaction_idx;
-    reg [8 * 5:1] str;
-    wait(AESL_reset === 0);
-    fp = $fopen(`AUTOTB_TVOUT_mm_out_wrapc,"w");
-    if(fp == 0) begin       // Failed to open file
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_mm_out_wrapc);
-        $display("ERROR: Simulation using HLS TB failed.");
-        $finish;
+    reg_fifomm_full_n = fifomm_full_n;
+    while (1) begin
+        @ (fifomm_full_n);
+        reg_fifomm_full_n = fifomm_full_n;
     end
-    $fdisplay(fp,"[[[runtime]]]");
-    transaction_idx = 0;
-    while (transaction_idx != AUTOTB_TRANSACTION_NUM) begin
-        @(posedge AESL_clock);
-          while(AESL_done !== 1) begin
-              @(posedge AESL_clock);
-          end
-        # 0.4;
-        $fdisplay(fp,"[[transaction]] %d", transaction_idx);
-        if(AESL_REG_mm_ap_vld)  begin
-          $fdisplay(fp,"0x%x", AESL_REG_mm);
-        AESL_REG_mm_ap_vld = 0;
-        end
-    transaction_idx = transaction_idx + 1;
-      $fdisplay(fp,"[[/transaction]]");
-    end
-    $fdisplay(fp,"[[[/runtime]]]");
-    $fclose(fp);
 end
 
+assign      mm_full_n    =   reg_fifomm_full_n;
 
-reg AESL_REG_ss_ap_vld = 0;
-// The signal of port ss
-reg [7: 0] AESL_REG_ss = 0;
-always @(posedge AESL_clock)
-begin
-    if(AESL_reset)
-        AESL_REG_ss = 0; 
-    else if(ss_ap_vld) begin
-        AESL_REG_ss <= ss;
-        AESL_REG_ss_ap_vld <= 1;
-    end
-end 
 
-initial begin : write_file_process_ss
-    integer fp;
-    integer fp_size;
-    integer err;
-    integer ret;
-    integer i;
-    integer hls_stream_size;
+//------------------------Fifoss Instantiation--------------
+
+// The input and output of fifoss
+wire  fifoss_wr;
+wire  [7 : 0] fifoss_din;
+wire  fifoss_full_n;
+wire  fifoss_ready;
+wire  fifoss_done;
+
+`AESL_FIFO_ss `AESL_FIFO_INST_ss(
+    .clk          (AESL_clock),
+    .reset        (AESL_reset),
+    .if_write     (fifoss_wr),
+    .if_din       (fifoss_din),
+    .if_full_n    (fifoss_full_n),
+    .if_read      (),
+    .if_dout      (),
+    .if_empty_n   (),
+    .ready        (fifoss_ready),
+    .done         (fifoss_done)
+);
+
+// Assignment between dut and fifoss
+
+// Assign input of fifoss
+assign      fifoss_wr        =   ss_write & ss_full_n;
+assign      fifoss_din        =   ss_din;
+assign    fifoss_ready   =  0;   //ready_initial | AESL_done_delay;
+assign    fifoss_done    =   AESL_done_delay;
+// Assign input of dut
+reg   reg_fifoss_full_n;
+initial begin : gen_reg_fifoss_full_n_process
     integer proc_rand;
-    integer ss_count;
-    reg [127:0] token;
-    integer transaction_idx;
-    reg [8 * 5:1] str;
-    wait(AESL_reset === 0);
-    fp = $fopen(`AUTOTB_TVOUT_ss_out_wrapc,"w");
-    if(fp == 0) begin       // Failed to open file
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_ss_out_wrapc);
-        $display("ERROR: Simulation using HLS TB failed.");
-        $finish;
+    reg_fifoss_full_n = fifoss_full_n;
+    while (1) begin
+        @ (fifoss_full_n);
+        reg_fifoss_full_n = fifoss_full_n;
     end
-    $fdisplay(fp,"[[[runtime]]]");
-    transaction_idx = 0;
-    while (transaction_idx != AUTOTB_TRANSACTION_NUM) begin
-        @(posedge AESL_clock);
-          while(AESL_done !== 1) begin
-              @(posedge AESL_clock);
-          end
-        # 0.4;
-        $fdisplay(fp,"[[transaction]] %d", transaction_idx);
-        if(AESL_REG_ss_ap_vld)  begin
-          $fdisplay(fp,"0x%x", AESL_REG_ss);
-        AESL_REG_ss_ap_vld = 0;
-        end
-    transaction_idx = transaction_idx + 1;
-      $fdisplay(fp,"[[/transaction]]");
-    end
-    $fdisplay(fp,"[[[/runtime]]]");
-    $fclose(fp);
 end
 
+assign      ss_full_n    =   reg_fifoss_full_n;
 
-reg AESL_REG_pm_ap_vld = 0;
-// The signal of port pm
-reg [0: 0] AESL_REG_pm = 0;
-always @(posedge AESL_clock)
-begin
-    if(AESL_reset)
-        AESL_REG_pm = 0; 
-    else if(pm_ap_vld) begin
-        AESL_REG_pm <= pm;
-        AESL_REG_pm_ap_vld <= 1;
-    end
-end 
 
-initial begin : write_file_process_pm
-    integer fp;
-    integer fp_size;
-    integer err;
-    integer ret;
-    integer i;
-    integer hls_stream_size;
+//------------------------Fifopm Instantiation--------------
+
+// The input and output of fifopm
+wire  fifopm_wr;
+wire  [0 : 0] fifopm_din;
+wire  fifopm_full_n;
+wire  fifopm_ready;
+wire  fifopm_done;
+
+`AESL_FIFO_pm `AESL_FIFO_INST_pm(
+    .clk          (AESL_clock),
+    .reset        (AESL_reset),
+    .if_write     (fifopm_wr),
+    .if_din       (fifopm_din),
+    .if_full_n    (fifopm_full_n),
+    .if_read      (),
+    .if_dout      (),
+    .if_empty_n   (),
+    .ready        (fifopm_ready),
+    .done         (fifopm_done)
+);
+
+// Assignment between dut and fifopm
+
+// Assign input of fifopm
+assign      fifopm_wr        =   pm_write & pm_full_n;
+assign      fifopm_din        =   pm_din;
+assign    fifopm_ready   =  0;   //ready_initial | AESL_done_delay;
+assign    fifopm_done    =   AESL_done_delay;
+// Assign input of dut
+reg   reg_fifopm_full_n;
+initial begin : gen_reg_fifopm_full_n_process
     integer proc_rand;
-    integer pm_count;
-    reg [127:0] token;
-    integer transaction_idx;
-    reg [8 * 5:1] str;
-    wait(AESL_reset === 0);
-    fp = $fopen(`AUTOTB_TVOUT_pm_out_wrapc,"w");
-    if(fp == 0) begin       // Failed to open file
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_pm_out_wrapc);
-        $display("ERROR: Simulation using HLS TB failed.");
-        $finish;
+    reg_fifopm_full_n = fifopm_full_n;
+    while (1) begin
+        @ (fifopm_full_n);
+        reg_fifopm_full_n = fifopm_full_n;
     end
-    $fdisplay(fp,"[[[runtime]]]");
-    transaction_idx = 0;
-    while (transaction_idx != AUTOTB_TRANSACTION_NUM) begin
-        @(posedge AESL_clock);
-          while(AESL_done !== 1) begin
-              @(posedge AESL_clock);
-          end
-        # 0.4;
-        $fdisplay(fp,"[[transaction]] %d", transaction_idx);
-        if(AESL_REG_pm_ap_vld)  begin
-          $fdisplay(fp,"0x%x", AESL_REG_pm);
-        AESL_REG_pm_ap_vld = 0;
-        end
-    transaction_idx = transaction_idx + 1;
-      $fdisplay(fp,"[[/transaction]]");
-    end
-    $fdisplay(fp,"[[[/runtime]]]");
-    $fclose(fp);
 end
+
+assign      pm_full_n    =   reg_fifopm_full_n;
 
 
 initial begin : generate_AESL_ready_cnt_proc
@@ -696,6 +668,118 @@ task write_binary;
         end
     end
 endtask;
+
+reg dump_tvout_finish_hh;
+
+initial begin : dump_tvout_runtime_sign_hh
+    integer fp;
+    dump_tvout_finish_hh = 0;
+    fp = $fopen(`AUTOTB_TVOUT_hh_out_wrapc, "w");
+    if (fp == 0) begin
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_hh_out_wrapc);
+        $display("ERROR: Simulation using HLS TB failed.");
+        $finish;
+    end
+    $fdisplay(fp,"[[[runtime]]]");
+    $fclose(fp);
+    wait (done_cnt == AUTOTB_TRANSACTION_NUM);
+    // last transaction is saved at negedge right after last done
+    repeat(5) @ (posedge AESL_clock);
+    fp = $fopen(`AUTOTB_TVOUT_hh_out_wrapc, "a");
+    if (fp == 0) begin
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_hh_out_wrapc);
+        $display("ERROR: Simulation using HLS TB failed.");
+        $finish;
+    end
+    $fdisplay(fp,"[[[/runtime]]]");
+    $fclose(fp);
+    dump_tvout_finish_hh = 1;
+end
+
+
+reg dump_tvout_finish_mm;
+
+initial begin : dump_tvout_runtime_sign_mm
+    integer fp;
+    dump_tvout_finish_mm = 0;
+    fp = $fopen(`AUTOTB_TVOUT_mm_out_wrapc, "w");
+    if (fp == 0) begin
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_mm_out_wrapc);
+        $display("ERROR: Simulation using HLS TB failed.");
+        $finish;
+    end
+    $fdisplay(fp,"[[[runtime]]]");
+    $fclose(fp);
+    wait (done_cnt == AUTOTB_TRANSACTION_NUM);
+    // last transaction is saved at negedge right after last done
+    repeat(5) @ (posedge AESL_clock);
+    fp = $fopen(`AUTOTB_TVOUT_mm_out_wrapc, "a");
+    if (fp == 0) begin
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_mm_out_wrapc);
+        $display("ERROR: Simulation using HLS TB failed.");
+        $finish;
+    end
+    $fdisplay(fp,"[[[/runtime]]]");
+    $fclose(fp);
+    dump_tvout_finish_mm = 1;
+end
+
+
+reg dump_tvout_finish_ss;
+
+initial begin : dump_tvout_runtime_sign_ss
+    integer fp;
+    dump_tvout_finish_ss = 0;
+    fp = $fopen(`AUTOTB_TVOUT_ss_out_wrapc, "w");
+    if (fp == 0) begin
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_ss_out_wrapc);
+        $display("ERROR: Simulation using HLS TB failed.");
+        $finish;
+    end
+    $fdisplay(fp,"[[[runtime]]]");
+    $fclose(fp);
+    wait (done_cnt == AUTOTB_TRANSACTION_NUM);
+    // last transaction is saved at negedge right after last done
+    repeat(5) @ (posedge AESL_clock);
+    fp = $fopen(`AUTOTB_TVOUT_ss_out_wrapc, "a");
+    if (fp == 0) begin
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_ss_out_wrapc);
+        $display("ERROR: Simulation using HLS TB failed.");
+        $finish;
+    end
+    $fdisplay(fp,"[[[/runtime]]]");
+    $fclose(fp);
+    dump_tvout_finish_ss = 1;
+end
+
+
+reg dump_tvout_finish_pm;
+
+initial begin : dump_tvout_runtime_sign_pm
+    integer fp;
+    dump_tvout_finish_pm = 0;
+    fp = $fopen(`AUTOTB_TVOUT_pm_out_wrapc, "w");
+    if (fp == 0) begin
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_pm_out_wrapc);
+        $display("ERROR: Simulation using HLS TB failed.");
+        $finish;
+    end
+    $fdisplay(fp,"[[[runtime]]]");
+    $fclose(fp);
+    wait (done_cnt == AUTOTB_TRANSACTION_NUM);
+    // last transaction is saved at negedge right after last done
+    repeat(5) @ (posedge AESL_clock);
+    fp = $fopen(`AUTOTB_TVOUT_pm_out_wrapc, "a");
+    if (fp == 0) begin
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_pm_out_wrapc);
+        $display("ERROR: Simulation using HLS TB failed.");
+        $finish;
+    end
+    $fdisplay(fp,"[[[/runtime]]]");
+    $fclose(fp);
+    dump_tvout_finish_pm = 1;
+end
+
 
 ////////////////////////////////////////////
 // progress and performance

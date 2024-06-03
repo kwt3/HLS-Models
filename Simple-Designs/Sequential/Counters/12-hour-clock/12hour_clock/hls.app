@@ -1,4 +1,4 @@
-<project xmlns="com.autoesl.autopilot.project" top="clock" name="12hour_clock" projectType="C/C++">
+<project xmlns="com.autoesl.autopilot.project" name="12hour_clock" top="clock" projectType="C/C++">
     <includePaths/>
     <libraryPaths/>
     <Simulation>

@@ -1,8 +1,6 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
-   Compiling ../../../../tb_4bitcounter.cpp in debug mode
-   Compiling ../../../../4bitcounter.cpp in debug mode
-   Generating csim.exe
+make: 'csim.exe' is up to date.
 At time 0, count = 1
 At time 1, count = 2
 At time 2, count = 3

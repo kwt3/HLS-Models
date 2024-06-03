@@ -2,5 +2,6 @@
    Compiling tb_clock.cpp_pre.cpp.tb.cpp
    Compiling clock.cpp_pre.cpp.tb.cpp
    Compiling apatb_clock.cpp
+   Compiling apatb_clock_util.cpp
    Compiling apatb_clock_ir.ll
    Generating cosim.tv.exe

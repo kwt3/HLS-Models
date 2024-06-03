@@ -3,12 +3,12 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Mon Mar 25 05:03:29 2024
-# Process ID: 22428
-# Current directory: C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Slow-decade-counter/slow_decade_counter/solution1/sim/verilog
+# Start of session at: Mon Jun  3 00:37:51 2024
+# Process ID: 5660
+# Current directory: C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Slow-decade-counter/slow_decade_counter/solution1/sim/verilog
 # Command line: xsim.exe -mode tcl -source {xsim.dir/decade_counter/xsim_script.tcl}
-# Log file: C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Slow-decade-counter/slow_decade_counter/solution1/sim/verilog/xsim.log
-# Journal file: C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Slow-decade-counter/slow_decade_counter/solution1/sim/verilog\xsim.jou
+# Log file: C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Slow-decade-counter/slow_decade_counter/solution1/sim/verilog/xsim.log
+# Journal file: C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Slow-decade-counter/slow_decade_counter/solution1/sim/verilog\xsim.jou
 # Running On: billy, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 16, Host memory: 16542 MB
 #-----------------------------------------------------------
 source xsim.dir/decade_counter/xsim_script.tcl

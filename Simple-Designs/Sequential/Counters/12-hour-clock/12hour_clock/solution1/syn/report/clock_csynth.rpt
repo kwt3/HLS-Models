@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'clock'
 ================================================================
-* Date:           Mon Mar 25 04:47:05 2024
+* Date:           Mon Jun  3 00:03:31 2024
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        12hour_clock
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  2.286 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  4.014 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |        0|        0|      0 ns|      0 ns|    1|    1|       no|
+    |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -49,14 +49,14 @@
 |         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
 +---------------------+---------+------+---------+---------+-----+
 |DSP                  |        -|     -|        -|        -|    -|
-|Expression           |        -|     -|        0|       81|    -|
+|Expression           |        -|     -|        0|       83|    -|
 |FIFO                 |        -|     -|        -|        -|    -|
 |Instance             |        -|     -|        -|        -|    -|
 |Memory               |        -|     -|        -|        -|    -|
-|Multiplexer          |        -|     -|        -|      151|    -|
+|Multiplexer          |        -|     -|        -|      187|    -|
 |Register             |        -|     -|       26|        -|    -|
 +---------------------+---------+------+---------+---------+-----+
-|Total                |        0|     0|       26|      232|    0|
+|Total                |        0|     0|       26|      270|    0|
 +---------------------+---------+------+---------+---------+-----+
 |Available SLR        |     1344|  3072|   864000|   432000|  320|
 +---------------------+---------+------+---------+---------+-----+
@@ -84,34 +84,39 @@
     +---------------------+----------+----+---+----+------------+------------+
     |    Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +---------------------+----------+----+---+----+------------+------------+
-    |add_ln18_fu_284_p2   |         +|   0|  0|  15|           8|           1|
-    |add_ln21_fu_297_p2   |         +|   0|  0|  15|           8|           1|
-    |add_ln24_fu_310_p2   |         +|   0|  0|  15|           8|           1|
-    |ap_condition_174     |       and|   0|  0|   2|           1|           1|
-    |ap_condition_66      |       and|   0|  0|   2|           1|           1|
-    |icmp_ln19_fu_291_p2  |      icmp|   0|  0|  15|           8|           6|
-    |icmp_ln22_fu_304_p2  |      icmp|   0|  0|  15|           8|           6|
-    |xor_ln28_fu_317_p2   |       xor|   0|  0|   2|           1|           2|
+    |add_ln20_fu_290_p2   |         +|   0|  0|  15|           8|           1|
+    |add_ln23_fu_303_p2   |         +|   0|  0|  15|           8|           1|
+    |add_ln26_fu_316_p2   |         +|   0|  0|  15|           8|           1|
+    |ap_condition_199     |       and|   0|  0|   2|           1|           1|
+    |ap_condition_91      |       and|   0|  0|   2|           1|           1|
+    |icmp_ln21_fu_297_p2  |      icmp|   0|  0|  15|           8|           6|
+    |icmp_ln24_fu_310_p2  |      icmp|   0|  0|  15|           8|           6|
+    |ap_block_state1      |        or|   0|  0|   2|           1|           1|
+    |xor_ln30_fu_323_p2   |       xor|   0|  0|   2|           1|           2|
     +---------------------+----------+----+---+----+------------+------------+
-    |Total                |          |   0|  0|  81|          43|          19|
+    |Total                |          |   0|  0|  83|          44|          20|
     +---------------------+----------+----+---+----+------------+------------+
 
     * Multiplexer: 
-    +----------------------------------------------+----+-----------+-----+-----------+
-    |                     Name                     | LUT| Input Size| Bits| Total Bits|
-    +----------------------------------------------+----+-----------+-----+-----------+
-    |ap_phi_mux_hours_flag_4_phi_fu_108_p12        |  14|          3|    1|          3|
-    |ap_phi_mux_hours_new_4_phi_fu_131_p12         |  26|          5|    8|         40|
-    |ap_phi_mux_minutes_flag_3_phi_fu_151_p12      |  14|          3|    1|          3|
-    |ap_phi_mux_minutes_new_3_phi_fu_174_p12       |  20|          4|    8|         32|
-    |ap_phi_mux_pm_indicator_loc_0_phi_fu_99_p4    |  14|          3|    1|          3|
-    |ap_phi_mux_pm_indicator_loc_5_phi_fu_240_p12  |  20|          4|    1|          4|
-    |ap_phi_mux_seconds_flag_2_phi_fu_195_p12      |  14|          3|    1|          3|
-    |ap_phi_mux_seconds_new_2_phi_fu_218_p12       |  20|          4|    8|         32|
-    |pm_indicator                                  |   9|          2|    1|          2|
-    +----------------------------------------------+----+-----------+-----+-----------+
-    |Total                                         | 151|         31|   30|        122|
-    +----------------------------------------------+----+-----------+-----+-----------+
+    +---------------------------------------------+----+-----------+-----+-----------+
+    |                     Name                    | LUT| Input Size| Bits| Total Bits|
+    +---------------------------------------------+----+-----------+-----+-----------+
+    |ap_phi_mux_hours_flag_4_phi_fu_114_p12       |  14|          3|    1|          3|
+    |ap_phi_mux_minutes_flag_3_phi_fu_157_p12     |  14|          3|    1|          3|
+    |ap_phi_mux_p_06_phi_fu_246_p12               |  20|          4|    1|          4|
+    |ap_phi_mux_p_07_phi_fu_137_p12               |  26|          5|    8|         40|
+    |ap_phi_mux_p_08_phi_fu_180_p12               |  20|          4|    8|         32|
+    |ap_phi_mux_p_0_phi_fu_224_p12                |  20|          4|    8|         32|
+    |ap_phi_mux_pm_indicator_loc_0_phi_fu_105_p4  |  14|          3|    1|          3|
+    |ap_phi_mux_seconds_flag_2_phi_fu_201_p12     |  14|          3|    1|          3|
+    |hh_blk_n                                     |   9|          2|    1|          2|
+    |mm_blk_n                                     |   9|          2|    1|          2|
+    |pm_blk_n                                     |   9|          2|    1|          2|
+    |pm_indicator                                 |   9|          2|    1|          2|
+    |ss_blk_n                                     |   9|          2|    1|          2|
+    +---------------------------------------------+----+-----------+-----+-----------+
+    |Total                                        | 187|         39|   34|        130|
+    +---------------------------------------------+----+-----------+-----+-----------+
 
     * Register: 
     +--------------+---+----+-----+-----------+
@@ -141,15 +146,19 @@
 |ap_done    |  out|    1|  ap_ctrl_hs|         clock|  return value|
 |ap_idle    |  out|    1|  ap_ctrl_hs|         clock|  return value|
 |ap_ready   |  out|    1|  ap_ctrl_hs|         clock|  return value|
-|reset      |   in|    1|     ap_none|         reset|       pointer|
-|ena        |   in|    1|     ap_none|           ena|       pointer|
-|hh         |  out|    8|      ap_vld|            hh|       pointer|
-|hh_ap_vld  |  out|    1|      ap_vld|            hh|       pointer|
-|mm         |  out|    8|      ap_vld|            mm|       pointer|
-|mm_ap_vld  |  out|    1|      ap_vld|            mm|       pointer|
-|ss         |  out|    8|      ap_vld|            ss|       pointer|
-|ss_ap_vld  |  out|    1|      ap_vld|            ss|       pointer|
-|pm         |  out|    1|      ap_vld|            pm|       pointer|
-|pm_ap_vld  |  out|    1|      ap_vld|            pm|       pointer|
+|reset      |   in|    1|     ap_none|         reset|        scalar|
+|ena        |   in|    1|     ap_none|           ena|        scalar|
+|hh_din     |  out|    8|     ap_fifo|            hh|       pointer|
+|hh_full_n  |   in|    1|     ap_fifo|            hh|       pointer|
+|hh_write   |  out|    1|     ap_fifo|            hh|       pointer|
+|mm_din     |  out|    8|     ap_fifo|            mm|       pointer|
+|mm_full_n  |   in|    1|     ap_fifo|            mm|       pointer|
+|mm_write   |  out|    1|     ap_fifo|            mm|       pointer|
+|ss_din     |  out|    8|     ap_fifo|            ss|       pointer|
+|ss_full_n  |   in|    1|     ap_fifo|            ss|       pointer|
+|ss_write   |  out|    1|     ap_fifo|            ss|       pointer|
+|pm_din     |  out|    1|     ap_fifo|            pm|       pointer|
+|pm_full_n  |   in|    1|     ap_fifo|            pm|       pointer|
+|pm_write   |  out|    1|     ap_fifo|            pm|       pointer|
 +-----------+-----+-----+------------+--------------+--------------+
 

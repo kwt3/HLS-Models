@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# xsim v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Jun  3 02:22:12 2024
+# Process ID: 20140
+# Current directory: C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/solution1/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/full_adder/xsim_script.tcl}
+# Log file: C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/solution1/sim/verilog/xsim.log
+# Journal file: C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/solution1/sim/verilog\xsim.jou
+# Running On: billy, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 16, Host memory: 16542 MB
+#-----------------------------------------------------------
+source xsim.dir/full_adder/xsim_script.tcl
+# xsim {full_adder} -autoloadwcfg -tclbatch {full_adder.tcl}
+Time resolution is 1 ps
+source full_adder.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [n/a] @ "125000"
+// RTL Simulation : 1 / 1 [n/a] @ "145000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 205 ns : File "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/solution1/sim/verilog/full_adder.autotb.v" Line 456
+## quit
+INFO: [Common 17-206] Exiting xsim at Mon Jun  3 02:22:14 2024...

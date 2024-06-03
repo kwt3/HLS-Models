@@ -6,4 +6,4 @@ set depth_list {
   {reset 1}
   {ss 1}
 }
-set trans_num 10001
+set trans_num 86401

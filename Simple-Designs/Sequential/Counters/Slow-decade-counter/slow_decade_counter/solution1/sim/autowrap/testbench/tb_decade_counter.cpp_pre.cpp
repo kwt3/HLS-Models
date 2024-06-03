@@ -1,8 +1,8 @@
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Slow-decade-counter/tb_decade_counter.cpp"
+# 1 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Slow-decade-counter/tb_decade_counter.cpp"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Slow-decade-counter/tb_decade_counter.cpp"
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Slow-decade-counter/decade_counter.hpp" 1
+# 1 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Slow-decade-counter/tb_decade_counter.cpp"
+# 1 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Slow-decade-counter/decade_counter.hpp" 1
 
 
 
@@ -55376,12 +55376,10 @@ inline bool operator!=(
 }
 # 366 "C:/Xilinx/Vitis_HLS/2023.2/include/ap_fixed.h" 2
 # 361 "C:/Xilinx/Vitis_HLS/2023.2/include/ap_int.h" 2
-# 5 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Slow-decade-counter/decade_counter.hpp" 2
+# 5 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Slow-decade-counter/decade_counter.hpp" 2
 
-extern "C" {
-    void decade_counter(ap_uint<1> &reset, ap_uint<1> &slowena, ap_uint<4> &out);
-}
-# 2 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Slow-decade-counter/tb_decade_counter.cpp" 2
+void decade_counter(ap_uint<1> &reset, ap_uint<1> &slowena, ap_uint<4> &out);
+# 2 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Slow-decade-counter/tb_decade_counter.cpp" 2
 
 
 int main() {
@@ -55399,6 +55397,20 @@ int main() {
     reset = 0;
     slowena = 1;
     for (int i = 0; i < 15; i++) {
+        decade_counter(reset, slowena, out);
+        std::cout << "Count: " << out.to_uint() << std::endl;
+    }
+
+
+    slowena = 0;
+    for (int i = 0; i < 5; i++) {
+        decade_counter(reset, slowena, out);
+        std::cout << "Count (paused): " << out.to_uint() << std::endl;
+    }
+
+
+    slowena = 1;
+    for (int i = 0; i < 5; i++) {
         decade_counter(reset, slowena, out);
         std::cout << "Count: " << out.to_uint() << std::endl;
     }

@@ -8,6 +8,7 @@ void counter(ap_uint<1> &reset, ap_uint<4> &out) {
     if (reset == 1) {
         count = 0;
     } else {
+        // Increment and wrap around at 9
         if (count == 9) {
             count = 0;
         } else {

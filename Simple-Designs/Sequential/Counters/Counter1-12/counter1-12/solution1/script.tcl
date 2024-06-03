@@ -5,13 +5,14 @@
 ## Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ############################################################
 open_project counter1-12
-set_top Counter12::increment
+set_top increment_counter
 add_files counter.cpp
 add_files counter.hpp
-add_files -tb testbench.cpp
+add_files -tb testbench.cpp -cflags "-Wno-unknown-pragmas"
 open_solution "solution1" -flow_target vivado
 set_part {xcvu11p-flga2577-1-e}
 create_clock -period 10 -name default
+config_cosim -tool xsim
 #source "./counter1-12/solution1/directives.tcl"
 csim_design
 csynth_design

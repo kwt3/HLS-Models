@@ -141,10 +141,10 @@ if.else:0 %count_load = load i4 %count
 
 <Node id="13" bw="1" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-if.else:1 %icmp_ln11 = icmp_eq  i4 %count_load, i4 9
+if.else:1 %icmp_ln12 = icmp_eq  i4 %count_load, i4 9
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln11"/></StgValue>
+<StgValue><ssdm name="icmp_ln12"/></StgValue>
 </operation>
 
 <operation id="11" st_id="1" stage="1" lat="1">
@@ -157,10 +157,10 @@ if.else:1 %icmp_ln11 = icmp_eq  i4 %count_load, i4 9
 
 <Node id="14" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-if.else:2 %br_ln11 = br i1 %icmp_ln11, void %if.else4, void %if.then2
+if.else:2 %br_ln12 = br i1 %icmp_ln12, void %if.else4, void %if.then2
 
 ]]></Node>
-<StgValue><ssdm name="br_ln11"/></StgValue>
+<StgValue><ssdm name="br_ln12"/></StgValue>
 </operation>
 
 <operation id="12" st_id="1" stage="1" lat="1">
@@ -168,16 +168,16 @@ if.else:2 %br_ln11 = br i1 %icmp_ln11, void %if.else4, void %if.then2
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="reset_read" val="0"/>
-<literal name="icmp_ln11" val="0"/>
+<literal name="icmp_ln12" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="16" bw="4" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-if.else4:0 %add_ln14 = add i4 %count_load, i4 1
+if.else4:0 %add_ln15 = add i4 %count_load, i4 1
 
 ]]></Node>
-<StgValue><ssdm name="add_ln14"/></StgValue>
+<StgValue><ssdm name="add_ln15"/></StgValue>
 </operation>
 
 <operation id="13" st_id="1" stage="1" lat="1">
@@ -185,16 +185,16 @@ if.else4:0 %add_ln14 = add i4 %count_load, i4 1
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="reset_read" val="0"/>
-<literal name="icmp_ln11" val="0"/>
+<literal name="icmp_ln12" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="17" bw="0" op_0_bw="4" op_1_bw="4" op_2_bw="0">
 <![CDATA[
-if.else4:1 %store_ln14 = store i4 %add_ln14, i4 %count
+if.else4:1 %store_ln15 = store i4 %add_ln15, i4 %count
 
 ]]></Node>
-<StgValue><ssdm name="store_ln14"/></StgValue>
+<StgValue><ssdm name="store_ln15"/></StgValue>
 </operation>
 
 <operation id="14" st_id="1" stage="1" lat="1">
@@ -202,7 +202,7 @@ if.else4:1 %store_ln14 = store i4 %add_ln14, i4 %count
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="reset_read" val="0"/>
-<literal name="icmp_ln11" val="0"/>
+<literal name="icmp_ln12" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -219,16 +219,16 @@ if.else4:2 %br_ln0 = br void %if.end5
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="reset_read" val="0"/>
-<literal name="icmp_ln11" val="1"/>
+<literal name="icmp_ln12" val="1"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="20" bw="0" op_0_bw="4" op_1_bw="4" op_2_bw="0">
 <![CDATA[
-if.then2:0 %store_ln12 = store i4 0, i4 %count
+if.then2:0 %store_ln13 = store i4 0, i4 %count
 
 ]]></Node>
-<StgValue><ssdm name="store_ln12"/></StgValue>
+<StgValue><ssdm name="store_ln13"/></StgValue>
 </operation>
 
 <operation id="16" st_id="1" stage="1" lat="1">
@@ -236,16 +236,16 @@ if.then2:0 %store_ln12 = store i4 0, i4 %count
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="reset_read" val="0"/>
-<literal name="icmp_ln11" val="1"/>
+<literal name="icmp_ln12" val="1"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="21" bw="0" op_0_bw="0">
 <![CDATA[
-if.then2:1 %br_ln13 = br void %if.end5
+if.then2:1 %br_ln14 = br void %if.end5
 
 ]]></Node>
-<StgValue><ssdm name="br_ln13"/></StgValue>
+<StgValue><ssdm name="br_ln14"/></StgValue>
 </operation>
 
 <operation id="17" st_id="1" stage="1" lat="1">
@@ -289,7 +289,7 @@ if.then:1 %br_ln10 = br void %if.end5
 
 <Node id="26" bw="4" op_0_bw="4" op_1_bw="0" op_2_bw="4" op_3_bw="0" op_4_bw="4" op_5_bw="0">
 <![CDATA[
-if.end5:0 %p_0_0_0 = phi i4 0, void %if.then, i4 %add_ln14, void %if.else4, i4 0, void %if.then2
+if.end5:0 %p_0_0_0 = phi i4 0, void %if.then, i4 %add_ln15, void %if.else4, i4 0, void %if.then2
 
 ]]></Node>
 <StgValue><ssdm name="p_0_0_0"/></StgValue>
@@ -304,10 +304,10 @@ if.end5:0 %p_0_0_0 = phi i4 0, void %if.then, i4 %add_ln14, void %if.else4, i4 0
 
 <Node id="27" bw="0" op_0_bw="0" op_1_bw="4" op_2_bw="4">
 <![CDATA[
-if.end5:1 %write_ln19 = write void @_ssdm_op_Write.ap_auto.i4P0A, i4 %out_r, i4 %p_0_0_0
+if.end5:1 %write_ln20 = write void @_ssdm_op_Write.ap_auto.i4P0A, i4 %out_r, i4 %p_0_0_0
 
 ]]></Node>
-<StgValue><ssdm name="write_ln19"/></StgValue>
+<StgValue><ssdm name="write_ln20"/></StgValue>
 </operation>
 
 <operation id="21" st_id="1" stage="1" lat="1">
@@ -319,10 +319,10 @@ if.end5:1 %write_ln19 = write void @_ssdm_op_Write.ap_auto.i4P0A, i4 %out_r, i4 
 
 <Node id="28" bw="0">
 <![CDATA[
-if.end5:2 %ret_ln20 = ret
+if.end5:2 %ret_ln21 = ret
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln20"/></StgValue>
+<StgValue><ssdm name="ret_ln21"/></StgValue>
 </operation>
 </state>
 </state_list>

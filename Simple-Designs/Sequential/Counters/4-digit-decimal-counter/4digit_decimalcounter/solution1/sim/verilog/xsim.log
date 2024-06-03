@@ -1,0 +1,63 @@
+#-----------------------------------------------------------
+# xsim v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun Jun  2 23:46:08 2024
+# Process ID: 23952
+# Current directory: C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/4-digit-decimal-counter/4digit_decimalcounter/solution1/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/increment/xsim_script.tcl}
+# Log file: C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/4-digit-decimal-counter/4digit_decimalcounter/solution1/sim/verilog/xsim.log
+# Journal file: C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/4-digit-decimal-counter/4digit_decimalcounter/solution1/sim/verilog\xsim.jou
+# Running On: billy, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 16, Host memory: 16542 MB
+#-----------------------------------------------------------
+source xsim.dir/increment/xsim_script.tcl
+# xsim {increment} -autoloadwcfg -tclbatch {increment.tcl}
+Time resolution is 1 ps
+source increment.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 34 [n/a] @ "125000"
+// RTL Simulation : 1 / 34 [n/a] @ "145000"
+// RTL Simulation : 2 / 34 [n/a] @ "155000"
+// RTL Simulation : 3 / 34 [n/a] @ "165000"
+// RTL Simulation : 4 / 34 [n/a] @ "175000"
+// RTL Simulation : 5 / 34 [n/a] @ "185000"
+// RTL Simulation : 6 / 34 [n/a] @ "195000"
+// RTL Simulation : 7 / 34 [n/a] @ "205000"
+// RTL Simulation : 8 / 34 [n/a] @ "215000"
+// RTL Simulation : 9 / 34 [n/a] @ "225000"
+// RTL Simulation : 10 / 34 [n/a] @ "235000"
+// RTL Simulation : 11 / 34 [n/a] @ "245000"
+// RTL Simulation : 12 / 34 [n/a] @ "255000"
+// RTL Simulation : 13 / 34 [n/a] @ "265000"
+// RTL Simulation : 14 / 34 [n/a] @ "275000"
+// RTL Simulation : 15 / 34 [n/a] @ "285000"
+// RTL Simulation : 16 / 34 [n/a] @ "295000"
+// RTL Simulation : 17 / 34 [n/a] @ "305000"
+// RTL Simulation : 18 / 34 [n/a] @ "315000"
+// RTL Simulation : 19 / 34 [n/a] @ "325000"
+// RTL Simulation : 20 / 34 [n/a] @ "335000"
+// RTL Simulation : 21 / 34 [n/a] @ "345000"
+// RTL Simulation : 22 / 34 [n/a] @ "355000"
+// RTL Simulation : 23 / 34 [n/a] @ "365000"
+// RTL Simulation : 24 / 34 [n/a] @ "375000"
+// RTL Simulation : 25 / 34 [n/a] @ "385000"
+// RTL Simulation : 26 / 34 [n/a] @ "395000"
+// RTL Simulation : 27 / 34 [n/a] @ "405000"
+// RTL Simulation : 28 / 34 [n/a] @ "415000"
+// RTL Simulation : 29 / 34 [n/a] @ "425000"
+// RTL Simulation : 30 / 34 [n/a] @ "435000"
+// RTL Simulation : 31 / 34 [n/a] @ "445000"
+// RTL Simulation : 32 / 34 [n/a] @ "455000"
+// RTL Simulation : 33 / 34 [n/a] @ "465000"
+// RTL Simulation : 34 / 34 [n/a] @ "475000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 535 ns : File "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/4-digit-decimal-counter/4digit_decimalcounter/solution1/sim/verilog/increment.autotb.v" Line 343
+## quit
+INFO: [Common 17-206] Exiting xsim at Sun Jun  2 23:46:11 2024...

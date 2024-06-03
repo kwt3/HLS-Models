@@ -157,7 +157,7 @@
     <RTLDesignHierarchy>
         <TopModule MAX_DEPTH="2">
             <ModuleName>counter</ModuleName>
-            <BindInstances>add_ln14_fu_69_p2</BindInstances>
+            <BindInstances>add_ln15_fu_69_p2</BindInstances>
         </TopModule>
     </RTLDesignHierarchy>
     <ModuleInformation>
@@ -205,7 +205,7 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln14_fu_69_p2" SOURCE="decade-counter.cpp:14" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln14"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln15_fu_69_p2" SOURCE="decade-counter.cpp:15" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln15"/>
             </BindNodes>
         </Module>
     </ModuleInformation>

@@ -3,8 +3,6 @@
 
 #include "ap_int.h"
 
-extern "C" {
-    void decade_counter(ap_uint<1> &reset, ap_uint<1> &slowena, ap_uint<4> &out);
-}
+void decade_counter(ap_uint<1> &reset, ap_uint<1> &slowena, ap_uint<4> &out);
 
 #endif // DECADE_COUNTER_HPP

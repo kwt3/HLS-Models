@@ -1,0 +1,43 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../tb_counter.cpp in debug mode
+   Compiling ../../../../counter.cpp in debug mode
+   Generating csim.exe
+4-digit counter test:
+Count: 1
+Count: 2
+Count: 3
+Count: 4
+Count: 5
+Count: 6
+Count: 7
+Count: 8
+Count: 9
+Count: 0
+Count: 1
+Count: 2
+Count: 3
+Count: 4
+Count: 5
+12-digit counter test:
+Count: 6
+Count: 7
+Count: 8
+Count: 9
+Count: 10
+Count: 11
+Count: 12
+Count: 1
+Count: 2
+Count: 3
+Count: 4
+Count: 5
+Count: 6
+Count: 7
+Count: 8
+After reset (4-digit): 0
+Next count after reset (4-digit): 1
+After reset (12-digit): 1
+Next count after reset (12-digit): 2
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

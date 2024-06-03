@@ -3,12 +3,12 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Mon Mar 25 05:06:54 2024
-# Process ID: 400
-# Current directory: C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Shift-Registers/4-bit-shift-register/4shift_register/solution1/sim/verilog
+# Start of session at: Mon Jun  3 01:39:59 2024
+# Process ID: 8004
+# Current directory: C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Shift-Registers/4-bit-shift-register/4shift_register/solution1/sim/verilog
 # Command line: xsim.exe -mode tcl -source {xsim.dir/shift_register/xsim_script.tcl}
-# Log file: C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Shift-Registers/4-bit-shift-register/4shift_register/solution1/sim/verilog/xsim.log
-# Journal file: C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Shift-Registers/4-bit-shift-register/4shift_register/solution1/sim/verilog\xsim.jou
+# Log file: C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Shift-Registers/4-bit-shift-register/4shift_register/solution1/sim/verilog/xsim.log
+# Journal file: C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Shift-Registers/4-bit-shift-register/4shift_register/solution1/sim/verilog\xsim.jou
 # Running On: billy, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 16, Host memory: 16542 MB
 #-----------------------------------------------------------
 source xsim.dir/shift_register/xsim_script.tcl
@@ -44,6 +44,6 @@ source shift_register.tcl
 // RTL Simulation : 19 / 20 [n/a] @ "325000"
 // RTL Simulation : 20 / 20 [n/a] @ "335000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 395 ns : File "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Shift-Registers/4-bit-shift-register/4shift_register/solution1/sim/verilog/shift_register.autotb.v" Line 463
+$finish called at time : 395 ns : File "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Shift-Registers/4-bit-shift-register/4shift_register/solution1/sim/verilog/shift_register.autotb.v" Line 463
 ## quit
-INFO: [Common 17-206] Exiting xsim at Mon Mar 25 05:06:56 2024...
+INFO: [Common 17-206] Exiting xsim at Mon Jun  3 01:40:01 2024...

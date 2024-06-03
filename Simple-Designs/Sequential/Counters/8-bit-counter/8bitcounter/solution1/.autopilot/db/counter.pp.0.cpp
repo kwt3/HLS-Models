@@ -156,9 +156,7 @@ extern "C" {
 }
 # 2 "<built-in>" 2
 # 1 "counter.cpp" 2
-
 # 1 "./counter.hpp" 1
-
 
 
 
@@ -472,35 +470,32 @@ namespace std
   using ::uintmax_t;
   using ::uintptr_t;
 }
-# 6 "./counter.hpp" 2
+# 5 "./counter.hpp" 2
 
+__attribute__((sdx_kernel("counter", 0))) void counter(uint8_t *count, uint8_t upper);
+# 2 "counter.cpp" 2
 
-extern "C" {
-
-    __attribute__((sdx_kernel("counter", 0))) void counter(uint8_t *count, uint8_t upper);
-}
-# 3 "counter.cpp" 2
-
-
-extern "C" {
-
-    __attribute__((sdx_kernel("counter", 0))) void counter(uint8_t *count, uint8_t upper) {
-#line 16 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/8-bit-counter/8bitcounter/solution1/csynth.tcl"
+__attribute__((sdx_kernel("counter", 0))) void counter(uint8_t *count, uint8_t upper) {
+#line 17 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/8-bit-counter/8bitcounter/solution1/csynth.tcl"
 #pragma HLSDIRECTIVE TOP name=counter
-# 7 "counter.cpp"
+# 3 "counter.cpp"
+
+#line 7 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/8-bit-counter/8bitcounter/solution1/directives.tcl"
+#pragma HLSDIRECTIVE TOP name=counter
+# 3 "counter.cpp"
 
 
 
-        static uint8_t count_internal = 0;
+    static uint8_t count_internal = 0;
 
 
-        uint8_t v = count_internal+1;
-        if (v == upper)
-         count_internal = 0;
-        else
-         count_internal = v;
-
-
-        *count = count_internal;
+    uint8_t v = count_internal + 1;
+    if (v == upper) {
+        count_internal = 0;
+    } else {
+        count_internal = v;
     }
+
+
+    *count = count_internal;
 }

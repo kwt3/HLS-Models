@@ -18,4 +18,5 @@ obj/tb_clock.o: ../../../../tb_clock.cpp ../../../../clock.hpp \
  C:/Xilinx/Vitis_HLS/2023.2/include/ap_fixed.h \
  C:/Xilinx/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h \
  C:/Xilinx/Vitis_HLS/2023.2/include/etc/ap_fixed_ref.h \
- C:/Xilinx/Vitis_HLS/2023.2/include/etc/ap_fixed_special.h
+ C:/Xilinx/Vitis_HLS/2023.2/include/etc/ap_fixed_special.h \
+ C:/Xilinx/Vitis_HLS/2023.2/include/hls_stream.h

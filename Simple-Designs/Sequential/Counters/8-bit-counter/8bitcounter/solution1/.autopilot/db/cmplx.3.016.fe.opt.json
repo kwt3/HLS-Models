@@ -3,7 +3,7 @@
     "basicblocks": 4,
     "calls": "",
     "file": "counter.cpp",
-    "fileloc": 7,
+    "fileloc": 3,
     "instructions": 18,
     "loads": {
       "G": 1

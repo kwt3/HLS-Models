@@ -22,14 +22,18 @@ using namespace std;
 #define AUTOTB_TVOUT_reset "../tv/cdatafile/c.clock.autotvout_reset.dat"
 #define AUTOTB_TVIN_ena "../tv/cdatafile/c.clock.autotvin_ena.dat"
 #define AUTOTB_TVOUT_ena "../tv/cdatafile/c.clock.autotvout_ena.dat"
-#define AUTOTB_TVIN_hh "../tv/cdatafile/c.clock.autotvin_hh.dat"
 #define AUTOTB_TVOUT_hh "../tv/cdatafile/c.clock.autotvout_hh.dat"
-#define AUTOTB_TVIN_mm "../tv/cdatafile/c.clock.autotvin_mm.dat"
+#define WRAPC_STREAM_SIZE_OUT_hh "../tv/stream_size/stream_size_out_hh.dat"
+#define WRAPC_STREAM_EGRESS_STATUS_hh "../tv/stream_size/stream_egress_status_hh.dat"
 #define AUTOTB_TVOUT_mm "../tv/cdatafile/c.clock.autotvout_mm.dat"
-#define AUTOTB_TVIN_ss "../tv/cdatafile/c.clock.autotvin_ss.dat"
+#define WRAPC_STREAM_SIZE_OUT_mm "../tv/stream_size/stream_size_out_mm.dat"
+#define WRAPC_STREAM_EGRESS_STATUS_mm "../tv/stream_size/stream_egress_status_mm.dat"
 #define AUTOTB_TVOUT_ss "../tv/cdatafile/c.clock.autotvout_ss.dat"
-#define AUTOTB_TVIN_pm "../tv/cdatafile/c.clock.autotvin_pm.dat"
+#define WRAPC_STREAM_SIZE_OUT_ss "../tv/stream_size/stream_size_out_ss.dat"
+#define WRAPC_STREAM_EGRESS_STATUS_ss "../tv/stream_size/stream_egress_status_ss.dat"
 #define AUTOTB_TVOUT_pm "../tv/cdatafile/c.clock.autotvout_pm.dat"
+#define WRAPC_STREAM_SIZE_OUT_pm "../tv/stream_size/stream_size_out_pm.dat"
+#define WRAPC_STREAM_EGRESS_STATUS_pm "../tv/stream_size/stream_egress_status_pm.dat"
 
 
 // tvout file define:
@@ -1037,10 +1041,10 @@ namespace hls::sim
 
 
 extern "C"
-void clock_hw_stub_wrapper(void*, void*, void*, void*, void*, void*);
+void clock_hw_stub_wrapper(hls::sim::Byte<1>*, hls::sim::Byte<1>*, void*, void*, void*, void*);
 
 extern "C"
-void apatb_clock_hw(void* __xlx_apatb_param_reset, void* __xlx_apatb_param_ena, void* __xlx_apatb_param_hh, void* __xlx_apatb_param_mm, void* __xlx_apatb_param_ss, void* __xlx_apatb_param_pm)
+void apatb_clock_hw(hls::sim::Byte<1>* __xlx_apatb_param_reset, hls::sim::Byte<1>* __xlx_apatb_param_ena, void* __xlx_apatb_param_hh, void* __xlx_apatb_param_mm, void* __xlx_apatb_param_ss, void* __xlx_apatb_param_pm)
 {
   static hls::sim::Register port0 {
     .name = "reset",
@@ -1064,53 +1068,61 @@ void apatb_clock_hw(void* __xlx_apatb_param_reset, void* __xlx_apatb_param_ena, 
   };
   port1.param = __xlx_apatb_param_ena;
 
-  static hls::sim::Register port2 {
-    .name = "hh",
+  static hls::sim::Stream<hls::sim::Byte<1>> port2 {
     .width = 8,
+    .name = "hh",
 #ifdef POST_CHECK
     .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_hh),
 #else
-    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_hh),
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_hh),
+    .writer = new hls::sim::Writer(AUTOTB_TVOUT_hh),
+    .swriter = new hls::sim::Writer(WRAPC_STREAM_SIZE_OUT_hh),
+    .gwriter = new hls::sim::Writer(WRAPC_STREAM_EGRESS_STATUS_hh),
 #endif
   };
-  port2.param = __xlx_apatb_param_hh;
+  port2.param = (hls::stream<hls::sim::Byte<1>>*)__xlx_apatb_param_hh;
+  port2.hasWrite = true;
 
-  static hls::sim::Register port3 {
-    .name = "mm",
+  static hls::sim::Stream<hls::sim::Byte<1>> port3 {
     .width = 8,
+    .name = "mm",
 #ifdef POST_CHECK
     .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_mm),
 #else
-    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_mm),
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_mm),
+    .writer = new hls::sim::Writer(AUTOTB_TVOUT_mm),
+    .swriter = new hls::sim::Writer(WRAPC_STREAM_SIZE_OUT_mm),
+    .gwriter = new hls::sim::Writer(WRAPC_STREAM_EGRESS_STATUS_mm),
 #endif
   };
-  port3.param = __xlx_apatb_param_mm;
+  port3.param = (hls::stream<hls::sim::Byte<1>>*)__xlx_apatb_param_mm;
+  port3.hasWrite = true;
 
-  static hls::sim::Register port4 {
-    .name = "ss",
+  static hls::sim::Stream<hls::sim::Byte<1>> port4 {
     .width = 8,
+    .name = "ss",
 #ifdef POST_CHECK
     .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_ss),
 #else
-    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_ss),
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_ss),
+    .writer = new hls::sim::Writer(AUTOTB_TVOUT_ss),
+    .swriter = new hls::sim::Writer(WRAPC_STREAM_SIZE_OUT_ss),
+    .gwriter = new hls::sim::Writer(WRAPC_STREAM_EGRESS_STATUS_ss),
 #endif
   };
-  port4.param = __xlx_apatb_param_ss;
+  port4.param = (hls::stream<hls::sim::Byte<1>>*)__xlx_apatb_param_ss;
+  port4.hasWrite = true;
 
-  static hls::sim::Register port5 {
-    .name = "pm",
+  static hls::sim::Stream<hls::sim::Byte<1>> port5 {
     .width = 1,
+    .name = "pm",
 #ifdef POST_CHECK
     .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_pm),
 #else
-    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_pm),
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_pm),
+    .writer = new hls::sim::Writer(AUTOTB_TVOUT_pm),
+    .swriter = new hls::sim::Writer(WRAPC_STREAM_SIZE_OUT_pm),
+    .gwriter = new hls::sim::Writer(WRAPC_STREAM_EGRESS_STATUS_pm),
 #endif
   };
-  port5.param = __xlx_apatb_param_pm;
+  port5.param = (hls::stream<hls::sim::Byte<1>>*)__xlx_apatb_param_pm;
+  port5.hasWrite = true;
 
   try {
 #ifdef POST_CHECK
@@ -1124,23 +1136,27 @@ void apatb_clock_hw(void* __xlx_apatb_param_reset, void* __xlx_apatb_param_ena, 
     CodeState = DUMP_INPUTS;
     dump(port0, port0.iwriter, tcl.AESL_transaction);
     dump(port1, port1.iwriter, tcl.AESL_transaction);
-    dump(port2, port2.iwriter, tcl.AESL_transaction);
-    dump(port3, port3.iwriter, tcl.AESL_transaction);
-    dump(port4, port4.iwriter, tcl.AESL_transaction);
-    dump(port5, port5.iwriter, tcl.AESL_transaction);
     port0.doTCL(tcl);
     port1.doTCL(tcl);
+    port2.markSize();
+    port3.markSize();
+    port4.markSize();
+    port5.markSize();
+    CodeState = CALL_C_DUT;
+    clock_hw_stub_wrapper(__xlx_apatb_param_reset, __xlx_apatb_param_ena, __xlx_apatb_param_hh, __xlx_apatb_param_mm, __xlx_apatb_param_ss, __xlx_apatb_param_pm);
+    port2.buffer();
+    port3.buffer();
+    port4.buffer();
+    port5.buffer();
+    CodeState = DUMP_OUTPUTS;
+    dump(port2, tcl.AESL_transaction);
+    dump(port3, tcl.AESL_transaction);
+    dump(port4, tcl.AESL_transaction);
+    dump(port5, tcl.AESL_transaction);
     port2.doTCL(tcl);
     port3.doTCL(tcl);
     port4.doTCL(tcl);
     port5.doTCL(tcl);
-    CodeState = CALL_C_DUT;
-    clock_hw_stub_wrapper(__xlx_apatb_param_reset, __xlx_apatb_param_ena, __xlx_apatb_param_hh, __xlx_apatb_param_mm, __xlx_apatb_param_ss, __xlx_apatb_param_pm);
-    CodeState = DUMP_OUTPUTS;
-    dump(port2, port2.owriter, tcl.AESL_transaction);
-    dump(port3, port3.owriter, tcl.AESL_transaction);
-    dump(port4, port4.owriter, tcl.AESL_transaction);
-    dump(port5, port5.owriter, tcl.AESL_transaction);
     tcl.AESL_transaction++;
 #endif
   } catch (const hls::sim::SimException &e) {

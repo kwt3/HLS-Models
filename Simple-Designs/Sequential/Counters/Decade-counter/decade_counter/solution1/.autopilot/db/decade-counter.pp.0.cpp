@@ -157,6 +157,9 @@ extern "C" {
 # 2 "<built-in>" 2
 # 1 "decade-counter.cpp" 2
 # 1 "./decade-counter.hpp" 1
+
+
+
 # 1 "C:/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\\ap_int.h" 1
 # 10 "C:/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\\ap_int.h"
 # 1 "C:/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\\etc/ap_common.h" 1
@@ -5717,14 +5720,17 @@ inline __attribute__((nodebug)) bool operator!=(
 }
 # 366 "C:/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\\ap_fixed.h" 2
 # 361 "C:/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\\ap_int.h" 2
-# 2 "./decade-counter.hpp" 2
-
+# 5 "./decade-counter.hpp" 2
 
 __attribute__((sdx_kernel("counter", 0))) void counter(ap_uint<1> &reset, ap_uint<4> &out);
 # 2 "decade-counter.cpp" 2
 
 __attribute__((sdx_kernel("counter", 0))) void counter(ap_uint<1> &reset, ap_uint<4> &out) {
-#line 16 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Decade-counter/decade_counter/solution1/csynth.tcl"
+#line 17 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Decade-counter/decade_counter/solution1/csynth.tcl"
+#pragma HLSDIRECTIVE TOP name=counter
+# 3 "decade-counter.cpp"
+
+#line 7 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Decade-counter/decade_counter/solution1/directives.tcl"
 #pragma HLSDIRECTIVE TOP name=counter
 # 3 "decade-counter.cpp"
 
@@ -5735,6 +5741,7 @@ __attribute__((sdx_kernel("counter", 0))) void counter(ap_uint<1> &reset, ap_uin
     if (reset == 1) {
         count = 0;
     } else {
+
         if (count == 9) {
             count = 0;
         } else {

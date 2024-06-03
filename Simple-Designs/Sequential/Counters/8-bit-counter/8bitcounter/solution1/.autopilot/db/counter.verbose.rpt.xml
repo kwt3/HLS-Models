@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'counter'" level="0">
-<item name = "Date">Mon Mar 25 04:35:33 2024
+<item name = "Date">Sun Jun  2 23:50:08 2024
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">8bitcounter</item>
@@ -80,7 +80,7 @@
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
 <column name="v_fu_47_p2">+, 0, 0, 15, 8, 1</column>
-<column name="icmp_ln14_fu_53_p2">icmp, 0, 0, 15, 8, 8</column>
+<column name="icmp_ln10_fu_53_p2">icmp, 0, 0, 15, 8, 8</column>
 <column name="count">select, 0, 0, 8, 1, 1</column>
 </table>
 </item>

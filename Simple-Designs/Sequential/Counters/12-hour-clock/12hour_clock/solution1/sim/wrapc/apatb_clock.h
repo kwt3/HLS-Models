@@ -7,9 +7,9 @@
 // ==============================================================
 
 extern "C" void AESL_WRAP_clock (
-volatile void* reset,
-volatile void* ena,
-volatile void* hh,
-volatile void* mm,
-volatile void* ss,
-volatile void* pm);
+char reset,
+char ena,
+hls::stream<int > hh,
+hls::stream<int > mm,
+hls::stream<int > ss,
+hls::stream<int > pm);

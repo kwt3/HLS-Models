@@ -6,7 +6,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="clock_clock,hls_ip_2023_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xcvu11p-flga2577-1-e,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=2.286286,HLS_SYN_LAT=0,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=26,HLS_SYN_LUT=232,HLS_VERSION=2023_2}" *)
+(* CORE_GENERATION_INFO="clock_clock,hls_ip_2023_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xcvu11p-flga2577-1-e,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=pipeline,HLS_SYN_CLOCK=4.014286,HLS_SYN_LAT=0,HLS_SYN_TPT=1,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=26,HLS_SYN_LUT=270,HLS_VERSION=2023_2}" *)
 
 module clock (
         ap_clk,
@@ -17,14 +17,18 @@ module clock (
         ap_ready,
         reset,
         ena,
-        hh,
-        hh_ap_vld,
-        mm,
-        mm_ap_vld,
-        ss,
-        ss_ap_vld,
-        pm,
-        pm_ap_vld
+        hh_din,
+        hh_full_n,
+        hh_write,
+        mm_din,
+        mm_full_n,
+        mm_write,
+        ss_din,
+        ss_full_n,
+        ss_write,
+        pm_din,
+        pm_full_n,
+        pm_write
 );
 
 parameter    ap_ST_fsm_state1 = 1'd1;
@@ -37,22 +41,26 @@ output   ap_idle;
 output   ap_ready;
 input  [0:0] reset;
 input  [0:0] ena;
-output  [7:0] hh;
-output   hh_ap_vld;
-output  [7:0] mm;
-output   mm_ap_vld;
-output  [7:0] ss;
-output   ss_ap_vld;
-output  [0:0] pm;
-output   pm_ap_vld;
+output  [7:0] hh_din;
+input   hh_full_n;
+output   hh_write;
+output  [7:0] mm_din;
+input   mm_full_n;
+output   mm_write;
+output  [7:0] ss_din;
+input   ss_full_n;
+output   ss_write;
+output  [0:0] pm_din;
+input   pm_full_n;
+output   pm_write;
 
 reg ap_done;
 reg ap_idle;
 reg ap_ready;
-reg hh_ap_vld;
-reg mm_ap_vld;
-reg ss_ap_vld;
-reg pm_ap_vld;
+reg hh_write;
+reg mm_write;
+reg ss_write;
+reg pm_write;
 
 (* fsm_encoding = "none" *) reg   [0:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
@@ -60,27 +68,32 @@ reg   [7:0] hours;
 reg   [7:0] minutes;
 reg   [7:0] seconds;
 reg   [0:0] pm_indicator;
-reg   [0:0] ap_phi_mux_pm_indicator_loc_0_phi_fu_99_p4;
-wire   [0:0] reset_read_read_fu_56_p2;
+reg    hh_blk_n;
+reg    mm_blk_n;
+reg    ss_blk_n;
+reg    pm_blk_n;
+reg   [0:0] ap_phi_mux_pm_indicator_loc_0_phi_fu_105_p4;
+reg    ap_block_state1;
+wire   [0:0] reset_read_read_fu_68_p2;
 wire   [0:0] ena_read_read_fu_62_p2;
-wire   [0:0] icmp_ln19_fu_291_p2;
-wire   [0:0] icmp_ln22_fu_304_p2;
-wire   [7:0] hours_load_load_fu_257_p1;
-wire   [0:0] xor_ln28_fu_317_p2;
-reg   [0:0] ap_phi_mux_hours_flag_4_phi_fu_108_p12;
-reg   [7:0] ap_phi_mux_hours_new_4_phi_fu_131_p12;
-wire   [7:0] add_ln24_fu_310_p2;
-reg   [0:0] ap_phi_mux_minutes_flag_3_phi_fu_151_p12;
-reg   [7:0] ap_phi_mux_minutes_new_3_phi_fu_174_p12;
-wire   [7:0] add_ln21_fu_297_p2;
-reg   [0:0] ap_phi_mux_seconds_flag_2_phi_fu_195_p12;
-reg   [7:0] ap_phi_mux_seconds_new_2_phi_fu_218_p12;
-wire   [7:0] add_ln18_fu_284_p2;
-reg   [0:0] ap_phi_mux_pm_indicator_loc_5_phi_fu_240_p12;
+wire   [0:0] icmp_ln21_fu_297_p2;
+wire   [0:0] icmp_ln24_fu_310_p2;
+wire   [7:0] hours_load_load_fu_263_p1;
+wire   [0:0] xor_ln30_fu_323_p2;
+reg   [0:0] ap_phi_mux_hours_flag_4_phi_fu_114_p12;
+reg   [7:0] ap_phi_mux_p_07_phi_fu_137_p12;
+wire   [7:0] add_ln26_fu_316_p2;
+reg   [0:0] ap_phi_mux_minutes_flag_3_phi_fu_157_p12;
+reg   [7:0] ap_phi_mux_p_08_phi_fu_180_p12;
+wire   [7:0] add_ln23_fu_303_p2;
+reg   [0:0] ap_phi_mux_seconds_flag_2_phi_fu_201_p12;
+reg   [7:0] ap_phi_mux_p_0_phi_fu_224_p12;
+wire   [7:0] add_ln20_fu_290_p2;
+reg   [0:0] ap_phi_mux_p_06_phi_fu_246_p12;
 reg   [0:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
-reg    ap_condition_174;
-reg    ap_condition_66;
+reg    ap_condition_199;
+reg    ap_condition_91;
 wire    ap_ce_reg;
 
 // power-on initialization
@@ -101,35 +114,35 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        if ((reset_read_read_fu_56_p2 == 1'd1)) begin
+    if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1))) begin
+        if ((reset_read_read_fu_68_p2 == 1'd1)) begin
             pm_indicator <= 1'd0;
-        end else if ((1'b1 == ap_condition_66)) begin
-            pm_indicator <= xor_ln28_fu_317_p2;
+        end else if ((1'b1 == ap_condition_91)) begin
+            pm_indicator <= xor_ln30_fu_323_p2;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((ap_start == 1'b1) & (ap_phi_mux_hours_flag_4_phi_fu_108_p12 == 1'd1) & (1'b1 == ap_CS_fsm_state1))) begin
-        hours <= ap_phi_mux_hours_new_4_phi_fu_131_p12;
+    if (((ap_phi_mux_hours_flag_4_phi_fu_114_p12 == 1'd1) & (1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1))) begin
+        hours <= ap_phi_mux_p_07_phi_fu_137_p12;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1) & (ap_phi_mux_minutes_flag_3_phi_fu_151_p12 == 1'd1))) begin
-        minutes <= ap_phi_mux_minutes_new_3_phi_fu_174_p12;
+    if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1) & (ap_phi_mux_minutes_flag_3_phi_fu_157_p12 == 1'd1))) begin
+        minutes <= ap_phi_mux_p_08_phi_fu_180_p12;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1) & (ap_phi_mux_seconds_flag_2_phi_fu_195_p12 == 1'd1))) begin
-        seconds <= ap_phi_mux_seconds_new_2_phi_fu_218_p12;
+    if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1) & (ap_phi_mux_seconds_flag_2_phi_fu_201_p12 == 1'd1))) begin
+        seconds <= ap_phi_mux_p_0_phi_fu_224_p12;
     end
 end
 
 always @ (*) begin
-    if ((ap_start == 1'b0)) begin
+    if ((1'b1 == ap_block_state1)) begin
         ap_ST_fsm_state1_blk = 1'b1;
     end else begin
         ap_ST_fsm_state1_blk = 1'b0;
@@ -137,7 +150,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
+    if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = 1'b0;
@@ -153,101 +166,101 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((((icmp_ln22_fu_304_p2 == 1'd0) & (icmp_ln19_fu_291_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_56_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((icmp_ln19_fu_291_p2 == 1'd0) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_56_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((ena_read_read_fu_62_p2 == 1'd0) & (reset_read_read_fu_56_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)))) begin
-        ap_phi_mux_hours_flag_4_phi_fu_108_p12 = 1'd0;
-    end else if ((((reset_read_read_fu_56_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state1)) | (~(hours_load_load_fu_257_p1 == 8'd12) & (icmp_ln22_fu_304_p2 == 1'd1) & (icmp_ln19_fu_291_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_56_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((hours_load_load_fu_257_p1 == 8'd12) & (icmp_ln22_fu_304_p2 == 1'd1) & (icmp_ln19_fu_291_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_56_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)))) begin
-        ap_phi_mux_hours_flag_4_phi_fu_108_p12 = 1'd1;
+    if ((((icmp_ln24_fu_310_p2 == 1'd0) & (icmp_ln21_fu_297_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_68_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((icmp_ln21_fu_297_p2 == 1'd0) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_68_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((ena_read_read_fu_62_p2 == 1'd0) & (reset_read_read_fu_68_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)))) begin
+        ap_phi_mux_hours_flag_4_phi_fu_114_p12 = 1'd0;
+    end else if ((((reset_read_read_fu_68_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state1)) | (~(hours_load_load_fu_263_p1 == 8'd12) & (icmp_ln24_fu_310_p2 == 1'd1) & (icmp_ln21_fu_297_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_68_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((hours_load_load_fu_263_p1 == 8'd12) & (icmp_ln24_fu_310_p2 == 1'd1) & (icmp_ln21_fu_297_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_68_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)))) begin
+        ap_phi_mux_hours_flag_4_phi_fu_114_p12 = 1'd1;
     end else begin
-        ap_phi_mux_hours_flag_4_phi_fu_108_p12 = 'bx;
+        ap_phi_mux_hours_flag_4_phi_fu_114_p12 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((~(hours_load_load_fu_257_p1 == 8'd12) & (icmp_ln22_fu_304_p2 == 1'd1) & (icmp_ln19_fu_291_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_56_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1))) begin
-        ap_phi_mux_hours_new_4_phi_fu_131_p12 = add_ln24_fu_310_p2;
-    end else if ((((icmp_ln22_fu_304_p2 == 1'd0) & (icmp_ln19_fu_291_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_56_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((icmp_ln19_fu_291_p2 == 1'd0) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_56_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((ena_read_read_fu_62_p2 == 1'd0) & (reset_read_read_fu_56_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)))) begin
-        ap_phi_mux_hours_new_4_phi_fu_131_p12 = hours;
-    end else if (((reset_read_read_fu_56_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state1))) begin
-        ap_phi_mux_hours_new_4_phi_fu_131_p12 = 8'd12;
-    end else if (((hours_load_load_fu_257_p1 == 8'd12) & (icmp_ln22_fu_304_p2 == 1'd1) & (icmp_ln19_fu_291_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_56_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1))) begin
-        ap_phi_mux_hours_new_4_phi_fu_131_p12 = 8'd1;
+    if ((((icmp_ln21_fu_297_p2 == 1'd0) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_68_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((ena_read_read_fu_62_p2 == 1'd0) & (reset_read_read_fu_68_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)))) begin
+        ap_phi_mux_minutes_flag_3_phi_fu_157_p12 = 1'd0;
+    end else if ((((reset_read_read_fu_68_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state1)) | (~(hours_load_load_fu_263_p1 == 8'd12) & (icmp_ln24_fu_310_p2 == 1'd1) & (icmp_ln21_fu_297_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_68_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((hours_load_load_fu_263_p1 == 8'd12) & (icmp_ln24_fu_310_p2 == 1'd1) & (icmp_ln21_fu_297_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_68_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((icmp_ln24_fu_310_p2 == 1'd0) & (icmp_ln21_fu_297_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_68_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)))) begin
+        ap_phi_mux_minutes_flag_3_phi_fu_157_p12 = 1'd1;
     end else begin
-        ap_phi_mux_hours_new_4_phi_fu_131_p12 = 'bx;
+        ap_phi_mux_minutes_flag_3_phi_fu_157_p12 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((icmp_ln19_fu_291_p2 == 1'd0) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_56_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((ena_read_read_fu_62_p2 == 1'd0) & (reset_read_read_fu_56_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)))) begin
-        ap_phi_mux_minutes_flag_3_phi_fu_151_p12 = 1'd0;
-    end else if ((((icmp_ln22_fu_304_p2 == 1'd0) & (icmp_ln19_fu_291_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_56_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((reset_read_read_fu_56_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state1)) | (~(hours_load_load_fu_257_p1 == 8'd12) & (icmp_ln22_fu_304_p2 == 1'd1) & (icmp_ln19_fu_291_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_56_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((hours_load_load_fu_257_p1 == 8'd12) & (icmp_ln22_fu_304_p2 == 1'd1) & (icmp_ln19_fu_291_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_56_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)))) begin
-        ap_phi_mux_minutes_flag_3_phi_fu_151_p12 = 1'd1;
+    if ((~(hours_load_load_fu_263_p1 == 8'd12) & (icmp_ln24_fu_310_p2 == 1'd1) & (icmp_ln21_fu_297_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_68_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1))) begin
+        ap_phi_mux_p_06_phi_fu_246_p12 = ap_phi_mux_pm_indicator_loc_0_phi_fu_105_p4;
+    end else if (((reset_read_read_fu_68_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state1))) begin
+        ap_phi_mux_p_06_phi_fu_246_p12 = 1'd0;
+    end else if ((((hours_load_load_fu_263_p1 == 8'd12) & (icmp_ln24_fu_310_p2 == 1'd1) & (icmp_ln21_fu_297_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_68_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((icmp_ln24_fu_310_p2 == 1'd0) & (icmp_ln21_fu_297_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_68_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((icmp_ln21_fu_297_p2 == 1'd0) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_68_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((ena_read_read_fu_62_p2 == 1'd0) & (reset_read_read_fu_68_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)))) begin
+        ap_phi_mux_p_06_phi_fu_246_p12 = pm_indicator;
     end else begin
-        ap_phi_mux_minutes_flag_3_phi_fu_151_p12 = 'bx;
+        ap_phi_mux_p_06_phi_fu_246_p12 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((icmp_ln22_fu_304_p2 == 1'd0) & (icmp_ln19_fu_291_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_56_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1))) begin
-        ap_phi_mux_minutes_new_3_phi_fu_174_p12 = add_ln21_fu_297_p2;
-    end else if ((((icmp_ln19_fu_291_p2 == 1'd0) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_56_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((ena_read_read_fu_62_p2 == 1'd0) & (reset_read_read_fu_56_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)))) begin
-        ap_phi_mux_minutes_new_3_phi_fu_174_p12 = minutes;
-    end else if ((((reset_read_read_fu_56_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state1)) | (~(hours_load_load_fu_257_p1 == 8'd12) & (icmp_ln22_fu_304_p2 == 1'd1) & (icmp_ln19_fu_291_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_56_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((hours_load_load_fu_257_p1 == 8'd12) & (icmp_ln22_fu_304_p2 == 1'd1) & (icmp_ln19_fu_291_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_56_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)))) begin
-        ap_phi_mux_minutes_new_3_phi_fu_174_p12 = 8'd0;
+    if ((~(hours_load_load_fu_263_p1 == 8'd12) & (icmp_ln24_fu_310_p2 == 1'd1) & (icmp_ln21_fu_297_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_68_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1))) begin
+        ap_phi_mux_p_07_phi_fu_137_p12 = add_ln26_fu_316_p2;
+    end else if ((((icmp_ln24_fu_310_p2 == 1'd0) & (icmp_ln21_fu_297_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_68_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((icmp_ln21_fu_297_p2 == 1'd0) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_68_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((ena_read_read_fu_62_p2 == 1'd0) & (reset_read_read_fu_68_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)))) begin
+        ap_phi_mux_p_07_phi_fu_137_p12 = hours;
+    end else if (((reset_read_read_fu_68_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state1))) begin
+        ap_phi_mux_p_07_phi_fu_137_p12 = 8'd12;
+    end else if (((hours_load_load_fu_263_p1 == 8'd12) & (icmp_ln24_fu_310_p2 == 1'd1) & (icmp_ln21_fu_297_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_68_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1))) begin
+        ap_phi_mux_p_07_phi_fu_137_p12 = 8'd1;
     end else begin
-        ap_phi_mux_minutes_new_3_phi_fu_174_p12 = 'bx;
+        ap_phi_mux_p_07_phi_fu_137_p12 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_condition_174)) begin
-        if ((hours_load_load_fu_257_p1 == 8'd11)) begin
-            ap_phi_mux_pm_indicator_loc_0_phi_fu_99_p4 = xor_ln28_fu_317_p2;
-        end else if ((~(hours_load_load_fu_257_p1 == 8'd11) & ~(hours_load_load_fu_257_p1 == 8'd12))) begin
-            ap_phi_mux_pm_indicator_loc_0_phi_fu_99_p4 = pm_indicator;
+    if (((icmp_ln24_fu_310_p2 == 1'd0) & (icmp_ln21_fu_297_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_68_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1))) begin
+        ap_phi_mux_p_08_phi_fu_180_p12 = add_ln23_fu_303_p2;
+    end else if ((((icmp_ln21_fu_297_p2 == 1'd0) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_68_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((ena_read_read_fu_62_p2 == 1'd0) & (reset_read_read_fu_68_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)))) begin
+        ap_phi_mux_p_08_phi_fu_180_p12 = minutes;
+    end else if ((((reset_read_read_fu_68_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state1)) | (~(hours_load_load_fu_263_p1 == 8'd12) & (icmp_ln24_fu_310_p2 == 1'd1) & (icmp_ln21_fu_297_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_68_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((hours_load_load_fu_263_p1 == 8'd12) & (icmp_ln24_fu_310_p2 == 1'd1) & (icmp_ln21_fu_297_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_68_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)))) begin
+        ap_phi_mux_p_08_phi_fu_180_p12 = 8'd0;
+    end else begin
+        ap_phi_mux_p_08_phi_fu_180_p12 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if (((icmp_ln21_fu_297_p2 == 1'd0) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_68_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1))) begin
+        ap_phi_mux_p_0_phi_fu_224_p12 = add_ln20_fu_290_p2;
+    end else if (((ena_read_read_fu_62_p2 == 1'd0) & (reset_read_read_fu_68_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1))) begin
+        ap_phi_mux_p_0_phi_fu_224_p12 = seconds;
+    end else if ((((reset_read_read_fu_68_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state1)) | (~(hours_load_load_fu_263_p1 == 8'd12) & (icmp_ln24_fu_310_p2 == 1'd1) & (icmp_ln21_fu_297_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_68_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((hours_load_load_fu_263_p1 == 8'd12) & (icmp_ln24_fu_310_p2 == 1'd1) & (icmp_ln21_fu_297_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_68_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((icmp_ln24_fu_310_p2 == 1'd0) & (icmp_ln21_fu_297_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_68_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)))) begin
+        ap_phi_mux_p_0_phi_fu_224_p12 = 8'd0;
+    end else begin
+        ap_phi_mux_p_0_phi_fu_224_p12 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_condition_199)) begin
+        if ((hours_load_load_fu_263_p1 == 8'd11)) begin
+            ap_phi_mux_pm_indicator_loc_0_phi_fu_105_p4 = xor_ln30_fu_323_p2;
+        end else if ((~(hours_load_load_fu_263_p1 == 8'd11) & ~(hours_load_load_fu_263_p1 == 8'd12))) begin
+            ap_phi_mux_pm_indicator_loc_0_phi_fu_105_p4 = pm_indicator;
         end else begin
-            ap_phi_mux_pm_indicator_loc_0_phi_fu_99_p4 = 'bx;
+            ap_phi_mux_pm_indicator_loc_0_phi_fu_105_p4 = 'bx;
         end
     end else begin
-        ap_phi_mux_pm_indicator_loc_0_phi_fu_99_p4 = 'bx;
+        ap_phi_mux_pm_indicator_loc_0_phi_fu_105_p4 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((~(hours_load_load_fu_257_p1 == 8'd12) & (icmp_ln22_fu_304_p2 == 1'd1) & (icmp_ln19_fu_291_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_56_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1))) begin
-        ap_phi_mux_pm_indicator_loc_5_phi_fu_240_p12 = ap_phi_mux_pm_indicator_loc_0_phi_fu_99_p4;
-    end else if (((reset_read_read_fu_56_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state1))) begin
-        ap_phi_mux_pm_indicator_loc_5_phi_fu_240_p12 = 1'd0;
-    end else if ((((icmp_ln22_fu_304_p2 == 1'd0) & (icmp_ln19_fu_291_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_56_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((icmp_ln19_fu_291_p2 == 1'd0) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_56_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((ena_read_read_fu_62_p2 == 1'd0) & (reset_read_read_fu_56_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((hours_load_load_fu_257_p1 == 8'd12) & (icmp_ln22_fu_304_p2 == 1'd1) & (icmp_ln19_fu_291_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_56_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)))) begin
-        ap_phi_mux_pm_indicator_loc_5_phi_fu_240_p12 = pm_indicator;
+    if (((ena_read_read_fu_62_p2 == 1'd0) & (reset_read_read_fu_68_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1))) begin
+        ap_phi_mux_seconds_flag_2_phi_fu_201_p12 = 1'd0;
+    end else if ((((reset_read_read_fu_68_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state1)) | (~(hours_load_load_fu_263_p1 == 8'd12) & (icmp_ln24_fu_310_p2 == 1'd1) & (icmp_ln21_fu_297_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_68_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((hours_load_load_fu_263_p1 == 8'd12) & (icmp_ln24_fu_310_p2 == 1'd1) & (icmp_ln21_fu_297_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_68_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((icmp_ln24_fu_310_p2 == 1'd0) & (icmp_ln21_fu_297_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_68_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((icmp_ln21_fu_297_p2 == 1'd0) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_68_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)))) begin
+        ap_phi_mux_seconds_flag_2_phi_fu_201_p12 = 1'd1;
     end else begin
-        ap_phi_mux_pm_indicator_loc_5_phi_fu_240_p12 = 'bx;
+        ap_phi_mux_seconds_flag_2_phi_fu_201_p12 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ena_read_read_fu_62_p2 == 1'd0) & (reset_read_read_fu_56_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1))) begin
-        ap_phi_mux_seconds_flag_2_phi_fu_195_p12 = 1'd0;
-    end else if ((((icmp_ln22_fu_304_p2 == 1'd0) & (icmp_ln19_fu_291_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_56_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((icmp_ln19_fu_291_p2 == 1'd0) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_56_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((reset_read_read_fu_56_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state1)) | (~(hours_load_load_fu_257_p1 == 8'd12) & (icmp_ln22_fu_304_p2 == 1'd1) & (icmp_ln19_fu_291_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_56_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((hours_load_load_fu_257_p1 == 8'd12) & (icmp_ln22_fu_304_p2 == 1'd1) & (icmp_ln19_fu_291_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_56_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)))) begin
-        ap_phi_mux_seconds_flag_2_phi_fu_195_p12 = 1'd1;
-    end else begin
-        ap_phi_mux_seconds_flag_2_phi_fu_195_p12 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if (((icmp_ln19_fu_291_p2 == 1'd0) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_56_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1))) begin
-        ap_phi_mux_seconds_new_2_phi_fu_218_p12 = add_ln18_fu_284_p2;
-    end else if (((ena_read_read_fu_62_p2 == 1'd0) & (reset_read_read_fu_56_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1))) begin
-        ap_phi_mux_seconds_new_2_phi_fu_218_p12 = seconds;
-    end else if ((((icmp_ln22_fu_304_p2 == 1'd0) & (icmp_ln19_fu_291_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_56_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((reset_read_read_fu_56_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state1)) | (~(hours_load_load_fu_257_p1 == 8'd12) & (icmp_ln22_fu_304_p2 == 1'd1) & (icmp_ln19_fu_291_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_56_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((hours_load_load_fu_257_p1 == 8'd12) & (icmp_ln22_fu_304_p2 == 1'd1) & (icmp_ln19_fu_291_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_56_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)))) begin
-        ap_phi_mux_seconds_new_2_phi_fu_218_p12 = 8'd0;
-    end else begin
-        ap_phi_mux_seconds_new_2_phi_fu_218_p12 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
+    if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1))) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
@@ -256,33 +269,65 @@ end
 
 always @ (*) begin
     if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        hh_ap_vld = 1'b1;
+        hh_blk_n = hh_full_n;
     end else begin
-        hh_ap_vld = 1'b0;
+        hh_blk_n = 1'b1;
+    end
+end
+
+always @ (*) begin
+    if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1))) begin
+        hh_write = 1'b1;
+    end else begin
+        hh_write = 1'b0;
     end
 end
 
 always @ (*) begin
     if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        mm_ap_vld = 1'b1;
+        mm_blk_n = mm_full_n;
     end else begin
-        mm_ap_vld = 1'b0;
+        mm_blk_n = 1'b1;
+    end
+end
+
+always @ (*) begin
+    if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1))) begin
+        mm_write = 1'b1;
+    end else begin
+        mm_write = 1'b0;
     end
 end
 
 always @ (*) begin
     if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        pm_ap_vld = 1'b1;
+        pm_blk_n = pm_full_n;
     end else begin
-        pm_ap_vld = 1'b0;
+        pm_blk_n = 1'b1;
+    end
+end
+
+always @ (*) begin
+    if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1))) begin
+        pm_write = 1'b1;
+    end else begin
+        pm_write = 1'b0;
     end
 end
 
 always @ (*) begin
     if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        ss_ap_vld = 1'b1;
+        ss_blk_n = ss_full_n;
     end else begin
-        ss_ap_vld = 1'b0;
+        ss_blk_n = 1'b1;
+    end
+end
+
+always @ (*) begin
+    if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1))) begin
+        ss_write = 1'b1;
+    end else begin
+        ss_write = 1'b0;
     end
 end
 
@@ -297,40 +342,44 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln18_fu_284_p2 = (seconds + 8'd1);
+assign add_ln20_fu_290_p2 = (seconds + 8'd1);
 
-assign add_ln21_fu_297_p2 = (minutes + 8'd1);
+assign add_ln23_fu_303_p2 = (minutes + 8'd1);
 
-assign add_ln24_fu_310_p2 = (hours + 8'd1);
+assign add_ln26_fu_316_p2 = (hours + 8'd1);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
 always @ (*) begin
-    ap_condition_174 = ((icmp_ln22_fu_304_p2 == 1'd1) & (icmp_ln19_fu_291_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_56_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1));
+    ap_block_state1 = ((ap_start == 1'b0) | (pm_full_n == 1'b0) | (ss_full_n == 1'b0) | (mm_full_n == 1'b0) | (hh_full_n == 1'b0));
 end
 
 always @ (*) begin
-    ap_condition_66 = ((hours_load_load_fu_257_p1 == 8'd11) & (icmp_ln22_fu_304_p2 == 1'd1) & (icmp_ln19_fu_291_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_56_p2 == 1'd0));
+    ap_condition_199 = ((icmp_ln24_fu_310_p2 == 1'd1) & (icmp_ln21_fu_297_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_68_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1));
+end
+
+always @ (*) begin
+    ap_condition_91 = ((hours_load_load_fu_263_p1 == 8'd11) & (icmp_ln24_fu_310_p2 == 1'd1) & (icmp_ln21_fu_297_p2 == 1'd1) & (ena_read_read_fu_62_p2 == 1'd1) & (reset_read_read_fu_68_p2 == 1'd0));
 end
 
 assign ena_read_read_fu_62_p2 = ena;
 
-assign hh = ap_phi_mux_hours_new_4_phi_fu_131_p12;
+assign hh_din = ap_phi_mux_p_07_phi_fu_137_p12;
 
-assign hours_load_load_fu_257_p1 = hours;
+assign hours_load_load_fu_263_p1 = hours;
 
-assign icmp_ln19_fu_291_p2 = ((add_ln18_fu_284_p2 == 8'd60) ? 1'b1 : 1'b0);
+assign icmp_ln21_fu_297_p2 = ((add_ln20_fu_290_p2 == 8'd60) ? 1'b1 : 1'b0);
 
-assign icmp_ln22_fu_304_p2 = ((add_ln21_fu_297_p2 == 8'd60) ? 1'b1 : 1'b0);
+assign icmp_ln24_fu_310_p2 = ((add_ln23_fu_303_p2 == 8'd60) ? 1'b1 : 1'b0);
 
-assign mm = ap_phi_mux_minutes_new_3_phi_fu_174_p12;
+assign mm_din = ap_phi_mux_p_08_phi_fu_180_p12;
 
-assign pm = ap_phi_mux_pm_indicator_loc_5_phi_fu_240_p12;
+assign pm_din = ap_phi_mux_p_06_phi_fu_246_p12;
 
-assign reset_read_read_fu_56_p2 = reset;
+assign reset_read_read_fu_68_p2 = reset;
 
-assign ss = ap_phi_mux_seconds_new_2_phi_fu_218_p12;
+assign ss_din = ap_phi_mux_p_0_phi_fu_224_p12;
 
-assign xor_ln28_fu_317_p2 = (pm_indicator ^ 1'd1);
+assign xor_ln30_fu_323_p2 = (pm_indicator ^ 1'd1);
 
 endmodule //clock

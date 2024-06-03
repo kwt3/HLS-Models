@@ -70,7 +70,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1702129263</coreId>
+              <coreId>2415964680</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>4</bitwidth>
@@ -102,7 +102,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item class_id="10" tracking_level="0" version="0">
-                  <first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</first>
+                  <first>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</first>
                   <second class_id="11" tracking_level="0" version="0">
                     <count>1</count>
                     <item_version>0</item_version>
@@ -124,7 +124,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>187847272</coreId>
+              <coreId>1919906418</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -159,7 +159,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</first>
+                  <first>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -181,7 +181,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>2271643864</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -217,7 +217,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</first>
+                  <first>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -239,7 +239,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>2467219696</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>4</bitwidth>
@@ -273,7 +273,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</first>
+                  <first>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -330,7 +330,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</first>
+                  <first>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -352,7 +352,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1869376609</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -388,7 +388,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</first>
+                  <first>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -445,7 +445,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</first>
+                  <first>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -467,7 +467,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>77935536</coreId>
+              <coreId>1931502689</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -511,7 +511,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>2467223920</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -545,7 +545,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</first>
+                  <first>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -603,7 +603,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</first>
+                  <first>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -659,7 +659,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</first>
+                  <first>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -681,7 +681,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1279816814</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -716,7 +716,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</first>
+                  <first>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -738,7 +738,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1634755954</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -772,7 +772,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</first>
+                  <first>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -794,7 +794,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>544435055</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>4</bitwidth>
@@ -833,7 +833,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</first>
+                  <first>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -855,7 +855,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1702258035</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -891,7 +891,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</first>
+                  <first>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -913,7 +913,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>4784214</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -958,7 +958,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1663923297</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>4</bitwidth>
@@ -989,7 +989,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>120963936</coreId>
+              <coreId>1702129263</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>4</bitwidth>
@@ -1020,7 +1020,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>185052240</coreId>
+              <coreId>1702129263</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>4</bitwidth>
@@ -1054,7 +1054,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>4294967295</coreId>
+            <coreId>81945040</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -1086,7 +1086,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>158629808</coreId>
+            <coreId>2408776288</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -1119,7 +1119,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>341939680</coreId>
+            <coreId>0</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -1152,7 +1152,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>4294967292</coreId>
+            <coreId>0</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -1184,7 +1184,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>4294967292</coreId>
+            <coreId>0</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -1216,7 +1216,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>0</coreId>
+            <coreId>2467227952</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>

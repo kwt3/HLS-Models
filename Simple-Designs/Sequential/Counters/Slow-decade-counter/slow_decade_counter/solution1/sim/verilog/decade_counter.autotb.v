@@ -16,6 +16,8 @@
 `define AUTOTB_TOP_INST AESL_inst_apatb_decade_counter_top
 `define AUTOTB_MAX_ALLOW_LATENCY  15000000
 `define AUTOTB_CLOCK_PERIOD_DIV2 5.00
+`define AUTOTB_II 1
+`define AUTOTB_LATENCY 0
 
 `define AESL_DEPTH_reset 1
 `define AESL_DEPTH_slowena 1
@@ -28,7 +30,7 @@
 `define AUTOTB_TVOUT_out_r_out_wrapc  "../tv/rtldatafile/rtl.decade_counter.autotvout_out_r.dat"
 module `AUTOTB_TOP;
 
-parameter AUTOTB_TRANSACTION_NUM = 16;
+parameter AUTOTB_TRANSACTION_NUM = 26;
 parameter PROGRESS_TIMEOUT = 10000000;
 parameter LATENCY_ESTIMATION = 0;
 parameter LENGTH_out_r = 1;
@@ -58,20 +60,15 @@ wire AESL_ce;
 wire AESL_ready;
 wire AESL_idle;
 wire AESL_continue;
-wire AESL_done;
+reg AESL_done = 0;
 reg AESL_done_delay = 0;
 reg AESL_done_delay2 = 0;
 reg AESL_ready_delay = 0;
 wire ready;
 wire ready_wire;
-wire ap_start;
-wire ap_done;
-wire ap_idle;
-wire ap_ready;
 wire [0 : 0] reset;
 wire [0 : 0] slowena;
 wire [3 : 0] out_r;
-wire  out_r_ap_vld;
 integer done_cnt = 0;
 integer AESL_ready_cnt = 0;
 integer ready_cnt = 0;
@@ -90,45 +87,19 @@ wire ap_rst_n;
 `AUTOTB_DUT `AUTOTB_DUT_INST(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(ap_start),
-    .ap_done(ap_done),
-    .ap_idle(ap_idle),
-    .ap_ready(ap_ready),
     .reset(reset),
     .slowena(slowena),
-    .out_r(out_r),
-    .out_r_ap_vld(out_r_ap_vld));
+    .out_r(out_r));
 
 // Assignment for control signal
 assign ap_clk = AESL_clock;
 assign ap_rst = dut_rst;
 assign ap_rst_n = ~dut_rst;
 assign AESL_reset = rst;
-assign ap_start = AESL_start;
 assign AESL_start = start;
-assign AESL_done = ap_done;
-assign AESL_idle = ap_idle;
-assign AESL_ready = ap_ready;
 assign AESL_ce = ce;
 assign AESL_continue = tb_continue;
-    always @(posedge AESL_clock) begin
-        if (AESL_reset) begin
-        end else begin
-            if (AESL_done !== 1 && AESL_done !== 0) begin
-                $display("ERROR: Control signal AESL_done is invalid!");
-                $finish;
-            end
-        end
-    end
-    always @(posedge AESL_clock) begin
-        if (AESL_reset) begin
-        end else begin
-            if (AESL_ready !== 1 && AESL_ready !== 0) begin
-                $display("ERROR: Control signal AESL_ready is invalid!");
-                $finish;
-            end
-        end
-    end
+assign AESL_ready = ready;
 // The signal of port reset
 reg [0: 0] AESL_REG_reset = 0;
 assign reset = AESL_REG_reset;
@@ -237,17 +208,14 @@ initial begin : read_file_process_slowena
 end
 
 
-reg AESL_REG_out_r_ap_vld = 0;
 // The signal of port out_r
 reg [3: 0] AESL_REG_out_r = 0;
 always @(posedge AESL_clock)
 begin
     if(AESL_reset)
         AESL_REG_out_r = 0; 
-    else if(out_r_ap_vld) begin
+    else
         AESL_REG_out_r <= out_r;
-        AESL_REG_out_r_ap_vld <= 1;
-    end
 end 
 
 initial begin : write_file_process_out_r
@@ -278,10 +246,7 @@ initial begin : write_file_process_out_r
           end
         # 0.4;
         $fdisplay(fp,"[[transaction]] %d", transaction_idx);
-        if(AESL_REG_out_r_ap_vld)  begin
           $fdisplay(fp,"0x%x", AESL_REG_out_r);
-        AESL_REG_out_r_ap_vld = 0;
-        end
     transaction_idx = transaction_idx + 1;
       $fdisplay(fp,"[[/transaction]]");
     end
@@ -375,25 +340,21 @@ initial begin : initial_process_for_dut_rst
     # 0.1;
     dut_rst = 0;
 end
-initial begin : start_process
-    integer proc_rand;
+initial begin : gen_ap_ctrl_none_start
     reg [31:0] start_cnt;
-    ce = 1;
     start = 0;
     start_cnt = 0;
+    ce = 1;
     wait (AESL_reset === 0);
     @ (posedge AESL_clock);
-    #0 start = 1;
-    start_cnt = start_cnt + 1;
-    forever begin
-        if (start_cnt >= AUTOTB_TRANSACTION_NUM + 1) begin
-            #0 start = 0;
-        end
+    while (ready_cnt < AUTOTB_TRANSACTION_NUM + 1) begin
+        start = 1;
+        start_cnt = start_cnt + 1;
         @ (posedge AESL_clock);
-        if (AESL_ready) begin
-            start_cnt = start_cnt + 1;
-        end
+        start = 0;
+        repeat (`AUTOTB_II - 1) @ (posedge AESL_clock);
     end
+    start <= 0;
 end
 
 always @(AESL_done)
@@ -403,19 +364,12 @@ end
 
 initial begin : ready_initial_process
     ready_initial = 0;
-    wait (AESL_start === 1);
+    wait(AESL_reset === 0);
     ready_initial = 1;
     @(posedge AESL_clock);
     ready_initial = 0;
 end
 
-always @(posedge AESL_clock)
-begin
-    if(AESL_reset)
-      AESL_ready_delay = 0;
-  else
-      AESL_ready_delay = AESL_ready;
-end
 initial begin : ready_last_n_process
   ready_last_n = 1;
   wait(ready_cnt == AUTOTB_TRANSACTION_NUM)
@@ -423,15 +377,8 @@ initial begin : ready_last_n_process
   ready_last_n <= 0;
 end
 
-always @(posedge AESL_clock)
-begin
-    if(AESL_reset)
-      ready_delay_last_n = 0;
-  else
-      ready_delay_last_n <= ready_last_n;
-end
-assign ready = (ready_initial | AESL_ready_delay);
-assign ready_wire = ready_initial | AESL_ready_delay;
+assign ready = AESL_start | ready_initial;
+assign ready_wire = ready;
 initial begin : done_delay_last_n_process
   done_delay_last_n = 1;
   while(done_cnt < AUTOTB_TRANSACTION_NUM)
@@ -465,6 +412,25 @@ begin
       else
           interface_done = 0;
   end
+end
+initial begin : gen_ap_ctrl_none_done
+    integer wait_i;
+    AESL_done <= 0;
+    wait(AESL_reset === 0);
+    for (wait_i = 0; wait_i < `AUTOTB_LATENCY ; wait_i = wait_i + 1) begin
+        @(posedge AESL_clock);
+    end
+    AESL_done <= 1;
+    @(posedge AESL_clock);
+    AESL_done <= 0;
+    while(done_cnt < AUTOTB_TRANSACTION_NUM) begin
+        for (wait_i = 0; wait_i < `AUTOTB_II - 1; wait_i = wait_i + 1) begin
+            @(posedge AESL_clock);
+        end
+        AESL_done <= 1;
+        @(posedge AESL_clock);
+        AESL_done <= 0;
+    end
 end
 task write_binary;
     input integer fp;
@@ -646,6 +612,8 @@ endtask
 task calculate_performance();
     integer i;
     integer fp;
+    integer real_cnt;
+    integer valid_cnt;
     reg [31:0] latency [0:AUTOTB_TRANSACTION_NUM - 1];
     reg [31:0] latency_min;
     reg [31:0] latency_max;
@@ -665,20 +633,27 @@ task calculate_performance();
         interval_max = 0;
         interval_total = 0;
         total_execute_time = lat_total;
+        real_cnt = (start_cnt < finish_cnt) ? start_cnt : AUTOTB_TRANSACTION_NUM;
+        valid_cnt = 0;
 
-        for (i = 0; i < AUTOTB_TRANSACTION_NUM; i = i + 1) begin
+        for (i = 0; i < real_cnt; i = i + 1) begin
             // calculate latency
-            latency[i] = finish_timestamp[i] - start_timestamp[i];
-            if (latency[i] > latency_max) latency_max = latency[i];
-            if (latency[i] < latency_min) latency_min = latency[i];
-            latency_total = latency_total + latency[i];
+            if (finish_timestamp[i] >= start_timestamp[i]) begin
+                latency[i] = finish_timestamp[i] - start_timestamp[i];
+                if (latency[i] > latency_max) latency_max = latency[i];
+                if (latency[i] < latency_min) latency_min = latency[i];
+                latency_total = latency_total + latency[i];
+                valid_cnt = valid_cnt + 1;
+            end else begin
+                latency[i] = 0;
+            end
             // calculate interval
-            if (AUTOTB_TRANSACTION_NUM == 1) begin
+            if (real_cnt == 1) begin
                 interval[i] = 0;
                 interval_max = 0;
                 interval_min = 0;
                 interval_total = 0;
-            end else if (i < AUTOTB_TRANSACTION_NUM - 1) begin
+            end else if (i < real_cnt - 1) begin
                 interval[i] = start_timestamp[i + 1] - start_timestamp[i];
                 if (interval[i] > interval_max) interval_max = interval[i];
                 if (interval[i] < interval_min) interval_min = interval[i];
@@ -686,11 +661,14 @@ task calculate_performance();
             end
         end
 
-        latency_average = latency_total / AUTOTB_TRANSACTION_NUM;
-        if (AUTOTB_TRANSACTION_NUM == 1) begin
+        if (valid_cnt > 0)
+            latency_average = latency_total / valid_cnt;
+        else
+            latency_average = latency_total;
+        if (real_cnt == 1) begin
             interval_average = 0;
         end else begin
-            interval_average = interval_total / (AUTOTB_TRANSACTION_NUM - 1);
+            interval_average = interval_total / (real_cnt - 1);
         end
 
         fp = $fopen(`AUTOTB_LAT_RESULT_FILE, "w");
@@ -708,12 +686,12 @@ task calculate_performance();
         fp = $fopen(`AUTOTB_PER_RESULT_TRANS_FILE, "w");
 
         $fdisplay(fp, "%20s%16s%16s", "", "latency", "interval");
-        if (AUTOTB_TRANSACTION_NUM == 1) begin
+        if (real_cnt == 1) begin
             i = 0;
             $fdisplay(fp, "transaction%8d:%16d%16d", i, latency[i], interval[i]);
         end else begin
-            for (i = 0; i < AUTOTB_TRANSACTION_NUM; i = i + 1) begin
-                if (i < AUTOTB_TRANSACTION_NUM - 1) begin
+            for (i = 0; i < real_cnt; i = i + 1) begin
+                if (i < real_cnt - 1) begin
                     $fdisplay(fp, "transaction%8d:%16d%16d", i, latency[i], interval[i]);
                 end else begin
                     $fdisplay(fp, "transaction%8d:%16d               x", i, latency[i]);
@@ -722,6 +700,8 @@ task calculate_performance();
         end
 
         $fclose(fp);
+        if (start_cnt < finish_cnt)
+            $display("Note: for this 'ap_ctrl_none' design the last %0d transactions have no output. In order to save runtime, cosim will end eariler after getting all needed output. So performance report only covers the first %0d transactions.",(finish_cnt - start_cnt), start_cnt);
     end
 endtask
 

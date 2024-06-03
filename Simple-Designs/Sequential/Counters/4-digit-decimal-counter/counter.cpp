@@ -1,28 +1,14 @@
 #include "counter.hpp"
 
-void Counter4::increment(ap_uint<1> &reset, ap_uint<4> &out) {
+void increment(ap_uint<1> &reset, ap_uint<4> &out, const int max_count) {
+    static int count = 0;
+
     // Check for reset signal
     if (reset == 1) {
-        count = 0;
+        count = (max_count == 12) ? 1 : 0; // Reset count based on max_count
     } else {
-        if (count == 9) {
-            count = 0;
-        } else {
-            count++;
-        }
-    }
-
-    // Output the current count
-    out = count;
-}
-
-void Counter12::increment(ap_uint<1> &reset, ap_uint<4> &out) {
-    // Check for reset signal
-    if (reset == 1) {
-        count = 1;
-    } else {
-        if (count == 12) {
-            count = 1;
+        if (count == max_count) {
+            count = (max_count == 12) ? 1 : 0; // Reset count to 1 or 0 based on max_count
         } else {
             count++;
         }

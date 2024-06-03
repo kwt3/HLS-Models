@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'clock'
 ================================================================
 + General Information: 
-    * Date:           Mon Mar 25 04:47:05 2024
+    * Date:           Mon Jun  3 00:03:31 2024
     * Version:        2023.2 (Build 4023990 on Oct 11 2023)
     * Project:        12hour_clock
     * Solution:       solution1 (Vivado IP Flow Target)
@@ -19,23 +19,29 @@
     | Modules | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |    |          |           |     |
     | & Loops | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|    FF    |    LUT    | URAM|
     +---------+------+------+---------+--------+----------+---------+------+----------+------+----+----------+-----------+-----+
-    |+ clock  |     -|  5.01|        0|   0.000|         -|        1|     -|        no|     -|   -|  26 (~0%)|  232 (~0%)|    -|
+    |+ clock  |     -|  3.29|        0|   0.000|         -|        1|     -|       yes|     -|   -|  26 (~0%)|  270 (~0%)|    -|
     +---------+------+------+---------+--------+----------+---------+------+----------+------+----+----------+-----------+-----+
 
 
 ================================================================
 == HW Interfaces
 ================================================================
+* AP_FIFO
++-----------+-----------+------------+
+| Interface | Direction | Data Width |
++-----------+-----------+------------+
+| hh        | out       | 8          |
+| mm        | out       | 8          |
+| pm        | out       | 1          |
+| ss        | out       | 8          |
++-----------+-----------+------------+
+
 * Other Ports
 +-------+---------+-----------+----------+
 | Port  | Mode    | Direction | Bitwidth |
 +-------+---------+-----------+----------+
 | ena   | ap_none | in        | 1        |
-| hh    | ap_vld  | out       | 8        |
-| mm    | ap_vld  | out       | 8        |
-| pm    | ap_vld  | out       | 1        |
 | reset | ap_none | in        | 1        |
-| ss    | ap_vld  | out       | 8        |
 +-------+---------+-----------+----------+
 
 * TOP LEVEL CONTROL
@@ -52,32 +58,28 @@
 == SW I/O Information
 ================================================================
 * Top Function Arguments
-+----------+-----------+-------------+
-| Argument | Direction | Datatype    |
-+----------+-----------+-------------+
-| reset    | in        | ap_uint<1>& |
-| ena      | in        | ap_uint<1>& |
-| hh       | out       | ap_uint<8>& |
-| mm       | out       | ap_uint<8>& |
-| ss       | out       | ap_uint<8>& |
-| pm       | out       | ap_uint<1>& |
-+----------+-----------+-------------+
++----------+-----------+------------------------+
+| Argument | Direction | Datatype               |
++----------+-----------+------------------------+
+| reset    | in        | ap_uint<1>             |
+| ena      | in        | ap_uint<1>             |
+| hh       | out       | stream<ap_uint<8>, 0>& |
+| mm       | out       | stream<ap_uint<8>, 0>& |
+| ss       | out       | stream<ap_uint<8>, 0>& |
+| pm       | out       | stream<ap_uint<1>, 0>& |
++----------+-----------+------------------------+
 
 * SW-to-HW Mapping
-+----------+--------------+---------+
-| Argument | HW Interface | HW Type |
-+----------+--------------+---------+
-| reset    | reset        | port    |
-| ena      | ena          | port    |
-| hh       | hh           | port    |
-| hh       | hh_ap_vld    | port    |
-| mm       | mm           | port    |
-| mm       | mm_ap_vld    | port    |
-| ss       | ss           | port    |
-| ss       | ss_ap_vld    | port    |
-| pm       | pm           | port    |
-| pm       | pm_ap_vld    | port    |
-+----------+--------------+---------+
++----------+--------------+-----------+
+| Argument | HW Interface | HW Type   |
++----------+--------------+-----------+
+| reset    | reset        | port      |
+| ena      | ena          | port      |
+| hh       | hh           | interface |
+| mm       | mm           | interface |
+| ss       | ss           | interface |
+| pm       | pm           | interface |
++----------+--------------+-----------+
 
 
 ================================================================
@@ -87,9 +89,9 @@
 | Name                 | DSP | Pragma | Variable | Op  | Impl   | Latency |
 +----------------------+-----+--------+----------+-----+--------+---------+
 | + clock              | 0   |        |          |     |        |         |
-|   add_ln18_fu_284_p2 |     |        | add_ln18 | add | fabric | 0       |
-|   add_ln21_fu_297_p2 |     |        | add_ln21 | add | fabric | 0       |
-|   add_ln24_fu_310_p2 |     |        | add_ln24 | add | fabric | 0       |
+|   add_ln20_fu_290_p2 |     |        | add_ln20 | add | fabric | 0       |
+|   add_ln23_fu_303_p2 |     |        | add_ln23 | add | fabric | 0       |
+|   add_ln26_fu_316_p2 |     |        | add_ln26 | add | fabric | 0       |
 +----------------------+-----+--------+----------+-----+--------+---------+
 
 
@@ -101,5 +103,11 @@
 ================================================================
 == Pragma Report
 ================================================================
-  No pragmas found
+* Valid Pragma Syntax
++----------+---------+-----------------------+
+| Type     | Options | Location              |
++----------+---------+-----------------------+
+| pipeline | II=1    | clock.cpp:10 in clock |
++----------+---------+-----------------------+
+
 

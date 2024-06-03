@@ -6,13 +6,11 @@
     "fileloc": 3,
     "instructions": 63,
     "loads": {
-      "G": 8,
-      "T": 2
+      "G": 8
     },
     "name": "clock",
     "stores": {
-      "G": 11,
-      "T": 4
+      "G": 11
     },
     "total_instructions": 63
   }

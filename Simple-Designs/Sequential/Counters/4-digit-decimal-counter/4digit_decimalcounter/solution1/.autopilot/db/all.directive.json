@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "increment",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "increment"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/4-digit-decimal-counter/4digit_decimalcounter/solution1/csynth.tcl",
+    "sourceLine": 16,
+    "success": true
+  }
+]

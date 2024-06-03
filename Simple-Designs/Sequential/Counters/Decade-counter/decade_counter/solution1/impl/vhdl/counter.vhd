@@ -45,8 +45,8 @@ architecture behav of counter is
     signal count : STD_LOGIC_VECTOR (3 downto 0) := "0000";
     signal ap_phi_mux_p_0_0_0_phi_fu_48_p6 : STD_LOGIC_VECTOR (3 downto 0);
     signal reset_read_read_fu_32_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal add_ln14_fu_69_p2 : STD_LOGIC_VECTOR (3 downto 0);
-    signal icmp_ln11_fu_63_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal add_ln15_fu_69_p2 : STD_LOGIC_VECTOR (3 downto 0);
+    signal icmp_ln12_fu_63_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_NS_fsm : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_ST_fsm_state1_blk : STD_LOGIC;
     signal ap_ce_reg : STD_LOGIC;
@@ -72,10 +72,10 @@ begin
     count_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if ((((ap_start = ap_const_logic_1) and (icmp_ln11_fu_63_p2 = ap_const_lv1_1) and (reset_read_read_fu_32_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state1)) or ((ap_start = ap_const_logic_1) and (reset_read_read_fu_32_p2 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
+            if ((((ap_start = ap_const_logic_1) and (icmp_ln12_fu_63_p2 = ap_const_lv1_1) and (reset_read_read_fu_32_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state1)) or ((ap_start = ap_const_logic_1) and (reset_read_read_fu_32_p2 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
                 count <= ap_const_lv4_0;
-            elsif (((ap_start = ap_const_logic_1) and (icmp_ln11_fu_63_p2 = ap_const_lv1_0) and (reset_read_read_fu_32_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
-                count <= add_ln14_fu_69_p2;
+            elsif (((ap_start = ap_const_logic_1) and (icmp_ln12_fu_63_p2 = ap_const_lv1_0) and (reset_read_read_fu_32_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
+                count <= add_ln15_fu_69_p2;
             end if; 
         end if;
     end process;
@@ -89,7 +89,7 @@ begin
                 ap_NS_fsm <= "X";
         end case;
     end process;
-    add_ln14_fu_69_p2 <= std_logic_vector(unsigned(count) + unsigned(ap_const_lv4_1));
+    add_ln15_fu_69_p2 <= std_logic_vector(unsigned(count) + unsigned(ap_const_lv4_1));
     ap_CS_fsm_state1 <= ap_CS_fsm(0);
 
     ap_ST_fsm_state1_blk_assign_proc : process(ap_start)
@@ -122,11 +122,11 @@ begin
     end process;
 
 
-    ap_phi_mux_p_0_0_0_phi_fu_48_p6_assign_proc : process(ap_CS_fsm_state1, reset_read_read_fu_32_p2, add_ln14_fu_69_p2, icmp_ln11_fu_63_p2)
+    ap_phi_mux_p_0_0_0_phi_fu_48_p6_assign_proc : process(ap_CS_fsm_state1, reset_read_read_fu_32_p2, add_ln15_fu_69_p2, icmp_ln12_fu_63_p2)
     begin
-        if (((icmp_ln11_fu_63_p2 = ap_const_lv1_0) and (reset_read_read_fu_32_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
-            ap_phi_mux_p_0_0_0_phi_fu_48_p6 <= add_ln14_fu_69_p2;
-        elsif ((((icmp_ln11_fu_63_p2 = ap_const_lv1_1) and (reset_read_read_fu_32_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state1)) or ((reset_read_read_fu_32_p2 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
+        if (((icmp_ln12_fu_63_p2 = ap_const_lv1_0) and (reset_read_read_fu_32_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
+            ap_phi_mux_p_0_0_0_phi_fu_48_p6 <= add_ln15_fu_69_p2;
+        elsif ((((icmp_ln12_fu_63_p2 = ap_const_lv1_1) and (reset_read_read_fu_32_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state1)) or ((reset_read_read_fu_32_p2 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
             ap_phi_mux_p_0_0_0_phi_fu_48_p6 <= ap_const_lv4_0;
         else 
             ap_phi_mux_p_0_0_0_phi_fu_48_p6 <= "XXXX";
@@ -143,7 +143,7 @@ begin
         end if; 
     end process;
 
-    icmp_ln11_fu_63_p2 <= "1" when (count = ap_const_lv4_9) else "0";
+    icmp_ln12_fu_63_p2 <= "1" when (count = ap_const_lv4_9) else "0";
     out_r <= ap_phi_mux_p_0_0_0_phi_fu_48_p6;
 
     out_r_ap_vld_assign_proc : process(ap_start, ap_CS_fsm_state1)

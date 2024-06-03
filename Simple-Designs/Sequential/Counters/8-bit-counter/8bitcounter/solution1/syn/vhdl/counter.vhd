@@ -42,7 +42,7 @@ architecture behav of counter is
     signal count_internal : STD_LOGIC_VECTOR (7 downto 0) := "00000000";
     signal v_1_fu_59_p3 : STD_LOGIC_VECTOR (7 downto 0);
     signal v_fu_47_p2 : STD_LOGIC_VECTOR (7 downto 0);
-    signal icmp_ln14_fu_53_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal icmp_ln10_fu_53_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_NS_fsm : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_ST_fsm_state1_blk : STD_LOGIC;
     signal ap_ce_reg : STD_LOGIC;
@@ -124,7 +124,7 @@ begin
     end process;
 
     count <= 
-        ap_const_lv8_0 when (icmp_ln14_fu_53_p2(0) = '1') else 
+        ap_const_lv8_0 when (icmp_ln10_fu_53_p2(0) = '1') else 
         v_fu_47_p2;
 
     count_ap_vld_assign_proc : process(ap_start, ap_CS_fsm_state1)
@@ -136,9 +136,9 @@ begin
         end if; 
     end process;
 
-    icmp_ln14_fu_53_p2 <= "1" when (v_fu_47_p2 = upper) else "0";
+    icmp_ln10_fu_53_p2 <= "1" when (v_fu_47_p2 = upper) else "0";
     v_1_fu_59_p3 <= 
-        ap_const_lv8_0 when (icmp_ln14_fu_53_p2(0) = '1') else 
+        ap_const_lv8_0 when (icmp_ln10_fu_53_p2(0) = '1') else 
         v_fu_47_p2;
     v_fu_47_p2 <= std_logic_vector(unsigned(count_internal) + unsigned(ap_const_lv8_1));
 end behav;

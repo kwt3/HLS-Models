@@ -1,8 +1,8 @@
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Shift-Registers/4-bit-shift-register/shift_register.cpp"
+# 1 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Shift-Registers/4-bit-shift-register/shift_register.cpp"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Shift-Registers/4-bit-shift-register/shift_register.cpp"
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Shift-Registers/4-bit-shift-register/shift_register.hpp" 1
+# 1 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Shift-Registers/4-bit-shift-register/shift_register.cpp"
+# 1 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Shift-Registers/4-bit-shift-register/shift_register.hpp" 1
 # 1 "C:/Xilinx/Vitis_HLS/2023.2/include/ap_int.h" 1
 # 10 "C:/Xilinx/Vitis_HLS/2023.2/include/ap_int.h"
 # 1 "C:/Xilinx/Vitis_HLS/2023.2/include/etc/ap_common.h" 1
@@ -55373,11 +55373,11 @@ inline bool operator!=(
 }
 # 366 "C:/Xilinx/Vitis_HLS/2023.2/include/ap_fixed.h" 2
 # 361 "C:/Xilinx/Vitis_HLS/2023.2/include/ap_int.h" 2
-# 2 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Shift-Registers/4-bit-shift-register/shift_register.hpp" 2
+# 2 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Shift-Registers/4-bit-shift-register/shift_register.hpp" 2
 
 
 void shift_register(ap_uint<1> &areset, ap_uint<1> &load, ap_uint<1> &ena, ap_uint<4> &data, ap_uint<4> &q);
-# 2 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Shift-Registers/4-bit-shift-register/shift_register.cpp" 2
+# 2 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Shift-Registers/4-bit-shift-register/shift_register.cpp" 2
 
 void shift_register(ap_uint<1> &areset, ap_uint<1> &load, ap_uint<1> &ena, ap_uint<4> &data, ap_uint<4> &q) {
 

@@ -1,4 +1,4 @@
-<project xmlns="com.autoesl.autopilot.project" top="counter" name="8bitcounter" projectType="C/C++">
+<project xmlns="com.autoesl.autopilot.project" name="8bitcounter" top="counter" projectType="C/C++">
     <includePaths/>
     <libraryPaths/>
     <Simulation>

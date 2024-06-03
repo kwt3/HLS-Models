@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="shift_register.cpp" path="C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Shift-Registers\4-bit-shift-register\shift_register.cpp"/>
-    <originFiles name="shift_register.hpp" path="C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Shift-Registers\4-bit-shift-register\shift_register.hpp"/>
+    <originFiles name="shift_register.cpp" path="C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Shift-Registers\4-bit-shift-register\shift_register.cpp"/>
+    <originFiles name="shift_register.hpp" path="C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Shift-Registers\4-bit-shift-register\shift_register.hpp"/>
   </source>
   <testbench>
-    <originFiles name="tb_shift_register.cpp" path="C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Shift-Registers\4-bit-shift-register\tb_shift_register.cpp"/>
+    <originFiles name="tb_shift_register.cpp" path="C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Shift-Registers\4-bit-shift-register\tb_shift_register.cpp"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

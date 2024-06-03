@@ -141,10 +141,10 @@ if.else:0 %count_load = load i4 %count
 
 <Node id="13" bw="1" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-if.else:1 %icmp_ln11 = icmp_eq  i4 %count_load, i4 9
+if.else:1 %icmp_ln12 = icmp_eq  i4 %count_load, i4 9
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln11"/></StgValue>
+<StgValue><ssdm name="icmp_ln12"/></StgValue>
 </operation>
 
 <operation id="11" st_id="1" stage="1" lat="1">
@@ -157,10 +157,10 @@ if.else:1 %icmp_ln11 = icmp_eq  i4 %count_load, i4 9
 
 <Node id="14" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-if.else:2 %br_ln11 = br i1 %icmp_ln11, void %if.else4, void %if.then2
+if.else:2 %br_ln12 = br i1 %icmp_ln12, void %if.else4, void %if.then2
 
 ]]></Node>
-<StgValue><ssdm name="br_ln11"/></StgValue>
+<StgValue><ssdm name="br_ln12"/></StgValue>
 </operation>
 
 <operation id="12" st_id="1" stage="1" lat="1">
@@ -168,16 +168,16 @@ if.else:2 %br_ln11 = br i1 %icmp_ln11, void %if.else4, void %if.then2
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="reset_read" val="0"/>
-<literal name="icmp_ln11" val="0"/>
+<literal name="icmp_ln12" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="16" bw="4" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-if.else4:0 %add_ln14 = add i4 %count_load, i4 1
+if.else4:0 %add_ln15 = add i4 %count_load, i4 1
 
 ]]></Node>
-<StgValue><ssdm name="add_ln14"/></StgValue>
+<StgValue><ssdm name="add_ln15"/></StgValue>
 </operation>
 
 <operation id="13" st_id="1" stage="1" lat="1">
@@ -185,16 +185,16 @@ if.else4:0 %add_ln14 = add i4 %count_load, i4 1
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="reset_read" val="0"/>
-<literal name="icmp_ln11" val="0"/>
+<literal name="icmp_ln12" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="17" bw="0" op_0_bw="4" op_1_bw="4" op_2_bw="0">
 <![CDATA[
-if.else4:1 %store_ln14 = store i4 %add_ln14, i4 %count
+if.else4:1 %store_ln15 = store i4 %add_ln15, i4 %count
 
 ]]></Node>
-<StgValue><ssdm name="store_ln14"/></StgValue>
+<StgValue><ssdm name="store_ln15"/></StgValue>
 </operation>
 
 <operation id="14" st_id="1" stage="1" lat="1">
@@ -202,7 +202,7 @@ if.else4:1 %store_ln14 = store i4 %add_ln14, i4 %count
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="reset_read" val="0"/>
-<literal name="icmp_ln11" val="0"/>
+<literal name="icmp_ln12" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -219,16 +219,16 @@ if.else4:2 %br_ln0 = br void %if.end5
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="reset_read" val="0"/>
-<literal name="icmp_ln11" val="1"/>
+<literal name="icmp_ln12" val="1"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="20" bw="0" op_0_bw="4" op_1_bw="4" op_2_bw="0">
 <![CDATA[
-if.then2:0 %store_ln12 = store i4 0, i4 %count
+if.then2:0 %store_ln13 = store i4 0, i4 %count
 
 ]]></Node>
-<StgValue><ssdm name="store_ln12"/></StgValue>
+<StgValue><ssdm name="store_ln13"/></StgValue>
 </operation>
 
 <operation id="16" st_id="1" stage="1" lat="1">
@@ -236,16 +236,16 @@ if.then2:0 %store_ln12 = store i4 0, i4 %count
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="reset_read" val="0"/>
-<literal name="icmp_ln11" val="1"/>
+<literal name="icmp_ln12" val="1"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="21" bw="0" op_0_bw="0">
 <![CDATA[
-if.then2:1 %br_ln13 = br void %if.end5
+if.then2:1 %br_ln14 = br void %if.end5
 
 ]]></Node>
-<StgValue><ssdm name="br_ln13"/></StgValue>
+<StgValue><ssdm name="br_ln14"/></StgValue>
 </operation>
 
 <operation id="17" st_id="1" stage="1" lat="1">
@@ -289,7 +289,7 @@ if.then:1 %br_ln10 = br void %if.end5
 
 <Node id="26" bw="4" op_0_bw="4" op_1_bw="0" op_2_bw="4" op_3_bw="0" op_4_bw="4" op_5_bw="0">
 <![CDATA[
-if.end5:0 %p_0_0_0 = phi i4 0, void %if.then, i4 %add_ln14, void %if.else4, i4 0, void %if.then2
+if.end5:0 %p_0_0_0 = phi i4 0, void %if.then, i4 %add_ln15, void %if.else4, i4 0, void %if.then2
 
 ]]></Node>
 <StgValue><ssdm name="p_0_0_0"/></StgValue>
@@ -304,10 +304,10 @@ if.end5:0 %p_0_0_0 = phi i4 0, void %if.then, i4 %add_ln14, void %if.else4, i4 0
 
 <Node id="27" bw="0" op_0_bw="0" op_1_bw="4" op_2_bw="4">
 <![CDATA[
-if.end5:1 %write_ln19 = write void @_ssdm_op_Write.ap_auto.i4P0A, i4 %out_r, i4 %p_0_0_0
+if.end5:1 %write_ln20 = write void @_ssdm_op_Write.ap_auto.i4P0A, i4 %out_r, i4 %p_0_0_0
 
 ]]></Node>
-<StgValue><ssdm name="write_ln19"/></StgValue>
+<StgValue><ssdm name="write_ln20"/></StgValue>
 </operation>
 
 <operation id="21" st_id="1" stage="1" lat="1">
@@ -319,10 +319,10 @@ if.end5:1 %write_ln19 = write void @_ssdm_op_Write.ap_auto.i4P0A, i4 %out_r, i4 
 
 <Node id="28" bw="0">
 <![CDATA[
-if.end5:2 %ret_ln20 = ret
+if.end5:2 %ret_ln21 = ret
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln20"/></StgValue>
+<StgValue><ssdm name="ret_ln21"/></StgValue>
 </operation>
 </state>
 </state_list>
@@ -438,23 +438,23 @@ if.end5:2 %ret_ln20 = ret
 </dataflow>
 <dataflow id="81" from="count" to="count_load" fromId="24" toId="9">
 </dataflow>
-<dataflow id="82" from="count_load" to="icmp_ln11" fromId="9" toId="10">
+<dataflow id="82" from="count_load" to="icmp_ln12" fromId="9" toId="10">
 </dataflow>
-<dataflow id="84" from="StgValue_83" to="icmp_ln11" fromId="83" toId="10">
+<dataflow id="84" from="StgValue_83" to="icmp_ln12" fromId="83" toId="10">
 </dataflow>
-<dataflow id="85" from="icmp_ln11" to="br_ln11" fromId="10" toId="11">
+<dataflow id="85" from="icmp_ln12" to="br_ln12" fromId="10" toId="11">
 </dataflow>
-<dataflow id="86" from="count_load" to="add_ln14" fromId="9" toId="12">
+<dataflow id="86" from="count_load" to="add_ln15" fromId="9" toId="12">
 </dataflow>
-<dataflow id="88" from="StgValue_87" to="add_ln14" fromId="87" toId="12">
+<dataflow id="88" from="StgValue_87" to="add_ln15" fromId="87" toId="12">
 </dataflow>
-<dataflow id="89" from="add_ln14" to="store_ln14" fromId="12" toId="13">
+<dataflow id="89" from="add_ln15" to="store_ln15" fromId="12" toId="13">
 </dataflow>
-<dataflow id="90" from="count" to="store_ln14" fromId="24" toId="13">
+<dataflow id="90" from="count" to="store_ln15" fromId="24" toId="13">
 </dataflow>
-<dataflow id="92" from="StgValue_91" to="store_ln12" fromId="91" toId="15">
+<dataflow id="92" from="StgValue_91" to="store_ln13" fromId="91" toId="15">
 </dataflow>
-<dataflow id="93" from="count" to="store_ln12" fromId="24" toId="15">
+<dataflow id="93" from="count" to="store_ln13" fromId="24" toId="15">
 </dataflow>
 <dataflow id="94" from="StgValue_91" to="store_ln9" fromId="91" toId="17">
 </dataflow>
@@ -468,10 +468,10 @@ if.end5:2 %ret_ln20 = ret
 </dataflow>
 <dataflow id="97" from="br_ln10" to="p_0_0_0" fromId="18" toId="19">
 </dataflow>
-<dataflow id="98" from="add_ln14" to="p_0_0_0" fromId="12" toId="19">
+<dataflow id="98" from="add_ln15" to="p_0_0_0" fromId="12" toId="19">
 <condition id="-1">
 <or_exp><and_exp><literal name="reset_read" val="0"/>
-<literal name="icmp_ln11" val="0"/>
+<literal name="icmp_ln12" val="0"/>
 </and_exp></or_exp>
 </condition>
 </dataflow>
@@ -480,21 +480,21 @@ if.end5:2 %ret_ln20 = ret
 <dataflow id="100" from="StgValue_91" to="p_0_0_0" fromId="91" toId="19">
 <condition id="-1">
 <or_exp><and_exp><literal name="reset_read" val="0"/>
-<literal name="icmp_ln11" val="1"/>
+<literal name="icmp_ln12" val="1"/>
 </and_exp></or_exp>
 </condition>
 </dataflow>
-<dataflow id="101" from="br_ln13" to="p_0_0_0" fromId="16" toId="19">
+<dataflow id="101" from="br_ln14" to="p_0_0_0" fromId="16" toId="19">
 </dataflow>
-<dataflow id="103" from="_ssdm_op_Write.ap_auto.i4P0A" to="write_ln19" fromId="102" toId="20">
+<dataflow id="103" from="_ssdm_op_Write.ap_auto.i4P0A" to="write_ln20" fromId="102" toId="20">
 </dataflow>
-<dataflow id="104" from="out_r" to="write_ln19" fromId="23" toId="20">
+<dataflow id="104" from="out_r" to="write_ln20" fromId="23" toId="20">
 </dataflow>
-<dataflow id="105" from="p_0_0_0" to="write_ln19" fromId="19" toId="20">
+<dataflow id="105" from="p_0_0_0" to="write_ln20" fromId="19" toId="20">
 </dataflow>
 <dataflow id="106" from="reset_read" to="StgValue_1" fromId="7" toId="1">
 </dataflow>
-<dataflow id="107" from="icmp_ln11" to="StgValue_1" fromId="10" toId="1">
+<dataflow id="107" from="icmp_ln12" to="StgValue_1" fromId="10" toId="1">
 </dataflow>
 </dataflows>
 

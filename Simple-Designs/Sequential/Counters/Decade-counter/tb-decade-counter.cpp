@@ -1,20 +1,26 @@
-#include "decade-counter.hpp"
 #include <iostream>
+#include <ap_int.h>
+#include "decade-counter.hpp"
 
 int main() {
     ap_uint<1> reset;
     ap_uint<4> out;
 
-    // Test with reset signal
-    reset = 1;
-    counter(reset, out);
-    std::cout << "Output with reset: " << out.to_uint() << std::endl;
+    // Test the decade counter
+    std::cout << "Testing decade counter:\n";
+    for (int i = 0; i < 20; ++i) {
+        // Reset the counter at i = 10
+        if (i == 10) {
+            reset = 1;
+        } else {
+            reset = 0;
+        }
 
-    // Test without reset signal
-    reset = 0;
-    for (int i = 0; i < 15; i++) {
+        // Call the counter function
         counter(reset, out);
-        std::cout << "Output at count " << i << ": " << out.to_uint() << std::endl;
+
+        // Print the output
+        std::cout << "At time " << i << ", count = " << out.to_uint() << std::endl;
     }
 
     return 0;

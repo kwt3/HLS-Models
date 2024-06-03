@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'counter'
 ================================================================
-* Date:           Mon Mar 25 04:35:33 2024
+* Date:           Sun Jun  2 23:50:08 2024
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        8bitcounter
@@ -75,19 +75,19 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 2.14>
-ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%spectopmodule_ln7 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [counter.cpp:7]   --->   Operation 2 'spectopmodule' 'spectopmodule_ln7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%spectopmodule_ln3 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [counter.cpp:3]   --->   Operation 2 'spectopmodule' 'spectopmodule_ln3' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %count"   --->   Operation 3 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %count, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 4 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %upper"   --->   Operation 5 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %upper, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 6 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%upper_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %upper" [counter.cpp:7]   --->   Operation 7 'read' 'upper_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%count_internal_load = load i8 %count_internal" [counter.cpp:13]   --->   Operation 8 'load' 'count_internal_load' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 9 [1/1] (0.87ns)   --->   "%v = add i8 %count_internal_load, i8 1" [counter.cpp:13]   --->   Operation 9 'add' 'v' <Predicate = true> <Delay = 0.87> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 10 [1/1] (0.87ns)   --->   "%icmp_ln14 = icmp_eq  i8 %v, i8 %upper_read" [counter.cpp:14]   --->   Operation 10 'icmp' 'icmp_ln14' <Predicate = true> <Delay = 0.87> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.87> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 11 [1/1] (0.40ns)   --->   "%v_1 = select i1 %icmp_ln14, i8 0, i8 %v" [counter.cpp:14]   --->   Operation 11 'select' 'v_1' <Predicate = true> <Delay = 0.40> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.40> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%store_ln15 = store i8 %v_1, i8 %count_internal" [counter.cpp:15]   --->   Operation 12 'store' 'store_ln15' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%write_ln20 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %count, i8 %v_1" [counter.cpp:20]   --->   Operation 13 'write' 'write_ln20' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%ret_ln21 = ret" [counter.cpp:21]   --->   Operation 14 'ret' 'ret_ln21' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%upper_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %upper" [counter.cpp:3]   --->   Operation 7 'read' 'upper_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%count_internal_load = load i8 %count_internal" [counter.cpp:9]   --->   Operation 8 'load' 'count_internal_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.87ns)   --->   "%v = add i8 %count_internal_load, i8 1" [counter.cpp:9]   --->   Operation 9 'add' 'v' <Predicate = true> <Delay = 0.87> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 10 [1/1] (0.87ns)   --->   "%icmp_ln10 = icmp_eq  i8 %v, i8 %upper_read" [counter.cpp:10]   --->   Operation 10 'icmp' 'icmp_ln10' <Predicate = true> <Delay = 0.87> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.87> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 11 [1/1] (0.40ns)   --->   "%v_1 = select i1 %icmp_ln10, i8 0, i8 %v" [counter.cpp:10]   --->   Operation 11 'select' 'v_1' <Predicate = true> <Delay = 0.40> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.40> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%store_ln11 = store i8 %v_1, i8 %count_internal" [counter.cpp:11]   --->   Operation 12 'store' 'store_ln11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%write_ln17 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %count, i8 %v_1" [counter.cpp:17]   --->   Operation 13 'write' 'write_ln17' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%ret_ln18 = ret" [counter.cpp:18]   --->   Operation 14 'ret' 'ret_ln18' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -97,10 +97,10 @@ Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 
  <State 1>: 2.142ns
 The critical path consists of the following:
-	'load' operation 8 bit ('count_internal_load', counter.cpp:13) on static variable 'count_internal' [10]  (0.000 ns)
-	'add' operation 8 bit ('v', counter.cpp:13) [11]  (0.871 ns)
-	'icmp' operation 1 bit ('icmp_ln14', counter.cpp:14) [12]  (0.871 ns)
-	'select' operation 8 bit ('v', counter.cpp:14) [13]  (0.400 ns)
+	'load' operation 8 bit ('count_internal_load', counter.cpp:9) on static variable 'count_internal' [10]  (0.000 ns)
+	'add' operation 8 bit ('v', counter.cpp:9) [11]  (0.871 ns)
+	'icmp' operation 1 bit ('icmp_ln10', counter.cpp:10) [12]  (0.871 ns)
+	'select' operation 8 bit ('v', counter.cpp:10) [13]  (0.400 ns)
 
 
 ============================================================

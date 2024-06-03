@@ -5722,13 +5722,15 @@ inline __attribute__((nodebug)) bool operator!=(
 # 361 "C:/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\\ap_int.h" 2
 # 5 "./decade_counter.hpp" 2
 
-extern "C" {
-    __attribute__((sdx_kernel("decade_counter", 0))) void decade_counter(ap_uint<1> &reset, ap_uint<1> &slowena, ap_uint<4> &out);
-}
+__attribute__((sdx_kernel("decade_counter", 0))) void decade_counter(ap_uint<1> &reset, ap_uint<1> &slowena, ap_uint<4> &out);
 # 2 "decade_counter.cpp" 2
 
 __attribute__((sdx_kernel("decade_counter", 0))) void decade_counter(ap_uint<1> &reset, ap_uint<1> &slowena, ap_uint<4> &out) {
-#line 16 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Slow-decade-counter/slow_decade_counter/solution1/csynth.tcl"
+#line 17 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Slow-decade-counter/slow_decade_counter/solution1/csynth.tcl"
+#pragma HLSDIRECTIVE TOP name=decade_counter
+# 3 "decade_counter.cpp"
+
+#line 7 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Slow-decade-counter/slow_decade_counter/solution1/directives.tcl"
 #pragma HLSDIRECTIVE TOP name=decade_counter
 # 3 "decade_counter.cpp"
 
@@ -5736,7 +5738,13 @@ __attribute__((sdx_kernel("decade_counter", 0))) void decade_counter(ap_uint<1> 
     static ap_uint<4> count = 0;
 
 
-    if (reset == 1) {
+#pragma HLS INTERFACE ap_ctrl_none port=return
+#pragma HLS INTERFACE ap_none port=reset
+#pragma HLS INTERFACE ap_none port=slowena
+#pragma HLS INTERFACE ap_none port=out
+
+
+ if (reset == 1) {
         count = 0;
     } else if (slowena == 1) {
 

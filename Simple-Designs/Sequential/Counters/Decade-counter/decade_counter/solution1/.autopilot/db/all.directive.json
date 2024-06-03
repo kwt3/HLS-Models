@@ -16,8 +16,29 @@
       ]
     },
     "slx": false,
-    "sourceFile": "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Decade-counter/decade_counter/solution1/csynth.tcl",
-    "sourceLine": 16,
+    "sourceFile": "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Decade-counter/decade_counter/solution1/directives.tcl",
+    "sourceLine": 7,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "counter",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "counter"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Decade-counter/decade_counter/solution1/csynth.tcl",
+    "sourceLine": 17,
     "success": true
   }
 ]

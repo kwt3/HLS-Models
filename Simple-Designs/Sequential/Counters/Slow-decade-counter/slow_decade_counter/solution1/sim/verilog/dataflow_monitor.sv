@@ -18,10 +18,10 @@ input logic finish
 
 
     nodf_module_intf module_intf_1(clock,reset);
-    assign module_intf_1.ap_start = AESL_inst_decade_counter.ap_start;
-    assign module_intf_1.ap_ready = AESL_inst_decade_counter.ap_ready;
-    assign module_intf_1.ap_done = AESL_inst_decade_counter.ap_done;
-    assign module_intf_1.ap_continue = 1'b1;
+    assign module_intf_1.ap_start = 1'b0;
+    assign module_intf_1.ap_ready = 1'b0;
+    assign module_intf_1.ap_done = 1'b0;
+    assign module_intf_1.ap_continue = 1'b0;
     assign module_intf_1.finish = finish;
     csv_file_dump mstatus_csv_dumper_1;
     nodf_module_monitor module_monitor_1;

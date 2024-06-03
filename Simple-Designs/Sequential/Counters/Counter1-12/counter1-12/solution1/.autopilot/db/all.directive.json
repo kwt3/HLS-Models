@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "increment_counter",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "increment_counter"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Counter1-12/counter1-12/solution1/csynth.tcl",
+    "sourceLine": 16,
+    "success": true
+  }
+]

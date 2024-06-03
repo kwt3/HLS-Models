@@ -241,10 +241,39 @@ class AESL_RUNTIME_BC {
     fstream file_token;
     string mName;
 };
+unsigned int ap_apatb_hh_cap_bc;
+static AESL_RUNTIME_BC __xlx_hh_V_size_Reader("../tv/stream_size/stream_size_out_hh.dat");
+unsigned int ap_apatb_mm_cap_bc;
+static AESL_RUNTIME_BC __xlx_mm_V_size_Reader("../tv/stream_size/stream_size_out_mm.dat");
+unsigned int ap_apatb_ss_cap_bc;
+static AESL_RUNTIME_BC __xlx_ss_V_size_Reader("../tv/stream_size/stream_size_out_ss.dat");
+unsigned int ap_apatb_pm_cap_bc;
+static AESL_RUNTIME_BC __xlx_pm_V_size_Reader("../tv/stream_size/stream_size_out_pm.dat");
 using hls::sim::Byte;
-extern "C" void clock(volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *);
-extern "C" void apatb_clock_hw(volatile void * __xlx_apatb_param_reset, volatile void * __xlx_apatb_param_ena, volatile void * __xlx_apatb_param_hh, volatile void * __xlx_apatb_param_mm, volatile void * __xlx_apatb_param_ss, volatile void * __xlx_apatb_param_pm) {
+struct __cosim_s1__ { char data[1]; };
+extern "C" void clock(__cosim_s1__, __cosim_s1__, char*, char*, char*, char*);
+extern "C" void apatb_clock_hw(__cosim_s1__* __xlx_apatb_param_reset, __cosim_s1__* __xlx_apatb_param_ena, volatile void * __xlx_apatb_param_hh, volatile void * __xlx_apatb_param_mm, volatile void * __xlx_apatb_param_ss, volatile void * __xlx_apatb_param_pm) {
 using hls::sim::createStream;
+  //Create input buffer for hh
+  ap_apatb_hh_cap_bc = __xlx_hh_V_size_Reader.read_size();
+  char* __xlx_hh_input_buffer= new char[ap_apatb_hh_cap_bc];
+auto* shh = createStream((hls::stream<char>*)__xlx_apatb_param_hh);
+  //Create input buffer for mm
+  ap_apatb_mm_cap_bc = __xlx_mm_V_size_Reader.read_size();
+  char* __xlx_mm_input_buffer= new char[ap_apatb_mm_cap_bc];
+auto* smm = createStream((hls::stream<char>*)__xlx_apatb_param_mm);
+  //Create input buffer for ss
+  ap_apatb_ss_cap_bc = __xlx_ss_V_size_Reader.read_size();
+  char* __xlx_ss_input_buffer= new char[ap_apatb_ss_cap_bc];
+auto* sss = createStream((hls::stream<char>*)__xlx_apatb_param_ss);
+  //Create input buffer for pm
+  ap_apatb_pm_cap_bc = __xlx_pm_V_size_Reader.read_size();
+  char* __xlx_pm_input_buffer= new char[ap_apatb_pm_cap_bc];
+auto* spm = createStream((hls::stream<char>*)__xlx_apatb_param_pm);
   // DUT call
-  clock(__xlx_apatb_param_reset, __xlx_apatb_param_ena, __xlx_apatb_param_hh, __xlx_apatb_param_mm, __xlx_apatb_param_ss, __xlx_apatb_param_pm);
+  clock(*__xlx_apatb_param_reset, *__xlx_apatb_param_ena, shh->data<char>(), smm->data<char>(), sss->data<char>(), spm->data<char>());
+shh->transfer((hls::stream<char>*)__xlx_apatb_param_hh);
+smm->transfer((hls::stream<char>*)__xlx_apatb_param_mm);
+sss->transfer((hls::stream<char>*)__xlx_apatb_param_ss);
+spm->transfer((hls::stream<char>*)__xlx_apatb_param_pm);
 }

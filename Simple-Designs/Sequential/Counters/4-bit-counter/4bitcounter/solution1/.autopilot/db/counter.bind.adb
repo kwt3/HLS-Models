@@ -70,7 +70,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1702129263</coreId>
+						<coreId>2415964680</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>4</bitwidth>
@@ -94,7 +94,7 @@
 						<id>9</id>
 						<name>reset_read</name>
 						<fileName>4bitcounter.cpp</fileName>
-						<fileDirectory>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</fileDirectory>
+						<fileDirectory>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</fileDirectory>
 						<lineNumber>8</lineNumber>
 						<contextFuncName>counter</contextFuncName>
 						<contextNormFuncName>counter</contextNormFuncName>
@@ -102,7 +102,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="10" tracking_level="0" version="0">
-								<first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</first>
+								<first>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</first>
 								<second class_id="11" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
@@ -124,7 +124,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>187847272</coreId>
+						<coreId>1919906418</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -151,7 +151,7 @@
 						<id>10</id>
 						<name>br_ln8</name>
 						<fileName>4bitcounter.cpp</fileName>
-						<fileDirectory>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</fileDirectory>
+						<fileDirectory>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</fileDirectory>
 						<lineNumber>8</lineNumber>
 						<contextFuncName>counter</contextFuncName>
 						<contextNormFuncName>counter</contextNormFuncName>
@@ -159,7 +159,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</first>
+								<first>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -181,7 +181,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>2271643864</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -209,7 +209,7 @@
 						<id>12</id>
 						<name>count_load</name>
 						<fileName>4bitcounter.cpp</fileName>
-						<fileDirectory>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</fileDirectory>
+						<fileDirectory>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</fileDirectory>
 						<lineNumber>11</lineNumber>
 						<contextFuncName>counter</contextFuncName>
 						<contextNormFuncName>counter</contextNormFuncName>
@@ -217,7 +217,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</first>
+								<first>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -239,7 +239,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>2467219696</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>4</bitwidth>
@@ -265,7 +265,7 @@
 						<id>13</id>
 						<name>icmp_ln11</name>
 						<fileName>4bitcounter.cpp</fileName>
-						<fileDirectory>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</fileDirectory>
+						<fileDirectory>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</fileDirectory>
 						<lineNumber>11</lineNumber>
 						<contextFuncName>counter</contextFuncName>
 						<contextNormFuncName>counter</contextNormFuncName>
@@ -273,7 +273,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</first>
+								<first>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -322,7 +322,7 @@
 						<id>14</id>
 						<name>br_ln11</name>
 						<fileName>4bitcounter.cpp</fileName>
-						<fileDirectory>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</fileDirectory>
+						<fileDirectory>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</fileDirectory>
 						<lineNumber>11</lineNumber>
 						<contextFuncName>counter</contextFuncName>
 						<contextNormFuncName>counter</contextNormFuncName>
@@ -330,7 +330,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</first>
+								<first>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -352,7 +352,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1869376609</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -380,7 +380,7 @@
 						<id>16</id>
 						<name>add_ln14</name>
 						<fileName>4bitcounter.cpp</fileName>
-						<fileDirectory>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</fileDirectory>
+						<fileDirectory>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</fileDirectory>
 						<lineNumber>14</lineNumber>
 						<contextFuncName>counter</contextFuncName>
 						<contextNormFuncName>counter</contextNormFuncName>
@@ -388,7 +388,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</first>
+								<first>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -437,7 +437,7 @@
 						<id>17</id>
 						<name>count_write_ln14</name>
 						<fileName>4bitcounter.cpp</fileName>
-						<fileDirectory>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</fileDirectory>
+						<fileDirectory>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</fileDirectory>
 						<lineNumber>14</lineNumber>
 						<contextFuncName>counter</contextFuncName>
 						<contextNormFuncName>counter</contextNormFuncName>
@@ -445,7 +445,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</first>
+								<first>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -467,7 +467,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>77935536</coreId>
+						<coreId>1931502689</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -511,7 +511,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>2467223920</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -537,7 +537,7 @@
 						<id>20</id>
 						<name>count_write_ln12</name>
 						<fileName>4bitcounter.cpp</fileName>
-						<fileDirectory>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</fileDirectory>
+						<fileDirectory>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</fileDirectory>
 						<lineNumber>12</lineNumber>
 						<contextFuncName>counter</contextFuncName>
 						<contextNormFuncName>counter</contextNormFuncName>
@@ -545,7 +545,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</first>
+								<first>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -595,7 +595,7 @@
 						<id>21</id>
 						<name>br_ln13</name>
 						<fileName>4bitcounter.cpp</fileName>
-						<fileDirectory>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</fileDirectory>
+						<fileDirectory>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</fileDirectory>
 						<lineNumber>13</lineNumber>
 						<contextFuncName>counter</contextFuncName>
 						<contextNormFuncName>counter</contextNormFuncName>
@@ -603,7 +603,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</first>
+								<first>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -651,7 +651,7 @@
 						<id>23</id>
 						<name>count_write_ln9</name>
 						<fileName>4bitcounter.cpp</fileName>
-						<fileDirectory>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</fileDirectory>
+						<fileDirectory>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>counter</contextFuncName>
 						<contextNormFuncName>counter</contextNormFuncName>
@@ -659,7 +659,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</first>
+								<first>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -681,7 +681,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1279816814</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -708,7 +708,7 @@
 						<id>24</id>
 						<name>br_ln10</name>
 						<fileName>4bitcounter.cpp</fileName>
-						<fileDirectory>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</fileDirectory>
+						<fileDirectory>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</fileDirectory>
 						<lineNumber>10</lineNumber>
 						<contextFuncName>counter</contextFuncName>
 						<contextNormFuncName>counter</contextNormFuncName>
@@ -716,7 +716,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</first>
+								<first>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -738,7 +738,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1634755954</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -764,7 +764,7 @@
 						<id>26</id>
 						<name>p_0_0_0</name>
 						<fileName>4bitcounter.cpp</fileName>
-						<fileDirectory>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</fileDirectory>
+						<fileDirectory>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</fileDirectory>
 						<lineNumber>14</lineNumber>
 						<contextFuncName>counter</contextFuncName>
 						<contextNormFuncName>counter</contextNormFuncName>
@@ -772,7 +772,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</first>
+								<first>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -794,7 +794,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>544435055</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>4</bitwidth>
@@ -825,7 +825,7 @@
 						<id>27</id>
 						<name>out_r_write_ln19</name>
 						<fileName>4bitcounter.cpp</fileName>
-						<fileDirectory>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</fileDirectory>
+						<fileDirectory>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</fileDirectory>
 						<lineNumber>19</lineNumber>
 						<contextFuncName>counter</contextFuncName>
 						<contextNormFuncName>counter</contextNormFuncName>
@@ -833,7 +833,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</first>
+								<first>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -855,7 +855,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1702258035</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -883,7 +883,7 @@
 						<id>28</id>
 						<name>_ln20</name>
 						<fileName>4bitcounter.cpp</fileName>
-						<fileDirectory>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</fileDirectory>
+						<fileDirectory>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</fileDirectory>
 						<lineNumber>20</lineNumber>
 						<contextFuncName>counter</contextFuncName>
 						<contextNormFuncName>counter</contextNormFuncName>
@@ -891,7 +891,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\4-bit-counter</first>
+								<first>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\4-bit-counter</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -913,7 +913,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4784214</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -958,7 +958,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1663923297</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>4</bitwidth>
@@ -989,7 +989,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>120963936</coreId>
+						<coreId>1702129263</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>4</bitwidth>
@@ -1020,7 +1020,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>185052240</coreId>
+						<coreId>1702129263</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>4</bitwidth>
@@ -1054,7 +1054,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>4294967295</coreId>
+					<coreId>81945040</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -1086,7 +1086,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>158629808</coreId>
+					<coreId>2408776288</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -1119,7 +1119,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>341939680</coreId>
+					<coreId>0</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -1152,7 +1152,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>4294967292</coreId>
+					<coreId>0</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -1184,7 +1184,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>4294967292</coreId>
+					<coreId>0</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -1216,7 +1216,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
+					<coreId>2467227952</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>

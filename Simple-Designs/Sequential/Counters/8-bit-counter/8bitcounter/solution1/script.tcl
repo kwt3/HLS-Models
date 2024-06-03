@@ -8,12 +8,12 @@ open_project 8bitcounter
 set_top counter
 add_files counter.cpp
 add_files counter.hpp
-add_files -tb tb_counter.cpp
+add_files -tb tb_counter.cpp -cflags "-Wno-unknown-pragmas"
 open_solution "solution1" -flow_target vivado
 set_part {xcvu11p-flga2577-1-e}
 create_clock -period 10 -name default
 config_cosim -tool xsim
-#source "./8bitcounter/solution1/directives.tcl"
+source "./8bitcounter/solution1/directives.tcl"
 csim_design
 csynth_design
 cosim_design

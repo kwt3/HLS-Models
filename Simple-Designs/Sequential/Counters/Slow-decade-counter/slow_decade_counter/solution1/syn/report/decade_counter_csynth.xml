@@ -61,7 +61,7 @@
 <Object>decade_counter</Object>
 <Type>return value</Type>
 <Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOProtocol>ap_ctrl_none</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
 <Bits>1</Bits>
@@ -72,53 +72,9 @@
 <Object>decade_counter</Object>
 <Type>return value</Type>
 <Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOProtocol>ap_ctrl_none</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_start</name>
-<Object>decade_counter</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_done</name>
-<Object>decade_counter</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_idle</name>
-<Object>decade_counter</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_ready</name>
-<Object>decade_counter</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
 <Bits>1</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
@@ -151,23 +107,11 @@
 <Object>out_r</Object>
 <Type>pointer</Type>
 <Scope></Scope>
-<IOProtocol>ap_vld</IOProtocol>
+<IOProtocol>ap_none</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
 <Bits>4</Bits>
 <Attribute>data</Attribute>
-<CType>int</CType>
-</RtlPorts>
-<RtlPorts>
-<name>out_r_ap_vld</name>
-<Object>out_r</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_vld</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
 <CType>int</CType>
 </RtlPorts>
 </InterfaceSummary>

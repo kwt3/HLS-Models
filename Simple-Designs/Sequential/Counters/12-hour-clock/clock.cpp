@@ -1,11 +1,13 @@
 #include "clock.hpp"
 
-void clock(ap_uint<1> &reset, ap_uint<1> &ena, ap_uint<8> &hh, ap_uint<8> &mm, ap_uint<8> &ss, ap_uint<1> &pm) {
-    // Static variables retain their values between invocations
+void clock(ap_uint<1> reset, ap_uint<1> ena, hls::stream<ap_uint<8>> &hh, hls::stream<ap_uint<8>> &mm, hls::stream<ap_uint<8>> &ss, hls::stream<ap_uint<1>> &pm) {
+    // State variables
     static ap_uint<8> hours = 12;
     static ap_uint<8> minutes = 0;
     static ap_uint<8> seconds = 0;
     static ap_uint<1> pm_indicator = 0;
+
+    #pragma HLS PIPELINE II=1
 
     // Check for reset signal
     if (reset == 1) {
@@ -32,8 +34,8 @@ void clock(ap_uint<1> &reset, ap_uint<1> &ena, ap_uint<8> &hh, ap_uint<8> &mm, a
     }
 
     // Output the current time
-    hh = hours;
-    mm = minutes;
-    ss = seconds;
-    pm = pm_indicator;
+    hh.write(hours);
+    mm.write(minutes);
+    ss.write(seconds);
+    pm.write(pm_indicator);
 }

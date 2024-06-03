@@ -1,10 +1,8 @@
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/8-bit-counter/counter.cpp"
+# 1 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/8-bit-counter/counter.cpp"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/8-bit-counter/counter.cpp"
-
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/8-bit-counter/counter.hpp" 1
-
+# 1 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/8-bit-counter/counter.cpp"
+# 1 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/8-bit-counter/counter.hpp" 1
 
 
 
@@ -352,33 +350,26 @@ namespace std
   using ::uintmax_t;
   using ::uintptr_t;
 }
-# 6 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/8-bit-counter/counter.hpp" 2
+# 5 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/8-bit-counter/counter.hpp" 2
 
 
+# 6 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/8-bit-counter/counter.hpp"
+void counter(uint8_t *count, uint8_t upper);
+# 2 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/8-bit-counter/counter.cpp" 2
 
-# 8 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/8-bit-counter/counter.hpp"
-extern "C" {
-
-    void counter(uint8_t *count, uint8_t upper);
-}
-# 3 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/8-bit-counter/counter.cpp" 2
+void counter(uint8_t *count, uint8_t upper) {
 
 
-extern "C" {
-
-    void counter(uint8_t *count, uint8_t upper) {
+    static uint8_t count_internal = 0;
 
 
-        static uint8_t count_internal = 0;
-
-
-        uint8_t v = count_internal+1;
-        if (v == upper)
-         count_internal = 0;
-        else
-         count_internal = v;
-
-
-        *count = count_internal;
+    uint8_t v = count_internal + 1;
+    if (v == upper) {
+        count_internal = 0;
+    } else {
+        count_internal = v;
     }
+
+
+    *count = count_internal;
 }

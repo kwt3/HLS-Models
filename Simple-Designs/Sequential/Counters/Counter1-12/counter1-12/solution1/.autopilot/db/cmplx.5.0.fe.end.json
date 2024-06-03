@@ -1,0 +1,17 @@
+{
+    "0": {
+        "name": "increment_counter",
+        "file": "counter.cpp",
+        "fileloc": "3",
+        "instructions": "27",
+        "total_instructions": "27",
+        "calls": "",
+        "basicblocks": "6",
+        "loads": {
+            "G": "1"
+        },
+        "stores": {
+            "G": "3"
+        }
+    }
+}

@@ -157,6 +157,9 @@ extern "C" {
 # 2 "<built-in>" 2
 # 1 "clock.cpp" 2
 # 1 "./clock.hpp" 1
+
+
+
 # 1 "C:/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\\ap_int.h" 1
 # 10 "C:/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\\ap_int.h"
 # 1 "C:/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\\etc/ap_common.h" 1
@@ -5717,14 +5720,147 @@ inline __attribute__((nodebug)) bool operator!=(
 }
 # 366 "C:/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\\ap_fixed.h" 2
 # 361 "C:/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\\ap_int.h" 2
-# 2 "./clock.hpp" 2
+# 5 "./clock.hpp" 2
+# 1 "C:/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\\hls_stream.h" 1
+# 12 "C:/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\\hls_stream.h"
+# 1 "C:/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_stream_39.h" 1
+# 23 "C:/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_stream_39.h"
+namespace hls {
+# 49 "C:/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_stream_39.h"
+template<typename __STREAM_T__, int DEPTH=0>
+class stream;
+
+template<typename __STREAM_T__>
+class stream<__STREAM_T__, 0>
+{
+  public:
+    using value_type = __STREAM_T__;
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) stream() {
+    }
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) stream(const char* name) {
+      (void)(name);
+    }
 
 
-__attribute__((sdx_kernel("clock", 0))) void clock(ap_uint<1> &reset, ap_uint<1> &ena, ap_uint<8> &hh, ap_uint<8> &mm, ap_uint<8> &ss, ap_uint<1> &pm);
+  private:
+    inline __attribute__((always_inline)) __attribute__((nodebug)) stream(const stream< __STREAM_T__ >& chn):V(chn.V) {
+    }
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) stream& operator= (const stream< __STREAM_T__ >& chn) {
+        V = chn.V;
+        return *this;
+    }
+
+  public:
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) void operator >> (__STREAM_T__& rdata) {
+        read(rdata);
+    }
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) void operator << (const __STREAM_T__& wdata) {
+        write(wdata);
+    }
+
+
+  public:
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) bool empty() const {
+        return !__fpga_fifo_not_empty(&V);
+    }
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) bool full() const {
+        return !__fpga_fifo_not_full(&V);
+    }
+
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) void read(__STREAM_T__& dout) {
+        __fpga_fifo_pop(&V, &dout);
+    }
+
+
+    inline __attribute__((noinline)) __attribute__((nodebug)) bool read_dep(__STREAM_T__& dout, volatile bool flag) {
+        __fpga_fifo_pop(&V, &dout);
+        return flag;
+    }
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) __STREAM_T__ read() {
+        __STREAM_T__ tmp;
+        read(tmp);
+        return tmp;
+    }
+
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) bool read_nb(__STREAM_T__& dout) {
+        __STREAM_T__ tmp;
+
+        if (__fpga_fifo_nb_pop(&V, &tmp)) {
+            dout = tmp;
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) void write(const __STREAM_T__& din) {
+        __fpga_fifo_push(&V, &din);
+    }
+
+
+    inline __attribute__((noinline)) __attribute__((nodebug)) bool write_dep(const __STREAM_T__& din, volatile bool flag) {
+        __fpga_fifo_push(&V, &din);
+        return flag;
+    }
+
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) bool write_nb(const __STREAM_T__& din) {
+        return __fpga_fifo_nb_push(&V, &din);
+    }
+
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) unsigned size() const {
+        return __fpga_fifo_size(&V);
+    }
+
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) unsigned capacity() const {
+        return __fpga_fifo_capacity(&V);
+    }
+
+
+    void set_name(const char* name) { (void)(name); }
+
+  public:
+    __STREAM_T__ V __attribute__((no_ctor));
+};
+
+template<typename __STREAM_T__, int DEPTH>
+class stream : public stream<__STREAM_T__, 0> {
+  public:
+    inline __attribute__((always_inline)) __attribute__((nodebug)) stream() {
+#pragma HLS stream variable=this depth=DEPTH
+ }
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) stream(const char* name) {
+#pragma HLS stream variable=this depth=DEPTH
+ (void)(name);
+    }
+};
+}
+# 13 "C:/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\\hls_stream.h" 2
+# 6 "./clock.hpp" 2
+
+__attribute__((sdx_kernel("clock", 0))) void clock(ap_uint<1> reset, ap_uint<1> ena, hls::stream<ap_uint<8>> &hh, hls::stream<ap_uint<8>> &mm, hls::stream<ap_uint<8>> &ss, hls::stream<ap_uint<1>> &pm);
 # 2 "clock.cpp" 2
 
-__attribute__((sdx_kernel("clock", 0))) void clock(ap_uint<1> &reset, ap_uint<1> &ena, ap_uint<8> &hh, ap_uint<8> &mm, ap_uint<8> &ss, ap_uint<1> &pm) {
-#line 16 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/12-hour-clock/12hour_clock/solution1/csynth.tcl"
+__attribute__((sdx_kernel("clock", 0))) void clock(ap_uint<1> reset, ap_uint<1> ena, hls::stream<ap_uint<8>> &hh, hls::stream<ap_uint<8>> &mm, hls::stream<ap_uint<8>> &ss, hls::stream<ap_uint<1>> &pm) {
+#line 17 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/12-hour-clock/12hour_clock/solution1/csynth.tcl"
+#pragma HLSDIRECTIVE TOP name=clock
+# 3 "clock.cpp"
+
+#line 7 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/12-hour-clock/12hour_clock/solution1/directives.tcl"
 #pragma HLSDIRECTIVE TOP name=clock
 # 3 "clock.cpp"
 
@@ -5734,8 +5870,10 @@ __attribute__((sdx_kernel("clock", 0))) void clock(ap_uint<1> &reset, ap_uint<1>
     static ap_uint<8> seconds = 0;
     static ap_uint<1> pm_indicator = 0;
 
+#pragma HLS PIPELINE II=1
 
-    if (reset == 1) {
+
+ if (reset == 1) {
         hours = 12;
         minutes = 0;
         seconds = 0;
@@ -5759,8 +5897,8 @@ __attribute__((sdx_kernel("clock", 0))) void clock(ap_uint<1> &reset, ap_uint<1>
     }
 
 
-    hh = hours;
-    mm = minutes;
-    ss = seconds;
-    pm = pm_indicator;
+    hh.write(hours);
+    mm.write(minutes);
+    ss.write(seconds);
+    pm.write(pm_indicator);
 }

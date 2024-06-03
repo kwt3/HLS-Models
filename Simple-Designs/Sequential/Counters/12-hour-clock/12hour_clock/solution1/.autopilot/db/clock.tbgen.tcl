@@ -3,7 +3,7 @@ set isTopModule 1
 set isCombinational 0
 set isDatapathOnly 0
 set isPipelined 0
-set pipeline_type none
+set pipeline_type function
 set FunctionProtocol ap_ctrl_hs
 set isOneStateSeq 1
 set ProfileFlag 0
@@ -15,24 +15,24 @@ set DLRegItemOffset 0
 set C_modelName {clock}
 set C_modelType { void 0 }
 set C_modelArgList {
-	{ reset int 1 regular {pointer 0}  }
-	{ ena int 1 regular {pointer 0}  }
-	{ hh int 8 regular {pointer 1}  }
-	{ mm int 8 regular {pointer 1}  }
-	{ ss int 8 regular {pointer 1}  }
-	{ pm int 1 regular {pointer 1}  }
+	{ reset int 1 regular  }
+	{ ena int 1 regular  }
+	{ hh int 8 regular {fifo 1 volatile }  }
+	{ mm int 8 regular {fifo 1 volatile }  }
+	{ ss int 8 regular {fifo 1 volatile }  }
+	{ pm int 1 regular {fifo 1 volatile }  }
 }
 set hasAXIMCache 0
 set AXIMCacheInstList { }
 set C_modelArgMapList {[ 
 	{ "Name" : "reset", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
  	{ "Name" : "ena", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
- 	{ "Name" : "hh", "interface" : "wire", "bitwidth" : 8, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "mm", "interface" : "wire", "bitwidth" : 8, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "ss", "interface" : "wire", "bitwidth" : 8, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "pm", "interface" : "wire", "bitwidth" : 1, "direction" : "WRITEONLY"} ]}
+ 	{ "Name" : "hh", "interface" : "fifo", "bitwidth" : 8, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "mm", "interface" : "fifo", "bitwidth" : 8, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "ss", "interface" : "fifo", "bitwidth" : 8, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "pm", "interface" : "fifo", "bitwidth" : 1, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
-set portNum 16
+set portNum 20
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -42,14 +42,18 @@ set portList {
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
 	{ reset sc_in sc_lv 1 signal 0 } 
 	{ ena sc_in sc_lv 1 signal 1 } 
-	{ hh sc_out sc_lv 8 signal 2 } 
-	{ hh_ap_vld sc_out sc_logic 1 outvld 2 } 
-	{ mm sc_out sc_lv 8 signal 3 } 
-	{ mm_ap_vld sc_out sc_logic 1 outvld 3 } 
-	{ ss sc_out sc_lv 8 signal 4 } 
-	{ ss_ap_vld sc_out sc_logic 1 outvld 4 } 
-	{ pm sc_out sc_lv 1 signal 5 } 
-	{ pm_ap_vld sc_out sc_logic 1 outvld 5 } 
+	{ hh_din sc_out sc_lv 8 signal 2 } 
+	{ hh_full_n sc_in sc_logic 1 signal 2 } 
+	{ hh_write sc_out sc_logic 1 signal 2 } 
+	{ mm_din sc_out sc_lv 8 signal 3 } 
+	{ mm_full_n sc_in sc_logic 1 signal 3 } 
+	{ mm_write sc_out sc_logic 1 signal 3 } 
+	{ ss_din sc_out sc_lv 8 signal 4 } 
+	{ ss_full_n sc_in sc_logic 1 signal 4 } 
+	{ ss_write sc_out sc_logic 1 signal 4 } 
+	{ pm_din sc_out sc_lv 1 signal 5 } 
+	{ pm_full_n sc_in sc_logic 1 signal 5 } 
+	{ pm_write sc_out sc_logic 1 signal 5 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -60,14 +64,18 @@ set NewPortList {[
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
  	{ "name": "reset", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "reset", "role": "default" }} , 
  	{ "name": "ena", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "ena", "role": "default" }} , 
- 	{ "name": "hh", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "hh", "role": "default" }} , 
- 	{ "name": "hh_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "hh", "role": "ap_vld" }} , 
- 	{ "name": "mm", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "mm", "role": "default" }} , 
- 	{ "name": "mm_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "mm", "role": "ap_vld" }} , 
- 	{ "name": "ss", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "ss", "role": "default" }} , 
- 	{ "name": "ss_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "ss", "role": "ap_vld" }} , 
- 	{ "name": "pm", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "pm", "role": "default" }} , 
- 	{ "name": "pm_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "pm", "role": "ap_vld" }}  ]}
+ 	{ "name": "hh_din", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "hh", "role": "din" }} , 
+ 	{ "name": "hh_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "hh", "role": "full_n" }} , 
+ 	{ "name": "hh_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "hh", "role": "write" }} , 
+ 	{ "name": "mm_din", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "mm", "role": "din" }} , 
+ 	{ "name": "mm_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "mm", "role": "full_n" }} , 
+ 	{ "name": "mm_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "mm", "role": "write" }} , 
+ 	{ "name": "ss_din", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "ss", "role": "din" }} , 
+ 	{ "name": "ss_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "ss", "role": "full_n" }} , 
+ 	{ "name": "ss_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "ss", "role": "write" }} , 
+ 	{ "name": "pm_din", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "pm", "role": "din" }} , 
+ 	{ "name": "pm_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "pm", "role": "full_n" }} , 
+ 	{ "name": "pm_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "pm", "role": "write" }}  ]}
 
 set RtlHierarchyInfo {[
 	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "",
@@ -87,10 +95,18 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "reset", "Type" : "None", "Direction" : "I"},
 			{"Name" : "ena", "Type" : "None", "Direction" : "I"},
-			{"Name" : "hh", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "mm", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "ss", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "pm", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "hh", "Type" : "Fifo", "Direction" : "O",
+				"BlockSignal" : [
+					{"Name" : "hh_blk_n", "Type" : "RtlSignal"}]},
+			{"Name" : "mm", "Type" : "Fifo", "Direction" : "O",
+				"BlockSignal" : [
+					{"Name" : "mm_blk_n", "Type" : "RtlSignal"}]},
+			{"Name" : "ss", "Type" : "Fifo", "Direction" : "O",
+				"BlockSignal" : [
+					{"Name" : "ss_blk_n", "Type" : "RtlSignal"}]},
+			{"Name" : "pm", "Type" : "Fifo", "Direction" : "O",
+				"BlockSignal" : [
+					{"Name" : "pm_blk_n", "Type" : "RtlSignal"}]},
 			{"Name" : "hours", "Type" : "OVld", "Direction" : "IO"},
 			{"Name" : "minutes", "Type" : "OVld", "Direction" : "IO"},
 			{"Name" : "seconds", "Type" : "OVld", "Direction" : "IO"},
@@ -123,16 +139,20 @@ set PipelineEnableSignalInfo {[
 set Spec2ImplPortList { 
 	reset { ap_none {  { reset in_data 0 1 } } }
 	ena { ap_none {  { ena in_data 0 1 } } }
-	hh { ap_vld {  { hh out_data 1 8 }  { hh_ap_vld out_vld 1 1 } } }
-	mm { ap_vld {  { mm out_data 1 8 }  { mm_ap_vld out_vld 1 1 } } }
-	ss { ap_vld {  { ss out_data 1 8 }  { ss_ap_vld out_vld 1 1 } } }
-	pm { ap_vld {  { pm out_data 1 1 }  { pm_ap_vld out_vld 1 1 } } }
+	hh { ap_fifo {  { hh_din fifo_data_in 1 8 }  { hh_full_n fifo_status 0 1 }  { hh_write fifo_port_we 1 1 } } }
+	mm { ap_fifo {  { mm_din fifo_data_in 1 8 }  { mm_full_n fifo_status 0 1 }  { mm_write fifo_port_we 1 1 } } }
+	ss { ap_fifo {  { ss_din fifo_data_in 1 8 }  { ss_full_n fifo_status 0 1 }  { ss_write fifo_port_we 1 1 } } }
+	pm { ap_fifo {  { pm_din fifo_data_in 1 1 }  { pm_full_n fifo_status 0 1 }  { pm_write fifo_port_we 1 1 } } }
 }
 
 set maxi_interface_dict [dict create]
 
 # RTL port scheduling information:
 set fifoSchedulingInfoList { 
+	hh { fifo_write 1 no_conditional }
+	mm { fifo_write 1 no_conditional }
+	ss { fifo_write 1 no_conditional }
+	pm { fifo_write 1 no_conditional }
 }
 
 # RTL bus port read request latency information:

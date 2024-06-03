@@ -1,0 +1,5 @@
+sv work "glbl.v"
+sv xil_defaultlib "increment.autotb.v"
+sv xil_defaultlib "increment.v"
+sv xil_defaultlib "dataflow_monitor.sv"
+

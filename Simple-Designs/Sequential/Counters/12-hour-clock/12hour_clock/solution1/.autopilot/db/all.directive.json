@@ -16,8 +16,29 @@
       ]
     },
     "slx": false,
-    "sourceFile": "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/12-hour-clock/12hour_clock/solution1/csynth.tcl",
-    "sourceLine": 16,
+    "sourceFile": "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/12-hour-clock/12hour_clock/solution1/directives.tcl",
+    "sourceLine": 7,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "clock",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "clock"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/12-hour-clock/12hour_clock/solution1/csynth.tcl",
+    "sourceLine": 17,
     "success": true
   }
 ]

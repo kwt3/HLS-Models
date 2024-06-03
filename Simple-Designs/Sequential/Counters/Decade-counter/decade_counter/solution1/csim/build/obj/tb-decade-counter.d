@@ -1,5 +1,4 @@
 obj/tb-decade-counter.o: ../../../../tb-decade-counter.cpp \
- ../../../../decade-counter.hpp \
  C:/Xilinx/Vitis_HLS/2023.2/include/ap_int.h \
  C:/Xilinx/Vitis_HLS/2023.2/include/etc/ap_common.h \
  C:/Xilinx/Vitis_HLS/2023.2/include/etc/ap_decl.h \
@@ -19,4 +18,5 @@ obj/tb-decade-counter.o: ../../../../tb-decade-counter.cpp \
  C:/Xilinx/Vitis_HLS/2023.2/include/ap_fixed.h \
  C:/Xilinx/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h \
  C:/Xilinx/Vitis_HLS/2023.2/include/etc/ap_fixed_ref.h \
- C:/Xilinx/Vitis_HLS/2023.2/include/etc/ap_fixed_special.h
+ C:/Xilinx/Vitis_HLS/2023.2/include/etc/ap_fixed_special.h \
+ ../../../../decade-counter.hpp

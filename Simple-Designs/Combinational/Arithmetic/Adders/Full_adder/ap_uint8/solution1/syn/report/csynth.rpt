@@ -1,0 +1,24 @@
+
+
+================================================================
+== Synthesis Summary Report of 'full_adder'
+================================================================
++ General Information: 
+    * Date:           Mon Jun  3 02:26:28 2024
+    * Version:        2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:        ap_uint8
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: virtexuplus
+    * Target device:  xcvu11p-flga2577-1-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------+------+------+---------+--------+----------+---------+------+----------+------+----+---+----------+-----+
+    |    Modules   | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |    |   |          |     |
+    |    & Loops   | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP| FF|    LUT   | URAM|
+    +--------------+------+------+---------+--------+----------+---------+------+----------+------+----+---+----------+-----+
+    |+ full_adder  |     -|  6.74|        0|   0.000|         -|        1|     -|        no|     -|   -|  -|  40 (~0%)|    -|
+    +--------------+------+------+---------+--------+----------+---------+------+----------+------+----+---+----------+-----+
+

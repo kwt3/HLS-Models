@@ -5,11 +5,14 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // 
 // ==============================================================
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Decade-counter/decade-counter.cpp"
+# 1 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Decade-counter/decade-counter.cpp"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Decade-counter/decade-counter.cpp"
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Decade-counter/decade-counter.hpp" 1
+# 1 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Decade-counter/decade-counter.cpp"
+# 1 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Decade-counter/decade-counter.hpp" 1
+
+
+
 # 1 "C:/Xilinx/Vitis_HLS/2023.2/include/ap_int.h" 1
 # 10 "C:/Xilinx/Vitis_HLS/2023.2/include/ap_int.h"
 # 1 "C:/Xilinx/Vitis_HLS/2023.2/include/etc/ap_common.h" 1
@@ -55380,11 +55383,10 @@ inline bool operator!=(
 }
 # 366 "C:/Xilinx/Vitis_HLS/2023.2/include/ap_fixed.h" 2
 # 361 "C:/Xilinx/Vitis_HLS/2023.2/include/ap_int.h" 2
-# 2 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Decade-counter/decade-counter.hpp" 2
-
+# 5 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Decade-counter/decade-counter.hpp" 2
 
 void counter(ap_uint<1> &reset, ap_uint<4> &out);
-# 2 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Decade-counter/decade-counter.cpp" 2
+# 2 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Decade-counter/decade-counter.cpp" 2
 
 void counter(ap_uint<1> &reset, ap_uint<4> &out) {
 
@@ -55394,6 +55396,7 @@ void counter(ap_uint<1> &reset, ap_uint<4> &out) {
     if (reset == 1) {
         count = 0;
     } else {
+
         if (count == 9) {
             count = 0;
         } else {
@@ -55429,5 +55432,5 @@ apatb_counter_ir(reset, out);
 return ;
 }
 #endif
-# 20 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Decade-counter/decade-counter.cpp"
+# 21 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Decade-counter/decade-counter.cpp"
 

@@ -16,8 +16,29 @@
       ]
     },
     "slx": false,
-    "sourceFile": "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Slow-decade-counter/slow_decade_counter/solution1/csynth.tcl",
-    "sourceLine": 16,
+    "sourceFile": "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Slow-decade-counter/slow_decade_counter/solution1/directives.tcl",
+    "sourceLine": 7,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "decade_counter",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "decade_counter"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Slow-decade-counter/slow_decade_counter/solution1/csynth.tcl",
+    "sourceLine": 17,
     "success": true
   }
 ]

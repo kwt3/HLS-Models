@@ -3,12 +3,12 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Mon Mar 25 04:58:33 2024
-# Process ID: 15460
-# Current directory: C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Decade-counter/decade_counter/solution1/sim/verilog
+# Start of session at: Mon Jun  3 00:26:59 2024
+# Process ID: 17256
+# Current directory: C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Decade-counter/decade_counter/solution1/sim/verilog
 # Command line: xsim.exe -mode tcl -source {xsim.dir/counter/xsim_script.tcl}
-# Log file: C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Decade-counter/decade_counter/solution1/sim/verilog/xsim.log
-# Journal file: C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Decade-counter/decade_counter/solution1/sim/verilog\xsim.jou
+# Log file: C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Decade-counter/decade_counter/solution1/sim/verilog/xsim.log
+# Journal file: C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Decade-counter/decade_counter/solution1/sim/verilog\xsim.jou
 # Running On: billy, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 16, Host memory: 16542 MB
 #-----------------------------------------------------------
 source xsim.dir/counter/xsim_script.tcl
@@ -22,24 +22,28 @@ source counter.tcl
 //
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
-// RTL Simulation : 0 / 16 [n/a] @ "125000"
-// RTL Simulation : 1 / 16 [n/a] @ "145000"
-// RTL Simulation : 2 / 16 [n/a] @ "155000"
-// RTL Simulation : 3 / 16 [n/a] @ "165000"
-// RTL Simulation : 4 / 16 [n/a] @ "175000"
-// RTL Simulation : 5 / 16 [n/a] @ "185000"
-// RTL Simulation : 6 / 16 [n/a] @ "195000"
-// RTL Simulation : 7 / 16 [n/a] @ "205000"
-// RTL Simulation : 8 / 16 [n/a] @ "215000"
-// RTL Simulation : 9 / 16 [n/a] @ "225000"
-// RTL Simulation : 10 / 16 [n/a] @ "235000"
-// RTL Simulation : 11 / 16 [n/a] @ "245000"
-// RTL Simulation : 12 / 16 [n/a] @ "255000"
-// RTL Simulation : 13 / 16 [n/a] @ "265000"
-// RTL Simulation : 14 / 16 [n/a] @ "275000"
-// RTL Simulation : 15 / 16 [n/a] @ "285000"
-// RTL Simulation : 16 / 16 [n/a] @ "295000"
+// RTL Simulation : 0 / 20 [n/a] @ "125000"
+// RTL Simulation : 1 / 20 [n/a] @ "145000"
+// RTL Simulation : 2 / 20 [n/a] @ "155000"
+// RTL Simulation : 3 / 20 [n/a] @ "165000"
+// RTL Simulation : 4 / 20 [n/a] @ "175000"
+// RTL Simulation : 5 / 20 [n/a] @ "185000"
+// RTL Simulation : 6 / 20 [n/a] @ "195000"
+// RTL Simulation : 7 / 20 [n/a] @ "205000"
+// RTL Simulation : 8 / 20 [n/a] @ "215000"
+// RTL Simulation : 9 / 20 [n/a] @ "225000"
+// RTL Simulation : 10 / 20 [n/a] @ "235000"
+// RTL Simulation : 11 / 20 [n/a] @ "245000"
+// RTL Simulation : 12 / 20 [n/a] @ "255000"
+// RTL Simulation : 13 / 20 [n/a] @ "265000"
+// RTL Simulation : 14 / 20 [n/a] @ "275000"
+// RTL Simulation : 15 / 20 [n/a] @ "285000"
+// RTL Simulation : 16 / 20 [n/a] @ "295000"
+// RTL Simulation : 17 / 20 [n/a] @ "305000"
+// RTL Simulation : 18 / 20 [n/a] @ "315000"
+// RTL Simulation : 19 / 20 [n/a] @ "325000"
+// RTL Simulation : 20 / 20 [n/a] @ "335000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 355 ns : File "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Decade-counter/decade_counter/solution1/sim/verilog/counter.autotb.v" Line 283
+$finish called at time : 395 ns : File "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Decade-counter/decade_counter/solution1/sim/verilog/counter.autotb.v" Line 283
 ## quit
-INFO: [Common 17-206] Exiting xsim at Mon Mar 25 04:58:36 2024...
+INFO: [Common 17-206] Exiting xsim at Mon Jun  3 00:27:01 2024...

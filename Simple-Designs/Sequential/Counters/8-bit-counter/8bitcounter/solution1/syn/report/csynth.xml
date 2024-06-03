@@ -31,7 +31,7 @@
         <SummaryOfViolations>
             <IssueType>-</IssueType>
             <ViolationType>-</ViolationType>
-            <SourceLocation>counter.cpp:7</SourceLocation>
+            <SourceLocation>counter.cpp:3</SourceLocation>
         </SummaryOfViolations>
     </PerformanceEstimates>
     <AreaEstimates>
@@ -182,7 +182,7 @@
                 <SummaryOfViolations>
                     <IssueType>-</IssueType>
                     <ViolationType>-</ViolationType>
-                    <SourceLocation>counter.cpp:7</SourceLocation>
+                    <SourceLocation>counter.cpp:3</SourceLocation>
                 </SummaryOfViolations>
             </PerformanceEstimates>
             <AreaEstimates>
@@ -205,7 +205,7 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="v_fu_47_p2" SOURCE="counter.cpp:13" STORAGESUBTYPE="" URAM="0" VARIABLE="v"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="v_fu_47_p2" SOURCE="counter.cpp:9" STORAGESUBTYPE="" URAM="0" VARIABLE="v"/>
             </BindNodes>
         </Module>
     </ModuleInformation>

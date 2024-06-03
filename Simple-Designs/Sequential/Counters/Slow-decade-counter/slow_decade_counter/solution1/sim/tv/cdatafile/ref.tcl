@@ -3,4 +3,4 @@ set depth_list {
   {reset 1}
   {slowena 1}
 }
-set trans_num 16
+set trans_num 26

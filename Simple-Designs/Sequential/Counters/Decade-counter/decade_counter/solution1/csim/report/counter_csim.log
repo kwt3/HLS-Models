@@ -3,21 +3,26 @@ INFO: [SIM 4] CSIM will launch GCC as the compiler.
    Compiling ../../../../tb-decade-counter.cpp in debug mode
    Compiling ../../../../decade-counter.cpp in debug mode
    Generating csim.exe
-Output with reset: 0
-Output at count 0: 1
-Output at count 1: 2
-Output at count 2: 3
-Output at count 3: 4
-Output at count 4: 5
-Output at count 5: 6
-Output at count 6: 7
-Output at count 7: 8
-Output at count 8: 9
-Output at count 9: 0
-Output at count 10: 1
-Output at count 11: 2
-Output at count 12: 3
-Output at count 13: 4
-Output at count 14: 5
+Testing decade counter:
+At time 0, count = 1
+At time 1, count = 2
+At time 2, count = 3
+At time 3, count = 4
+At time 4, count = 5
+At time 5, count = 6
+At time 6, count = 7
+At time 7, count = 8
+At time 8, count = 9
+At time 9, count = 0
+At time 10, count = 0
+At time 11, count = 1
+At time 12, count = 2
+At time 13, count = 3
+At time 14, count = 4
+At time 15, count = 5
+At time 16, count = 6
+At time 17, count = 7
+At time 18, count = 8
+At time 19, count = 9
 INFO: [SIM 1] CSim done with 0 errors.
 INFO: [SIM 3] *************** CSIM finish ***************

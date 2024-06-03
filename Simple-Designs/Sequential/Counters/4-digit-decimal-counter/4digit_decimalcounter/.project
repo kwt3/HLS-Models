@@ -29,47 +29,47 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/4-digit-decimal-counter/4digit_decimalcounter/.apc/.src</location>
+			<location>C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/4-digit-decimal-counter/4digit_decimalcounter/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/4-digit-decimal-counter/4digit_decimalcounter/.apc/.tb</location>
+			<location>C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/4-digit-decimal-counter/4digit_decimalcounter/.apc/.tb</location>
 		</link>
 		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
-			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/4-digit-decimal-counter/4digit_decimalcounter/solution1/.tcls</location>
+			<location>C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/4-digit-decimal-counter/4digit_decimalcounter/solution1/.tcls</location>
 		</link>
 		<link>
 			<name>source/counter.cpp</name>
 			<type>1</type>
-			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/4-digit-decimal-counter/counter.cpp</location>
+			<location>C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/4-digit-decimal-counter/counter.cpp</location>
 		</link>
 		<link>
 			<name>source/counter.hpp</name>
 			<type>1</type>
-			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/4-digit-decimal-counter/counter.hpp</location>
+			<location>C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/4-digit-decimal-counter/counter.hpp</location>
 		</link>
 		<link>
 			<name>testbench/tb_counter.cpp</name>
 			<type>1</type>
-			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/4-digit-decimal-counter/tb_counter.cpp</location>
+			<location>C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/4-digit-decimal-counter/tb_counter.cpp</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/4-digit-decimal-counter/4digit_decimalcounter/solution1/solution1.directive</location>
+			<location>C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/4-digit-decimal-counter/4digit_decimalcounter/solution1/solution1.directive</location>
 		</link>
 		<link>
 			<name>solution1/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/4-digit-decimal-counter/4digit_decimalcounter/solution1/directives.tcl</location>
+			<location>C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/4-digit-decimal-counter/4digit_decimalcounter/solution1/directives.tcl</location>
 		</link>
 		<link>
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
-			<location>C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/4-digit-decimal-counter/4digit_decimalcounter/solution1/script.tcl</location>
+			<location>C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/4-digit-decimal-counter/4digit_decimalcounter/solution1/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

@@ -1,9 +1,8 @@
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/8-bit-counter/tb_counter.cpp"
+# 1 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/8-bit-counter/tb_counter.cpp"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/8-bit-counter/tb_counter.cpp"
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/8-bit-counter/counter.hpp" 1
-
+# 1 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/8-bit-counter/tb_counter.cpp"
+# 1 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/8-bit-counter/counter.hpp" 1
 
 
 
@@ -351,16 +350,12 @@ namespace std
   using ::uintmax_t;
   using ::uintptr_t;
 }
-# 6 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/8-bit-counter/counter.hpp" 2
+# 5 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/8-bit-counter/counter.hpp" 2
 
 
-
-# 8 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/8-bit-counter/counter.hpp"
-extern "C" {
-
-    void counter(uint8_t *count, uint8_t upper);
-}
-# 2 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/8-bit-counter/tb_counter.cpp" 2
+# 6 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/8-bit-counter/counter.hpp"
+void counter(uint8_t *count, uint8_t upper);
+# 2 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/8-bit-counter/tb_counter.cpp" 2
 # 1 "C:/Xilinx/Vitis_HLS/2023.2/tps/win64/msys64/mingw64/include/c++/6.2.0/iostream" 1 3
 # 36 "C:/Xilinx/Vitis_HLS/2023.2/tps/win64/msys64/mingw64/include/c++/6.2.0/iostream" 3
        
@@ -25532,16 +25527,16 @@ namespace std
 
 
 }
-# 3 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/8-bit-counter/tb_counter.cpp" 2
+# 3 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/8-bit-counter/tb_counter.cpp" 2
 
 
-# 4 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/8-bit-counter/tb_counter.cpp"
+# 4 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/8-bit-counter/tb_counter.cpp"
 int main() {
     uint8_t count;
     uint8_t upper = 10;
 
 
-    for (int i = 0; i < 20; i++) {
+    for (int i = 0; i < 20; ++i) {
         counter(&count, upper);
         std::cout << "Count: " << static_cast<int>(count) << std::endl;
     }

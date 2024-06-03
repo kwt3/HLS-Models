@@ -1,8 +1,8 @@
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/4-bit-counter/4bitcounter.cpp"
+# 1 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/4-bit-counter/4bitcounter.cpp"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/4-bit-counter/4bitcounter.cpp"
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/4-bit-counter/4bitcounter.hpp" 1
+# 1 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/4-bit-counter/4bitcounter.cpp"
+# 1 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/4-bit-counter/4bitcounter.hpp" 1
 # 1 "C:/Xilinx/Vitis_HLS/2023.2/include/ap_int.h" 1
 # 10 "C:/Xilinx/Vitis_HLS/2023.2/include/ap_int.h"
 # 1 "C:/Xilinx/Vitis_HLS/2023.2/include/etc/ap_common.h" 1
@@ -55373,11 +55373,11 @@ inline bool operator!=(
 }
 # 366 "C:/Xilinx/Vitis_HLS/2023.2/include/ap_fixed.h" 2
 # 361 "C:/Xilinx/Vitis_HLS/2023.2/include/ap_int.h" 2
-# 2 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/4-bit-counter/4bitcounter.hpp" 2
+# 2 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/4-bit-counter/4bitcounter.hpp" 2
 
 
 void counter(ap_uint<1> &reset, ap_uint<4> &out);
-# 2 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/4-bit-counter/4bitcounter.cpp" 2
+# 2 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/4-bit-counter/4bitcounter.cpp" 2
 
 void counter(ap_uint<1> &reset, ap_uint<4> &out) {
 

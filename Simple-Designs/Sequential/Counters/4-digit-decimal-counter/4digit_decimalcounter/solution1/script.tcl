@@ -5,13 +5,14 @@
 ## Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ############################################################
 open_project 4digit_decimalcounter
-set_top Counter12::increment
+set_top increment
 add_files counter.cpp
 add_files counter.hpp
-add_files -tb tb_counter.cpp
+add_files -tb tb_counter.cpp -cflags "-Wno-unknown-pragmas"
 open_solution "solution1" -flow_target vivado
 set_part {xcvu11p-flga2577-1-e}
 create_clock -period 10 -name default
+config_cosim -tool xsim
 #source "./4digit_decimalcounter/solution1/directives.tcl"
 csim_design
 csynth_design

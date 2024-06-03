@@ -19,10 +19,10 @@
 
 <Node id="4" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-entry:0 %spectopmodule_ln7 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1
+entry:0 %spectopmodule_ln3 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1
 
 ]]></Node>
-<StgValue><ssdm name="spectopmodule_ln7"/></StgValue>
+<StgValue><ssdm name="spectopmodule_ln3"/></StgValue>
 </operation>
 
 <operation id="3" st_id="1" stage="1" lat="1">
@@ -139,10 +139,10 @@ entry:7 %v = add i8 %count_internal_load, i8 1
 
 <Node id="12" bw="1" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-entry:8 %icmp_ln14 = icmp_eq  i8 %v, i8 %upper_read
+entry:8 %icmp_ln10 = icmp_eq  i8 %v, i8 %upper_read
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln14"/></StgValue>
+<StgValue><ssdm name="icmp_ln10"/></StgValue>
 </operation>
 
 <operation id="11" st_id="1" stage="1" lat="1">
@@ -154,7 +154,7 @@ entry:8 %icmp_ln14 = icmp_eq  i8 %v, i8 %upper_read
 
 <Node id="13" bw="8" op_0_bw="1" op_1_bw="8" op_2_bw="8">
 <![CDATA[
-entry:9 %v_1 = select i1 %icmp_ln14, i8 0, i8 %v
+entry:9 %v_1 = select i1 %icmp_ln10, i8 0, i8 %v
 
 ]]></Node>
 <StgValue><ssdm name="v_1"/></StgValue>
@@ -169,10 +169,10 @@ entry:9 %v_1 = select i1 %icmp_ln14, i8 0, i8 %v
 
 <Node id="14" bw="0" op_0_bw="8" op_1_bw="8" op_2_bw="0">
 <![CDATA[
-entry:10 %store_ln15 = store i8 %v_1, i8 %count_internal
+entry:10 %store_ln11 = store i8 %v_1, i8 %count_internal
 
 ]]></Node>
-<StgValue><ssdm name="store_ln15"/></StgValue>
+<StgValue><ssdm name="store_ln11"/></StgValue>
 </operation>
 
 <operation id="13" st_id="1" stage="1" lat="1">
@@ -184,10 +184,10 @@ entry:10 %store_ln15 = store i8 %v_1, i8 %count_internal
 
 <Node id="15" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8">
 <![CDATA[
-entry:11 %write_ln20 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %count, i8 %v_1
+entry:11 %write_ln17 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %count, i8 %v_1
 
 ]]></Node>
-<StgValue><ssdm name="write_ln20"/></StgValue>
+<StgValue><ssdm name="write_ln17"/></StgValue>
 </operation>
 
 <operation id="14" st_id="1" stage="1" lat="1">
@@ -199,10 +199,10 @@ entry:11 %write_ln20 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %count, i8 %
 
 <Node id="16" bw="0">
 <![CDATA[
-entry:12 %ret_ln21 = ret
+entry:12 %ret_ln18 = ret
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln21"/></StgValue>
+<StgValue><ssdm name="ret_ln18"/></StgValue>
 </operation>
 </state>
 </state_list>

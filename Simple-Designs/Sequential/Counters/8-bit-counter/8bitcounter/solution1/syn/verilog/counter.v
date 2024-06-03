@@ -42,7 +42,7 @@ wire    ap_CS_fsm_state1;
 reg   [7:0] count_internal;
 wire   [7:0] v_1_fu_59_p3;
 wire   [7:0] v_fu_47_p2;
-wire   [0:0] icmp_ln14_fu_53_p2;
+wire   [0:0] icmp_ln10_fu_53_p2;
 reg   [0:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
 wire    ap_ce_reg;
@@ -120,11 +120,11 @@ end
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
-assign count = ((icmp_ln14_fu_53_p2[0:0] == 1'b1) ? 8'd0 : v_fu_47_p2);
+assign count = ((icmp_ln10_fu_53_p2[0:0] == 1'b1) ? 8'd0 : v_fu_47_p2);
 
-assign icmp_ln14_fu_53_p2 = ((v_fu_47_p2 == upper) ? 1'b1 : 1'b0);
+assign icmp_ln10_fu_53_p2 = ((v_fu_47_p2 == upper) ? 1'b1 : 1'b0);
 
-assign v_1_fu_59_p3 = ((icmp_ln14_fu_53_p2[0:0] == 1'b1) ? 8'd0 : v_fu_47_p2);
+assign v_1_fu_59_p3 = ((icmp_ln10_fu_53_p2[0:0] == 1'b1) ? 8'd0 : v_fu_47_p2);
 
 assign v_fu_47_p2 = (count_internal + 8'd1);
 

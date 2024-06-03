@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'clock'" level="0">
-<item name = "Date">Mon Mar 25 04:47:05 2024
+<item name = "Date">Mon Jun  3 00:03:31 2024
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">12hour_clock</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 2.286 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 4.014 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">0, 0, 0 ns, 0 ns, 1, 1, no</column>
+<column name="">0, 0, 0 ns, 0 ns, 1, 1, yes</column>
 </table>
 </item>
 <item name = "Detail">
@@ -47,11 +47,11 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 81, -</column>
+<column name="Expression">-, -, 0, 83, -</column>
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, -, -, -, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, -, 151, -</column>
+<column name="Multiplexer">-, -, -, 187, -</column>
 <column name="Register">-, -, 26, -, -</column>
 <specialColumn name="Available SLR">1344, 3072, 864000, 432000, 320</specialColumn>
 <specialColumn name="Utilization SLR (%)">0, 0, ~0, ~0, 0</specialColumn>
@@ -79,27 +79,32 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln18_fu_284_p2">+, 0, 0, 15, 8, 1</column>
-<column name="add_ln21_fu_297_p2">+, 0, 0, 15, 8, 1</column>
-<column name="add_ln24_fu_310_p2">+, 0, 0, 15, 8, 1</column>
-<column name="ap_condition_174">and, 0, 0, 2, 1, 1</column>
-<column name="ap_condition_66">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln19_fu_291_p2">icmp, 0, 0, 15, 8, 6</column>
-<column name="icmp_ln22_fu_304_p2">icmp, 0, 0, 15, 8, 6</column>
-<column name="xor_ln28_fu_317_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="add_ln20_fu_290_p2">+, 0, 0, 15, 8, 1</column>
+<column name="add_ln23_fu_303_p2">+, 0, 0, 15, 8, 1</column>
+<column name="add_ln26_fu_316_p2">+, 0, 0, 15, 8, 1</column>
+<column name="ap_condition_199">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_91">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln21_fu_297_p2">icmp, 0, 0, 15, 8, 6</column>
+<column name="icmp_ln24_fu_310_p2">icmp, 0, 0, 15, 8, 6</column>
+<column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
+<column name="xor_ln30_fu_323_p2">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_phi_mux_hours_flag_4_phi_fu_108_p12">14, 3, 1, 3</column>
-<column name="ap_phi_mux_hours_new_4_phi_fu_131_p12">26, 5, 8, 40</column>
-<column name="ap_phi_mux_minutes_flag_3_phi_fu_151_p12">14, 3, 1, 3</column>
-<column name="ap_phi_mux_minutes_new_3_phi_fu_174_p12">20, 4, 8, 32</column>
-<column name="ap_phi_mux_pm_indicator_loc_0_phi_fu_99_p4">14, 3, 1, 3</column>
-<column name="ap_phi_mux_pm_indicator_loc_5_phi_fu_240_p12">20, 4, 1, 4</column>
-<column name="ap_phi_mux_seconds_flag_2_phi_fu_195_p12">14, 3, 1, 3</column>
-<column name="ap_phi_mux_seconds_new_2_phi_fu_218_p12">20, 4, 8, 32</column>
+<column name="ap_phi_mux_hours_flag_4_phi_fu_114_p12">14, 3, 1, 3</column>
+<column name="ap_phi_mux_minutes_flag_3_phi_fu_157_p12">14, 3, 1, 3</column>
+<column name="ap_phi_mux_p_06_phi_fu_246_p12">20, 4, 1, 4</column>
+<column name="ap_phi_mux_p_07_phi_fu_137_p12">26, 5, 8, 40</column>
+<column name="ap_phi_mux_p_08_phi_fu_180_p12">20, 4, 8, 32</column>
+<column name="ap_phi_mux_p_0_phi_fu_224_p12">20, 4, 8, 32</column>
+<column name="ap_phi_mux_pm_indicator_loc_0_phi_fu_105_p4">14, 3, 1, 3</column>
+<column name="ap_phi_mux_seconds_flag_2_phi_fu_201_p12">14, 3, 1, 3</column>
+<column name="hh_blk_n">9, 2, 1, 2</column>
+<column name="mm_blk_n">9, 2, 1, 2</column>
+<column name="pm_blk_n">9, 2, 1, 2</column>
 <column name="pm_indicator">9, 2, 1, 2</column>
+<column name="ss_blk_n">9, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -124,16 +129,20 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, clock, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, clock, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, clock, return value</column>
-<column name="reset">in, 1, ap_none, reset, pointer</column>
-<column name="ena">in, 1, ap_none, ena, pointer</column>
-<column name="hh">out, 8, ap_vld, hh, pointer</column>
-<column name="hh_ap_vld">out, 1, ap_vld, hh, pointer</column>
-<column name="mm">out, 8, ap_vld, mm, pointer</column>
-<column name="mm_ap_vld">out, 1, ap_vld, mm, pointer</column>
-<column name="ss">out, 8, ap_vld, ss, pointer</column>
-<column name="ss_ap_vld">out, 1, ap_vld, ss, pointer</column>
-<column name="pm">out, 1, ap_vld, pm, pointer</column>
-<column name="pm_ap_vld">out, 1, ap_vld, pm, pointer</column>
+<column name="reset">in, 1, ap_none, reset, scalar</column>
+<column name="ena">in, 1, ap_none, ena, scalar</column>
+<column name="hh_din">out, 8, ap_fifo, hh, pointer</column>
+<column name="hh_full_n">in, 1, ap_fifo, hh, pointer</column>
+<column name="hh_write">out, 1, ap_fifo, hh, pointer</column>
+<column name="mm_din">out, 8, ap_fifo, mm, pointer</column>
+<column name="mm_full_n">in, 1, ap_fifo, mm, pointer</column>
+<column name="mm_write">out, 1, ap_fifo, mm, pointer</column>
+<column name="ss_din">out, 8, ap_fifo, ss, pointer</column>
+<column name="ss_full_n">in, 1, ap_fifo, ss, pointer</column>
+<column name="ss_write">out, 1, ap_fifo, ss, pointer</column>
+<column name="pm_din">out, 1, ap_fifo, pm, pointer</column>
+<column name="pm_full_n">in, 1, ap_fifo, pm, pointer</column>
+<column name="pm_write">out, 1, ap_fifo, pm, pointer</column>
 </table>
 </item>
 </section>

@@ -5,12 +5,11 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // 
 // ==============================================================
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/8-bit-counter/tb_counter.cpp"
+# 1 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/8-bit-counter/tb_counter.cpp"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/8-bit-counter/tb_counter.cpp"
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/8-bit-counter/counter.hpp" 1
-
+# 1 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/8-bit-counter/tb_counter.cpp"
+# 1 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/8-bit-counter/counter.hpp" 1
 
 
 
@@ -358,24 +357,20 @@ namespace std
   using ::uintmax_t;
   using ::uintptr_t;
 }
-# 6 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/8-bit-counter/counter.hpp" 2
+# 5 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/8-bit-counter/counter.hpp" 2
 
 
+# 6 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/8-bit-counter/counter.hpp"
 
-# 8 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/8-bit-counter/counter.hpp"
-extern "C" {
-
-    
 #ifndef HLS_FASTSIM
 #ifdef __cplusplus
 extern "C"
 #endif
 void apatb_counter_sw(unsigned char *, unsigned char);
 #endif
-# 10 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/8-bit-counter/counter.hpp"
+# 6 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/8-bit-counter/counter.hpp"
 void counter(uint8_t *count, uint8_t upper);
-}
-# 2 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/8-bit-counter/tb_counter.cpp" 2
+# 2 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/8-bit-counter/tb_counter.cpp" 2
 # 1 "C:/Xilinx/Vitis_HLS/2023.2/tps/win64/msys64/mingw64/include/c++/6.2.0/iostream" 1 3
 # 36 "C:/Xilinx/Vitis_HLS/2023.2/tps/win64/msys64/mingw64/include/c++/6.2.0/iostream" 3
        
@@ -25547,27 +25542,27 @@ namespace std
 
 
 }
-# 3 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/8-bit-counter/tb_counter.cpp" 2
+# 3 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/8-bit-counter/tb_counter.cpp" 2
 
 
-# 4 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/8-bit-counter/tb_counter.cpp"
+# 4 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/8-bit-counter/tb_counter.cpp"
 
 #ifndef HLS_FASTSIM
-# 4 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/8-bit-counter/tb_counter.cpp"
+# 4 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/8-bit-counter/tb_counter.cpp"
 int main() {
     uint8_t count;
     uint8_t upper = 10;
 
 
-    for (int i = 0; i < 20; i++) {
+    for (int i = 0; i < 20; ++i) {
         
 #ifndef HLS_FASTSIM
 #define counter apatb_counter_sw
 #endif
-# 10 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/8-bit-counter/tb_counter.cpp"
+# 10 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/8-bit-counter/tb_counter.cpp"
 counter(&count, upper);
 #undef counter
-# 10 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/8-bit-counter/tb_counter.cpp"
+# 10 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/8-bit-counter/tb_counter.cpp"
 
         std::cout << "Count: " << static_cast<int>(count) << std::endl;
     }
@@ -25575,5 +25570,5 @@ counter(&count, upper);
     return 0;
 }
 #endif
-# 15 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/8-bit-counter/tb_counter.cpp"
+# 15 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/8-bit-counter/tb_counter.cpp"
 

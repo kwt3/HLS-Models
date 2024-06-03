@@ -34,7 +34,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1702129263</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -70,7 +70,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1702129263</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -94,15 +94,15 @@
 						<id>9</id>
 						<name>upper_read</name>
 						<fileName>counter.cpp</fileName>
-						<fileDirectory>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\8-bit-counter</fileDirectory>
-						<lineNumber>7</lineNumber>
+						<fileDirectory>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\8-bit-counter</fileDirectory>
+						<lineNumber>3</lineNumber>
 						<contextFuncName>counter</contextFuncName>
 						<contextNormFuncName>counter</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="10" tracking_level="0" version="0">
-								<first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\8-bit-counter</first>
+								<first>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\8-bit-counter</first>
 								<second class_id="11" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
@@ -111,7 +111,7 @@
 											<first>counter.cpp</first>
 											<second>counter</second>
 										</first>
-										<second>7</second>
+										<second>3</second>
 									</item>
 								</second>
 							</item>
@@ -124,7 +124,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3615076888</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -151,15 +151,15 @@
 						<id>10</id>
 						<name>count_internal_load</name>
 						<fileName>counter.cpp</fileName>
-						<fileDirectory>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\8-bit-counter</fileDirectory>
-						<lineNumber>13</lineNumber>
+						<fileDirectory>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\8-bit-counter</fileDirectory>
+						<lineNumber>9</lineNumber>
 						<contextFuncName>counter</contextFuncName>
 						<contextNormFuncName>counter</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\8-bit-counter</first>
+								<first>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\8-bit-counter</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -168,7 +168,7 @@
 											<first>counter.cpp</first>
 											<second>counter</second>
 										</first>
-										<second>13</second>
+										<second>9</second>
 									</item>
 								</second>
 							</item>
@@ -181,7 +181,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>7209065</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -207,15 +207,15 @@
 						<id>11</id>
 						<name>v</name>
 						<fileName>counter.cpp</fileName>
-						<fileDirectory>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\8-bit-counter</fileDirectory>
-						<lineNumber>13</lineNumber>
+						<fileDirectory>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\8-bit-counter</fileDirectory>
+						<lineNumber>9</lineNumber>
 						<contextFuncName>counter</contextFuncName>
 						<contextNormFuncName>counter</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\8-bit-counter</first>
+								<first>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\8-bit-counter</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -224,7 +224,7 @@
 											<first>counter.cpp</first>
 											<second>counter</second>
 										</first>
-										<second>13</second>
+										<second>9</second>
 									</item>
 								</second>
 							</item>
@@ -262,17 +262,17 @@
 					<Obj>
 						<type>0</type>
 						<id>12</id>
-						<name>icmp_ln14</name>
+						<name>icmp_ln10</name>
 						<fileName>counter.cpp</fileName>
-						<fileDirectory>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\8-bit-counter</fileDirectory>
-						<lineNumber>14</lineNumber>
+						<fileDirectory>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\8-bit-counter</fileDirectory>
+						<lineNumber>10</lineNumber>
 						<contextFuncName>counter</contextFuncName>
 						<contextNormFuncName>counter</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\8-bit-counter</first>
+								<first>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\8-bit-counter</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -281,7 +281,7 @@
 											<first>counter.cpp</first>
 											<second>counter</second>
 										</first>
-										<second>14</second>
+										<second>10</second>
 									</item>
 								</second>
 							</item>
@@ -321,15 +321,15 @@
 						<id>13</id>
 						<name>v_1</name>
 						<fileName>counter.cpp</fileName>
-						<fileDirectory>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\8-bit-counter</fileDirectory>
-						<lineNumber>14</lineNumber>
+						<fileDirectory>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\8-bit-counter</fileDirectory>
+						<lineNumber>10</lineNumber>
 						<contextFuncName>counter</contextFuncName>
 						<contextNormFuncName>counter</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\8-bit-counter</first>
+								<first>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\8-bit-counter</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -338,7 +338,7 @@
 											<first>counter.cpp</first>
 											<second>counter</second>
 										</first>
-										<second>14</second>
+										<second>10</second>
 									</item>
 								</second>
 							</item>
@@ -377,17 +377,17 @@
 					<Obj>
 						<type>0</type>
 						<id>14</id>
-						<name>count_internal_write_ln15</name>
+						<name>count_internal_write_ln11</name>
 						<fileName>counter.cpp</fileName>
-						<fileDirectory>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\8-bit-counter</fileDirectory>
-						<lineNumber>15</lineNumber>
+						<fileDirectory>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\8-bit-counter</fileDirectory>
+						<lineNumber>11</lineNumber>
 						<contextFuncName>counter</contextFuncName>
 						<contextNormFuncName>counter</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\8-bit-counter</first>
+								<first>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\8-bit-counter</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -396,7 +396,7 @@
 											<first>counter.cpp</first>
 											<second>counter</second>
 										</first>
-										<second>15</second>
+										<second>11</second>
 									</item>
 								</second>
 							</item>
@@ -409,7 +409,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>7864430</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -435,17 +435,17 @@
 					<Obj>
 						<type>0</type>
 						<id>15</id>
-						<name>count_write_ln20</name>
+						<name>count_write_ln17</name>
 						<fileName>counter.cpp</fileName>
-						<fileDirectory>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\8-bit-counter</fileDirectory>
-						<lineNumber>20</lineNumber>
+						<fileDirectory>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\8-bit-counter</fileDirectory>
+						<lineNumber>17</lineNumber>
 						<contextFuncName>counter</contextFuncName>
 						<contextNormFuncName>counter</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\8-bit-counter</first>
+								<first>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\8-bit-counter</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -454,7 +454,7 @@
 											<first>counter.cpp</first>
 											<second>counter</second>
 										</first>
-										<second>20</second>
+										<second>17</second>
 									</item>
 								</second>
 							</item>
@@ -467,7 +467,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3080242</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -493,17 +493,17 @@
 					<Obj>
 						<type>0</type>
 						<id>16</id>
-						<name>_ln21</name>
+						<name>_ln18</name>
 						<fileName>counter.cpp</fileName>
-						<fileDirectory>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\8-bit-counter</fileDirectory>
-						<lineNumber>21</lineNumber>
+						<fileDirectory>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\8-bit-counter</fileDirectory>
+						<lineNumber>18</lineNumber>
 						<contextFuncName>counter</contextFuncName>
 						<contextNormFuncName>counter</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\8-bit-counter</first>
+								<first>C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\8-bit-counter</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -512,7 +512,7 @@
 											<first>counter.cpp</first>
 											<second>counter</second>
 										</first>
-										<second>21</second>
+										<second>18</second>
 									</item>
 								</second>
 							</item>
@@ -525,7 +525,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3276848</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -570,7 +570,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1702129263</coreId>
+						<coreId>4117678832</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -601,7 +601,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1702129263</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -635,7 +635,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>1702129263</coreId>
+					<coreId>538970656</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -1004,7 +1004,7 @@
 		<count>3</count>
 		<item_version>0</item_version>
 		<item class_id="42" tracking_level="0" version="0">
-			<first>icmp_ln14_fu_53</first>
+			<first>icmp_ln10_fu_53</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1044,7 +1044,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln15_store_fu_68</first>
+			<first>store_ln11_store_fu_68</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1060,7 +1060,7 @@
 			</second>
 		</item>
 		<item>
-			<first>write_ln20_write_fu_36</first>
+			<first>write_ln17_write_fu_36</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

@@ -1,4 +1,4 @@
-<project xmlns="com.autoesl.autopilot.project" top="Counter12::increment" name="counter1-12" projectType="C/C++">
+<project xmlns="com.autoesl.autopilot.project" name="counter1-12" top="increment_counter" projectType="C/C++">
     <includePaths/>
     <libraryPaths/>
     <Simulation>

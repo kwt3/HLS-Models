@@ -34,21 +34,21 @@ At time 17, q = 0
 At time 18, q = 0
 At time 19, q = 0
 
-C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Shift-Registers\4-bit-shift-register\4shift_register\solution1\sim\verilog>set PATH= 
+C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Shift-Registers\4-bit-shift-register\4shift_register\solution1\sim\verilog>set PATH= 
 
-C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Shift-Registers\4-bit-shift-register\4shift_register\solution1\sim\verilog>call C:/Xilinx/Vivado/2023.2/bin/xelab xil_defaultlib.apatb_shift_register_top glbl -Oenable_linking_all_libraries  -prj shift_register.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_1_16 -L floating_point_v7_0_21 --lib "ieee_proposed=./ieee_proposed" -s shift_register  
+C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Shift-Registers\4-bit-shift-register\4shift_register\solution1\sim\verilog>call C:/Xilinx/Vivado/2023.2/bin/xelab xil_defaultlib.apatb_shift_register_top glbl -Oenable_linking_all_libraries  -prj shift_register.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_1_16 -L floating_point_v7_0_21 --lib "ieee_proposed=./ieee_proposed" -s shift_register  
 Vivado Simulator v2023.2
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_shift_register_top glbl -Oenable_linking_all_libraries -prj shift_register.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_16 -L floating_point_v7_0_21 --lib ieee_proposed=./ieee_proposed -s shift_register 
 Multi-threading is on. Using 14 slave threads.
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Shift-Registers/4-bit-shift-register/4shift_register/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Shift-Registers/4-bit-shift-register/4shift_register/solution1/sim/verilog/glbl.v" into library work
 INFO: [VRFC 10-311] analyzing module glbl
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Shift-Registers/4-bit-shift-register/4shift_register/solution1/sim/verilog/shift_register.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Shift-Registers/4-bit-shift-register/4shift_register/solution1/sim/verilog/shift_register.autotb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module apatb_shift_register_top
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Shift-Registers/4-bit-shift-register/4shift_register/solution1/sim/verilog/shift_register.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Shift-Registers/4-bit-shift-register/4shift_register/solution1/sim/verilog/shift_register.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module shift_register
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Shift-Registers/4-bit-shift-register/4shift_register/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Shift-Registers/4-bit-shift-register/4shift_register/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module dataflow_monitor
 Starting static elaboration
 Pass Through NonSizing Optimizer
@@ -104,9 +104,9 @@ source shift_register.tcl
 // RTL Simulation : 19 / 20 [n/a] @ "325000"
 // RTL Simulation : 20 / 20 [n/a] @ "335000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 395 ns : File "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Shift-Registers/4-bit-shift-register/4shift_register/solution1/sim/verilog/shift_register.autotb.v" Line 463
+$finish called at time : 395 ns : File "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Shift-Registers/4-bit-shift-register/4shift_register/solution1/sim/verilog/shift_register.autotb.v" Line 463
 ## quit
-INFO: [Common 17-206] Exiting xsim at Mon Mar 25 05:06:56 2024...
+INFO: [Common 17-206] Exiting xsim at Mon Jun  3 01:40:01 2024...
 At time 0, q = 0
 At time 1, q = 0
 At time 2, q = 0

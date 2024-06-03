@@ -1,4 +1,8 @@
 sv work "glbl.v"
+sv xil_defaultlib "AESL_autofifo_hh.v"
+sv xil_defaultlib "AESL_autofifo_mm.v"
+sv xil_defaultlib "AESL_autofifo_pm.v"
+sv xil_defaultlib "AESL_autofifo_ss.v"
 sv xil_defaultlib "clock.autotb.v"
 sv xil_defaultlib "clock.v"
 sv xil_defaultlib "dataflow_monitor.sv"

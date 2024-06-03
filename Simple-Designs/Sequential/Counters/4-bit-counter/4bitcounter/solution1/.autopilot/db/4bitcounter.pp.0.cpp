@@ -5724,7 +5724,11 @@ __attribute__((sdx_kernel("counter", 0))) void counter(ap_uint<1> &reset, ap_uin
 # 2 "4bitcounter.cpp" 2
 
 __attribute__((sdx_kernel("counter", 0))) void counter(ap_uint<1> &reset, ap_uint<4> &out) {
-#line 16 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/4-bit-counter/4bitcounter/solution1/csynth.tcl"
+#line 17 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/4-bit-counter/4bitcounter/solution1/csynth.tcl"
+#pragma HLSDIRECTIVE TOP name=counter
+# 3 "4bitcounter.cpp"
+
+#line 7 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/4-bit-counter/4bitcounter/solution1/directives.tcl"
 #pragma HLSDIRECTIVE TOP name=counter
 # 3 "4bitcounter.cpp"
 

@@ -8,12 +8,12 @@ open_project slow_decade_counter
 set_top decade_counter
 add_files decade_counter.cpp
 add_files decade_counter.hpp
-add_files -tb tb_decade_counter.cpp
+add_files -tb tb_decade_counter.cpp -cflags "-Wno-unknown-pragmas"
 open_solution "solution1" -flow_target vivado
 set_part {xcvu11p-flga2577-1-e}
 create_clock -period 10 -name default
 config_cosim -tool xsim
-#source "./slow_decade_counter/solution1/directives.tcl"
+source "./slow_decade_counter/solution1/directives.tcl"
 csim_design
 csynth_design
 cosim_design

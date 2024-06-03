@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'counter'
 ================================================================
 + General Information: 
-    * Date:           Mon Mar 25 04:58:08 2024
+    * Date:           Mon Jun  3 00:26:32 2024
     * Version:        2023.2 (Build 4023990 on Oct 11 2023)
     * Project:        decade_counter
     * Solution:       solution1 (Vivado IP Flow Target)
@@ -72,7 +72,7 @@
 | Name                | DSP | Pragma | Variable | Op  | Impl   | Latency |
 +---------------------+-----+--------+----------+-----+--------+---------+
 | + counter           | 0   |        |          |     |        |         |
-|   add_ln14_fu_69_p2 |     |        | add_ln14 | add | fabric | 0       |
+|   add_ln15_fu_69_p2 |     |        | add_ln15 | add | fabric | 0       |
 +---------------------+-----+--------+----------+-----+--------+---------+
 
 

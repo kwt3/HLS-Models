@@ -11,51 +11,36 @@
 module decade_counter (
         ap_clk,
         ap_rst,
-        ap_start,
-        ap_done,
-        ap_idle,
-        ap_ready,
         reset,
         slowena,
-        out_r,
-        out_r_ap_vld
+        out_r
 );
 
 parameter    ap_ST_fsm_state1 = 1'd1;
 
 input   ap_clk;
 input   ap_rst;
-input   ap_start;
-output   ap_done;
-output   ap_idle;
-output   ap_ready;
 input  [0:0] reset;
 input  [0:0] slowena;
 output  [3:0] out_r;
-output   out_r_ap_vld;
 
-reg ap_done;
-reg ap_idle;
-reg ap_ready;
-reg out_r_ap_vld;
-
+reg   [3:0] count;
+reg   [3:0] ap_phi_mux_count_loc_1_phi_fu_58_p6;
 (* fsm_encoding = "none" *) reg   [0:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
-reg   [3:0] count;
-reg   [3:0] ap_phi_mux_count_loc_1_phi_fu_56_p6;
-wire   [0:0] reset_read_read_fu_34_p2;
-wire   [3:0] select_ln12_fu_83_p3;
-wire   [0:0] slowena_read_read_fu_40_p2;
-wire   [0:0] icmp_ln12_fu_71_p2;
-wire   [3:0] add_ln15_fu_77_p2;
+wire   [0:0] reset_read_read_fu_36_p2;
+wire   [3:0] select_ln18_fu_85_p3;
+wire   [0:0] slowena_read_read_fu_42_p2;
+wire   [0:0] icmp_ln18_fu_73_p2;
+wire   [3:0] add_ln21_fu_79_p2;
 reg   [0:0] ap_NS_fsm;
-reg    ap_ST_fsm_state1_blk;
+wire    ap_ST_fsm_state1_blk;
 wire    ap_ce_reg;
 
 // power-on initialization
 initial begin
-#0 ap_CS_fsm = 1'd1;
 #0 count = 4'd0;
+#0 ap_CS_fsm = 1'd1;
 end
 
 always @ (posedge ap_clk) begin
@@ -67,68 +52,30 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        if ((reset_read_read_fu_34_p2 == 1'd1)) begin
+    if ((1'b1 == ap_CS_fsm_state1)) begin
+        if ((reset_read_read_fu_36_p2 == 1'd1)) begin
             count <= 4'd0;
-        end else if (((slowena_read_read_fu_40_p2 == 1'd1) & (reset_read_read_fu_34_p2 == 1'd0))) begin
-            count <= select_ln12_fu_83_p3;
+        end else if (((slowena_read_read_fu_42_p2 == 1'd1) & (reset_read_read_fu_36_p2 == 1'd0))) begin
+            count <= select_ln18_fu_85_p3;
         end
     end
 end
 
-always @ (*) begin
-    if ((ap_start == 1'b0)) begin
-        ap_ST_fsm_state1_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state1_blk = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        ap_done = 1'b1;
-    end else begin
-        ap_done = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1))) begin
-        ap_idle = 1'b1;
-    end else begin
-        ap_idle = 1'b0;
-    end
-end
+assign ap_ST_fsm_state1_blk = 1'b0;
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state1)) begin
-        if (((slowena_read_read_fu_40_p2 == 1'd0) & (reset_read_read_fu_34_p2 == 1'd0))) begin
-            ap_phi_mux_count_loc_1_phi_fu_56_p6 = count;
-        end else if (((slowena_read_read_fu_40_p2 == 1'd1) & (reset_read_read_fu_34_p2 == 1'd0))) begin
-            ap_phi_mux_count_loc_1_phi_fu_56_p6 = select_ln12_fu_83_p3;
-        end else if ((reset_read_read_fu_34_p2 == 1'd1)) begin
-            ap_phi_mux_count_loc_1_phi_fu_56_p6 = 4'd0;
+        if (((slowena_read_read_fu_42_p2 == 1'd0) & (reset_read_read_fu_36_p2 == 1'd0))) begin
+            ap_phi_mux_count_loc_1_phi_fu_58_p6 = count;
+        end else if (((slowena_read_read_fu_42_p2 == 1'd1) & (reset_read_read_fu_36_p2 == 1'd0))) begin
+            ap_phi_mux_count_loc_1_phi_fu_58_p6 = select_ln18_fu_85_p3;
+        end else if ((reset_read_read_fu_36_p2 == 1'd1)) begin
+            ap_phi_mux_count_loc_1_phi_fu_58_p6 = 4'd0;
         end else begin
-            ap_phi_mux_count_loc_1_phi_fu_56_p6 = 'bx;
+            ap_phi_mux_count_loc_1_phi_fu_58_p6 = 'bx;
         end
     end else begin
-        ap_phi_mux_count_loc_1_phi_fu_56_p6 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        ap_ready = 1'b1;
-    end else begin
-        ap_ready = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        out_r_ap_vld = 1'b1;
-    end else begin
-        out_r_ap_vld = 1'b0;
+        ap_phi_mux_count_loc_1_phi_fu_58_p6 = 'bx;
     end
 end
 
@@ -143,18 +90,18 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln15_fu_77_p2 = (count + 4'd1);
+assign add_ln21_fu_79_p2 = (count + 4'd1);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
-assign icmp_ln12_fu_71_p2 = ((count == 4'd9) ? 1'b1 : 1'b0);
+assign icmp_ln18_fu_73_p2 = ((count == 4'd9) ? 1'b1 : 1'b0);
 
-assign out_r = ap_phi_mux_count_loc_1_phi_fu_56_p6;
+assign out_r = ap_phi_mux_count_loc_1_phi_fu_58_p6;
 
-assign reset_read_read_fu_34_p2 = reset;
+assign reset_read_read_fu_36_p2 = reset;
 
-assign select_ln12_fu_83_p3 = ((icmp_ln12_fu_71_p2[0:0] == 1'b1) ? 4'd0 : add_ln15_fu_77_p2);
+assign select_ln18_fu_85_p3 = ((icmp_ln18_fu_73_p2[0:0] == 1'b1) ? 4'd0 : add_ln21_fu_79_p2);
 
-assign slowena_read_read_fu_40_p2 = slowena;
+assign slowena_read_read_fu_42_p2 = slowena;
 
 endmodule //decade_counter

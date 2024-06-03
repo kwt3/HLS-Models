@@ -1,25 +1,25 @@
-C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\12-hour-clock\12hour_clock\solution1\.autopilot\db\clock.pp.0.cpp:1315:7: warning: Added loop label VITIS_LOOP_1207_1:   [xilinx-label-all-loops]
+C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\12-hour-clock\12hour_clock\solution1\.autopilot\db\clock.pp.0.cpp:1318:7: warning: Added loop label VITIS_LOOP_1207_1:   [xilinx-label-all-loops]
       for (i = 0; i < __N - 1; ++i) {
       ^~~
       VITIS_LOOP_1207_1: 
-C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\12-hour-clock\12hour_clock\solution1\.autopilot\db\clock.pp.0.cpp:1315:7: note: FIX-IT applied suggested code changes
-C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\12-hour-clock\12hour_clock\solution1\.autopilot\db\clock.pp.0.cpp:2289:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\12-hour-clock\12hour_clock\solution1\.autopilot\db\clock.pp.0.cpp:1318:7: note: FIX-IT applied suggested code changes
+C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\12-hour-clock\12hour_clock\solution1\.autopilot\db\clock.pp.0.cpp:2292:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
     for (unsigned i = low; i != high; ++i) {
     ^~~
     VITIS_LOOP_676_1: 
-C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\12-hour-clock\12hour_clock\solution1\.autopilot\db\clock.pp.0.cpp:2289:5: note: FIX-IT applied suggested code changes
-C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\12-hour-clock\12hour_clock\solution1\.autopilot\db\clock.pp.0.cpp:2303:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\12-hour-clock\12hour_clock\solution1\.autopilot\db\clock.pp.0.cpp:2292:5: note: FIX-IT applied suggested code changes
+C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\12-hour-clock\12hour_clock\solution1\.autopilot\db\clock.pp.0.cpp:2306:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
     for (unsigned i = low; i != high; ++i) {
     ^~~
     VITIS_LOOP_690_1: 
-C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\12-hour-clock\12hour_clock\solution1\.autopilot\db\clock.pp.0.cpp:2303:5: note: FIX-IT applied suggested code changes
-C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\12-hour-clock\12hour_clock\solution1\.autopilot\db\clock.pp.0.cpp:2317:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\12-hour-clock\12hour_clock\solution1\.autopilot\db\clock.pp.0.cpp:2306:5: note: FIX-IT applied suggested code changes
+C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\12-hour-clock\12hour_clock\solution1\.autopilot\db\clock.pp.0.cpp:2320:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
     for (unsigned i = low; i != high; ++i) {
     ^~~
     VITIS_LOOP_704_1: 
-C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\12-hour-clock\12hour_clock\solution1\.autopilot\db\clock.pp.0.cpp:2317:5: note: FIX-IT applied suggested code changes
-C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\12-hour-clock\12hour_clock\solution1\.autopilot\db\clock.pp.0.cpp:3946:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
+C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\12-hour-clock\12hour_clock\solution1\.autopilot\db\clock.pp.0.cpp:2320:5: note: FIX-IT applied suggested code changes
+C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\12-hour-clock\12hour_clock\solution1\.autopilot\db\clock.pp.0.cpp:3949:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
       for (i = 0; i < __N - 1; ++i) {
       ^~~
       VITIS_LOOP_1247_1: 
-C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\12-hour-clock\12hour_clock\solution1\.autopilot\db\clock.pp.0.cpp:3946:7: note: FIX-IT applied suggested code changes
+C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\12-hour-clock\12hour_clock\solution1\.autopilot\db\clock.pp.0.cpp:3949:7: note: FIX-IT applied suggested code changes

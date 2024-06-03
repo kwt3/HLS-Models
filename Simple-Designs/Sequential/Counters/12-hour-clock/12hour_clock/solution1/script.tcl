@@ -8,12 +8,12 @@ open_project 12hour_clock
 set_top clock
 add_files clock.cpp
 add_files clock.hpp
-add_files -tb tb_clock.cpp
+add_files -tb tb_clock.cpp -cflags "-Wno-unknown-pragmas"
 open_solution "solution1" -flow_target vivado
 set_part {xcvu11p-flga2577-1-e}
 create_clock -period 10 -name default
 config_cosim -tool xsim
-#source "./12hour_clock/solution1/directives.tcl"
+source "./12hour_clock/solution1/directives.tcl"
 csim_design
 csynth_design
 cosim_design

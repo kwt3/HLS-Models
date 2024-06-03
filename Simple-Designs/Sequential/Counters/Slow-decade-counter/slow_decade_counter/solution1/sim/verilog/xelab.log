@@ -3,13 +3,13 @@ Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_decade_counter_top glbl -Oenable_linking_all_libraries -prj decade_counter.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_16 -L floating_point_v7_0_21 --lib ieee_proposed=./ieee_proposed -s decade_counter 
 Multi-threading is on. Using 14 slave threads.
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Slow-decade-counter/slow_decade_counter/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Slow-decade-counter/slow_decade_counter/solution1/sim/verilog/glbl.v" into library work
 INFO: [VRFC 10-311] analyzing module glbl
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Slow-decade-counter/slow_decade_counter/solution1/sim/verilog/decade_counter.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Slow-decade-counter/slow_decade_counter/solution1/sim/verilog/decade_counter.autotb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module apatb_decade_counter_top
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Slow-decade-counter/slow_decade_counter/solution1/sim/verilog/decade_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Slow-decade-counter/slow_decade_counter/solution1/sim/verilog/decade_counter.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module decade_counter
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Slow-decade-counter/slow_decade_counter/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Slow-decade-counter/slow_decade_counter/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module dataflow_monitor
 Starting static elaboration
 Pass Through NonSizing Optimizer
@@ -20,7 +20,7 @@ Time Resolution for simulation is 1ps
 Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
 Compiling module xil_defaultlib.decade_counter
 Compiling module xil_defaultlib.nodf_module_intf
-Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.dataflow_monitor
 Compiling module xil_defaultlib.apatb_decade_counter_top
 Compiling module work.glbl
 Built simulation snapshot decade_counter

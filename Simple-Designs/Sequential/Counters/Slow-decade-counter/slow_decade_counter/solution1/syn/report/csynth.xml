@@ -56,7 +56,7 @@
             <Object>decade_counter</Object>
             <Type>return value</Type>
             <Scope/>
-            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOProtocol>ap_ctrl_none</IOProtocol>
             <IOConfig/>
             <Dir>in</Dir>
             <Bits>1</Bits>
@@ -67,53 +67,9 @@
             <Object>decade_counter</Object>
             <Type>return value</Type>
             <Scope/>
-            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOProtocol>ap_ctrl_none</IOProtocol>
             <IOConfig/>
             <Dir>in</Dir>
-            <Bits>1</Bits>
-            <Attribute>control</Attribute>
-        </RtlPorts>
-        <RtlPorts>
-            <name>ap_start</name>
-            <Object>decade_counter</Object>
-            <Type>return value</Type>
-            <Scope/>
-            <IOProtocol>ap_ctrl_hs</IOProtocol>
-            <IOConfig/>
-            <Dir>in</Dir>
-            <Bits>1</Bits>
-            <Attribute>control</Attribute>
-        </RtlPorts>
-        <RtlPorts>
-            <name>ap_done</name>
-            <Object>decade_counter</Object>
-            <Type>return value</Type>
-            <Scope/>
-            <IOProtocol>ap_ctrl_hs</IOProtocol>
-            <IOConfig/>
-            <Dir>out</Dir>
-            <Bits>1</Bits>
-            <Attribute>control</Attribute>
-        </RtlPorts>
-        <RtlPorts>
-            <name>ap_idle</name>
-            <Object>decade_counter</Object>
-            <Type>return value</Type>
-            <Scope/>
-            <IOProtocol>ap_ctrl_hs</IOProtocol>
-            <IOConfig/>
-            <Dir>out</Dir>
-            <Bits>1</Bits>
-            <Attribute>control</Attribute>
-        </RtlPorts>
-        <RtlPorts>
-            <name>ap_ready</name>
-            <Object>decade_counter</Object>
-            <Type>return value</Type>
-            <Scope/>
-            <IOProtocol>ap_ctrl_hs</IOProtocol>
-            <IOConfig/>
-            <Dir>out</Dir>
             <Bits>1</Bits>
             <Attribute>control</Attribute>
         </RtlPorts>
@@ -146,30 +102,18 @@
             <Object>out_r</Object>
             <Type>pointer</Type>
             <Scope/>
-            <IOProtocol>ap_vld</IOProtocol>
+            <IOProtocol>ap_none</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
             <Bits>4</Bits>
             <Attribute>data</Attribute>
             <CType>int</CType>
         </RtlPorts>
-        <RtlPorts>
-            <name>out_r_ap_vld</name>
-            <Object>out_r</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>ap_vld</IOProtocol>
-            <IOConfig/>
-            <Dir>out</Dir>
-            <Bits>1</Bits>
-            <Attribute>control</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
     </InterfaceSummary>
     <RTLDesignHierarchy>
         <TopModule MAX_DEPTH="2">
             <ModuleName>decade_counter</ModuleName>
-            <BindInstances>add_ln15_fu_77_p2</BindInstances>
+            <BindInstances>add_ln21_fu_79_p2</BindInstances>
         </TopModule>
     </RTLDesignHierarchy>
     <ModuleInformation>
@@ -217,7 +161,7 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln15_fu_77_p2" SOURCE="decade_counter.cpp:15" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln15"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln21_fu_79_p2" SOURCE="decade_counter.cpp:21" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln21"/>
             </BindNodes>
         </Module>
     </ModuleInformation>
@@ -237,7 +181,6 @@
         <Arg ArgName="out" index="2" direction="out" srcType="ap_uint&lt;4&gt;&amp;" srcSize="8">
             <hwRefs>
                 <hwRef type="port" interface="out_r" name="out_r" usage="data" direction="out"/>
-                <hwRef type="port" interface="out_r_ap_vld" name="out_r_ap_vld" usage="control" direction="out"/>
             </hwRefs>
         </Arg>
     </Args>
@@ -264,20 +207,6 @@
                 <port>ap_rst</port>
             </ports>
         </Interface>
-        <Interface InterfaceName="ap_ctrl" type="ap_ctrl" busTypeName="acc_handshake" mode="slave">
-            <portMaps>
-                <portMap portMapName="ap_start">start</portMap>
-                <portMap portMapName="ap_done">done</portMap>
-                <portMap portMapName="ap_idle">idle</portMap>
-                <portMap portMapName="ap_ready">ready</portMap>
-            </portMaps>
-            <ports>
-                <port>ap_done</port>
-                <port>ap_idle</port>
-                <port>ap_ready</port>
-                <port>ap_start</port>
-            </ports>
-        </Interface>
         <Interface InterfaceName="reset" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="1">
             <portMaps>
                 <portMap portMapName="reset">DATA</portMap>
@@ -300,7 +229,7 @@
                 <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="slowena"/>
             </constraints>
         </Interface>
-        <Interface InterfaceName="out_r" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="4">
+        <Interface InterfaceName="out_r" type="data" busTypeName="data" protocol="ap_none" mode="master" dataWidth="4">
             <portMaps>
                 <portMap portMapName="out_r">DATA</portMap>
             </portMaps>
@@ -317,7 +246,7 @@
             <item name="Other Ports">
                 <table>
                     <keys size="4">Port, Mode, Direction, Bitwidth</keys>
-                    <column name="out_r">ap_vld, out, 4</column>
+                    <column name="out_r">ap_none, out, 4</column>
                     <column name="reset">ap_none, in, 1</column>
                     <column name="slowena">ap_none, in, 1</column>
                 </table>
@@ -327,7 +256,7 @@
                     <keys size="3">Interface, Type, Ports</keys>
                     <column name="ap_clk">clock, ap_clk</column>
                     <column name="ap_rst">reset, ap_rst</column>
-                    <column name="ap_ctrl">ap_ctrl_hs, ap_done ap_idle ap_ready ap_start</column>
+                    <column name="ap_ctrl">ap_ctrl_none, </column>
                 </table>
             </item>
         </section>
@@ -348,12 +277,16 @@
                     <column name="reset">reset, port</column>
                     <column name="slowena">slowena, port</column>
                     <column name="out">out_r, port</column>
-                    <column name="out">out_r_ap_vld, port</column>
                 </table>
             </item>
         </section>
     </ReportSWInterface>
     <ResolutionUrl key="ZZZ">docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
-    <PragmaReport/>
+    <PragmaReport>
+        <Pragma type="interface" location="decade_counter.cpp:8" status="valid" parentFunction="decade_counter" variable="return" isDirective="0" options="ap_ctrl_none port=return"/>
+        <Pragma type="interface" location="decade_counter.cpp:9" status="valid" parentFunction="decade_counter" variable="reset" isDirective="0" options="ap_none port=reset"/>
+        <Pragma type="interface" location="decade_counter.cpp:10" status="valid" parentFunction="decade_counter" variable="slowena" isDirective="0" options="ap_none port=slowena"/>
+        <Pragma type="interface" location="decade_counter.cpp:11" status="valid" parentFunction="decade_counter" variable="out" isDirective="0" options="ap_none port=out"/>
+    </PragmaReport>
 </profile>
 

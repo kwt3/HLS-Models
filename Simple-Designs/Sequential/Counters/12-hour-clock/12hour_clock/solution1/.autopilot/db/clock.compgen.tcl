@@ -43,13 +43,13 @@ if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 3 \
     name hh \
-    type other \
+    type fifo \
     dir O \
     reset_level 1 \
     sync_rst true \
     corename dc_hh \
     op interface \
-    ports { hh { O 8 vector } hh_ap_vld { O 1 bit } } \
+    ports { hh_din { O 8 vector } hh_full_n { I 1 bit } hh_write { O 1 bit } } \
 } "
 }
 
@@ -58,13 +58,13 @@ if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 4 \
     name mm \
-    type other \
+    type fifo \
     dir O \
     reset_level 1 \
     sync_rst true \
     corename dc_mm \
     op interface \
-    ports { mm { O 8 vector } mm_ap_vld { O 1 bit } } \
+    ports { mm_din { O 8 vector } mm_full_n { I 1 bit } mm_write { O 1 bit } } \
 } "
 }
 
@@ -73,13 +73,13 @@ if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 5 \
     name ss \
-    type other \
+    type fifo \
     dir O \
     reset_level 1 \
     sync_rst true \
     corename dc_ss \
     op interface \
-    ports { ss { O 8 vector } ss_ap_vld { O 1 bit } } \
+    ports { ss_din { O 8 vector } ss_full_n { I 1 bit } ss_write { O 1 bit } } \
 } "
 }
 
@@ -88,13 +88,13 @@ if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 6 \
     name pm \
-    type other \
+    type fifo \
     dir O \
     reset_level 1 \
     sync_rst true \
     corename dc_pm \
     op interface \
-    ports { pm { O 1 vector } pm_ap_vld { O 1 bit } } \
+    ports { pm_din { O 1 vector } pm_full_n { I 1 bit } pm_write { O 1 bit } } \
 } "
 }
 

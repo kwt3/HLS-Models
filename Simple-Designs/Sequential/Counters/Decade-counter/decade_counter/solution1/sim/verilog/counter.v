@@ -42,8 +42,8 @@ wire    ap_CS_fsm_state1;
 reg   [3:0] count;
 reg   [3:0] ap_phi_mux_p_0_0_0_phi_fu_48_p6;
 wire   [0:0] reset_read_read_fu_32_p2;
-wire   [3:0] add_ln14_fu_69_p2;
-wire   [0:0] icmp_ln11_fu_63_p2;
+wire   [3:0] add_ln15_fu_69_p2;
+wire   [0:0] icmp_ln12_fu_63_p2;
 reg   [0:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
 wire    ap_ce_reg;
@@ -63,10 +63,10 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if ((((ap_start == 1'b1) & (icmp_ln11_fu_63_p2 == 1'd1) & (reset_read_read_fu_32_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((ap_start == 1'b1) & (reset_read_read_fu_32_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state1)))) begin
+    if ((((ap_start == 1'b1) & (icmp_ln12_fu_63_p2 == 1'd1) & (reset_read_read_fu_32_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((ap_start == 1'b1) & (reset_read_read_fu_32_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state1)))) begin
         count <= 4'd0;
-    end else if (((ap_start == 1'b1) & (icmp_ln11_fu_63_p2 == 1'd0) & (reset_read_read_fu_32_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1))) begin
-        count <= add_ln14_fu_69_p2;
+    end else if (((ap_start == 1'b1) & (icmp_ln12_fu_63_p2 == 1'd0) & (reset_read_read_fu_32_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1))) begin
+        count <= add_ln15_fu_69_p2;
     end
 end
 
@@ -95,9 +95,9 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln11_fu_63_p2 == 1'd0) & (reset_read_read_fu_32_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1))) begin
-        ap_phi_mux_p_0_0_0_phi_fu_48_p6 = add_ln14_fu_69_p2;
-    end else if ((((icmp_ln11_fu_63_p2 == 1'd1) & (reset_read_read_fu_32_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((reset_read_read_fu_32_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state1)))) begin
+    if (((icmp_ln12_fu_63_p2 == 1'd0) & (reset_read_read_fu_32_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1))) begin
+        ap_phi_mux_p_0_0_0_phi_fu_48_p6 = add_ln15_fu_69_p2;
+    end else if ((((icmp_ln12_fu_63_p2 == 1'd1) & (reset_read_read_fu_32_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)) | ((reset_read_read_fu_32_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state1)))) begin
         ap_phi_mux_p_0_0_0_phi_fu_48_p6 = 4'd0;
     end else begin
         ap_phi_mux_p_0_0_0_phi_fu_48_p6 = 'bx;
@@ -131,11 +131,11 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln14_fu_69_p2 = (count + 4'd1);
+assign add_ln15_fu_69_p2 = (count + 4'd1);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
-assign icmp_ln11_fu_63_p2 = ((count == 4'd9) ? 1'b1 : 1'b0);
+assign icmp_ln12_fu_63_p2 = ((count == 4'd9) ? 1'b1 : 1'b0);
 
 assign out_r = ap_phi_mux_p_0_0_0_phi_fu_48_p6;
 

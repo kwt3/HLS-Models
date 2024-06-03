@@ -9,13 +9,14 @@
         <TopModelName>clock</TopModelName>
         <TargetClockPeriod>10.00</TargetClockPeriod>
         <ClockUncertainty>2.70</ClockUncertainty>
+        <TargetInitiationInterval>1</TargetInitiationInterval>
         <FlowTarget>vivado</FlowTarget>
     </UserAssignments>
     <PerformanceEstimates>
-        <PipelineType>no</PipelineType>
+        <PipelineType>yes</PipelineType>
         <SummaryOfTimingAnalysis>
             <unit>ns</unit>
-            <EstimatedClockPeriod>2.286</EstimatedClockPeriod>
+            <EstimatedClockPeriod>4.014</EstimatedClockPeriod>
         </SummaryOfTimingAnalysis>
         <SummaryOfOverallLatency>
             <unit>clock cycles</unit>
@@ -25,19 +26,21 @@
             <Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
             <Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
             <Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
+            <PipelineInitiationInterval>1</PipelineInitiationInterval>
+            <PipelineDepth>1</PipelineDepth>
             <Interval-min>1</Interval-min>
             <Interval-max>1</Interval-max>
         </SummaryOfOverallLatency>
         <SummaryOfViolations>
             <IssueType>-</IssueType>
             <ViolationType>-</ViolationType>
-            <SourceLocation>clock.cpp:3</SourceLocation>
+            <SourceLocation>clock.cpp:10</SourceLocation>
         </SummaryOfViolations>
     </PerformanceEstimates>
     <AreaEstimates>
         <Resources>
             <FF>26</FF>
-            <LUT>232</LUT>
+            <LUT>270</LUT>
             <BRAM_18K>0</BRAM_18K>
             <DSP>0</DSP>
             <URAM>0</URAM>
@@ -120,7 +123,7 @@
         <RtlPorts>
             <name>reset</name>
             <Object>reset</Object>
-            <Type>pointer</Type>
+            <Type>scalar</Type>
             <Scope/>
             <IOProtocol>ap_none</IOProtocol>
             <IOConfig/>
@@ -132,7 +135,7 @@
         <RtlPorts>
             <name>ena</name>
             <Object>ena</Object>
-            <Type>pointer</Type>
+            <Type>scalar</Type>
             <Scope/>
             <IOProtocol>ap_none</IOProtocol>
             <IOConfig/>
@@ -142,23 +145,35 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>hh</name>
+            <name>hh_din</name>
             <Object>hh</Object>
             <Type>pointer</Type>
             <Scope/>
-            <IOProtocol>ap_vld</IOProtocol>
+            <IOProtocol>ap_fifo</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
             <Bits>8</Bits>
-            <Attribute>data</Attribute>
+            <Attribute>control</Attribute>
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>hh_ap_vld</name>
+            <name>hh_full_n</name>
             <Object>hh</Object>
             <Type>pointer</Type>
             <Scope/>
-            <IOProtocol>ap_vld</IOProtocol>
+            <IOProtocol>ap_fifo</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>hh_write</name>
+            <Object>hh</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_fifo</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
             <Bits>1</Bits>
@@ -166,23 +181,35 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>mm</name>
+            <name>mm_din</name>
             <Object>mm</Object>
             <Type>pointer</Type>
             <Scope/>
-            <IOProtocol>ap_vld</IOProtocol>
+            <IOProtocol>ap_fifo</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
             <Bits>8</Bits>
-            <Attribute>data</Attribute>
+            <Attribute>control</Attribute>
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>mm_ap_vld</name>
+            <name>mm_full_n</name>
             <Object>mm</Object>
             <Type>pointer</Type>
             <Scope/>
-            <IOProtocol>ap_vld</IOProtocol>
+            <IOProtocol>ap_fifo</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>mm_write</name>
+            <Object>mm</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_fifo</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
             <Bits>1</Bits>
@@ -190,23 +217,35 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>ss</name>
+            <name>ss_din</name>
             <Object>ss</Object>
             <Type>pointer</Type>
             <Scope/>
-            <IOProtocol>ap_vld</IOProtocol>
+            <IOProtocol>ap_fifo</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
             <Bits>8</Bits>
-            <Attribute>data</Attribute>
+            <Attribute>control</Attribute>
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>ss_ap_vld</name>
+            <name>ss_full_n</name>
             <Object>ss</Object>
             <Type>pointer</Type>
             <Scope/>
-            <IOProtocol>ap_vld</IOProtocol>
+            <IOProtocol>ap_fifo</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ss_write</name>
+            <Object>ss</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_fifo</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
             <Bits>1</Bits>
@@ -214,23 +253,35 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>pm</name>
+            <name>pm_din</name>
             <Object>pm</Object>
             <Type>pointer</Type>
             <Scope/>
-            <IOProtocol>ap_vld</IOProtocol>
+            <IOProtocol>ap_fifo</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
             <Bits>1</Bits>
-            <Attribute>data</Attribute>
+            <Attribute>control</Attribute>
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>pm_ap_vld</name>
+            <name>pm_full_n</name>
             <Object>pm</Object>
             <Type>pointer</Type>
             <Scope/>
-            <IOProtocol>ap_vld</IOProtocol>
+            <IOProtocol>ap_fifo</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>pm_write</name>
+            <Object>pm</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_fifo</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
             <Bits>1</Bits>
@@ -241,7 +292,7 @@
     <RTLDesignHierarchy>
         <TopModule MAX_DEPTH="2">
             <ModuleName>clock</ModuleName>
-            <BindInstances>add_ln18_fu_284_p2 add_ln21_fu_297_p2 add_ln24_fu_310_p2</BindInstances>
+            <BindInstances>add_ln20_fu_290_p2 add_ln23_fu_303_p2 add_ln26_fu_316_p2</BindInstances>
         </TopModule>
     </RTLDesignHierarchy>
     <ModuleInformation>
@@ -251,7 +302,8 @@
                 <SummaryOfTimingAnalysis>
                     <TargetClockPeriod>10.00</TargetClockPeriod>
                     <ClockUncertainty>2.70</ClockUncertainty>
-                    <EstimatedClockPeriod>2.286</EstimatedClockPeriod>
+                    <TargetInitiationInterval>1</TargetInitiationInterval>
+                    <EstimatedClockPeriod>4.014</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
                     <Best-caseLatency>0</Best-caseLatency>
@@ -261,12 +313,13 @@
                     <Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
                     <Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
                     <PipelineInitiationInterval>1</PipelineInitiationInterval>
-                    <PipelineType>no</PipelineType>
+                    <PipelineDepth>1</PipelineDepth>
+                    <PipelineType>yes</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfViolations>
                     <IssueType>-</IssueType>
                     <ViolationType>-</ViolationType>
-                    <SourceLocation>clock.cpp:3</SourceLocation>
+                    <SourceLocation>clock.cpp:10</SourceLocation>
                 </SummaryOfViolations>
             </PerformanceEstimates>
             <AreaEstimates>
@@ -274,7 +327,7 @@
                     <FF>26</FF>
                     <AVAIL_FF>2592000</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>232</LUT>
+                    <LUT>270</LUT>
                     <AVAIL_LUT>1296000</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
@@ -289,47 +342,43 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln18_fu_284_p2" SOURCE="clock.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln21_fu_297_p2" SOURCE="clock.cpp:21" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln21"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln24_fu_310_p2" SOURCE="clock.cpp:24" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln24"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln20_fu_290_p2" SOURCE="clock.cpp:20" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln20"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln23_fu_303_p2" SOURCE="clock.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln26_fu_316_p2" SOURCE="clock.cpp:26" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln26"/>
             </BindNodes>
         </Module>
     </ModuleInformation>
     <FIFOInformation/>
     <UserConfigCommands/>
     <Args>
-        <Arg ArgName="reset" index="0" direction="in" srcType="ap_uint&lt;1&gt;&amp;" srcSize="8">
+        <Arg ArgName="reset" index="0" direction="in" srcType="ap_uint&lt;1&gt;" srcSize="8">
             <hwRefs>
                 <hwRef type="port" interface="reset" name="reset" usage="data" direction="in"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="ena" index="1" direction="in" srcType="ap_uint&lt;1&gt;&amp;" srcSize="8">
+        <Arg ArgName="ena" index="1" direction="in" srcType="ap_uint&lt;1&gt;" srcSize="8">
             <hwRefs>
                 <hwRef type="port" interface="ena" name="ena" usage="data" direction="in"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="hh" index="2" direction="out" srcType="ap_uint&lt;8&gt;&amp;" srcSize="8">
+        <Arg ArgName="hh" index="2" direction="out" srcType="stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;" srcSize="8">
             <hwRefs>
-                <hwRef type="port" interface="hh" name="hh" usage="data" direction="out"/>
-                <hwRef type="port" interface="hh_ap_vld" name="hh_ap_vld" usage="control" direction="out"/>
+                <hwRef type="interface" interface="hh" name="" usage="data" direction="out"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="mm" index="3" direction="out" srcType="ap_uint&lt;8&gt;&amp;" srcSize="8">
+        <Arg ArgName="mm" index="3" direction="out" srcType="stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;" srcSize="8">
             <hwRefs>
-                <hwRef type="port" interface="mm" name="mm" usage="data" direction="out"/>
-                <hwRef type="port" interface="mm_ap_vld" name="mm_ap_vld" usage="control" direction="out"/>
+                <hwRef type="interface" interface="mm" name="" usage="data" direction="out"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="ss" index="4" direction="out" srcType="ap_uint&lt;8&gt;&amp;" srcSize="8">
+        <Arg ArgName="ss" index="4" direction="out" srcType="stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;" srcSize="8">
             <hwRefs>
-                <hwRef type="port" interface="ss" name="ss" usage="data" direction="out"/>
-                <hwRef type="port" interface="ss_ap_vld" name="ss_ap_vld" usage="control" direction="out"/>
+                <hwRef type="interface" interface="ss" name="" usage="data" direction="out"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="pm" index="5" direction="out" srcType="ap_uint&lt;1&gt;&amp;" srcSize="8">
+        <Arg ArgName="pm" index="5" direction="out" srcType="stream&lt;ap_uint&lt;1&gt;, 0&gt;&amp;" srcSize="8">
             <hwRefs>
-                <hwRef type="port" interface="pm" name="pm" usage="data" direction="out"/>
-                <hwRef type="port" interface="pm_ap_vld" name="pm_ap_vld" usage="control" direction="out"/>
+                <hwRef type="interface" interface="pm" name="" usage="data" direction="out"/>
             </hwRefs>
         </Arg>
     </Args>
@@ -392,62 +441,83 @@
                 <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="ena"/>
             </constraints>
         </Interface>
-        <Interface InterfaceName="hh" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="8">
+        <Interface InterfaceName="hh" type="ap_fifo" busTypeName="acc_fifo_write" mode="master" dataWidth="8" portPrefix="hh_">
             <portMaps>
-                <portMap portMapName="hh">DATA</portMap>
+                <portMap portMapName="hh_din">WR_DATA</portMap>
+                <portMap portMapName="hh_full_n">FULL_N</portMap>
+                <portMap portMapName="hh_write">WR_EN</portMap>
             </portMaps>
             <ports>
-                <port>hh</port>
+                <port>hh_din</port>
+                <port>hh_full_n</port>
+                <port>hh_write</port>
             </ports>
             <constraints>
-                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="hh"/>
+                <constraint constraint_type="pragma interface" mode="ap_fifo" register_option="0" argName="hh"/>
             </constraints>
         </Interface>
-        <Interface InterfaceName="mm" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="8">
+        <Interface InterfaceName="mm" type="ap_fifo" busTypeName="acc_fifo_write" mode="master" dataWidth="8" portPrefix="mm_">
             <portMaps>
-                <portMap portMapName="mm">DATA</portMap>
+                <portMap portMapName="mm_din">WR_DATA</portMap>
+                <portMap portMapName="mm_full_n">FULL_N</portMap>
+                <portMap portMapName="mm_write">WR_EN</portMap>
             </portMaps>
             <ports>
-                <port>mm</port>
+                <port>mm_din</port>
+                <port>mm_full_n</port>
+                <port>mm_write</port>
             </ports>
             <constraints>
-                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="mm"/>
+                <constraint constraint_type="pragma interface" mode="ap_fifo" register_option="0" argName="mm"/>
             </constraints>
         </Interface>
-        <Interface InterfaceName="ss" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="8">
+        <Interface InterfaceName="ss" type="ap_fifo" busTypeName="acc_fifo_write" mode="master" dataWidth="8" portPrefix="ss_">
             <portMaps>
-                <portMap portMapName="ss">DATA</portMap>
+                <portMap portMapName="ss_din">WR_DATA</portMap>
+                <portMap portMapName="ss_full_n">FULL_N</portMap>
+                <portMap portMapName="ss_write">WR_EN</portMap>
             </portMaps>
             <ports>
-                <port>ss</port>
+                <port>ss_din</port>
+                <port>ss_full_n</port>
+                <port>ss_write</port>
             </ports>
             <constraints>
-                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="ss"/>
+                <constraint constraint_type="pragma interface" mode="ap_fifo" register_option="0" argName="ss"/>
             </constraints>
         </Interface>
-        <Interface InterfaceName="pm" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="1">
+        <Interface InterfaceName="pm" type="ap_fifo" busTypeName="acc_fifo_write" mode="master" dataWidth="1" portPrefix="pm_">
             <portMaps>
-                <portMap portMapName="pm">DATA</portMap>
+                <portMap portMapName="pm_din">WR_DATA</portMap>
+                <portMap portMapName="pm_full_n">FULL_N</portMap>
+                <portMap portMapName="pm_write">WR_EN</portMap>
             </portMaps>
             <ports>
-                <port>pm</port>
+                <port>pm_din</port>
+                <port>pm_full_n</port>
+                <port>pm_write</port>
             </ports>
             <constraints>
-                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="pm"/>
+                <constraint constraint_type="pragma interface" mode="ap_fifo" register_option="0" argName="pm"/>
             </constraints>
         </Interface>
     </Interfaces>
     <ReportHWInterface>
         <section name="HW Interfaces" level="0">
+            <item name="AP_FIFO">
+                <table>
+                    <keys size="3">Interface, Direction, Data Width</keys>
+                    <column name="hh">out, 8</column>
+                    <column name="mm">out, 8</column>
+                    <column name="pm">out, 1</column>
+                    <column name="ss">out, 8</column>
+                </table>
+            </item>
             <item name="Other Ports">
                 <table>
                     <keys size="4">Port, Mode, Direction, Bitwidth</keys>
                     <column name="ena">ap_none, in, 1</column>
-                    <column name="hh">ap_vld, out, 8</column>
-                    <column name="mm">ap_vld, out, 8</column>
-                    <column name="pm">ap_vld, out, 1</column>
                     <column name="reset">ap_none, in, 1</column>
-                    <column name="ss">ap_vld, out, 8</column>
                 </table>
             </item>
             <item name="TOP LEVEL CONTROL">
@@ -465,12 +535,12 @@
             <item name="Top Function Arguments">
                 <table>
                     <keys size="3">Argument, Direction, Datatype</keys>
-                    <column name="reset">in, ap_uint&lt;1&gt;&amp;</column>
-                    <column name="ena">in, ap_uint&lt;1&gt;&amp;</column>
-                    <column name="hh">out, ap_uint&lt;8&gt;&amp;</column>
-                    <column name="mm">out, ap_uint&lt;8&gt;&amp;</column>
-                    <column name="ss">out, ap_uint&lt;8&gt;&amp;</column>
-                    <column name="pm">out, ap_uint&lt;1&gt;&amp;</column>
+                    <column name="reset">in, ap_uint&lt;1&gt;</column>
+                    <column name="ena">in, ap_uint&lt;1&gt;</column>
+                    <column name="hh">out, stream&lt;ap_uint&lt;8&gt; 0&gt;&amp;</column>
+                    <column name="mm">out, stream&lt;ap_uint&lt;8&gt; 0&gt;&amp;</column>
+                    <column name="ss">out, stream&lt;ap_uint&lt;8&gt; 0&gt;&amp;</column>
+                    <column name="pm">out, stream&lt;ap_uint&lt;1&gt; 0&gt;&amp;</column>
                 </table>
             </item>
             <item name="SW-to-HW Mapping">
@@ -478,19 +548,17 @@
                     <keys size="3">Argument, HW Interface, HW Type</keys>
                     <column name="reset">reset, port</column>
                     <column name="ena">ena, port</column>
-                    <column name="hh">hh, port</column>
-                    <column name="hh">hh_ap_vld, port</column>
-                    <column name="mm">mm, port</column>
-                    <column name="mm">mm_ap_vld, port</column>
-                    <column name="ss">ss, port</column>
-                    <column name="ss">ss_ap_vld, port</column>
-                    <column name="pm">pm, port</column>
-                    <column name="pm">pm_ap_vld, port</column>
+                    <column name="hh">hh, interface</column>
+                    <column name="mm">mm, interface</column>
+                    <column name="ss">ss, interface</column>
+                    <column name="pm">pm, interface</column>
                 </table>
             </item>
         </section>
     </ReportSWInterface>
     <ResolutionUrl key="ZZZ">docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
-    <PragmaReport/>
+    <PragmaReport>
+        <Pragma type="pipeline" location="clock.cpp:10" status="valid" parentFunction="clock" variable="" isDirective="0" options="II=1"/>
+    </PragmaReport>
 </profile>
 

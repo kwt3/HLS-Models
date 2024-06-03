@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="clock.cpp" path="C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\12-hour-clock\clock.cpp"/>
-    <originFiles name="clock.hpp" path="C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\12-hour-clock\clock.hpp"/>
+    <originFiles name="clock.cpp" path="C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\12-hour-clock\clock.cpp"/>
+    <originFiles name="clock.hpp" path="C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\12-hour-clock\clock.hpp"/>
   </source>
   <testbench>
-    <originFiles name="tb_clock.cpp" path="C:\Users\kwokt\Desktop\Clone_HLS-Models\HLS-Models\Simple-Designs\Counters\12-hour-clock\tb_clock.cpp"/>
+    <originFiles name="tb_clock.cpp" path="C:\Users\kwokt\HLS-Models\Simple-Designs\Sequential\Counters\12-hour-clock\tb_clock.cpp"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

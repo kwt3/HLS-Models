@@ -1,8 +1,8 @@
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Slow-decade-counter/decade_counter.cpp"
+# 1 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Slow-decade-counter/decade_counter.cpp"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Slow-decade-counter/decade_counter.cpp"
-# 1 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Slow-decade-counter/decade_counter.hpp" 1
+# 1 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Slow-decade-counter/decade_counter.cpp"
+# 1 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Slow-decade-counter/decade_counter.hpp" 1
 
 
 
@@ -55376,16 +55376,20 @@ inline bool operator!=(
 }
 # 366 "C:/Xilinx/Vitis_HLS/2023.2/include/ap_fixed.h" 2
 # 361 "C:/Xilinx/Vitis_HLS/2023.2/include/ap_int.h" 2
-# 5 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Slow-decade-counter/decade_counter.hpp" 2
+# 5 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Slow-decade-counter/decade_counter.hpp" 2
 
-extern "C" {
-    void decade_counter(ap_uint<1> &reset, ap_uint<1> &slowena, ap_uint<4> &out);
-}
-# 2 "C:/Users/kwokt/Desktop/Clone_HLS-Models/HLS-Models/Simple-Designs/Counters/Slow-decade-counter/decade_counter.cpp" 2
+void decade_counter(ap_uint<1> &reset, ap_uint<1> &slowena, ap_uint<4> &out);
+# 2 "C:/Users/kwokt/HLS-Models/Simple-Designs/Sequential/Counters/Slow-decade-counter/decade_counter.cpp" 2
 
 void decade_counter(ap_uint<1> &reset, ap_uint<1> &slowena, ap_uint<4> &out) {
 
     static ap_uint<4> count = 0;
+
+
+#pragma HLS INTERFACE ap_ctrl_none port=return
+#pragma HLS INTERFACE ap_none port=reset
+#pragma HLS INTERFACE ap_none port=slowena
+#pragma HLS INTERFACE ap_none port=out
 
 
     if (reset == 1) {

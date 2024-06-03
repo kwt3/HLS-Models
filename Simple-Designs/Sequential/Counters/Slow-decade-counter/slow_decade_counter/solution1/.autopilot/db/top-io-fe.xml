@@ -1,5 +1,5 @@
 <root versionMajor = "1" versionMinor = "5">
-  <kernel src_name="decade_counter" language="c" hwCtrl="ap_ctrl_hs" mem_layout="fpga64-xilinx-none">
+  <kernel src_name="decade_counter" language="c" hwCtrl="ap_ctrl_none" mem_layout="fpga64-xilinx-none">
     <args>
       <arg id="0" access_type="r" src_name="reset" src_type="ap_uint&lt;1&gt;&amp;" src_isptr="1" src_bitwidth="8" src_size_or_depth="1">
         <hw hw_usage="data" hw_interface="Register" hw_name="reset" hw_bitwidth="1" hw_size_or_depth="1" hw_kernel_support="false">

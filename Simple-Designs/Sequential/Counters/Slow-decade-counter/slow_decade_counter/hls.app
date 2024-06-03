@@ -1,4 +1,4 @@
-<project xmlns="com.autoesl.autopilot.project" top="decade_counter" name="slow_decade_counter" projectType="C/C++">
+<project xmlns="com.autoesl.autopilot.project" name="slow_decade_counter" top="decade_counter" projectType="C/C++">
     <includePaths/>
     <libraryPaths/>
     <Simulation>

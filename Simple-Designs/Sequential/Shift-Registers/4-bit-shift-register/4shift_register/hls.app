@@ -1,4 +1,4 @@
-<project xmlns="com.autoesl.autopilot.project" top="shift_register" name="4shift_register" projectType="C/C++">
+<project xmlns="com.autoesl.autopilot.project" name="4shift_register" top="shift_register" projectType="C/C++">
     <includePaths/>
     <libraryPaths/>
     <Simulation>
