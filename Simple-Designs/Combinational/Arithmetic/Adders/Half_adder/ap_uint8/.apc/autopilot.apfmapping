@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="half_adder.cpp" path="C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Half_adder\half_adder.cpp"/>
+    <originFiles name="half_adder.hpp" path="C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Half_adder\half_adder.hpp"/>
+  </source>
+  <testbench>
+    <originFiles name="tb_ap_uint8.cpp" path="C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Adders\Half_adder\tb_ap_uint8.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

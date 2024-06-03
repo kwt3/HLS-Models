@@ -1,0 +1,18 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "half_adder.cpp",
+    "fileloc": 4,
+    "instructions": 25,
+    "loads": {
+      "L": 2
+    },
+    "name": "half_adder<ap_uint<8> >",
+    "stores": {
+      "L": 2,
+      "T": 2
+    },
+    "total_instructions": 125
+  }
+}

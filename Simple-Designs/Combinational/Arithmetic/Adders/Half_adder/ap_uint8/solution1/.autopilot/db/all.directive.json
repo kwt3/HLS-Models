@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "half_adder",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "half_adder"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Half_adder/ap_uint8/solution1/csynth.tcl",
+    "sourceLine": 16,
+    "success": true
+  }
+]

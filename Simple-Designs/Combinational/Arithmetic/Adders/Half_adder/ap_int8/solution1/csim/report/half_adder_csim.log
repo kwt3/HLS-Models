@@ -1,0 +1,11 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../tb_ap_int8.cpp in debug mode
+   Compiling ../../../../half_adder.cpp in debug mode
+   Generating csim.exe
+Input (ap_int<8>): A=5, B=3
+Sum: 6
+Carry: 1
+Test Passed for ap_int<8>.
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

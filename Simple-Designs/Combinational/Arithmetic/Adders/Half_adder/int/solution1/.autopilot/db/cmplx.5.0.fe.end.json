@@ -1,0 +1,11 @@
+{
+    "0": {
+        "name": "half_adder<int>",
+        "file": "half_adder.cpp",
+        "fileloc": "4",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "1"
+    }
+}
