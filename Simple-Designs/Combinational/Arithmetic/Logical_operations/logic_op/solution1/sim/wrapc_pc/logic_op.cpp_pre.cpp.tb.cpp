@@ -25530,7 +25530,12 @@ enum class LogicOperator {
 };
 
 bool perform_logic_operation(bool A, bool B, LogicOperator op);
+int perform_logic_operation(int A, int B, LogicOperator op);
+
+
+extern "C" void wrapper_function(bool A_bool, bool B_bool, int A_int, int B_int, LogicOperator op, bool &result_bool, int &result_int);
 # 2 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op.cpp" 2
+
 
 bool perform_logic_operation(bool A, bool B, LogicOperator op) {
     switch (op) {
@@ -25542,25 +25547,47 @@ bool perform_logic_operation(bool A, bool B, LogicOperator op) {
             return A ^ B;
         case LogicOperator::NAND:
             return !(A && B);
+        default:
+            return false;
+    }
+}
+
+
+int perform_logic_operation(int A, int B, LogicOperator op) {
+    switch (op) {
+        case LogicOperator::AND:
+            return A & B;
+        case LogicOperator::OR:
+            return A | B;
+        case LogicOperator::XOR:
+            return A ^ B;
+        case LogicOperator::NAND:
+            return ~(A & B);
         case LogicOperator::LEFT_SHIFT:
             return A << B;
         case LogicOperator::RIGHT_SHIFT:
             return A >> B;
         default:
-            return false;
+            return 0;
     }
+}
+
+
+extern "C" void wrapper_function(bool A_bool, bool B_bool, int A_int, int B_int, LogicOperator op, bool &result_bool, int &result_int) {
+    result_bool = perform_logic_operation(A_bool, B_bool, op);
+    result_int = perform_logic_operation(A_int, B_int, op);
 }
 #ifndef HLS_FASTSIM
 #ifdef __cplusplus
 extern "C"
 #endif
-bool apatb_perform_logic_operation_ir(bool, bool, LogicOperator);
+void apatb_wrapper_function_ir(bool, bool, int, int, LogicOperator, bool &, int &);
 #ifdef __cplusplus
 extern "C"
 #endif
-bool perform_logic_operation_hw_stub(bool A, bool B, LogicOperator op){
-bool _ret = perform_logic_operation(A, B, op);
-return _ret;
+void wrapper_function_hw_stub(bool A_bool, bool B_bool, int A_int, int B_int, LogicOperator op, bool &result_bool, int &result_int){
+wrapper_function(A_bool, B_bool, A_int, B_int, op, result_bool, result_int);
+return ;
 }
 #ifdef __cplusplus
 extern "C"
@@ -25569,11 +25596,11 @@ void refine_signal_handler();
 #ifdef __cplusplus
 extern "C"
 #endif
-bool apatb_perform_logic_operation_sw(bool A, bool B, LogicOperator op){
+void apatb_wrapper_function_sw(bool A_bool, bool B_bool, int A_int, int B_int, LogicOperator op, bool &result_bool, int &result_int){
 refine_signal_handler();
-bool _ret = apatb_perform_logic_operation_ir(A, B, op);
-return _ret;
+apatb_wrapper_function_ir(A_bool, B_bool, A_int, B_int, op, result_bool, result_int);
+return ;
 }
 #endif
-# 20 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op.cpp"
+# 43 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op.cpp"
 

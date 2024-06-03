@@ -34,12 +34,12 @@ if {$ret == 1} {
 	return -code error -errorcode $::errorCode
 }
 
-if {[file isfile perform_logic_operation.autotvin.dat]} {
-	file delete -force perform_logic_operation.autotvin.dat
+if {[file isfile wrapper_function.autotvin.dat]} {
+	file delete -force wrapper_function.autotvin.dat
 }
 
-if {[file isfile perform_logic_operation.autotvout.dat]} {
-	file delete -force perform_logic_operation.autotvout.dat
+if {[file isfile wrapper_function.autotvout.dat]} {
+	file delete -force wrapper_function.autotvout.dat
 }
 
 sc_sim_check $ret $err "temp0.log"

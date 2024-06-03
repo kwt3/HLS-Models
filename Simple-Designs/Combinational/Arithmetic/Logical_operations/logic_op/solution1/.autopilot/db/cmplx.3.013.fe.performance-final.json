@@ -1,11 +1,14 @@
 {
   "0": {
-    "basicblocks": 8,
+    "basicblocks": 13,
     "calls": "",
     "file": "logic_op.cpp",
-    "fileloc": 3,
-    "instructions": 25,
-    "name": "perform_logic_operation",
-    "total_instructions": 25
+    "fileloc": 40,
+    "instructions": 32,
+    "name": "wrapper_function",
+    "stores": {
+      "T": 2
+    },
+    "total_instructions": 32
   }
 }

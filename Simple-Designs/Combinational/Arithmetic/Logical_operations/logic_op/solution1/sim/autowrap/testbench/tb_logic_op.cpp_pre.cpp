@@ -25524,35 +25524,29 @@ enum class LogicOperator {
 };
 
 bool perform_logic_operation(bool A, bool B, LogicOperator op);
+int perform_logic_operation(int A, int B, LogicOperator op);
+
+
+extern "C" void wrapper_function(bool A_bool, bool B_bool, int A_int, int B_int, LogicOperator op, bool &result_bool, int &result_int);
 # 3 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp" 2
 
 int main() {
-    bool A = true;
-    bool B = false;
+    bool A_bool = true;
+    bool B_bool = false;
+    int A_int = 4;
+    int B_int = 1;
+    bool result_bool;
+    int result_int;
 
 
     LogicOperator op1 = LogicOperator::AND;
-    std::cout << "Result of AND operation: " << perform_logic_operation(A, B, op1) << std::endl;
-
-
-    LogicOperator op2 = LogicOperator::OR;
-    std::cout << "Result of OR operation: " << perform_logic_operation(A, B, op2) << std::endl;
-
-
-    LogicOperator op3 = LogicOperator::XOR;
-    std::cout << "Result of XOR operation: " << perform_logic_operation(A, B, op3) << std::endl;
-
-
-    LogicOperator op4 = LogicOperator::NAND;
-    std::cout << "Result of NAND operation: " << perform_logic_operation(A, B, op4) << std::endl;
+    wrapper_function(A_bool, B_bool, A_int, B_int, op1, result_bool, result_int);
+    std::cout << "Result of AND operation (bool): " << result_bool << std::endl;
 
 
     LogicOperator op5 = LogicOperator::LEFT_SHIFT;
-    std::cout << "Result of LEFT SHIFT operation: " << perform_logic_operation(A, B, op5) << std::endl;
-
-
-    LogicOperator op6 = LogicOperator::RIGHT_SHIFT;
-    std::cout << "Result of RIGHT SHIFT operation: " << perform_logic_operation(A, B, op6) << std::endl;
+    wrapper_function(A_bool, B_bool, A_int, B_int, op5, result_bool, result_int);
+    std::cout << "Result of LEFT SHIFT operation (int): " << result_int << std::endl;
 
     return 0;
 }

@@ -3,18 +3,18 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Mon Apr 22 10:04:50 2024
-# Process ID: 9784
+# Start of session at: Mon Jun  3 03:27:26 2024
+# Process ID: 15852
 # Current directory: C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op/solution1/sim/verilog
-# Command line: xsim.exe -mode tcl -source {xsim.dir/perform_logic_operation/xsim_script.tcl}
+# Command line: xsim.exe -mode tcl -source {xsim.dir/wrapper_function/xsim_script.tcl}
 # Log file: C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op/solution1/sim/verilog/xsim.log
 # Journal file: C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op/solution1/sim/verilog\xsim.jou
 # Running On: billy, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 16, Host memory: 16542 MB
 #-----------------------------------------------------------
-source xsim.dir/perform_logic_operation/xsim_script.tcl
-# xsim {perform_logic_operation} -autoloadwcfg -tclbatch {perform_logic_operation.tcl}
+source xsim.dir/wrapper_function/xsim_script.tcl
+# xsim {wrapper_function} -autoloadwcfg -tclbatch {wrapper_function.tcl}
 Time resolution is 1 ps
-source perform_logic_operation.tcl
+source wrapper_function.tcl
 ## run all
 ////////////////////////////////////////////////////////////////////////////////////
 // Inter-Transaction Progress: Completed Transaction / Total Transaction
@@ -22,14 +22,10 @@ source perform_logic_operation.tcl
 //
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
-// RTL Simulation : 0 / 6 [n/a] @ "125000"
-// RTL Simulation : 1 / 6 [n/a] @ "145000"
-// RTL Simulation : 2 / 6 [n/a] @ "155000"
-// RTL Simulation : 3 / 6 [n/a] @ "165000"
-// RTL Simulation : 4 / 6 [n/a] @ "175000"
-// RTL Simulation : 5 / 6 [n/a] @ "185000"
-// RTL Simulation : 6 / 6 [n/a] @ "195000"
+// RTL Simulation : 0 / 2 [n/a] @ "125000"
+// RTL Simulation : 1 / 2 [n/a] @ "145000"
+// RTL Simulation : 2 / 2 [n/a] @ "155000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 255 ns : File "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op/solution1/sim/verilog/perform_logic_operation.autotb.v" Line 374
+$finish called at time : 215 ns : File "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op/solution1/sim/verilog/wrapper_function.autotb.v" Line 576
 ## quit
-INFO: [Common 17-206] Exiting xsim at Mon Apr 22 10:04:53 2024...
+INFO: [Common 17-206] Exiting xsim at Mon Jun  3 03:27:28 2024...

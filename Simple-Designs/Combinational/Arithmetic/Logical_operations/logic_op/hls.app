@@ -1,4 +1,4 @@
-<project xmlns="com.autoesl.autopilot.project" name="logic_op" top="perform_logic_operation" projectType="C/C++">
+<project xmlns="com.autoesl.autopilot.project" name="logic_op" top="wrapper_function" projectType="C/C++">
     <includePaths/>
     <libraryPaths/>
     <Simulation>

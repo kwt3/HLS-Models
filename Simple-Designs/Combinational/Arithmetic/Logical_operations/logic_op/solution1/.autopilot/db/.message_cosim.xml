@@ -11,5 +11,5 @@
 	<Message severity="INFO" prefix="[COSIM 212-316]" key="COSIM_TCL_316_1188" tag="" content="Starting C post checking ..." resolution=""/>
 	<Message severity="INFO" prefix="[COSIM 212-1000]" key="COSIM_TCL_1000_1070" tag="" content="*** C/RTL co-simulation finished: PASS ***" resolution=""/>
 	<Message severity="INFO" prefix="[COSIM 212-210]" key="COSIM_TCL_210_1173" tag="COSIM" content="Design is translated to an combinational logic. II and Latency will be marked as all 0." resolution=""/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Command cosim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 16.179 seconds; current allocated memory: 6.664 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Command cosim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 12.371 seconds; current allocated memory: 6.516 MB." resolution=""/>
 </Messages>

@@ -1,10 +1,10 @@
 {
     "0": {
-        "name": "perform_logic_operation",
+        "name": "wrapper_function",
         "file": "logic_op.cpp",
-        "fileloc": "3",
-        "instructions": "35",
-        "total_instructions": "35",
+        "fileloc": "40",
+        "instructions": "53",
+        "total_instructions": "53",
         "calls": "",
         "basicblocks": "1"
     }

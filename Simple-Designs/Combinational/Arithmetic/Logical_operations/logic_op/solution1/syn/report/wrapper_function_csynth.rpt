@@ -1,0 +1,149 @@
+
+
+================================================================
+== Vitis HLS Report for 'wrapper_function'
+================================================================
+* Date:           Mon Jun  3 03:27:03 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        logic_op
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu11p-flga2577-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  2.140 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        0|      574|    -|
+|FIFO                 |        -|     -|        -|        -|    -|
+|Instance             |        -|     -|        -|        -|    -|
+|Memory               |        -|     -|        -|        -|    -|
+|Multiplexer          |        -|     -|        -|        -|    -|
+|Register             |        -|     -|        -|        -|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |        0|     0|        0|      574|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1344|  3072|   864000|   432000|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |        0|     0|        0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4032|  9216|  2592000|  1296000|  960|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |        0|     0|        0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-------------------------+----------+----+---+-----+------------+------------+
+    |      Variable Name      | Operation| DSP| FF| LUT | Bitwidth P0| Bitwidth P1|
+    +-------------------------+----------+----+---+-----+------------+------------+
+    |and_ln23_fu_185_p2       |       and|   0|  0|   32|          32|          32|
+    |and_ln5_fu_130_p2        |       and|   0|  0|    2|           1|           1|
+    |and_ln7_fu_100_p2        |       and|   0|  0|    2|           1|           1|
+    |ashr_ln33_fu_191_p2      |      ashr|   0|  0|  100|          32|          32|
+    |icmp_ln21_1_fu_227_p2    |      icmp|   0|  0|   12|           3|           4|
+    |icmp_ln21_fu_221_p2      |      icmp|   0|  0|   10|           3|           3|
+    |icmp_ln5_1_fu_136_p2     |      icmp|   0|  0|   10|           3|           2|
+    |icmp_ln5_2_fu_142_p2     |      icmp|   0|  0|   10|           3|           1|
+    |icmp_ln5_3_fu_148_p2     |      icmp|   0|  0|   10|           3|           1|
+    |icmp_ln5_fu_124_p2       |      icmp|   0|  0|   10|           3|           2|
+    |or_ln21_1_fu_255_p2      |        or|   0|  0|    2|           1|           1|
+    |or_ln21_2_fu_277_p2      |        or|   0|  0|    2|           1|           1|
+    |or_ln21_fu_241_p2        |        or|   0|  0|    2|           1|           1|
+    |or_ln25_fu_197_p2        |        or|   0|  0|   32|          32|          32|
+    |or_ln5_fu_162_p2         |        or|   0|  0|    2|           1|           1|
+    |or_ln9_fu_106_p2         |        or|   0|  0|    2|           1|           1|
+    |result_bool              |    select|   0|  0|    2|           1|           1|
+    |result_int               |    select|   0|  0|   32|           1|          32|
+    |select_ln21_1_fu_247_p3  |    select|   0|  0|   32|           1|          32|
+    |select_ln21_2_fu_261_p3  |    select|   0|  0|   32|           1|          32|
+    |select_ln21_3_fu_269_p3  |    select|   0|  0|   32|           1|          32|
+    |select_ln21_fu_233_p3    |    select|   0|  0|   32|           1|          32|
+    |select_ln5_1_fu_168_p3   |    select|   0|  0|    2|           1|           1|
+    |select_ln5_fu_154_p3     |    select|   0|  0|    2|           1|           1|
+    |shl_ln31_fu_215_p2       |       shl|   0|  0|  100|          32|          32|
+    |xor_ln11_fu_112_p2       |       xor|   0|  0|    2|           1|           1|
+    |xor_ln13_fu_118_p2       |       xor|   0|  0|    2|           2|           1|
+    |xor_ln27_fu_203_p2       |       xor|   0|  0|   32|          32|          32|
+    |xor_ln29_fu_209_p2       |       xor|   0|  0|   32|           2|          32|
+    +-------------------------+----------+----+---+-----+------------+------------+
+    |Total                    |          |   0|  0|  574|         198|         377|
+    +-------------------------+----------+----+---+-----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------+-----+-----+------------+------------------+--------------+
+|      RTL Ports     | Dir | Bits|  Protocol  |   Source Object  |    C Type    |
++--------------------+-----+-----+------------+------------------+--------------+
+|ap_start            |   in|    1|  ap_ctrl_hs|  wrapper_function|  return value|
+|ap_done             |  out|    1|  ap_ctrl_hs|  wrapper_function|  return value|
+|ap_idle             |  out|    1|  ap_ctrl_hs|  wrapper_function|  return value|
+|ap_ready            |  out|    1|  ap_ctrl_hs|  wrapper_function|  return value|
+|A_bool              |   in|    1|     ap_none|            A_bool|        scalar|
+|B_bool              |   in|    1|     ap_none|            B_bool|        scalar|
+|A_int               |   in|   32|     ap_none|             A_int|        scalar|
+|B_int               |   in|   32|     ap_none|             B_int|        scalar|
+|op                  |   in|   32|     ap_none|                op|        scalar|
+|result_bool         |  out|    1|      ap_vld|       result_bool|       pointer|
+|result_bool_ap_vld  |  out|    1|      ap_vld|       result_bool|       pointer|
+|result_int          |  out|   32|      ap_vld|        result_int|       pointer|
+|result_int_ap_vld   |  out|    1|      ap_vld|        result_int|       pointer|
++--------------------+-----+-----+------------+------------------+--------------+
+

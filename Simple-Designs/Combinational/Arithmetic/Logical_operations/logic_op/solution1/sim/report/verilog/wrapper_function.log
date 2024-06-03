@@ -1,0 +1,77 @@
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+   Build using "C:/Xilinx/Vitis_HLS/2023.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling apatb_wrapper_function.cpp
+   Compiling tb_logic_op.cpp_pre.cpp.tb.cpp
+   Compiling logic_op.cpp_pre.cpp.tb.cpp
+   Compiling apatb_wrapper_function_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM-302] Starting C TB testing ... 
+INFO: [COSIM-333] Generating C post check test bench ...
+INFO: [COSIM-12] Generating RTL test bench ...
+INFO: [COSIM-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM-323] Starting verilog simulation. 
+INFO: [COSIM-15] Starting XSIM ...
+INFO: [COSIM-316] Starting C post checking ...
+Result of AND operation (bool): 0
+Result of LEFT SHIFT operation (int): 8
+
+C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Logical_operations\logic_op\solution1\sim\verilog>set PATH= 
+
+C:\Users\kwokt\HLS-Models\Simple-Designs\Combinational\Arithmetic\Logical_operations\logic_op\solution1\sim\verilog>call C:/Xilinx/Vivado/2023.2/bin/xelab xil_defaultlib.apatb_wrapper_function_top glbl -Oenable_linking_all_libraries  -prj wrapper_function.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_1_16 -L floating_point_v7_0_21 --lib "ieee_proposed=./ieee_proposed" -s wrapper_function  
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_wrapper_function_top glbl -Oenable_linking_all_libraries -prj wrapper_function.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_16 -L floating_point_v7_0_21 --lib ieee_proposed=./ieee_proposed -s wrapper_function 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op/solution1/sim/verilog/wrapper_function.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_wrapper_function_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op/solution1/sim/verilog/wrapper_function.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wrapper_function
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.wrapper_function
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_wrapper_function_top
+Compiling module work.glbl
+Built simulation snapshot wrapper_function
+
+****** xsim v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/wrapper_function/xsim_script.tcl
+# xsim {wrapper_function} -autoloadwcfg -tclbatch {wrapper_function.tcl}
+Time resolution is 1 ps
+source wrapper_function.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 2 [n/a] @ "125000"
+// RTL Simulation : 1 / 2 [n/a] @ "145000"
+// RTL Simulation : 2 / 2 [n/a] @ "155000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 215 ns : File "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op/solution1/sim/verilog/wrapper_function.autotb.v" Line 576
+## quit
+INFO: [Common 17-206] Exiting xsim at Mon Jun  3 03:27:28 2024...
+Result of AND operation (bool): 0
+Result of LEFT SHIFT operation (int): 8
+INFO: [COSIM-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM-210] Design is translated to an combinational logic. II and Latency will be marked as all 0.

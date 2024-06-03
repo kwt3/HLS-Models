@@ -1,9 +1,12 @@
 <xilinx:hls_fe_msgs>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op/solution1/csynth.tcl:17:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="directive" ARG_PragmaFunction="perform_logic_operation" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=perform_logic_operation" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="wrapper_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=wrapper_function" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op/solution1/directives.tcl:7:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="directive" ARG_PragmaFunction="perform_logic_operation" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=perform_logic_operation" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="logic_op.cpp:40:0" msg_body="Inlining function 'perform_logic_operation(bool, bool, LogicOperator)' into 'wrapper_function'">
+        <args Callee="perform_logic_operation(bool, bool, LogicOperator)" Callee-DebugLoc="File logic_op.cpp Line 4 Column 0" Caller="wrapper_function" Caller-DebugLoc="File logic_op.cpp Line 40 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="logic_op.cpp:40:0" msg_body="Inlining function 'perform_logic_operation(int, int, LogicOperator)' into 'wrapper_function'">
+        <args Callee="perform_logic_operation(int, int, LogicOperator)" Callee-DebugLoc="File logic_op.cpp Line 20 Column 0" Caller="wrapper_function" Caller-DebugLoc="File logic_op.cpp Line 40 Column 0"/>
     </msg>
 </xilinx:hls_fe_msgs>
 

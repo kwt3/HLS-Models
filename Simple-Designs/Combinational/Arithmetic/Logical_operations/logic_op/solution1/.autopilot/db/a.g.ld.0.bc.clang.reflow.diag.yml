@@ -1,0 +1,28 @@
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: logic_op.cpp, Line: 40, Column: 0 }
+Function:        wrapper_function
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'perform_logic_operation(bool, bool, LogicOperator)'
+    DebugLoc:        { File: logic_op.cpp, Line: 4, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          wrapper_function
+    DebugLoc:        { File: logic_op.cpp, Line: 40, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: logic_op.cpp, Line: 40, Column: 0 }
+Function:        wrapper_function
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'perform_logic_operation(int, int, LogicOperator)'
+    DebugLoc:        { File: logic_op.cpp, Line: 20, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          wrapper_function
+    DebugLoc:        { File: logic_op.cpp, Line: 40, Column: 0 }
+  - String:          ''''
+...

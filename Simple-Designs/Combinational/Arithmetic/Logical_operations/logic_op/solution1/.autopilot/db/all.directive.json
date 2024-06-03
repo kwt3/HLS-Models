@@ -1,7 +1,7 @@
 [
   {
     "functionLabel": "",
-    "functionName": "perform_logic_operation",
+    "functionName": "wrapper_function",
     "id": 0,
     "ifcond": "",
     "insert_position": "",
@@ -11,28 +11,7 @@
       "option": [
         {
           "name": "name",
-          "value": "perform_logic_operation"
-        }
-      ]
-    },
-    "slx": false,
-    "sourceFile": "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op/solution1/directives.tcl",
-    "sourceLine": 7,
-    "success": true
-  },
-  {
-    "functionLabel": "",
-    "functionName": "perform_logic_operation",
-    "id": 1,
-    "ifcond": "",
-    "insert_position": "",
-    "label": "",
-    "pragma": {
-      "name": "TOP",
-      "option": [
-        {
-          "name": "name",
-          "value": "perform_logic_operation"
+          "value": "wrapper_function"
         }
       ]
     },

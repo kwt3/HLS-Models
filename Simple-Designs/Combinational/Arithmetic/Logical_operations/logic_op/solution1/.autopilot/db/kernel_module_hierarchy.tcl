@@ -1,3 +1,3 @@
 set ModuleHierarchy {[{
-"Name" : "perform_logic_operation","ID" : "0","Type" : "sequential"
+"Name" : "wrapper_function","ID" : "0","Type" : "sequential"
 }]}

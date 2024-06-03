@@ -1,10 +1,10 @@
 
 
 ================================================================
-== Synthesis Summary Report of 'perform_logic_operation'
+== Synthesis Summary Report of 'wrapper_function'
 ================================================================
 + General Information: 
-    * Date:           Mon Apr 22 10:04:24 2024
+    * Date:           Mon Jun  3 03:27:03 2024
     * Version:        2023.2 (Build 4023990 on Oct 11 2023)
     * Project:        logic_op
     * Solution:       solution1 (Vivado IP Flow Target)
@@ -15,26 +15,29 @@
 + Performance & Resource Estimates: 
     
     PS: '+' for module; 'o' for loop; '*' for dataflow
-    +---------------------------+------+------+---------+--------+----------+---------+------+----------+------+----+---+----------+-----+
-    |          Modules          | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |    |   |          |     |
-    |          & Loops          | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP| FF|    LUT   | URAM|
-    +---------------------------+------+------+---------+--------+----------+---------+------+----------+------+----+---+----------+-----+
-    |+ perform_logic_operation  |     -|  5.06|        0|   0.000|         -|        1|     -|        no|     -|   -|  -|  95 (~0%)|    -|
-    +---------------------------+------+------+---------+--------+----------+---------+------+----------+------+----+---+----------+-----+
+    +--------------------+------+------+---------+--------+----------+---------+------+----------+------+----+---+-----------+-----+
+    |       Modules      | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |    |   |           |     |
+    |       & Loops      | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP| FF|    LUT    | URAM|
+    +--------------------+------+------+---------+--------+----------+---------+------+----------+------+----+---+-----------+-----+
+    |+ wrapper_function  |     -|  5.16|        0|   0.000|         -|        1|     -|        no|     -|   -|  -|  574 (~0%)|    -|
+    +--------------------+------+------+---------+--------+----------+---------+------+----------+------+----+---+-----------+-----+
 
 
 ================================================================
 == HW Interfaces
 ================================================================
 * Other Ports
-+-----------+---------+-----------+----------+
-| Port      | Mode    | Direction | Bitwidth |
-+-----------+---------+-----------+----------+
-| A         | ap_none | in        | 1        |
-| B         | ap_none | in        | 1        |
-| ap_return |         | out       | 1        |
-| op        | ap_none | in        | 32       |
-+-----------+---------+-----------+----------+
++-------------+---------+-----------+----------+
+| Port        | Mode    | Direction | Bitwidth |
++-------------+---------+-----------+----------+
+| A_bool      | ap_none | in        | 1        |
+| A_int       | ap_none | in        | 32       |
+| B_bool      | ap_none | in        | 1        |
+| B_int       | ap_none | in        | 32       |
+| op          | ap_none | in        | 32       |
+| result_bool | ap_vld  | out       | 1        |
+| result_int  | ap_vld  | out       | 32       |
++-------------+---------+-----------+----------+
 
 * TOP LEVEL CONTROL
 +-----------+------------+-----------------------------------+
@@ -48,24 +51,32 @@
 == SW I/O Information
 ================================================================
 * Top Function Arguments
-+----------+-----------+---------------+
-| Argument | Direction | Datatype      |
-+----------+-----------+---------------+
-| A        | in        | bool          |
-| B        | in        | bool          |
-| op       | in        | LogicOperator |
-| return   | out       | bool          |
-+----------+-----------+---------------+
++-------------+-----------+---------------+
+| Argument    | Direction | Datatype      |
++-------------+-----------+---------------+
+| A_bool      | in        | bool          |
+| B_bool      | in        | bool          |
+| A_int       | in        | int           |
+| B_int       | in        | int           |
+| op          | in        | LogicOperator |
+| result_bool | out       | bool&         |
+| result_int  | out       | int&          |
++-------------+-----------+---------------+
 
 * SW-to-HW Mapping
-+----------+--------------+---------+
-| Argument | HW Interface | HW Type |
-+----------+--------------+---------+
-| A        | A            | port    |
-| B        | B            | port    |
-| op       | op           | port    |
-| return   | ap_return    | port    |
-+----------+--------------+---------+
++-------------+--------------------+---------+
+| Argument    | HW Interface       | HW Type |
++-------------+--------------------+---------+
+| A_bool      | A_bool             | port    |
+| B_bool      | B_bool             | port    |
+| A_int       | A_int              | port    |
+| B_int       | B_int              | port    |
+| op          | op                 | port    |
+| result_bool | result_bool        | port    |
+| result_bool | result_bool_ap_vld | port    |
+| result_int  | result_int         | port    |
+| result_int  | result_int_ap_vld  | port    |
++-------------+--------------------+---------+
 
 
 ================================================================

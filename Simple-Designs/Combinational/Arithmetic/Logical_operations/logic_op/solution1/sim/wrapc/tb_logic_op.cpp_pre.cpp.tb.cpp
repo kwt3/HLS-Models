@@ -25530,98 +25530,60 @@ enum class LogicOperator {
     RIGHT_SHIFT
 };
 
+bool perform_logic_operation(bool A, bool B, LogicOperator op);
+int perform_logic_operation(int A, int B, LogicOperator op);
 
+
+extern "C" 
 #ifndef HLS_FASTSIM
 #ifdef __cplusplus
 extern "C"
 #endif
-bool apatb_perform_logic_operation_sw(bool, bool, LogicOperator);
+void apatb_wrapper_function_sw(bool, bool, int, int, LogicOperator, bool &, int &);
 #endif
-# 15 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op.hpp"
-bool perform_logic_operation(bool A, bool B, LogicOperator op);
+# 19 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/logic_op.hpp"
+void wrapper_function(bool A_bool, bool B_bool, int A_int, int B_int, LogicOperator op, bool &result_bool, int &result_int);
 # 3 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp" 2
 
 
 #ifndef HLS_FASTSIM
 # 4 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp"
 int main() {
-    bool A = true;
-    bool B = false;
+    bool A_bool = true;
+    bool B_bool = false;
+    int A_int = 4;
+    int B_int = 1;
+    bool result_bool;
+    int result_int;
 
 
     LogicOperator op1 = LogicOperator::AND;
-    std::cout << "Result of AND operation: " << 
+    
 #ifndef HLS_FASTSIM
-#define perform_logic_operation apatb_perform_logic_operation_sw
-#endif
-# 10 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp"
-perform_logic_operation(A, B, op1)
-#undef perform_logic_operation
-# 10 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp"
- << std::endl;
-
-
-    LogicOperator op2 = LogicOperator::OR;
-    std::cout << "Result of OR operation: " << 
-#ifndef HLS_FASTSIM
-#define perform_logic_operation apatb_perform_logic_operation_sw
+#define wrapper_function apatb_wrapper_function_sw
 #endif
 # 14 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp"
-perform_logic_operation(A, B, op2)
-#undef perform_logic_operation
+wrapper_function(A_bool, B_bool, A_int, B_int, op1, result_bool, result_int);
+#undef wrapper_function
 # 14 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp"
- << std::endl;
 
-
-    LogicOperator op3 = LogicOperator::XOR;
-    std::cout << "Result of XOR operation: " << 
-#ifndef HLS_FASTSIM
-#define perform_logic_operation apatb_perform_logic_operation_sw
-#endif
-# 18 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp"
-perform_logic_operation(A, B, op3)
-#undef perform_logic_operation
-# 18 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp"
- << std::endl;
-
-
-    LogicOperator op4 = LogicOperator::NAND;
-    std::cout << "Result of NAND operation: " << 
-#ifndef HLS_FASTSIM
-#define perform_logic_operation apatb_perform_logic_operation_sw
-#endif
-# 22 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp"
-perform_logic_operation(A, B, op4)
-#undef perform_logic_operation
-# 22 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp"
- << std::endl;
+    std::cout << "Result of AND operation (bool): " << result_bool << std::endl;
 
 
     LogicOperator op5 = LogicOperator::LEFT_SHIFT;
-    std::cout << "Result of LEFT SHIFT operation: " << 
+    
 #ifndef HLS_FASTSIM
-#define perform_logic_operation apatb_perform_logic_operation_sw
+#define wrapper_function apatb_wrapper_function_sw
 #endif
-# 26 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp"
-perform_logic_operation(A, B, op5)
-#undef perform_logic_operation
-# 26 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp"
- << std::endl;
+# 19 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp"
+wrapper_function(A_bool, B_bool, A_int, B_int, op5, result_bool, result_int);
+#undef wrapper_function
+# 19 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp"
 
-
-    LogicOperator op6 = LogicOperator::RIGHT_SHIFT;
-    std::cout << "Result of RIGHT SHIFT operation: " << 
-#ifndef HLS_FASTSIM
-#define perform_logic_operation apatb_perform_logic_operation_sw
-#endif
-# 30 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp"
-perform_logic_operation(A, B, op6)
-#undef perform_logic_operation
-# 30 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp"
- << std::endl;
+    std::cout << "Result of LEFT SHIFT operation (int): " << result_int << std::endl;
 
     return 0;
 }
 #endif
-# 33 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp"
+# 23 "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Logical_operations/tb_logic_op.cpp"
 

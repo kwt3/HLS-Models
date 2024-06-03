@@ -1,0 +1,161 @@
+
+
+================================================================
+== Vitis HLS Report for 'wrapper_function'
+================================================================
+* Date:           Mon Jun  3 03:27:03 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        logic_op
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu11p-flga2577-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  2.140 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.13>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%op_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %op" [logic_op.cpp:40]   --->   Operation 2 'read' 'op_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%B_int_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %B_int" [logic_op.cpp:40]   --->   Operation 3 'read' 'B_int_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%A_int_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_int" [logic_op.cpp:40]   --->   Operation 4 'read' 'A_int_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%B_bool_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %B_bool" [logic_op.cpp:40]   --->   Operation 5 'read' 'B_bool_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%A_bool_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %A_bool" [logic_op.cpp:40]   --->   Operation 6 'read' 'A_bool_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%trunc_ln40 = trunc i32 %op_read" [logic_op.cpp:40]   --->   Operation 7 'trunc' 'trunc_ln40' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%spectopmodule_ln40 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [logic_op.cpp:40]   --->   Operation 8 'spectopmodule' 'spectopmodule_ln40' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %A_bool"   --->   Operation 9 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %A_bool, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %B_bool"   --->   Operation 11 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %B_bool, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %A_int"   --->   Operation 13 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %A_int, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %B_int"   --->   Operation 15 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %B_int, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %op"   --->   Operation 17 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %op, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 18 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %result_bool"   --->   Operation 19 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %result_bool, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 20 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %result_int"   --->   Operation 21 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %result_int, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 22 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.14ns)   --->   "%and_ln7 = and i1 %A_bool_read, i1 %B_bool_read" [logic_op.cpp:7->logic_op.cpp:41]   --->   Operation 23 'and' 'and_ln7' <Predicate = true> <Delay = 0.14> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.14> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 24 [1/1] (0.00ns) (grouped into LUT with out node select_ln5)   --->   "%or_ln9 = or i1 %A_bool_read, i1 %B_bool_read" [logic_op.cpp:9->logic_op.cpp:41]   --->   Operation 24 'or' 'or_ln9' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.14> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 25 [1/1] (0.00ns) (grouped into LUT with out node select_ln5_1)   --->   "%xor_ln11 = xor i1 %A_bool_read, i1 %B_bool_read" [logic_op.cpp:11->logic_op.cpp:41]   --->   Operation 25 'xor' 'xor_ln11' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.14> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 26 [1/1] (0.00ns) (grouped into LUT with out node select_ln5_1)   --->   "%xor_ln13 = xor i1 %and_ln7, i1 1" [logic_op.cpp:13->logic_op.cpp:41]   --->   Operation 26 'xor' 'xor_ln13' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.14> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 27 [1/1] (0.71ns)   --->   "%icmp_ln5 = icmp_eq  i3 %trunc_ln40, i3 3" [logic_op.cpp:5->logic_op.cpp:41]   --->   Operation 27 'icmp' 'icmp_ln5' <Predicate = true> <Delay = 0.71> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.71> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 28 [1/1] (0.00ns) (grouped into LUT with out node select_ln5_1)   --->   "%and_ln5 = and i1 %icmp_ln5, i1 %xor_ln13" [logic_op.cpp:5->logic_op.cpp:41]   --->   Operation 28 'and' 'and_ln5' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.14> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 29 [1/1] (0.71ns)   --->   "%icmp_ln5_1 = icmp_eq  i3 %trunc_ln40, i3 2" [logic_op.cpp:5->logic_op.cpp:41]   --->   Operation 29 'icmp' 'icmp_ln5_1' <Predicate = true> <Delay = 0.71> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.71> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 30 [1/1] (0.71ns)   --->   "%icmp_ln5_2 = icmp_eq  i3 %trunc_ln40, i3 1" [logic_op.cpp:5->logic_op.cpp:41]   --->   Operation 30 'icmp' 'icmp_ln5_2' <Predicate = true> <Delay = 0.71> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.71> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 31 [1/1] (0.71ns)   --->   "%icmp_ln5_3 = icmp_eq  i3 %trunc_ln40, i3 0" [logic_op.cpp:5->logic_op.cpp:41]   --->   Operation 31 'icmp' 'icmp_ln5_3' <Predicate = true> <Delay = 0.71> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.71> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 32 [1/1] (0.34ns) (out node of the LUT)   --->   "%select_ln5 = select i1 %icmp_ln5_3, i1 %and_ln7, i1 %or_ln9" [logic_op.cpp:5->logic_op.cpp:41]   --->   Operation 32 'select' 'select_ln5' <Predicate = true> <Delay = 0.34> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 33 [1/1] (0.00ns) (grouped into LUT with out node select_ln5_2)   --->   "%or_ln5 = or i1 %icmp_ln5_3, i1 %icmp_ln5_2" [logic_op.cpp:5->logic_op.cpp:41]   --->   Operation 33 'or' 'or_ln5' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.14> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 34 [1/1] (0.34ns) (out node of the LUT)   --->   "%select_ln5_1 = select i1 %icmp_ln5_1, i1 %xor_ln11, i1 %and_ln5" [logic_op.cpp:5->logic_op.cpp:41]   --->   Operation 34 'select' 'select_ln5_1' <Predicate = true> <Delay = 0.34> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 35 [1/1] (0.34ns) (out node of the LUT)   --->   "%select_ln5_2 = select i1 %or_ln5, i1 %select_ln5, i1 %select_ln5_1" [logic_op.cpp:5->logic_op.cpp:41]   --->   Operation 35 'select' 'select_ln5_2' <Predicate = true> <Delay = 0.34> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%write_ln41 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %result_bool, i1 %select_ln5_2" [logic_op.cpp:41]   --->   Operation 36 'write' 'write_ln41' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.28ns)   --->   "%and_ln23 = and i32 %B_int_read, i32 %A_int_read" [logic_op.cpp:23->logic_op.cpp:42]   --->   Operation 37 'and' 'and_ln23' <Predicate = true> <Delay = 0.28> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 38 [1/1] (1.27ns)   --->   "%ashr_ln33 = ashr i32 %A_int_read, i32 %B_int_read" [logic_op.cpp:33->logic_op.cpp:42]   --->   Operation 38 'ashr' 'ashr_ln33' <Predicate = (icmp_ln21 & !or_ln21_2)> <Delay = 1.27> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 1.27> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 39 [1/1] (0.00ns) (grouped into LUT with out node select_ln21)   --->   "%or_ln25 = or i32 %B_int_read, i32 %A_int_read" [logic_op.cpp:25->logic_op.cpp:42]   --->   Operation 39 'or' 'or_ln25' <Predicate = (icmp_ln5_2 & or_ln21 & or_ln21_2)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 40 [1/1] (0.00ns) (grouped into LUT with out node select_ln21)   --->   "%xor_ln27 = xor i32 %B_int_read, i32 %A_int_read" [logic_op.cpp:27->logic_op.cpp:42]   --->   Operation 40 'xor' 'xor_ln27' <Predicate = (!icmp_ln5_2 & or_ln21 & or_ln21_2)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 41 [1/1] (0.00ns) (grouped into LUT with out node select_ln21_1)   --->   "%xor_ln29 = xor i32 %and_ln23, i32 4294967295" [logic_op.cpp:29->logic_op.cpp:42]   --->   Operation 41 'xor' 'xor_ln29' <Predicate = (icmp_ln5 & !or_ln21 & or_ln21_2)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 42 [1/1] (1.27ns)   --->   "%shl_ln31 = shl i32 %A_int_read, i32 %B_int_read" [logic_op.cpp:31->logic_op.cpp:42]   --->   Operation 42 'shl' 'shl_ln31' <Predicate = (!icmp_ln5 & !or_ln21 & or_ln21_2)> <Delay = 1.27> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 1.27> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 43 [1/1] (0.71ns)   --->   "%icmp_ln21 = icmp_eq  i3 %trunc_ln40, i3 5" [logic_op.cpp:21->logic_op.cpp:42]   --->   Operation 43 'icmp' 'icmp_ln21' <Predicate = (!or_ln21_2)> <Delay = 0.71> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.71> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 44 [1/1] (0.71ns)   --->   "%icmp_ln21_1 = icmp_eq  i3 %trunc_ln40, i3 4" [logic_op.cpp:21->logic_op.cpp:42]   --->   Operation 44 'icmp' 'icmp_ln21_1' <Predicate = true> <Delay = 0.71> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.71> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 45 [1/1] (0.28ns) (out node of the LUT)   --->   "%select_ln21 = select i1 %icmp_ln5_2, i32 %or_ln25, i32 %xor_ln27" [logic_op.cpp:21->logic_op.cpp:42]   --->   Operation 45 'select' 'select_ln21' <Predicate = (or_ln21 & or_ln21_2)> <Delay = 0.28> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 46 [1/1] (0.14ns)   --->   "%or_ln21 = or i1 %icmp_ln5_2, i1 %icmp_ln5_1" [logic_op.cpp:21->logic_op.cpp:42]   --->   Operation 46 'or' 'or_ln21' <Predicate = true> <Delay = 0.14> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.14> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 47 [1/1] (0.28ns) (out node of the LUT)   --->   "%select_ln21_1 = select i1 %icmp_ln5, i32 %xor_ln29, i32 %shl_ln31" [logic_op.cpp:21->logic_op.cpp:42]   --->   Operation 47 'select' 'select_ln21_1' <Predicate = (!or_ln21 & or_ln21_2)> <Delay = 0.28> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 48 [1/1] (0.00ns) (grouped into LUT with out node or_ln21_2)   --->   "%or_ln21_1 = or i1 %icmp_ln5, i1 %icmp_ln21_1" [logic_op.cpp:21->logic_op.cpp:42]   --->   Operation 48 'or' 'or_ln21_1' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.14> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 49 [1/1] (0.00ns) (grouped into LUT with out node select_ln21_4)   --->   "%select_ln21_2 = select i1 %icmp_ln21, i32 %ashr_ln33, i32 %and_ln23" [logic_op.cpp:21->logic_op.cpp:42]   --->   Operation 49 'select' 'select_ln21_2' <Predicate = (!or_ln21_2)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 50 [1/1] (0.28ns) (out node of the LUT)   --->   "%select_ln21_3 = select i1 %or_ln21, i32 %select_ln21, i32 %select_ln21_1" [logic_op.cpp:21->logic_op.cpp:42]   --->   Operation 50 'select' 'select_ln21_3' <Predicate = (or_ln21_2)> <Delay = 0.28> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 51 [1/1] (0.14ns) (out node of the LUT)   --->   "%or_ln21_2 = or i1 %or_ln21, i1 %or_ln21_1" [logic_op.cpp:21->logic_op.cpp:42]   --->   Operation 51 'or' 'or_ln21_2' <Predicate = true> <Delay = 0.14> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.14> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 52 [1/1] (0.28ns) (out node of the LUT)   --->   "%select_ln21_4 = select i1 %or_ln21_2, i32 %select_ln21_3, i32 %select_ln21_2" [logic_op.cpp:21->logic_op.cpp:42]   --->   Operation 52 'select' 'select_ln21_4' <Predicate = true> <Delay = 0.28> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%write_ln42 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %result_int, i32 %select_ln21_4" [logic_op.cpp:42]   --->   Operation 53 'write' 'write_ln42' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%ret_ln43 = ret" [logic_op.cpp:43]   --->   Operation 54 'ret' 'ret_ln43' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 2.140ns
+The critical path consists of the following:
+	wire read operation ('B_int', logic_op.cpp:40) on port 'B_int' (logic_op.cpp:40) [9]  (0.000 ns)
+	'shl' operation 32 bit ('shl_ln31', logic_op.cpp:31->logic_op.cpp:42) [48]  (1.279 ns)
+	'select' operation 32 bit ('select_ln21_1', logic_op.cpp:21->logic_op.cpp:42) [53]  (0.289 ns)
+	'select' operation 32 bit ('select_ln21_3', logic_op.cpp:21->logic_op.cpp:42) [56]  (0.286 ns)
+	'select' operation 32 bit ('select_ln21_4', logic_op.cpp:21->logic_op.cpp:42) [58]  (0.286 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

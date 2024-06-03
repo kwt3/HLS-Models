@@ -1,5 +1,0 @@
-sv work "glbl.v"
-sv xil_defaultlib "perform_logic_operation.autotb.v"
-sv xil_defaultlib "perform_logic_operation.v"
-sv xil_defaultlib "dataflow_monitor.sv"
-

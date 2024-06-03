@@ -1,5 +1,5 @@
 
-set TopModule "perform_logic_operation"
+set TopModule "wrapper_function"
 set ClockPeriod 10
 set ClockList {}
 set HasVivadoClockPeriod 0
@@ -23,7 +23,7 @@ set ResetRegisterNum 0
 set FsmEncStyle onehot
 set MaxFanout 0
 set RtlPrefix {}
-set RtlSubPrefix perform_logic_operation_
+set RtlSubPrefix wrapper_function_
 set ExtraCCFlags {}
 set ExtraCLdFlags {}
 set SynCheckOptions {}

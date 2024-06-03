@@ -1,11 +1,32 @@
 {
   "0": {
+    "basicblocks": 1,
+    "calls": "1 2",
+    "file": "logic_op.cpp",
+    "fileloc": 40,
+    "instructions": 5,
+    "name": "wrapper_function",
+    "stores": {
+      "T": 2
+    },
+    "total_instructions": 36
+  },
+  "1": {
+    "basicblocks": 6,
+    "calls": "",
+    "file": "logic_op.cpp",
+    "fileloc": 4,
+    "instructions": 15,
+    "name": "perform_logic_operation",
+    "total_instructions": 15
+  },
+  "2": {
     "basicblocks": 8,
     "calls": "",
     "file": "logic_op.cpp",
-    "fileloc": 3,
-    "instructions": 25,
+    "fileloc": 20,
+    "instructions": 16,
     "name": "perform_logic_operation",
-    "total_instructions": 25
+    "total_instructions": 16
   }
 }
