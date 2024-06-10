@@ -1,0 +1,42 @@
+INFO: [vitis-run 60-1548] Creating build summary session with primary output C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/full_adder\full_adder.hlsrun_csim_summary, at 06/10/24 06:06:04
+INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run csim -work_dir C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/full_adder -config C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg -cmdlineconfig C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/full_adder/hls/config.cmdline
+INFO: [HLS 200-10] For user 'kwokt' on host 'billy' (Windows NT_amd64 version 10.0) on Mon Jun 10 06:06:07 -0400 2024
+INFO: [HLS 200-10] In directory 'C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component'
+INFO: [HLS 200-2005] Using work_dir C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/full_adder 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.hpp' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(6)
+INFO: [HLS 200-10] Adding design file 'C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.hpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.cpp' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/tb_int.cpp' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/tb_int.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=full_adder' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(5)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xcvu11p-flga2577-1-e' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(4)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'cosim.tool=xsim' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(12)
+INFO: [SIM 211-200] Executing Code Analyzer instead of classic HLS C simulation
+INFO: [SIM 211-200] Compiling source code ../../full_adder.cpp as hardware code with instrumentation
+INFO: [SIM 211-200] Compiling source code ../../tb_int.cpp as test bench code with instrumentation
+INFO: [SIM 211-200] Compiling source code ../../full_adder.cpp as test bench code with instrumentation
+In file included from ../../full_adder.cpp:1:
+../../full_adder.hpp:7:6: error: [SIM 211-200] The requested top-level hardware function 'full_adder' should not be a template function
+void full_adder(T A, T B, T C_In, T& sum, T& carry);
+     ^
+../../full_adder.cpp:4:6: error: [SIM 211-200] The requested top-level hardware function 'full_adder' should not be a template function
+void full_adder(T A, T B, T C_In, T& sum, T& carry) {
+     ^
+../../full_adder.cpp:4:6: error: [SIM 211-200] The requested top-level hardware function 'full_adder' should not be a template function
+../../full_adder.cpp:19:15: note: in instantiation of function template specialization 'full_adder<int>' requested here
+template void full_adder<int>(int A, int B, int C_In, int& sum, int& carry);
+              ^
+3 errors generated.
+ERROR: [SIM 211-200] Code Analyzer execution failed. Consider running the classic C simulation instead by disabling the hls.csim.code_analyzer option in the config file.
+ERROR: Problem running csim: child process exited abnormally
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 7.219 seconds; peak allocated memory: 230.211 MB.

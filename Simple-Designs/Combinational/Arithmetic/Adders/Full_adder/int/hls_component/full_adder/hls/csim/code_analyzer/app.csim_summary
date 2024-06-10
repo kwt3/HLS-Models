@@ -1,0 +1,66 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\kwokt\\HLS-Models\\Simple-Designs\\Combinational\\Arithmetic\\Adders\\Full_adder\\int\\hls_component\\full_adder\\hls\\csim\\code_analyzer\\app.csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Jun 10 06:06:12 2024",
+ "timestampMillis": "1718013972616",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [],
+  "toolVersion": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Jun 10 06:06:12 2024",
+ "timestampMillis": "1718013972628",
+ "buildStep": {
+  "cmdId": "1114c87a-2711-11ef-9038-709cd15c0bce",
+  "name": "vitis_c++",
+  "logFile": "",
+  "commandLine": "vitis_c++ code_analyzer",
+  "args": [
+   "code_analyzer"
+  ],
+  "iniFiles": [],
+  "cwd": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun 10 06:06:12 2024",
+ "timestampMillis": "1718013972629",
+ "status": {
+  "cmdId": "1114c87a-2711-11ef-9038-709cd15c0bce",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun 10 06:06:13 2024",
+ "timestampMillis": "1718013973862",
+ "status": {
+  "cmdId": "1114c87a-2711-11ef-9038-709cd15c0bce",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>

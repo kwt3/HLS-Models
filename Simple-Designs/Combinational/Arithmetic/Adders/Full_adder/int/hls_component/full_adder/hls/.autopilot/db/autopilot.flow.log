@@ -1,0 +1,161 @@
+INFO-FLOW: Workspace C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/full_adder/hls opened at Mon Jun 10 06:05:31 -0400 2024
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.hpp' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(6) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.hpp' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(6)
+Execute     add_files C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.hpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.hpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.cpp' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.cpp' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(7)
+Execute     add_files C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/tb_int.cpp' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/tb_int.cpp' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(9)
+Execute     add_files -tb C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/tb_int.cpp 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/tb_int.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=full_adder' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=full_adder' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(8)
+Execute     set_top full_adder 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(5)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xcvu11p-flga2577-1-e' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xcvu11p-flga2577-1-e' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(1)
+Execute     set_part xcvu11p-flga2577-1-e 
+Execute       create_platform xcvu11p-flga2577-1-e -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+Command       create_platform done; 2.036 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.175 sec.
+Execute       ap_part_info -name xcvu11p-flga2577-1-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 2.295 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10ns' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(4)
+Execute     create_clock -period 10ns 
+Execute       ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'cosim.tool=xsim' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'cosim.tool=xsim' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(10)
+Execute     config_cosim -tool=xsim 
+Execute     send_msg_by_id INFO @200-1465@%s 'csim.code_analyzer=1' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(12)
+Execute     config_csim -code_analyzer=1 
+Command   apply_ini done; 2.356 sec.
+Execute   apply_ini C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/full_adder/hls/config.cmdline 
+Execute   csim_design 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO-FLOW: ::SLX::run_csim failed: child process exited abnormally
+INFO-FLOW: Caught error in csim_design: Problem running csim: child process exited abnormally
+    while executing
+"error "Problem running $stage: $result""
+    (procedure "::AP::hls_slx_hook" line 54)
+    invoked from within
+"::AP::hls_slx_hook csim $config_value_dict replace_flow"
+    (procedure "ap_internal_csim_design" line 104)
+    invoked from within
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 5.521 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/full_adder/hls opened at Mon Jun 10 06:06:07 -0400 2024
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.hpp' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(6) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.hpp' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(6)
+Execute     add_files C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.hpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.hpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.cpp' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.cpp' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(7)
+Execute     add_files C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/tb_int.cpp' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/tb_int.cpp' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(9)
+Execute     add_files -tb C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/tb_int.cpp 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/tb_int.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=full_adder' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=full_adder' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(8)
+Execute     set_top full_adder 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(5)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xcvu11p-flga2577-1-e' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xcvu11p-flga2577-1-e' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(1)
+Execute     set_part xcvu11p-flga2577-1-e 
+Execute       create_platform xcvu11p-flga2577-1-e -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+Command       create_platform done; 1.936 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xcvu11p-flga2577-1-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 2.105 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10ns' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(4)
+Execute     create_clock -period 10ns 
+Execute       ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'cosim.tool=xsim' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'cosim.tool=xsim' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(10)
+Execute     config_cosim -tool=xsim 
+Execute     send_msg_by_id INFO @200-1465@%s 'csim.code_analyzer=1' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/hls_config.cfg(12)
+Execute     config_csim -code_analyzer=1 
+Command   apply_ini done; 2.162 sec.
+Execute   apply_ini C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/int/hls_component/full_adder/hls/config.cmdline 
+Execute   csim_design 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO-FLOW: ::SLX::run_csim failed: child process exited abnormally
+INFO-FLOW: Caught error in csim_design: Problem running csim: child process exited abnormally
+    while executing
+"error "Problem running $stage: $result""
+    (procedure "::AP::hls_slx_hook" line 54)
+    invoked from within
+"::AP::hls_slx_hook csim $config_value_dict replace_flow"
+    (procedure "ap_internal_csim_design" line 104)
+    invoked from within
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 3.821 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 

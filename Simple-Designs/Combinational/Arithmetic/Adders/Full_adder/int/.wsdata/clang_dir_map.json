@@ -1,0 +1,7 @@
+{
+  "workspaceRoot": "C:\\Users\\kwokt\\HLS-Models\\Simple-Designs\\Combinational\\Arithmetic\\Adders\\Full_adder\\int",
+  "mapping": {
+    "C:\\Users\\kwokt\\HLS-Models\\Simple-Designs\\Combinational\\Arithmetic\\Adders\\Full_adder\\tb_int.cpp": "hls_component",
+    "C:\\Users\\kwokt\\HLS-Models\\Simple-Designs\\Combinational\\Arithmetic\\Adders\\Full_adder\\full_adder.cpp": "hls_component"
+  }
+}

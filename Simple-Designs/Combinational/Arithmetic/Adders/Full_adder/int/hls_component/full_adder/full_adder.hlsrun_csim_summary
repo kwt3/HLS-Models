@@ -1,0 +1,157 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\kwokt\\HLS-Models\\Simple-Designs\\Combinational\\Arithmetic\\Adders\\Full_adder\\int\\hls_component\\full_adder\\full_adder.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "06/10/24 06:06:04",
+ "timestampMillis": "27046384",
+ "buildStep": {
+  "cmdId": "0b24fb49-e4e3-4db1-a43d-416894bfc2a7",
+  "name": "vitis-run",
+  "logFile": "C:/Users\\kwokt\\HLS-Models\\Simple-Designs\\Combinational\\Arithmetic\\Adders\\Full_adder\\int\\hls_component\\full_adder\\logs\\full_adder.steps.log",
+  "commandLine": "C:/Xilinx/Vitis/2024.1/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\Users\\kwokt\\HLS-Models\\Simple-Designs\\Combinational\\Arithmetic\\Adders\\Full_adder\\int\\hls_component\\hls_config.cfg --work_dir full_adder ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\Users\\kwokt\\HLS-Models\\Simple-Designs\\Combinational\\Arithmetic\\Adders\\Full_adder\\int\\hls_component\\hls_config.cfg",
+   "--work_dir",
+   "full_adder"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\kwokt\\HLS-Models\\Simple-Designs\\Combinational\\Arithmetic\\Adders\\Full_adder\\int\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "06/10/24 06:06:04",
+ "timestampMillis": "27046385",
+ "status": {
+  "cmdId": "0b24fb49-e4e3-4db1-a43d-416894bfc2a7",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "06/10/24 06:06:10",
+ "timestampMillis": "27051706",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "full_adder",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\kwokt\\HLS-Models\\Simple-Designs\\Combinational\\Arithmetic\\Adders\\Full_adder\\full_adder.hpp",
+     "C:/Users\\kwokt\\HLS-Models\\Simple-Designs\\Combinational\\Arithmetic\\Adders\\Full_adder\\full_adder.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "06/10/24 06:06:10",
+ "timestampMillis": "27051708",
+ "buildStep": {
+  "cmdId": "d775ee22-e7eb-4c68-9a7d-1bd43b5af4f1",
+  "name": "csim_design",
+  "logFile": "C:/Users\\kwokt\\HLS-Models\\Simple-Designs\\Combinational\\Arithmetic\\Adders\\Full_adder\\int\\hls_component\\full_adder\\hls\\hls.log",
+  "commandLine": "csim_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\kwokt\\HLS-Models\\Simple-Designs\\Combinational\\Arithmetic\\Adders\\Full_adder\\int\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "06/10/24 06:06:10",
+ "timestampMillis": "27051709",
+ "status": {
+  "cmdId": "d775ee22-e7eb-4c68-9a7d-1bd43b5af4f1",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "06/10/24 06:06:13",
+ "timestampMillis": "27055529",
+ "status": {
+  "cmdId": "d775ee22-e7eb-4c68-9a7d-1bd43b5af4f1",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "06/10/24 06:06:14",
+ "timestampMillis": "27055700",
+ "status": {
+  "cmdId": "0b24fb49-e4e3-4db1-a43d-416894bfc2a7",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "06/10/24 06:06:14",
+ "timestampMillis": "27055700",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "06/10/24 06:06:14",
+ "timestampMillis": "27055701",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

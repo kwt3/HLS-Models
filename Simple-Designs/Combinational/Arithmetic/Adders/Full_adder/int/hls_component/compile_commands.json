@@ -1,0 +1,26 @@
+[
+  {
+    "directory": "C:\\Users\\kwokt\\HLS-Models\\Simple-Designs\\Combinational\\Arithmetic\\Adders\\Full_adder\\int\\hls_component",
+    "arguments": [
+      "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\common\\technology\\autopilot",
+      "",
+      "-c",
+      "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.cpp"
+    ],
+    "file": "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/full_adder.cpp"
+  },
+  {
+    "directory": "C:\\Users\\kwokt\\HLS-Models\\Simple-Designs\\Combinational\\Arithmetic\\Adders\\Full_adder\\int\\hls_component",
+    "arguments": [
+      "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\include",
+      "",
+      "-c",
+      "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/tb_int.cpp"
+    ],
+    "file": "C:/Users/kwokt/HLS-Models/Simple-Designs/Combinational/Arithmetic/Adders/Full_adder/tb_int.cpp"
+  }
+]
