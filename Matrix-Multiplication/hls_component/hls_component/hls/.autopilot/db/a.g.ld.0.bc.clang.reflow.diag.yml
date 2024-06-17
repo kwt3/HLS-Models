@@ -1,0 +1,26 @@
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../mat_mult.cpp, Line: 14, Column: 19 }
+Function:        _Z15matrix_multiplyPA256_iS0_S0_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_14_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../mat_mult.cpp, Line: 3, Column: 0 }
+Function:        _Z15matrix_multiplyPA256_iS0_S0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_14_3
+  - String:          ''' ('
+  - LoopLoc:         '../mat_mult.cpp:14:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          matrix_multiply
+  - String:          ''' completely with a factor of '
+  - Factor:          '256'
+...

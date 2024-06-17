@@ -1,0 +1,157 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls_component.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "06/17/24 10:47:25",
+ "timestampMillis": "648726989",
+ "buildStep": {
+  "cmdId": "45e9ff91-45b6-4dee-a11a-59d0001f28c5",
+  "name": "vitis-run",
+  "logFile": "C:/Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\logs\\hls_component.steps.log",
+  "commandLine": "C:/Xilinx/Vitis/2024.1/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_config.cfg --work_dir hls_component ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_config.cfg",
+   "--work_dir",
+   "hls_component"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "06/17/24 10:47:25",
+ "timestampMillis": "648726990",
+ "status": {
+  "cmdId": "45e9ff91-45b6-4dee-a11a-59d0001f28c5",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "06/17/24 10:47:31",
+ "timestampMillis": "648732630",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "matrix_multiply",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\mat_mult.cpp",
+     "C:/Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\mat_mult.hpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "06/17/24 10:47:31",
+ "timestampMillis": "648732631",
+ "buildStep": {
+  "cmdId": "a57b2e52-b85b-4f9c-a746-0a0ef584b369",
+  "name": "csim_design",
+  "logFile": "C:/Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\hls.log",
+  "commandLine": "csim_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "06/17/24 10:47:31",
+ "timestampMillis": "648732632",
+ "status": {
+  "cmdId": "a57b2e52-b85b-4f9c-a746-0a0ef584b369",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "06/17/24 10:47:43",
+ "timestampMillis": "648744932",
+ "status": {
+  "cmdId": "a57b2e52-b85b-4f9c-a746-0a0ef584b369",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "06/17/24 10:47:43",
+ "timestampMillis": "648745110",
+ "status": {
+  "cmdId": "45e9ff91-45b6-4dee-a11a-59d0001f28c5",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "06/17/24 10:47:43",
+ "timestampMillis": "648745110",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "06/17/24 10:47:43",
+ "timestampMillis": "648745110",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

@@ -1,0 +1,150 @@
+INFO: [v++ 60-1548] Creating build summary session with primary output C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_component\hls_component.hlscompile_summary, at 06/15/24 00:07:53
+INFO: [v++ 82-31] Launching vitis_hls: vitis_hls -nolog -run csynth -work_dir C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_component -config C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_config.cfg -cmdlineconfig C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_component/hls/config.cmdline
+INFO: [HLS 200-10] For user 'kwokt' on host 'billy' (Windows NT_amd64 version 10.0) on Sat Jun 15 00:07:56 -0400 2024
+INFO: [HLS 200-10] In directory 'C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component'
+INFO: [HLS 200-2005] Using work_dir C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_component 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/kwokt/HLS-Models/Matrix-Multiplication/mat_mult.cpp' from C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/Users/kwokt/HLS-Models/Matrix-Multiplication/mat_mult.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/kwokt/HLS-Models/Matrix-Multiplication/mat_mult.hpp' from C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/Users/kwokt/HLS-Models/Matrix-Multiplication/mat_mult.hpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/Users/kwokt/HLS-Models/Matrix-Multiplication/tb_mat_mult.cpp' from C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/kwokt/HLS-Models/Matrix-Multiplication/tb_mat_mult.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=matrix_multiply' from C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xcvu9p-flga2104-2-i' from C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xcvu9p-flga2104-2-i'
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_config.cfg(5)
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 3.776 seconds; current allocated memory: 230.203 MB.
+INFO: [HLS 200-10] Analyzing design file '../mat_mult.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.349 seconds; current allocated memory: 233.180 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 69 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,573 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,566 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,562 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,562 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,562 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,562 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,562 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,562 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,562 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,562 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,562 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,562 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,562 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,568 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,583 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_16_5' is marked as complete unroll implied by the pipeline pragma (../mat_mult.cpp:16:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_16_5' (../mat_mult.cpp:16:19) in function 'matrix_multiply' completely with a factor of 256 (../mat_mult.cpp:4:0)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_7_2> at ../mat_mult.cpp:7:25 
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.193 seconds; current allocated memory: 234.742 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.006 seconds; current allocated memory: 234.742 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.309 seconds; current allocated memory: 241.801 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 244.883 MB.
+INFO: [XFORM 203-11] Balancing expressions in function 'matrix_multiply' (../mat_mult.cpp:4:38)...256 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.837 seconds; current allocated memory: 271.551 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_6_1'(../mat_mult.cpp:6:21) and 'VITIS_LOOP_7_2'(../mat_mult.cpp:7:25) in function 'matrix_multiply' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_13_3'(../mat_mult.cpp:13:22) and 'VITIS_LOOP_14_4'(../mat_mult.cpp:14:26) in function 'matrix_multiply' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_6_1' (../mat_mult.cpp:6:21) in function 'matrix_multiply'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_13_3' (../mat_mult.cpp:13:22) in function 'matrix_multiply'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.191 seconds; current allocated memory: 289.531 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'matrix_multiply' ...
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrix_multiply_Pipeline_VITIS_LOOP_6_1_VITIS_LOOP_7_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_6_1_VITIS_LOOP_7_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_6_1_VITIS_LOOP_7_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.379 seconds; current allocated memory: 293.434 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.079 seconds; current allocated memory: 294.602 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrix_multiply_Pipeline_VITIS_LOOP_13_3_VITIS_LOOP_14_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_13_3_VITIS_LOOP_14_4'.
+WARNING: [HLS 200-885] The II Violation in module 'matrix_multiply_Pipeline_VITIS_LOOP_13_3_VITIS_LOOP_14_4' (loop 'VITIS_LOOP_13_3_VITIS_LOOP_14_4'): Unable to schedule 'load' operation 32 bit ('A_load_1', ../mat_mult.cpp:13) on array 'A' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'A'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+WARNING: [HLS 200-885] The II Violation in module 'matrix_multiply_Pipeline_VITIS_LOOP_13_3_VITIS_LOOP_14_4' (loop 'VITIS_LOOP_13_3_VITIS_LOOP_14_4'): Unable to schedule 'load' operation 32 bit ('A_load_3', ../mat_mult.cpp:13) on array 'A' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'A'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+WARNING: [HLS 200-885] The II Violation in module 'matrix_multiply_Pipeline_VITIS_LOOP_13_3_VITIS_LOOP_14_4' (loop 'VITIS_LOOP_13_3_VITIS_LOOP_14_4'): Unable to schedule 'load' operation 32 bit ('A_load_5', ../mat_mult.cpp:13) on array 'A' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'A'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+WARNING: [HLS 200-885] The II Violation in module 'matrix_multiply_Pipeline_VITIS_LOOP_13_3_VITIS_LOOP_14_4' (loop 'VITIS_LOOP_13_3_VITIS_LOOP_14_4'): Unable to schedule 'load' operation 32 bit ('A_load_7', ../mat_mult.cpp:13) on array 'A' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'A'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+WARNING: [HLS 200-885] The II Violation in module 'matrix_multiply_Pipeline_VITIS_LOOP_13_3_VITIS_LOOP_14_4' (loop 'VITIS_LOOP_13_3_VITIS_LOOP_14_4'): Unable to schedule 'load' operation 32 bit ('A_load_133', ../mat_mult.cpp:13) on array 'A' due to limited memory ports (II = 67). Please consider using a memory core with more ports or partitioning the array 'A'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+WARNING: [HLS 200-885] The II Violation in module 'matrix_multiply_Pipeline_VITIS_LOOP_13_3_VITIS_LOOP_14_4' (loop 'VITIS_LOOP_13_3_VITIS_LOOP_14_4'): Unable to schedule 'load' operation 32 bit ('A_load_195', ../mat_mult.cpp:13) on array 'A' due to limited memory ports (II = 98). Please consider using a memory core with more ports or partitioning the array 'A'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+WARNING: [HLS 200-885] The II Violation in module 'matrix_multiply_Pipeline_VITIS_LOOP_13_3_VITIS_LOOP_14_4' (loop 'VITIS_LOOP_13_3_VITIS_LOOP_14_4'): Unable to schedule 'load' operation 32 bit ('A_load_227', ../mat_mult.cpp:13) on array 'A' due to limited memory ports (II = 114). Please consider using a memory core with more ports or partitioning the array 'A'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+WARNING: [HLS 200-885] The II Violation in module 'matrix_multiply_Pipeline_VITIS_LOOP_13_3_VITIS_LOOP_14_4' (loop 'VITIS_LOOP_13_3_VITIS_LOOP_14_4'): Unable to schedule 'load' operation 32 bit ('A_load_243', ../mat_mult.cpp:13) on array 'A' due to limited memory ports (II = 122). Please consider using a memory core with more ports or partitioning the array 'A'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+WARNING: [HLS 200-885] The II Violation in module 'matrix_multiply_Pipeline_VITIS_LOOP_13_3_VITIS_LOOP_14_4' (loop 'VITIS_LOOP_13_3_VITIS_LOOP_14_4'): Unable to schedule 'load' operation 32 bit ('A_load_251', ../mat_mult.cpp:13) on array 'A' due to limited memory ports (II = 126). Please consider using a memory core with more ports or partitioning the array 'A'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+WARNING: [HLS 200-885] The II Violation in module 'matrix_multiply_Pipeline_VITIS_LOOP_13_3_VITIS_LOOP_14_4' (loop 'VITIS_LOOP_13_3_VITIS_LOOP_14_4'): Unable to schedule 'load' operation 32 bit ('A_load_253', ../mat_mult.cpp:13) on array 'A' due to limited memory ports (II = 127). Please consider using a memory core with more ports or partitioning the array 'A'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 128, Depth = 131, loop 'VITIS_LOOP_13_3_VITIS_LOOP_14_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 12 seconds. CPU system time: 0 seconds. Elapsed time: 13.211 seconds; current allocated memory: 314.684 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.166 seconds; current allocated memory: 314.762 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrix_multiply' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.525 seconds; current allocated memory: 314.762 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.064 seconds; current allocated memory: 314.785 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrix_multiply_Pipeline_VITIS_LOOP_6_1_VITIS_LOOP_7_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'matrix_multiply_Pipeline_VITIS_LOOP_6_1_VITIS_LOOP_7_2' pipeline 'VITIS_LOOP_6_1_VITIS_LOOP_7_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrix_multiply_Pipeline_VITIS_LOOP_6_1_VITIS_LOOP_7_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.105 seconds; current allocated memory: 316.297 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrix_multiply_Pipeline_VITIS_LOOP_13_3_VITIS_LOOP_14_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'matrix_multiply_Pipeline_VITIS_LOOP_13_3_VITIS_LOOP_14_4' pipeline 'VITIS_LOOP_13_3_VITIS_LOOP_14_4' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrix_multiply_Pipeline_VITIS_LOOP_13_3_VITIS_LOOP_14_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.863 seconds; current allocated memory: 331.684 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrix_multiply' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_multiply/A' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_multiply/B' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_multiply/C' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'matrix_multiply' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrix_multiply'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 4 seconds. Elapsed time: 5.781 seconds; current allocated memory: 372.039 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.533 seconds; current allocated memory: 372.039 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.13 seconds; current allocated memory: 376.953 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for matrix_multiply.
+INFO: [VLOG 209-307] Generating Verilog RTL for matrix_multiply.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 147.93 MHz
+INFO: [HLS 200-112] Total CPU user time: 20 seconds. Total CPU system time: 5 seconds. Total elapsed time: 45.786 seconds; peak allocated memory: 377.000 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 50s

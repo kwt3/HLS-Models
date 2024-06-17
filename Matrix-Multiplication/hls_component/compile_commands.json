@@ -1,0 +1,26 @@
+[
+  {
+    "directory": "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component",
+    "arguments": [
+      "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\common\\technology\\autopilot",
+      "",
+      "-c",
+      "C:/Users/kwokt/HLS-Models/Matrix-Multiplication/mat_mult.cpp"
+    ],
+    "file": "C:/Users/kwokt/HLS-Models/Matrix-Multiplication/mat_mult.cpp"
+  },
+  {
+    "directory": "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component",
+    "arguments": [
+      "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\include",
+      "",
+      "-c",
+      "C:/Users/kwokt/HLS-Models/Matrix-Multiplication/tb_mat_mult.cpp"
+    ],
+    "file": "C:/Users/kwokt/HLS-Models/Matrix-Multiplication/tb_mat_mult.cpp"
+  }
+]

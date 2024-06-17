@@ -1,0 +1,24 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="matrix_multiply" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=matrix_multiply" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../mat_mult.cpp:4:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="matrix_multiply" ARG_PragmaIsValid="1" ARG_PragmaOptions="bram port=A" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../mat_mult.cpp:5:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="matrix_multiply" ARG_PragmaIsValid="1" ARG_PragmaOptions="bram port=B" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../mat_mult.cpp:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="matrix_multiply" ARG_PragmaIsValid="1" ARG_PragmaOptions="bram port=C" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../mat_mult.cpp:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="matrix_multiply" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../mat_mult.cpp:14:19" msg_body="Loop 'VITIS_LOOP_14_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_14_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../mat_mult.cpp:3:0" msg_body="Unrolling loop 'VITIS_LOOP_14_3' (../mat_mult.cpp:14:19) in function 'matrix_multiply' completely with a factor of 256">
+        <args Factor="256" LoopLoc="../mat_mult.cpp:14:19" LoopName="VITIS_LOOP_14_3"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

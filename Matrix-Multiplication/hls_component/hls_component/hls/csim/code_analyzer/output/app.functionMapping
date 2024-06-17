@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<cpuFpgaMapping:cpuFpgaMapping xmlns:cpuFpgaMapping="http://www.xilinx.com/act/cpuFpgaMapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xilinx.com/act/cpuFpgaMapping cpuFPGAMapping.xsd">
+  <Function id="_f206" name="print_matrix">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f209" name="main">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f216" name="matrix_multiply">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>true</TopLevel>
+    <IsCalledByHwFn>false</IsCalledByHwFn>
+    <Interfaces>
+      <Return>
+        <Default/>
+      </Return>
+      <Argument declaration="A (int[256]*)" id="_v14" name="A">
+        <PragmaOrigin id="_fi216_14">
+          <CodeSection beginColumn="0" beginLine="4" endColumn="0" endLine="4" file="..\mat_mult.cpp"/>
+        </PragmaOrigin>
+        <Bram>
+          <Depth/>
+          <Name/>
+          <PortBitwidth>512</PortBitwidth>
+        </Bram>
+      </Argument>
+      <Argument declaration="B (int[256]*)" id="_v15" name="B">
+        <PragmaOrigin id="_fi216_15">
+          <CodeSection beginColumn="0" beginLine="5" endColumn="0" endLine="5" file="..\mat_mult.cpp"/>
+        </PragmaOrigin>
+        <Bram>
+          <Depth/>
+          <Name/>
+          <PortBitwidth>512</PortBitwidth>
+        </Bram>
+      </Argument>
+      <Argument declaration="C (int[256]*)" id="_v16" name="C">
+        <PragmaOrigin id="_fi216_16">
+          <CodeSection beginColumn="0" beginLine="6" endColumn="0" endLine="6" file="..\mat_mult.cpp"/>
+        </PragmaOrigin>
+        <Bram>
+          <Depth/>
+          <Name/>
+          <PortBitwidth>512</PortBitwidth>
+        </Bram>
+      </Argument>
+    </Interfaces>
+  </Function>
+</cpuFpgaMapping:cpuFpgaMapping>

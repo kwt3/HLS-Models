@@ -1,0 +1,40 @@
+INFO: [vitis-run 60-1548] Creating build summary session with primary output C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_component\hls_component.hlsrun_csim_summary, at 06/17/24 10:45:43
+INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run csim -work_dir C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_component -config C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_config.cfg -cmdlineconfig C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_component/hls/config.cmdline
+INFO: [HLS 200-10] For user 'kwokt' on host 'billy' (Windows NT_amd64 version 10.0) on Mon Jun 17 10:45:46 -0400 2024
+INFO: [HLS 200-10] In directory 'C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component'
+INFO: [HLS 200-2005] Using work_dir C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_component 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/kwokt/HLS-Models/Matrix-Multiplication/mat_mult.cpp' from C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/Users/kwokt/HLS-Models/Matrix-Multiplication/mat_mult.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/kwokt/HLS-Models/Matrix-Multiplication/mat_mult.hpp' from C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/Users/kwokt/HLS-Models/Matrix-Multiplication/mat_mult.hpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/Users/kwokt/HLS-Models/Matrix-Multiplication/tb_mat_mult.cpp' from C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/kwokt/HLS-Models/Matrix-Multiplication/tb_mat_mult.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=matrix_multiply' from C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xcvu9p-flga2104-2-i' from C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xcvu9p-flga2104-2-i'
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_config.cfg(5)
+INFO: [SIM 211-200] Executing Code Analyzer instead of classic HLS C simulation
+INFO: [SIM 211-200] Compiling source code ../mat_mult.cpp as hardware code with instrumentation
+INFO: [SIM 211-200] Compiling source code ../tb_mat_mult.cpp as test bench code with instrumentation
+INFO: [SIM 211-200] Compiling source code ../mat_mult.cpp as test bench code with instrumentation
+In file included from ../mat_mult.cpp:1:
+../mat_mult.hpp:10:6: error: [SIM 211-200] The requested top-level hardware function 'matrix_multiply' should not be a template function
+void matrix_multiply(const T A[N][N], const T B[N][N], T C[N][N]);
+     ^
+../mat_mult.cpp:47:6: error: [SIM 211-200] The requested top-level hardware function 'matrix_multiply' should not be a template function
+void matrix_multiply(const T A[N][N], const T B[N][N], T C[N][N]) {
+     ^
+../mat_mult.cpp:47:6: error: [SIM 211-200] The requested top-level hardware function 'matrix_multiply' should not be a template function
+../mat_mult.cpp:66:15: note: in instantiation of function template specialization 'matrix_multiply<int>' requested here
+template void matrix_multiply<int>(const int A[N][N], const int B[N][N], int C[N][N]);
+              ^
+3 errors generated.
+ERROR: [SIM 211-200] Code Analyzer execution failed. Consider running the classic C simulation instead by disabling the hls.csim.code_analyzer option in the config file.
+ERROR: Problem running csim: child process exited abnormally
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 6.237 seconds; peak allocated memory: 229.973 MB.

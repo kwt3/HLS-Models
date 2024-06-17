@@ -1,0 +1,80 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\csim\\code_analyzer\\app.csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Jun 17 10:47:33 2024",
+ "timestampMillis": "1718635653556",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [],
+  "toolVersion": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Jun 17 10:47:33 2024",
+ "timestampMillis": "1718635653556",
+ "buildStep": {
+  "cmdId": "87ca4c43-2cb8-11ef-b8bf-709cd15c0bce",
+  "name": "vitis_c++",
+  "logFile": "",
+  "commandLine": "vitis_c++ code_analyzer",
+  "args": [
+   "code_analyzer"
+  ],
+  "iniFiles": [],
+  "cwd": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun 17 10:47:33 2024",
+ "timestampMillis": "1718635653569",
+ "status": {
+  "cmdId": "87ca4c43-2cb8-11ef-b8bf-709cd15c0bce",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun 17 10:47:43 2024",
+ "timestampMillis": "1718635663273",
+ "status": {
+  "cmdId": "87ca4c43-2cb8-11ef-b8bf-709cd15c0bce",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun 17 10:47:43 2024",
+ "timestampMillis": "1718635663273",
+ "report": {
+  "path": "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "VCXX_CODE_ANALYZER",
+  "cmdId": "87ca4c43-2cb8-11ef-b8bf-709cd15c0bce"
+ }
+}
+</ENTRY>

@@ -1,0 +1,8 @@
+{
+  "workspaceRoot": "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication",
+  "mapping": {
+    "mat_mult.cpp": "hls_component",
+    "tb_mat_mult.cpp": "hls_component",
+    "mat_mult.hpp": "hls_component"
+  }
+}

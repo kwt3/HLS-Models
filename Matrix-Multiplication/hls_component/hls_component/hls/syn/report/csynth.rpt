@@ -1,0 +1,523 @@
+
+
+================================================================
+== Synthesis Summary Report of 'matrix_multiply'
+================================================================
++ General Information: 
+    * Date:           Mon Jun 17 10:50:08 2024
+    * Version:        2024.1 (Build 5069499 on May 21 2024)
+    * Project:        hls_component
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: virtexuplus
+    * Target device:  xcvu9p-flga2104-2-i
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+------+---------+------------+------------+-----+
+    |               Modules              | Issue|      | Latency |  Latency  | Iteration|         |  Trip |          |      |         |            |            |     |
+    |               & Loops              | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count | Pipelined| BRAM |   DSP   |     FF     |     LUT    | URAM|
+    +------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+------+---------+------------+------------+-----+
+    |+ matrix_multiply                   |    II|  0.54|  8388611|  8.389e+07|         -|  8388608|      -|    rewind|     -|  6 (~0%)|  2160 (~0%)|  7197 (~0%)|    -|
+    | o VITIS_LOOP_10_1_VITIS_LOOP_11_2  |    II|  7.30|  8388609|  8.389e+07|       130|      128|  65536|       yes|     -|        -|           -|           -|    -|
+    +------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+------+---------+------------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* BRAM
++-----------+------------+---------------+
+| Interface | Data Width | Address Width |
++-----------+------------+---------------+
+| A_PORTA   | 32         | 32            |
+| A_PORTB   | 32         | 32            |
+| B_PORTA   | 32         | 32            |
+| B_PORTB   | 32         | 32            |
+| C_PORTA   | 32         | 32            |
++-----------+------------+---------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------+
+| Argument | Direction | Datatype |
++----------+-----------+----------+
+| A        | in        | int*     |
+| B        | in        | int*     |
+| C        | out       | int*     |
++----------+-----------+----------+
+
+* SW-to-HW Mapping
++----------+--------------+-----------+
+| Argument | HW Interface | HW Type   |
++----------+--------------+-----------+
+| A        | A_PORTA      | interface |
+| A        | A_PORTB      | interface |
+| B        | B_PORTA      | interface |
+| B        | B_PORTB      | interface |
+| C        | C_PORTA      | interface |
++----------+--------------+-----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++--------------------------+-----+--------+--------------+--------+----------+---------+
+| Name                     | DSP | Pragma | Variable     | Op     | Impl     | Latency |
++--------------------------+-----+--------+--------------+--------+----------+---------+
+| + matrix_multiply        | 6   |        |              |        |          |         |
+|   add_ln10_fu_5198_p2    |     |        | add_ln10     | add    | fabric   | 0       |
+|   select_ln10_fu_5204_p3 |     |        | select_ln10  | select | auto_sel | 0       |
+|   i_fu_5212_p3           |     |        | i            | select | auto_sel | 0       |
+|   add_ln16_fu_5259_p2    |     |        | add_ln16     | add    | fabric   | 0       |
+|   add_ln16_1_fu_5326_p2  |     |        | add_ln16_1   | add    | fabric   | 0       |
+|   add_ln16_2_fu_5373_p2  |     |        | add_ln16_2   | add    | fabric   | 0       |
+|   add_ln16_3_fu_5418_p2  |     |        | add_ln16_3   | add    | fabric   | 0       |
+|   add_ln16_4_fu_5465_p2  |     |        | add_ln16_4   | add    | fabric   | 0       |
+|   add_ln16_5_fu_5511_p2  |     |        | add_ln16_5   | add    | fabric   | 0       |
+|   add_ln16_6_fu_5596_p2  |     |        | add_ln16_6   | add    | fabric   | 0       |
+|   add_ln16_7_fu_5643_p2  |     |        | add_ln16_7   | add    | fabric   | 0       |
+|   add_ln16_8_fu_5689_p2  |     |        | add_ln16_8   | add    | fabric   | 0       |
+|   add_ln16_9_fu_5741_p2  |     |        | add_ln16_9   | add    | fabric   | 0       |
+|   add_ln16_10_fu_5787_p2 |     |        | add_ln16_10  | add    | fabric   | 0       |
+|   add_ln16_11_fu_5952_p2 |     |        | add_ln16_11  | add    | fabric   | 0       |
+|   add_ln16_12_fu_5999_p2 |     |        | add_ln16_12  | add    | fabric   | 0       |
+|   add_ln16_13_fu_6045_p2 |     |        | add_ln16_13  | add    | fabric   | 0       |
+|   add_ln16_14_fu_6097_p2 |     |        | add_ln16_14  | add    | fabric   | 0       |
+|   add_ln16_15_fu_6143_p2 |     |        | add_ln16_15  | add    | fabric   | 0       |
+|   add_ln16_16_fu_6189_p2 |     |        | add_ln16_16  | add    | fabric   | 0       |
+|   add_ln16_17_fu_6235_p2 |     |        | add_ln16_17  | add    | fabric   | 0       |
+|   add_ln16_18_fu_6281_p2 |     |        | add_ln16_18  | add    | fabric   | 0       |
+|   add_ln16_19_fu_6327_p2 |     |        | add_ln16_19  | add    | fabric   | 0       |
+|   add_ln16_20_fu_6652_p2 |     |        | add_ln16_20  | add    | fabric   | 0       |
+|   add_ln16_21_fu_6699_p2 |     |        | add_ln16_21  | add    | fabric   | 0       |
+|   add_ln16_22_fu_6745_p2 |     |        | add_ln16_22  | add    | fabric   | 0       |
+|   add_ln16_23_fu_6824_p2 |     |        | add_ln16_23  | add    | fabric   | 0       |
+|   add_ln16_24_fu_6870_p2 |     |        | add_ln16_24  | add    | fabric   | 0       |
+|   add_ln16_25_fu_6916_p2 |     |        | add_ln16_25  | add    | fabric   | 0       |
+|   add_ln16_26_fu_6962_p2 |     |        | add_ln16_26  | add    | fabric   | 0       |
+|   add_ln16_27_fu_7008_p2 |     |        | add_ln16_27  | add    | fabric   | 0       |
+|   add_ln16_28_fu_7054_p2 |     |        | add_ln16_28  | add    | fabric   | 0       |
+|   add_ln16_29_fu_7100_p2 |     |        | add_ln16_29  | add    | fabric   | 0       |
+|   add_ln16_30_fu_7152_p2 |     |        | add_ln16_30  | add    | fabric   | 0       |
+|   add_ln16_31_fu_7203_p2 |     |        | add_ln16_31  | add    | fabric   | 0       |
+|   add_ln16_32_fu_7249_p2 |     |        | add_ln16_32  | add    | fabric   | 0       |
+|   add_ln16_33_fu_7295_p2 |     |        | add_ln16_33  | add    | fabric   | 0       |
+|   add_ln16_34_fu_7341_p2 |     |        | add_ln16_34  | add    | fabric   | 0       |
+|   add_ln16_35_fu_7387_p2 |     |        | add_ln16_35  | add    | fabric   | 0       |
+|   add_ln16_36_fu_7433_p2 |     |        | add_ln16_36  | add    | fabric   | 0       |
+|   add_ln16_37_fu_8090_p2 |     |        | add_ln16_37  | add    | fabric   | 0       |
+|   add_ln16_38_fu_8137_p2 |     |        | add_ln16_38  | add    | fabric   | 0       |
+|   add_ln16_39_fu_8183_p2 |     |        | add_ln16_39  | add    | fabric   | 0       |
+|   add_ln16_40_fu_8261_p2 |     |        | add_ln16_40  | add    | fabric   | 0       |
+|   add_ln16_41_fu_8307_p2 |     |        | add_ln16_41  | add    | fabric   | 0       |
+|   add_ln16_42_fu_8353_p2 |     |        | add_ln16_42  | add    | fabric   | 0       |
+|   add_ln16_43_fu_8399_p2 |     |        | add_ln16_43  | add    | fabric   | 0       |
+|   add_ln16_44_fu_8445_p2 |     |        | add_ln16_44  | add    | fabric   | 0       |
+|   add_ln16_45_fu_8491_p2 |     |        | add_ln16_45  | add    | fabric   | 0       |
+|   add_ln16_46_fu_8537_p2 |     |        | add_ln16_46  | add    | fabric   | 0       |
+|   add_ln16_47_fu_8583_p2 |     |        | add_ln16_47  | add    | fabric   | 0       |
+|   add_ln16_48_fu_8629_p2 |     |        | add_ln16_48  | add    | fabric   | 0       |
+|   add_ln16_49_fu_8675_p2 |     |        | add_ln16_49  | add    | fabric   | 0       |
+|   add_ln16_50_fu_8721_p2 |     |        | add_ln16_50  | add    | fabric   | 0       |
+|   add_ln16_51_fu_8767_p2 |     |        | add_ln16_51  | add    | fabric   | 0       |
+|   add_ln16_52_fu_8813_p2 |     |        | add_ln16_52  | add    | fabric   | 0       |
+|   add_ln16_53_fu_8859_p2 |     |        | add_ln16_53  | add    | fabric   | 0       |
+|   add_ln16_54_fu_8905_p2 |     |        | add_ln16_54  | add    | fabric   | 0       |
+|   add_ln16_55_fu_8957_p2 |     |        | add_ln16_55  | add    | fabric   | 0       |
+|   add_ln16_56_fu_9019_p2 |     |        | add_ln16_56  | add    | fabric   | 0       |
+|   add_ln16_57_fu_9065_p2 |     |        | add_ln16_57  | add    | fabric   | 0       |
+|   add_ln16_58_fu_9111_p2 |     |        | add_ln16_58  | add    | fabric   | 0       |
+|   add_ln16_59_fu_9157_p2 |     |        | add_ln16_59  | add    | fabric   | 0       |
+|   add_ln16_60_fu_9203_p2 |     |        | add_ln16_60  | add    | fabric   | 0       |
+|   add_ln16_61_fu_9249_p2 |     |        | add_ln16_61  | add    | fabric   | 0       |
+|   add_ln16_62_fu_9295_p2 |     |        | add_ln16_62  | add    | fabric   | 0       |
+|   add_ln16_63_fu_9341_p2 |     |        | add_ln16_63  | add    | fabric   | 0       |
+|   add_ln16_64_fu_9387_p2 |     |        | add_ln16_64  | add    | fabric   | 0       |
+|   add_ln16_65_fu_9433_p2 |     |        | add_ln16_65  | add    | fabric   | 0       |
+|   add_ln16_66_fu_9479_p2 |     |        | add_ln16_66  | add    | fabric   | 0       |
+|   add_ln16_67_fu_9525_p2 |     |        | add_ln16_67  | add    | fabric   | 0       |
+|   add_ln16_68_fu_9571_p2 |     |        | add_ln16_68  | add    | fabric   | 0       |
+|   add_ln16_69_fu_9617_p2 |     |        | add_ln16_69  | add    | fabric   | 0       |
+|   xor_ln16_fu_10968_p2   |     |        | xor_ln16     | xor    | auto     | 0       |
+|   add_ln19_fu_9627_p2    |     |        | add_ln19     | add    | fabric   | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17     | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_1   | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_2   | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_3   | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_4   | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_5   | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_6   | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_7   | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_8   | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_9   | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_10  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_11  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_12  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_13  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_14  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_15  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_16  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_17  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_18  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_19  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_20  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_21  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_22  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_23  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_24  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_25  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_26  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_27  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_28  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_29  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_30  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_31  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_32  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_33  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_34  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_35  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_36  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_37  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_38  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_39  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_40  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_41  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_42  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_43  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_44  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_45  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_46  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_47  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_48  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_49  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_50  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_51  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_52  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_53  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_54  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_55  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_56  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_57  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_58  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_59  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_60  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_61  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_62  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_63  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_64  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_65  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_66  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_67  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_68  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_69  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_70  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_71  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_72  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_73  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_74  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_75  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_76  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_77  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_78  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_79  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_80  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_81  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_82  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_83  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_84  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_85  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_86  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_87  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_88  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_89  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_90  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_91  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_92  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_93  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_94  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_95  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_96  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_97  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_98  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_99  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_100 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_101 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_102 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_103 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_104 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_105 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_106 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_107 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_108 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_109 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_110 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_111 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_112 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_113 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_114 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_115 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_116 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_117 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_118 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_119 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_120 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_121 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_122 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_123 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_124 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_125 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_126 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_127 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_128 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_129 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_130 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_131 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_132 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_133 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_134 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_135 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_136 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_137 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_138 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_139 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_140 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_141 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_142 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_143 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_144 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_145 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_146 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_147 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_148 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_149 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_150 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_151 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_152 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_153 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_154 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_155 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_156 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_157 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_158 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_159 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_160 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_161 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_162 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_163 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_164 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_165 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_166 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_167 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_168 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_169 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_170 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_171 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_172 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_173 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_174 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_175 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_176 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_177 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_178 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_179 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_180 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_181 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_182 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_183 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_184 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_185 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_186 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_187 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_188 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_189 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_190 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_191 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_192 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_193 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_194 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_195 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_196 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_197 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_198 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_199 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_200 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_201 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_202 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_203 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_204 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_205 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_206 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_207 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_208 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_209 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_210 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_211 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_212 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_213 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_214 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_215 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_216 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_217 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_218 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_219 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_220 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_221 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_222 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_223 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_224 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_225 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_226 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_227 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_228 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_229 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_230 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_231 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_232 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_233 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_234 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_235 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_236 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_237 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_238 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_239 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_240 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_241 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_242 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1  | 3   |        | mul_ln17_243 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_244 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_245 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_246 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_247 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_248 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_249 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_250 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_251 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_252 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_253 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_254 | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2  | 3   |        | mul_ln17_255 | mul    | auto     | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_1   | add    | fabric   | 0       |
+|   grp_fu_4989_p2         |     |        | add_ln17_4   | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_7   | add    | fabric   | 0       |
+|   grp_fu_4989_p2         |     |        | add_ln17_8   | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_11  | add    | fabric   | 0       |
+|   grp_fu_4989_p2         |     |        | add_ln17_16  | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_19  | add    | fabric   | 0       |
+|   grp_fu_4989_p2         |     |        | add_ln17_22  | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_23  | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_26  | add    | fabric   | 0       |
+|   grp_fu_4989_p2         |     |        | add_ln17_31  | add    | fabric   | 0       |
+|   grp_fu_4989_p2         |     |        | add_ln17_32  | add    | fabric   | 0       |
+|   grp_fu_4989_p2         |     |        | add_ln17_35  | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_38  | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_39  | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_42  | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_47  | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_50  | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_53  | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_54  | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_57  | add    | fabric   | 0       |
+|   grp_fu_4989_p2         |     |        | add_ln17_64  | add    | fabric   | 0       |
+|   grp_fu_4989_p2         |     |        | add_ln17_67  | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_70  | add    | fabric   | 0       |
+|   grp_fu_4989_p2         |     |        | add_ln17_71  | add    | fabric   | 0       |
+|   grp_fu_4989_p2         |     |        | add_ln17_74  | add    | fabric   | 0       |
+|   grp_fu_4989_p2         |     |        | add_ln17_79  | add    | fabric   | 0       |
+|   grp_fu_4989_p2         |     |        | add_ln17_82  | add    | fabric   | 0       |
+|   grp_fu_4989_p2         |     |        | add_ln17_85  | add    | fabric   | 0       |
+|   grp_fu_4989_p2         |     |        | add_ln17_86  | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_89  | add    | fabric   | 0       |
+|   grp_fu_4989_p2         |     |        | add_ln17_94  | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_95  | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_98  | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_101 | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_102 | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_105 | add    | fabric   | 0       |
+|   grp_fu_4989_p2         |     |        | add_ln17_110 | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_113 | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_116 | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_117 | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_120 | add    | fabric   | 0       |
+|   grp_fu_4989_p2         |     |        | add_ln17_127 | add    | fabric   | 0       |
+|   grp_fu_4989_p2         |     |        | add_ln17_128 | add    | fabric   | 0       |
+|   grp_fu_4989_p2         |     |        | add_ln17_131 | add    | fabric   | 0       |
+|   grp_fu_4989_p2         |     |        | add_ln17_134 | add    | fabric   | 0       |
+|   grp_fu_4989_p2         |     |        | add_ln17_135 | add    | fabric   | 0       |
+|   grp_fu_4989_p2         |     |        | add_ln17_138 | add    | fabric   | 0       |
+|   grp_fu_4989_p2         |     |        | add_ln17_143 | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_146 | add    | fabric   | 0       |
+|   grp_fu_4989_p2         |     |        | add_ln17_149 | add    | fabric   | 0       |
+|   grp_fu_4989_p2         |     |        | add_ln17_150 | add    | fabric   | 0       |
+|   grp_fu_4989_p2         |     |        | add_ln17_153 | add    | fabric   | 0       |
+|   grp_fu_4989_p2         |     |        | add_ln17_158 | add    | fabric   | 0       |
+|   grp_fu_4989_p2         |     |        | add_ln17_159 | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_162 | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_165 | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_166 | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_169 | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_174 | add    | fabric   | 0       |
+|   grp_fu_4989_p2         |     |        | add_ln17_177 | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_180 | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_181 | add    | fabric   | 0       |
+|   grp_fu_4989_p2         |     |        | add_ln17_184 | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_191 | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_194 | add    | fabric   | 0       |
+|   grp_fu_4989_p2         |     |        | add_ln17_197 | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_198 | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_201 | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_206 | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_209 | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_212 | add    | fabric   | 0       |
+|   grp_fu_4989_p2         |     |        | add_ln17_213 | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_216 | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_221 | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_222 | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_225 | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_228 | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_229 | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_232 | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_237 | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_240 | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_243 | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_244 | add    | fabric   | 0       |
+|   grp_fu_4983_p2         |     |        | add_ln17_247 | add    | fabric   | 0       |
+|   j_fu_9631_p2           |     |        | j            | add    | fabric   | 0       |
+|   add_ln10_1_fu_10989_p2 |     |        | add_ln10_1   | add    | fabric   | 0       |
+|   icmp_ln11_fu_9636_p2   |     |        | icmp_ln11    | seteq  | auto     | 0       |
+|   icmp_ln10_fu_10995_p2  |     |        | icmp_ln10    | seteq  | auto     | 0       |
++--------------------------+-----+--------+--------------+--------+----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+-------------+-----------------------------------------+
+| Type      | Options     | Location                                |
++-----------+-------------+-----------------------------------------+
+| interface | bram port=A | ../mat_mult.cpp:4 in matrix_multiply, A |
+| interface | bram port=B | ../mat_mult.cpp:5 in matrix_multiply, B |
+| interface | bram port=C | ../mat_mult.cpp:6 in matrix_multiply, C |
+| pipeline  |             | ../mat_mult.cpp:13 in matrix_multiply   |
++-----------+-------------+-----------------------------------------+
+
+

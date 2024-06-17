@@ -1,0 +1,227 @@
+{
+    "rules": {
+        "['C:\\\\Users\\\\kwokt\\\\HLS-Models\\\\Matrix-Multiplication\\\\hls_component\\\\hls_component\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\mat_mult.cpp.0.bc', 'C:\\\\Users\\\\kwokt\\\\HLS-Models\\\\Matrix-Multiplication\\\\hls_component\\\\hls_component\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\mat_mult.cpp.0.bc.d']": {
+            "command": [
+                "c:\\xilinx\\vitis_hls\\2024.1\\vcxx\\/libexec/clang.exe",
+                "-c",
+                "-emit-llvm",
+                "-MD",
+                "-MF",
+                "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\csim\\code_analyzer\\.internal\\build\\mat_mult.cpp.0.bc.d",
+                "-fhls",
+                "-hls-syn-headers-dir=c:\\xilinx\\vitis_hls\\2024.1\\vcxx\\data\\autopilot",
+                "-vitis-hls=C:\\Xilinx\\Vitis_HLS\\2024.1",
+                "--sysroot=C:\\Xilinx\\Vitis_HLS\\2024.1\\tps\\mingw\\10.0.0\\win64.o\\nt",
+                "-fhlstoplevel=matrix_multiply",
+                "-fslxtrace",
+                "../mat_mult.cpp",
+                "-o",
+                "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\csim\\code_analyzer\\.internal\\build\\mat_mult.cpp.0.bc"
+            ],
+            "exectime": 1.4967482089996338,
+            "cwd": "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component"
+        },
+        "['C:\\\\Users\\\\kwokt\\\\HLS-Models\\\\Matrix-Multiplication\\\\hls_component\\\\hls_component\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\tb_mat_mult.cpp.0.o', 'C:\\\\Users\\\\kwokt\\\\HLS-Models\\\\Matrix-Multiplication\\\\hls_component\\\\hls_component\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\tb_mat_mult.cpp.0.o.d']": {
+            "command": [
+                "c:\\xilinx\\vitis_hls\\2024.1\\vcxx\\/libexec/clang.exe",
+                "-c",
+                "-MD",
+                "-MF",
+                "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\csim\\code_analyzer\\.internal\\build\\tb_mat_mult.cpp.0.o.d",
+                "-fhls-tb",
+                "-hls-sim-headers-dir=c:\\xilinx\\vitis_hls\\2024.1\\vcxx\\data\\include",
+                "-vitis-hls=C:\\Xilinx\\Vitis_HLS\\2024.1",
+                "--sysroot=C:\\Xilinx\\Vitis_HLS\\2024.1\\tps\\mingw\\10.0.0\\win64.o\\nt",
+                "-fhlstoplevel=matrix_multiply",
+                "-fslxskipfunctionbody",
+                "-fslxtrace",
+                "../tb_mat_mult.cpp",
+                "-o",
+                "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\csim\\code_analyzer\\.internal\\build\\tb_mat_mult.cpp.0.o"
+            ],
+            "exectime": 1.9166676998138428,
+            "cwd": "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component"
+        },
+        "['C:\\\\Users\\\\kwokt\\\\HLS-Models\\\\Matrix-Multiplication\\\\hls_component\\\\hls_component\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\mat_mult.cpp.0.o', 'C:\\\\Users\\\\kwokt\\\\HLS-Models\\\\Matrix-Multiplication\\\\hls_component\\\\hls_component\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\mat_mult.cpp.0.o.d']": {
+            "command": [
+                "c:\\xilinx\\vitis_hls\\2024.1\\vcxx\\/libexec/clang.exe",
+                "-c",
+                "-MD",
+                "-MF",
+                "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\csim\\code_analyzer\\.internal\\build\\mat_mult.cpp.0.o.d",
+                "-fhls-tb",
+                "-hls-sim-headers-dir=c:\\xilinx\\vitis_hls\\2024.1\\vcxx\\data\\include",
+                "-vitis-hls=C:\\Xilinx\\Vitis_HLS\\2024.1",
+                "--sysroot=C:\\Xilinx\\Vitis_HLS\\2024.1\\tps\\mingw\\10.0.0\\win64.o\\nt",
+                "-fhlstoplevel=matrix_multiply",
+                "-fslxskipfunctionbody",
+                "-fslxtrace",
+                "../mat_mult.cpp",
+                "-o",
+                "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\csim\\code_analyzer\\.internal\\build\\mat_mult.cpp.0.o"
+            ],
+            "exectime": 1.8286759853363037,
+            "cwd": "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component"
+        },
+        "['C:\\\\Users\\\\kwokt\\\\HLS-Models\\\\Matrix-Multiplication\\\\hls_component\\\\hls_component\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\syn_srcs.bc']": {
+            "command": [
+                "c:\\xilinx\\vitis_hls\\2024.1\\vcxx\\/libexec/llvm-link.exe",
+                "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\csim\\code_analyzer\\.internal\\build\\mat_mult.cpp.0.bc",
+                "-o",
+                "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\csim\\code_analyzer\\.internal\\build\\syn_srcs.bc"
+            ],
+            "exectime": 0.02445077896118164,
+            "cwd": "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component"
+        },
+        "['C:\\\\Users\\\\kwokt\\\\HLS-Models\\\\Matrix-Multiplication\\\\hls_component\\\\hls_component\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\syn_srcs.opt.bc']": {
+            "command": [
+                "c:\\xilinx\\vitis_hls\\2024.1\\vcxx\\/libexec/opt.exe",
+                "-check-single-toplevel",
+                "-make-non-toplevel-internal",
+                "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\csim\\code_analyzer\\.internal\\build\\syn_srcs.bc",
+                "-o",
+                "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\csim\\code_analyzer\\.internal\\build\\syn_srcs.opt.bc"
+            ],
+            "exectime": 0.0260312557220459,
+            "cwd": "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component"
+        },
+        "['C:\\\\Users\\\\kwokt\\\\HLS-Models\\\\Matrix-Multiplication\\\\hls_component\\\\hls_component\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\app.exe']": {
+            "command": [
+                "c:\\xilinx\\vitis_hls\\2024.1\\vcxx\\/libexec/clang++.exe",
+                "-o",
+                "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\csim\\code_analyzer\\.internal\\build\\app.exe",
+                "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\csim\\code_analyzer\\.internal\\build\\tb_mat_mult.cpp.0.o",
+                "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\csim\\code_analyzer\\.internal\\build\\mat_mult.cpp.0.o",
+                "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\csim\\code_analyzer\\.internal\\build\\syn_srcs.opt.bc",
+                "-fhls",
+                "-fhlstoplevel=matrix_multiply",
+                "-vitis-hls=C:\\Xilinx\\Vitis_HLS\\2024.1",
+                "-fslxtrace",
+                "-Wl,-mllvm,-profilerOutputDirectory=C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\csim\\code_analyzer\\.internal\\profiler\\0",
+                "-fslxpthreads",
+                "-lpthread",
+                "--sysroot=C:\\Xilinx\\Vitis_HLS\\2024.1\\tps\\mingw\\10.0.0\\win64.o\\nt"
+            ],
+            "exectime": 0.2888767719268799,
+            "cwd": "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component"
+        },
+        "['C:\\\\Users\\\\kwokt\\\\HLS-Models\\\\Matrix-Multiplication\\\\hls_component\\\\hls_component\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\instrument\\\\app_0\\\\binary_dependencies.json']": {
+            "command": [
+                "c:\\xilinx\\vitis_hls\\2024.1\\vcxx\\libexec\\clang-scan-deps.exe",
+                "--compilation-database=C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\compile_commands.json",
+                "--format=vitiscxx",
+                "--reuse-filemanager=false",
+                "--output=C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\binary_dependencies.json"
+            ],
+            "exectime": 0.1510624885559082,
+            "cwd": "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component"
+        },
+        "['C:\\\\Users\\\\kwokt\\\\HLS-Models\\\\Matrix-Multiplication\\\\hls_component\\\\hls_component\\\\hls\\\\csim\\\\code_analyzer\\\\output\\\\app.functionGraph']": {
+            "command": [
+                "c:\\xilinx\\vitis_hls\\2024.1\\vcxx\\/libexec/staticCallGraph.exe",
+                "-i",
+                "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\static.xml",
+                "-o",
+                "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\csim\\code_analyzer\\output\\app.functionGraph"
+            ],
+            "exectime": 0.08970880508422852,
+            "cwd": "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component"
+        },
+        "['C:\\\\Users\\\\kwokt\\\\HLS-Models\\\\Matrix-Multiplication\\\\hls_component\\\\hls_component\\\\hls\\\\csim\\\\code_analyzer\\\\output\\\\app.functionMapping']": {
+            "command": [
+                "c:\\xilinx\\vitis_hls\\2024.1\\vcxx\\/libexec/functionMapper.exe",
+                "--static-xml",
+                "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\static.xml",
+                "--function-mapping",
+                "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\csim\\code_analyzer\\output\\app.functionMapping",
+                "--ir-module",
+                "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\project.symbols.bc",
+                "--fn",
+                "216"
+            ],
+            "exectime": 0.05062150955200195,
+            "cwd": "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component"
+        },
+        "['C:\\\\Users\\\\kwokt\\\\HLS-Models\\\\Matrix-Multiplication\\\\hls_component\\\\hls_component\\\\hls\\\\csim\\\\code_analyzer\\\\bin\\\\.tracing_stdout.txt', 'C:\\\\Users\\\\kwokt\\\\HLS-Models\\\\Matrix-Multiplication\\\\hls_component\\\\hls_component\\\\hls\\\\csim\\\\code_analyzer\\\\bin\\\\.tracing_stderr.txt']": {
+            "command": [
+                "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\csim\\code_analyzer\\.internal\\build\\app.exe"
+            ],
+            "exectime": 0.8541874885559082,
+            "cwd": "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\csim\\code_analyzer\\tracing\\csim\\build"
+        },
+        "['C:\\\\Users\\\\kwokt\\\\HLS-Models\\\\Matrix-Multiplication\\\\hls_component\\\\hls_component\\\\hls\\\\csim\\\\code_analyzer\\\\output\\\\reduced_programmodel.app']": {
+            "command": [
+                "c:\\xilinx\\vitis_hls\\2024.1\\vcxx\\/libexec/optimizer.exe",
+                "-DFGPass",
+                "-appName=app",
+                "-outputDir",
+                "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\csim\\code_analyzer\\output",
+                "-logDir",
+                "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\csim\\code_analyzer\\log",
+                "-pmout=C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\csim\\code_analyzer\\output\\reduced_programmodel.app",
+                "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\project.symbols.bc",
+                "-staticFile",
+                "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\static.xml",
+                "-traceFile",
+                "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\csim\\code_analyzer\\.internal\\profiler\\0\\app_0_3\\thread0000-trace.txt",
+                "-o",
+                "nul"
+            ],
+            "exectime": 1.8259522914886475,
+            "cwd": "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component"
+        },
+        "['C:\\\\Users\\\\kwokt\\\\HLS-Models\\\\Matrix-Multiplication\\\\hls_component\\\\hls_component\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\dataflow\\\\0\\\\taskgraph.json']": {
+            "command": [
+                "c:\\xilinx\\vitis_hls\\2024.1\\vcxx\\/libexec/parallelismSelector.exe",
+                "-g",
+                "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\csim\\code_analyzer\\output\\reduced_programmodel.app",
+                "--basepath",
+                "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component",
+                "--static-xml",
+                "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\static.xml",
+                "--fpga-part",
+                "xcvu9p-flga2104-2-i",
+                "--device-totals",
+                "c:\\xilinx\\vitis_hls\\2024.1\\vcxx\\data\\platform\\logic\\fpga.devicetotals",
+                "--clock-frequency",
+                "100.0",
+                "--out-dir",
+                "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\csim\\code_analyzer\\output",
+                "--log-dir",
+                "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\csim\\code_analyzer\\log",
+                "--mapping",
+                "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\csim\\code_analyzer\\output\\app.functionMapping",
+                "--objective",
+                "none",
+                "--performance-target",
+                "target_both",
+                "--max-array-optimization-factor",
+                "1024",
+                "--complete-partition-limit",
+                "4",
+                "--lut-constraint",
+                "100.0",
+                "--ff-constraint",
+                "100.0",
+                "--dsp-constraint",
+                "100.0",
+                "--bram-constraint",
+                "100.0",
+                "--uram-constraint",
+                "100.0",
+                "--ir-module",
+                "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\project.symbols.bc",
+                "--max-iterations",
+                "1000",
+                "--max-iterations-branch-full-log",
+                "20",
+                "--df-id",
+                "0",
+                "--df-target",
+                "%F216"
+            ],
+            "exectime": 0.711101770401001,
+            "cwd": "C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component"
+        }
+    }
+}

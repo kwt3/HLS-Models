@@ -1,0 +1,6 @@
+<pragmas>
+<pragma file="../mat_mult.cpp" line="13" pragmaType="pipeline" parentfunction="matrix_multiply" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="../mat_mult.cpp" line="4" pragmaType="interface" parentfunction="matrix_multiply" mode="ap_memory" port="A" storage_type="-1" impl="-1" latency="-1" name="" depth="-1"/>
+<pragma file="../mat_mult.cpp" line="5" pragmaType="interface" parentfunction="matrix_multiply" mode="ap_memory" port="B" storage_type="-1" impl="-1" latency="-1" name="" depth="-1"/>
+<pragma file="../mat_mult.cpp" line="6" pragmaType="interface" parentfunction="matrix_multiply" mode="ap_memory" port="C" storage_type="-1" impl="-1" latency="-1" name="" depth="-1"/>
+</pragmas>
