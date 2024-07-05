@@ -1,0 +1,15 @@
+C:\Users\kwokt\Desktop\project0303\hls_component\mmult_accel\hls\.autopilot\db\mm.pp.0.cpp:423:5: warning: Added loop label VITIS_LOOP_22_1:   [xilinx-label-all-loops]
+    for (i = 0; i < dim; i++) {
+    ^~~
+    VITIS_LOOP_22_1: 
+C:\Users\kwokt\Desktop\project0303\hls_component\mmult_accel\hls\.autopilot\db\mm.pp.0.cpp:423:5: note: FIX-IT applied suggested code changes
+C:\Users\kwokt\Desktop\project0303\hls_component\mmult_accel\hls\.autopilot\db\mm.pp.0.cpp:424:9: warning: Added loop label VITIS_LOOP_23_2:   [xilinx-label-all-loops]
+        for (j = 0; j < dim; j++) {
+        ^~~
+        VITIS_LOOP_23_2: 
+C:\Users\kwokt\Desktop\project0303\hls_component\mmult_accel\hls\.autopilot\db\mm.pp.0.cpp:424:9: note: FIX-IT applied suggested code changes
+C:\Users\kwokt\Desktop\project0303\hls_component\mmult_accel\hls\.autopilot\db\mm.pp.0.cpp:427:13: warning: Added loop label VITIS_LOOP_26_3:   [xilinx-label-all-loops]
+            for (k = 0; k < dim; k++) {
+            ^~~
+            VITIS_LOOP_26_3: 
+C:\Users\kwokt\Desktop\project0303\hls_component\mmult_accel\hls\.autopilot\db\mm.pp.0.cpp:427:13: note: FIX-IT applied suggested code changes

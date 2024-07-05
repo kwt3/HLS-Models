@@ -1,0 +1,3 @@
+relativeroot=C:/Users/kwokt/Desktop/project0303/hls_component
+original_argv=--mode hls --cosim --config C:\Users\kwokt\Desktop\project0303\hls_component\hls_config.cfg --work_dir mmult_accel 
+

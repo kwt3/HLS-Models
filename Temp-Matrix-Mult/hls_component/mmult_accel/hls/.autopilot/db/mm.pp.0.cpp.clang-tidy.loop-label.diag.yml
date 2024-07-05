@@ -1,0 +1,31 @@
+---
+MainSourceFile:  'C:/Users/kwokt/Desktop/project0303/hls_component/mmult_accel/hls/.autopilot/db/mm.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_22_1:  '
+    FileOffset:      22
+    FilePath:        'C:\Users\kwokt\Desktop\project0303\mm.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\kwokt\Desktop\project0303\hls_component\mmult_accel\hls\.autopilot\db\mm.pp.0.cpp'
+        Offset:          17924
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_22_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_23_2:  '
+    FileOffset:      23
+    FilePath:        'C:\Users\kwokt\Desktop\project0303\mm.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\kwokt\Desktop\project0303\hls_component\mmult_accel\hls\.autopilot\db\mm.pp.0.cpp'
+        Offset:          17960
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_23_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_26_3:  '
+    FileOffset:      26
+    FilePath:        'C:\Users\kwokt\Desktop\project0303\mm.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\kwokt\Desktop\project0303\hls_component\mmult_accel\hls\.autopilot\db\mm.pp.0.cpp'
+        Offset:          18036
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_26_3: '
+...

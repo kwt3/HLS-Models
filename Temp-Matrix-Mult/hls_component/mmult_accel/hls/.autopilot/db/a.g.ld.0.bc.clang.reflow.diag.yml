@@ -1,0 +1,310 @@
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../mm.cpp, Line: 26, Column: 30 }
+Function:        _Z11mmult_accelPhS_Pji
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_26_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../mm.cpp, Line: 26, Column: 30 }
+Function:        _Z11mmult_accelPhS_Pji
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgepseq
+  - ArrayName:       a
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_26_3
+  - String:          ' '
+  - LoopLoc:         '../mm.cpp:26:30'
+  - String:          ' '
+  - Function:        'mmult_accel(unsigned char*, unsigned char*, unsigned int*, int)'
+    DebugLoc:        { File: ../mm.cpp, Line: 8, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: ../mm.cpp, Line: 27, Column: 34 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.load.7
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../mm.cpp, Line: 22, Column: 22 }
+Function:        _Z11mmult_accelPhS_Pji
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        c4seq
+  - ArrayName:       c
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_22_1
+  - String:          ' '
+  - LoopLoc:         '../mm.cpp:22:22'
+  - String:          ' '
+  - Function:        'mmult_accel(unsigned char*, unsigned char*, unsigned int*, int)'
+    DebugLoc:        { File: ../mm.cpp, Line: 8, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: ../mm.cpp, Line: 29, Column: 28 }
+  - OrigDirection:   write
+  - OrigID:          for.inc18.store.5
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: ../mm.cpp, Line: 27, Column: 61 }
+Function:        _Z11mmult_accelPhS_Pji
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: ../mm.cpp, Line: 27, Column: 61 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.load.12
+  - ArrayName:       b
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_26_3
+  - String:          ' '
+  - LoopLoc:         '../mm.cpp:26:30'
+  - String:          ' '
+  - Function:        'mmult_accel(unsigned char*, unsigned char*, unsigned int*, int)'
+    DebugLoc:        { File: ../mm.cpp, Line: 8, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: ../mm.cpp, Line: 26, Column: 30 }
+Function:        _Z11mmult_accelPhS_Pji
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../mm.cpp, Line: 26, Column: 30 }
+  - OrigDirection:   read
+  - OrigID:          scevgepseq
+  - ArrayName:       a
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_23_2
+  - String:          ' '
+  - LoopLoc:         '../mm.cpp:23:26'
+  - String:          ' '
+  - Function:        'mmult_accel(unsigned char*, unsigned char*, unsigned int*, int)'
+    DebugLoc:        { File: ../mm.cpp, Line: 8, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../mm.cpp, Line: 22, Column: 22 }
+Function:        _Z11mmult_accelPhS_Pji
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../mm.cpp, Line: 22, Column: 22 }
+  - OrigDirection:   write
+  - OrigID:          c4seq
+  - ArrayName:       c
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_23_2
+  - String:          ' '
+  - LoopLoc:         '../mm.cpp:23:26'
+  - String:          ' '
+  - Function:        'mmult_accel(unsigned char*, unsigned char*, unsigned int*, int)'
+    DebugLoc:        { File: ../mm.cpp, Line: 8, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../mm.cpp, Line: 26, Column: 30 }
+Function:        _Z11mmult_accelPhS_Pji
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i8
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../mm.cpp, Line: 26, Column: 30 }
+  - OrigDirection:   read
+  - OrigID:          scevgepseq
+  - ArrayName:       a
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_26_3
+  - String:          ' '
+  - LoopLoc:         '../mm.cpp:26:30'
+  - String:          ' '
+  - Function:        'mmult_accel(unsigned char*, unsigned char*, unsigned int*, int)'
+    DebugLoc:        { File: ../mm.cpp, Line: 8, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../mm.cpp, Line: 26, Column: 30 }
+Function:        _Z11mmult_accelPhS_Pji
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_26_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../mm.cpp, Line: 26, Column: 30 }
+Function:        _Z11mmult_accelPhS_Pji
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_26_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ../mm.cpp, Line: 22, Column: 22 }
+Function:        _Z11mmult_accelPhS_Pji
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - Function:        'mmult_accel(unsigned char*, unsigned char*, unsigned int*, int)'
+    DebugLoc:        { File: ../mm.cpp, Line: 8, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ../mm.cpp, Line: 22, Column: 22 }
+Function:        _Z11mmult_accelPhS_Pji
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem2
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ../mm.cpp, Line: 26, Column: 30 }
+Function:        _Z11mmult_accelPhS_Pji
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '8'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_26_3
+  - String:          ' '
+  - LoopLoc:         '../mm.cpp:26:30'
+  - String:          ' '
+  - Function:        'mmult_accel(unsigned char*, unsigned char*, unsigned int*, int)'
+    DebugLoc:        { File: ../mm.cpp, Line: 8, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ../mm.cpp, Line: 26, Column: 30 }
+Function:        _Z11mmult_accelPhS_Pji
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '8'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_26_3
+  - String:          '''('
+  - LoopLoc:         '../mm.cpp:26:30'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem0
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../mm.cpp, Line: 26, Column: 30 }
+Function:        _Z11mmult_accelPhS_Pji
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_26_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: ../mm.cpp, Line: 26, Column: 30 }
+Function:        _Z11mmult_accelPhS_Pji
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_26_3
+  - String:          ''' ('
+  - LoopLoc:         '../mm.cpp:26:30'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          mmult_accel
+  - String:          ''' as it has a variable trip count'
+...

@@ -1,0 +1,39 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="mmult_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=mmult_accel" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../mm.cpp:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mmult_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=a offset=slave bundle=gmem0 depth=65536" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../mm.cpp:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mmult_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=b offset=slave bundle=gmem1 depth=65536" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../mm.cpp:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mmult_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=c offset=slave bundle=gmem2 depth=65536" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../mm.cpp:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mmult_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=a bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../mm.cpp:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mmult_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=b bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../mm.cpp:14:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mmult_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=c bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../mm.cpp:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mmult_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=dim bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../mm.cpp:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mmult_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../mm.cpp:24:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mmult_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../mm.cpp:26:30" msg_body="Loop 'VITIS_LOOP_26_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_26_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="../mm.cpp:26:30" msg_body="Cannot unroll loop 'VITIS_LOOP_26_3' (../mm.cpp:26:30) in function 'mmult_accel' as it has a variable trip count">
+        <args LoopLoc="../mm.cpp:26:30" LoopName="VITIS_LOOP_26_3"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+
