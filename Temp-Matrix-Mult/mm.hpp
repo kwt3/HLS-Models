@@ -1,5 +1,5 @@
-#ifndef MMULT_ACCEL_HPP
-#define MMULT_ACCEL_HPP
+#ifndef MM_HPP
+#define MM_HPP
 
 #include <stdint.h>
 
@@ -10,7 +10,7 @@ void mmult_accel(
     int dim
 );
 
-#endif // MMULT_ACCEL_HPP
+#endif // MM_HPP
 
 
 // #ifndef MM_HPP
