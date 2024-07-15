@@ -1,7 +1,0 @@
-{
-  "workspaceRoot": "C:\\Users\\kwokt\\Desktop\\project0303",
-  "mapping": {
-    "mm.cpp": "hls_component",
-    "mmtb.cpp": "hls_component"
-  }
-}

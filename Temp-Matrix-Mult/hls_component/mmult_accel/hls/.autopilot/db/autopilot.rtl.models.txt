@@ -1,9 +1,0 @@
-mmult_accel_mul_31ns_32ns_63_1_1
-mmult_accel_mul_32ns_32ns_62_1_1
-mmult_accel_mul_32ns_32ns_64_1_1
-mmult_accel_mac_muladd_8ns_8ns_32ns_32_4_1
-mmult_accel_gmem0_m_axi
-mmult_accel_gmem1_m_axi
-mmult_accel_gmem2_m_axi
-mmult_accel_control_s_axi
-mmult_accel
