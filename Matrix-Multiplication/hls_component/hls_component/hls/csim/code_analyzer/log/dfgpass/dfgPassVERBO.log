@@ -8,11 +8,11 @@ dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +1 is not an innermost loop
 dfgPass::VERBO:       - BEFORE BREAK
-dfgPass::VERBO:       - for.cond1
+dfgPass::VERBO:       - for.cond3
 dfgPass::VERBO:         - memlocal of :j:0
 dfgPass::VERBO:         - LCV conditional branch 6:48
 dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.body3
+dfgPass::VERBO:       - for.body5
 dfgPass::VERBO:         - memlocal of :matrix:0
 dfgPass::VERBO:         - memlocal of :i:0
 dfgPass::VERBO:         - memlocal of :j:0

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'matrix_multiply'" level="0">
-<item name = "Date">Mon Jun 17 10:50:07 2024
+<item name = "Date">Mon Jul 15 04:26:26 2024
 </item>
 <item name = "Version">2024.1 (Build 5069499 on May 21 2024)</item>
 <item name = "Project">hls_component</item>

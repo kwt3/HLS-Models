@@ -6,8 +6,8 @@ programModel::INFOR: Function __cxx_global_var_init.2 will be added to the Progr
 programModel::INFOR: Function _GLOBAL__sub_I_tb_mat_mult.cpp will be added to the ProgramContainer
 programModel::INFOR: Function __cxx_global_var_init will be added to the ProgramContainer
 programModel::INFOR: Function main will be added to the ProgramContainer
+programModel::INFOR: Function _Z12print_matrixPA256_iPKc will be added to the ProgramContainer
 programModel::INFOR: Function _Z15matrix_multiplyPA256_iS0_S0_ will be added to the ProgramContainer
-programModel::INFOR: Function _Z12print_matrixPA256_i will be added to the ProgramContainer
 programModel::INFOR: Function __dtor__ZStL8__ioinit will be added to the ProgramContainer
 programModel::INFOR: Function __dtor__ZStL8__ioinit.4 will be added to the ProgramContainer
 programModel::INFOR: Function __dtor__ZStL8__ioinit.9 will be added to the ProgramContainer

@@ -52,7 +52,7 @@ Diagnostics:
     FilePath:        'C:\Users\kwokt\HLS-Models\Matrix-Multiplication\mat_mult.cpp'
     Replacements:    
       - FilePath:        'C:\Users\kwokt\HLS-Models\Matrix-Multiplication\hls_component\hls_component\hls\.autopilot\db\mat_mult.pp.0.cpp'
-        Offset:          938752
+        Offset:          938749
         Length:          0
         ReplacementText: 'VITIS_LOOP_10_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -61,7 +61,7 @@ Diagnostics:
     FilePath:        'C:\Users\kwokt\HLS-Models\Matrix-Multiplication\mat_mult.cpp'
     Replacements:    
       - FilePath:        'C:\Users\kwokt\HLS-Models\Matrix-Multiplication\hls_component\hls_component\hls\.autopilot\db\mat_mult.pp.0.cpp'
-        Offset:          938792
+        Offset:          938789
         Length:          0
         ReplacementText: 'VITIS_LOOP_11_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -70,7 +70,7 @@ Diagnostics:
     FilePath:        'C:\Users\kwokt\HLS-Models\Matrix-Multiplication\mat_mult.cpp'
     Replacements:    
       - FilePath:        'C:\Users\kwokt\HLS-Models\Matrix-Multiplication\hls_component\hls_component\hls\.autopilot\db\mat_mult.pp.0.cpp'
-        Offset:          938871
+        Offset:          938868
         Length:          0
         ReplacementText: 'VITIS_LOOP_14_3: '
 ...

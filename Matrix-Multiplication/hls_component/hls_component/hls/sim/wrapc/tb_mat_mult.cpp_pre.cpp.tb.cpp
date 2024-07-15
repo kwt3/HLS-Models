@@ -77582,16 +77582,13 @@ inline bool operator!=(
 
 
 
-
-
-
 #ifndef HLS_FASTSIM
 #ifdef __cplusplus
 extern "C"
 #endif
 void apatb_matrix_multiply_sw(int (*)[256], int (*)[256], int (*)[256]);
 #endif
-# 14 "C:/Users/kwokt/HLS-Models/Matrix-Multiplication/mat_mult.hpp"
+# 11 "C:/Users/kwokt/HLS-Models/Matrix-Multiplication/mat_mult.hpp"
 void matrix_multiply(int A[256][256], int B[256][256], int C[256][256]);
 # 2 "C:/Users/kwokt/HLS-Models/Matrix-Multiplication/tb_mat_mult.cpp" 2
 
@@ -77599,18 +77596,20 @@ void matrix_multiply(int A[256][256], int B[256][256], int C[256][256]);
 
 
 
-void print_matrix(int matrix[256][256]) {
+void print_matrix(int matrix[256][256], const char* name) {
+    std::cout << "Matrix " << name << ":\n";
     for (int i = 0; i < 256; i++) {
         for (int j = 0; j < 256; j++) {
             std::cout << matrix[i][j] << " ";
         }
         std::cout << "\n";
     }
+    std::cout << "\n";
 }
 
 
 #ifndef HLS_FASTSIM
-# 16 "C:/Users/kwokt/HLS-Models/Matrix-Multiplication/tb_mat_mult.cpp"
+# 18 "C:/Users/kwokt/HLS-Models/Matrix-Multiplication/tb_mat_mult.cpp"
 int main() {
     int A[256][256], B[256][256], C[256][256];
 
@@ -77623,22 +77622,26 @@ int main() {
     }
 
 
+    print_matrix(A, "A");
+    print_matrix(B, "B");
+
+
     
 #ifndef HLS_FASTSIM
 #define matrix_multiply apatb_matrix_multiply_sw
 #endif
-# 28 "C:/Users/kwokt/HLS-Models/Matrix-Multiplication/tb_mat_mult.cpp"
+# 34 "C:/Users/kwokt/HLS-Models/Matrix-Multiplication/tb_mat_mult.cpp"
 matrix_multiply(A, B, C);
 #undef matrix_multiply
-# 28 "C:/Users/kwokt/HLS-Models/Matrix-Multiplication/tb_mat_mult.cpp"
+# 34 "C:/Users/kwokt/HLS-Models/Matrix-Multiplication/tb_mat_mult.cpp"
 
 
 
     std::cout << "Matrix C (Result):\n";
-    print_matrix(C);
+    print_matrix(C, "C");
 
     return 0;
 }
 #endif
-# 35 "C:/Users/kwokt/HLS-Models/Matrix-Multiplication/tb_mat_mult.cpp"
+# 41 "C:/Users/kwokt/HLS-Models/Matrix-Multiplication/tb_mat_mult.cpp"
 

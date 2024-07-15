@@ -23,18 +23,18 @@ C:\Users\kwokt\HLS-Models\Matrix-Multiplication\hls_component\hls_component\hls\
       ^~~
       VITIS_LOOP_1247_1: 
 C:\Users\kwokt\HLS-Models\Matrix-Multiplication\hls_component\hls_component\hls\.autopilot\db\mat_mult.pp.0.cpp:4076:7: note: FIX-IT applied suggested code changes
-C:\Users\kwokt\HLS-Models\Matrix-Multiplication\hls_component\hls_component\hls\.autopilot\db\mat_mult.pp.0.cpp:5873:5: warning: Added loop label VITIS_LOOP_10_1:   [xilinx-label-all-loops]
+C:\Users\kwokt\HLS-Models\Matrix-Multiplication\hls_component\hls_component\hls\.autopilot\db\mat_mult.pp.0.cpp:5870:5: warning: Added loop label VITIS_LOOP_10_1:   [xilinx-label-all-loops]
     for (int i = 0; i < 256; i++) {
     ^~~
     VITIS_LOOP_10_1: 
-C:\Users\kwokt\HLS-Models\Matrix-Multiplication\hls_component\hls_component\hls\.autopilot\db\mat_mult.pp.0.cpp:5873:5: note: FIX-IT applied suggested code changes
-C:\Users\kwokt\HLS-Models\Matrix-Multiplication\hls_component\hls_component\hls\.autopilot\db\mat_mult.pp.0.cpp:5874:9: warning: Added loop label VITIS_LOOP_11_2:   [xilinx-label-all-loops]
+C:\Users\kwokt\HLS-Models\Matrix-Multiplication\hls_component\hls_component\hls\.autopilot\db\mat_mult.pp.0.cpp:5870:5: note: FIX-IT applied suggested code changes
+C:\Users\kwokt\HLS-Models\Matrix-Multiplication\hls_component\hls_component\hls\.autopilot\db\mat_mult.pp.0.cpp:5871:9: warning: Added loop label VITIS_LOOP_11_2:   [xilinx-label-all-loops]
         for (int j = 0; j < 256; j++) {
         ^~~
         VITIS_LOOP_11_2: 
-C:\Users\kwokt\HLS-Models\Matrix-Multiplication\hls_component\hls_component\hls\.autopilot\db\mat_mult.pp.0.cpp:5874:9: note: FIX-IT applied suggested code changes
-C:\Users\kwokt\HLS-Models\Matrix-Multiplication\hls_component\hls_component\hls\.autopilot\db\mat_mult.pp.0.cpp:5877:2: warning: Added loop label VITIS_LOOP_14_3:   [xilinx-label-all-loops]
+C:\Users\kwokt\HLS-Models\Matrix-Multiplication\hls_component\hls_component\hls\.autopilot\db\mat_mult.pp.0.cpp:5871:9: note: FIX-IT applied suggested code changes
+C:\Users\kwokt\HLS-Models\Matrix-Multiplication\hls_component\hls_component\hls\.autopilot\db\mat_mult.pp.0.cpp:5874:2: warning: Added loop label VITIS_LOOP_14_3:   [xilinx-label-all-loops]
  for (int k = 0; k < 256; k++) {
  ^~~
  VITIS_LOOP_14_3: 
-C:\Users\kwokt\HLS-Models\Matrix-Multiplication\hls_component\hls_component\hls\.autopilot\db\mat_mult.pp.0.cpp:5877:2: note: FIX-IT applied suggested code changes
+C:\Users\kwokt\HLS-Models\Matrix-Multiplication\hls_component\hls_component\hls\.autopilot\db\mat_mult.pp.0.cpp:5874:2: note: FIX-IT applied suggested code changes

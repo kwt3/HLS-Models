@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Mon Jun 17 10:50:56 2024
-# Process ID: 15840
+# Start of session at: Mon Jul 15 04:27:25 2024
+# Process ID: 8468
 # Current directory: C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_component/hls/sim/verilog
 # Command line: xsim.exe -mode tcl -source {xsim.dir/matrix_multiply/xsim_script.tcl}
 # Log file: C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_component/hls/sim/verilog/xsim.log
@@ -17,9 +17,9 @@
 # CPU Physical cores:8
 # CPU Logical cores :16
 # Host memory       :16542 MB
-# Swap memory       :7247 MB
-# Total Virtual     :23790 MB
-# Available Virtual :8528 MB
+# Swap memory       :5637 MB
+# Total Virtual     :22179 MB
+# Available Virtual :11896 MB
 #-----------------------------------------------------------
 source xsim.dir/matrix_multiply/xsim_script.tcl
 # xsim {matrix_multiply} -autoloadwcfg -tclbatch {matrix_multiply.tcl}
@@ -36,7 +36,7 @@ source matrix_multiply.tcl
 // RTL Simulation : 1 / 1 [100.00%] @ "83886235000"
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 83886295 ns : File "C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component/hls_component/hls/sim/verilog/matrix_multiply.autotb.v" Line 393
-run: Time (s): cpu = 00:00:00 ; elapsed = 00:03:09 . Memory (MB): peak = 224.031 ; gain = 0.000
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:03:00 . Memory (MB): peak = 224.664 ; gain = 0.000
 ## quit
-INFO: xsimkernel Simulation Memory Usage: 16316 KB (Peak: 16316 KB), Simulation CPU Usage: 173796 ms
-INFO: [Common 17-206] Exiting xsim at Mon Jun 17 10:54:08 2024...
+INFO: xsimkernel Simulation Memory Usage: 16020 KB (Peak: 16020 KB), Simulation CPU Usage: 175092 ms
+INFO: [Common 17-206] Exiting xsim at Mon Jul 15 04:30:26 2024...

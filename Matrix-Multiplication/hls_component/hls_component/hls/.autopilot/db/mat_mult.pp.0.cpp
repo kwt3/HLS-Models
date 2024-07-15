@@ -5853,9 +5853,6 @@ inline __attribute__((nodebug)) bool operator!=(
 
 
 
-
-
-
 __attribute__((sdx_kernel("matrix_multiply", 0))) void matrix_multiply(int A[256][256], int B[256][256], int C[256][256]);
 # 2 "../mat_mult.cpp" 2
 

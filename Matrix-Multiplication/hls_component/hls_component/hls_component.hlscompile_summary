@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "06/17/24 10:49:21",
- "timestampMillis": "648842934",
+ "dateTimestamp": "07/15/24 04:25:44",
+ "timestampMillis": "3045026014",
  "buildStep": {
-  "cmdId": "081c1356-8a29-439d-8fab-7c8141192070",
+  "cmdId": "b91bb4d3-40e8-45fa-9fd4-0f39a491584e",
   "name": "v++",
   "logFile": "C:/Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\logs\\hls_component.steps.log",
   "commandLine": "C:/Xilinx/Vitis/2024.1/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config C:\\Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_config.cfg --work_dir hls_component ",
@@ -38,10 +38,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "06/17/24 10:49:21",
- "timestampMillis": "648842935",
+ "dateTimestamp": "07/15/24 04:25:44",
+ "timestampMillis": "3045026015",
  "status": {
-  "cmdId": "081c1356-8a29-439d-8fab-7c8141192070",
+  "cmdId": "b91bb4d3-40e8-45fa-9fd4-0f39a491584e",
   "state": "CS_RUNNING"
  }
 }
@@ -49,8 +49,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "06/17/24 10:49:26",
- "timestampMillis": "648848549",
+ "dateTimestamp": "07/15/24 04:25:50",
+ "timestampMillis": "3045032312",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -86,10 +86,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "06/17/24 10:49:26",
- "timestampMillis": "648848551",
+ "dateTimestamp": "07/15/24 04:25:50",
+ "timestampMillis": "3045032313",
  "buildStep": {
-  "cmdId": "821ae845-7150-4959-8eea-1375f32d8873",
+  "cmdId": "faf79234-aeb8-4523-a86e-a0a4df6c30a5",
   "name": "csynth_design",
   "logFile": "C:/Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\hls.log",
   "commandLine": "csynth_design",
@@ -102,10 +102,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "06/17/24 10:49:26",
- "timestampMillis": "648848551",
+ "dateTimestamp": "07/15/24 04:25:50",
+ "timestampMillis": "3045032314",
  "status": {
-  "cmdId": "821ae845-7150-4959-8eea-1375f32d8873",
+  "cmdId": "faf79234-aeb8-4523-a86e-a0a4df6c30a5",
   "state": "CS_RUNNING"
  }
 }
@@ -113,8 +113,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "06/17/24 10:49:26",
- "timestampMillis": "648848552",
+ "dateTimestamp": "07/15/24 04:25:50",
+ "timestampMillis": "3045032314",
  "report": {
   "path": "C:/Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\hls_data.json",
   "name": "",
@@ -127,8 +127,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "06/17/24 10:49:26",
- "timestampMillis": "648848552",
+ "dateTimestamp": "07/15/24 04:25:50",
+ "timestampMillis": "3045032314",
  "report": {
   "path": "C:/Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\syn\\report\\csynth.rpt",
   "name": "",
@@ -141,8 +141,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "06/17/24 10:49:26",
- "timestampMillis": "648848553",
+ "dateTimestamp": "07/15/24 04:25:50",
+ "timestampMillis": "3045032315",
  "report": {
   "path": "C:/Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls\\syn\\report\\csynth.xml",
   "name": "",
@@ -155,8 +155,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "06/17/24 10:50:15",
- "timestampMillis": "648896633",
+ "dateTimestamp": "07/15/24 04:26:33",
+ "timestampMillis": "3045075082",
  "report": {
   "path": "C:/Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls",
   "name": "",
@@ -169,8 +169,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "06/17/24 10:50:15",
- "timestampMillis": "648896633",
+ "dateTimestamp": "07/15/24 04:26:33",
+ "timestampMillis": "3045075083",
  "report": {
   "path": "C:/Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls",
   "name": "",
@@ -183,8 +183,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "06/17/24 10:50:15",
- "timestampMillis": "648896634",
+ "dateTimestamp": "07/15/24 04:26:33",
+ "timestampMillis": "3045075083",
  "report": {
   "path": "C:/Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\hls",
   "name": "",
@@ -197,10 +197,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "06/17/24 10:50:15",
- "timestampMillis": "648896635",
+ "dateTimestamp": "07/15/24 04:26:33",
+ "timestampMillis": "3045075084",
  "status": {
-  "cmdId": "821ae845-7150-4959-8eea-1375f32d8873",
+  "cmdId": "faf79234-aeb8-4523-a86e-a0a4df6c30a5",
   "state": "CS_PASSED"
  }
 }
@@ -208,10 +208,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "06/17/24 10:50:15",
- "timestampMillis": "648896880",
+ "dateTimestamp": "07/15/24 04:26:33",
+ "timestampMillis": "3045075318",
  "status": {
-  "cmdId": "081c1356-8a29-439d-8fab-7c8141192070",
+  "cmdId": "b91bb4d3-40e8-45fa-9fd4-0f39a491584e",
   "state": "CS_PASSED"
  }
 }
@@ -219,8 +219,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "06/17/24 10:50:15",
- "timestampMillis": "648896906",
+ "dateTimestamp": "07/15/24 04:26:33",
+ "timestampMillis": "3045075336",
  "report": {
   "path": "C:/Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\reports\\v++_compile_hls_component_guidance.html",
   "name": "",
@@ -233,8 +233,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "06/17/24 10:50:15",
- "timestampMillis": "648896907",
+ "dateTimestamp": "07/15/24 04:26:33",
+ "timestampMillis": "3045075337",
  "report": {
   "path": "C:/Users\\kwokt\\HLS-Models\\Matrix-Multiplication\\hls_component\\hls_component\\reports\\.db\\v++_compile_hls_component_guidance.pb3",
   "name": "",

@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <callgraph:CallGraph xmlns:callgraph="http://www.xilinx.com/act/callgraph">
-  <DirectCall count="0" file="..\tb_mat_mult.cpp" id="137" line="32">
+  <DirectCall count="0" file="..\tb_mat_mult.cpp" id="140" line="30">
     <caller function="_f209"/>
     <callee function="_f206"/>
   </DirectCall>
-  <DirectCall count="0" file="..\tb_mat_mult.cpp" id="132" line="28">
+  <DirectCall count="0" file="..\tb_mat_mult.cpp" id="143" line="31">
+    <caller function="_f209"/>
+    <callee function="_f206"/>
+  </DirectCall>
+  <DirectCall count="0" file="..\tb_mat_mult.cpp" id="153" line="38">
+    <caller function="_f209"/>
+    <callee function="_f206"/>
+  </DirectCall>
+  <DirectCall count="0" file="..\tb_mat_mult.cpp" id="148" line="34">
     <caller function="_f209"/>
     <callee function="_f216"/>
   </DirectCall>
   <Function file="..\tb_mat_mult.cpp" id="_f206" line="7" name="print_matrix"/>
-  <Function file="..\tb_mat_mult.cpp" id="_f209" line="16" name="main"/>
+  <Function file="..\tb_mat_mult.cpp" id="_f209" line="18" name="main"/>
   <Function file="..\mat_mult.cpp" id="_f216" line="3" name="matrix_multiply"/>
 </callgraph:CallGraph>

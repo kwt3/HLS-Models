@@ -20,8 +20,8 @@
       <Return>
         <Default/>
       </Return>
-      <Argument declaration="A (int[256]*)" id="_v14" name="A">
-        <PragmaOrigin id="_fi216_14">
+      <Argument declaration="A (int[256]*)" id="_v15" name="A">
+        <PragmaOrigin id="_fi216_15">
           <CodeSection beginColumn="0" beginLine="4" endColumn="0" endLine="4" file="..\mat_mult.cpp"/>
         </PragmaOrigin>
         <Bram>
@@ -30,8 +30,8 @@
           <PortBitwidth>512</PortBitwidth>
         </Bram>
       </Argument>
-      <Argument declaration="B (int[256]*)" id="_v15" name="B">
-        <PragmaOrigin id="_fi216_15">
+      <Argument declaration="B (int[256]*)" id="_v16" name="B">
+        <PragmaOrigin id="_fi216_16">
           <CodeSection beginColumn="0" beginLine="5" endColumn="0" endLine="5" file="..\mat_mult.cpp"/>
         </PragmaOrigin>
         <Bram>
@@ -40,8 +40,8 @@
           <PortBitwidth>512</PortBitwidth>
         </Bram>
       </Argument>
-      <Argument declaration="C (int[256]*)" id="_v16" name="C">
-        <PragmaOrigin id="_fi216_16">
+      <Argument declaration="C (int[256]*)" id="_v17" name="C">
+        <PragmaOrigin id="_fi216_17">
           <CodeSection beginColumn="0" beginLine="6" endColumn="0" endLine="6" file="..\mat_mult.cpp"/>
         </PragmaOrigin>
         <Bram>

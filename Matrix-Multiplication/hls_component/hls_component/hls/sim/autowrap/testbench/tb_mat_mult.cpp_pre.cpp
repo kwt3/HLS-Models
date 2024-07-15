@@ -77574,9 +77574,6 @@ inline bool operator!=(
 
 
 
-
-
-
 void matrix_multiply(int A[256][256], int B[256][256], int C[256][256]);
 # 2 "C:/Users/kwokt/HLS-Models/Matrix-Multiplication/tb_mat_mult.cpp" 2
 
@@ -77584,13 +77581,15 @@ void matrix_multiply(int A[256][256], int B[256][256], int C[256][256]);
 
 
 
-void print_matrix(int matrix[256][256]) {
+void print_matrix(int matrix[256][256], const char* name) {
+    std::cout << "Matrix " << name << ":\n";
     for (int i = 0; i < 256; i++) {
         for (int j = 0; j < 256; j++) {
             std::cout << matrix[i][j] << " ";
         }
         std::cout << "\n";
     }
+    std::cout << "\n";
 }
 
 int main() {
@@ -77605,11 +77604,15 @@ int main() {
     }
 
 
+    print_matrix(A, "A");
+    print_matrix(B, "B");
+
+
     matrix_multiply(A, B, C);
 
 
     std::cout << "Matrix C (Result):\n";
-    print_matrix(C);
+    print_matrix(C, "C");
 
     return 0;
 }

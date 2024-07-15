@@ -3407,7 +3407,7 @@ window.onload = function () { addSorting(); }
 <center><h1>Design Guidance Report</h1></center><center><table class="header" border="0">
 <tr><td><b>Copyright</b></td><td>Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.</td></tr>
 <tr><td><b>Tool Version</b></td><td>xcd v.2024.1 (win64) Build 0 </td></tr>
-<tr><td><b>Date</b></td><td>Mon Jun 17 10:50:15 2024</td></tr>
+<tr><td><b>Date</b></td><td>Mon Jul 15 04:26:33 2024</td></tr>
 <tr><td><b>Host</b></td><td>billy running 64-bit major release  (build 9200)</td></tr>
 <tr><td><b>Command</b></td><td>C:/Xilinx/Vitis/2024.1/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config C:\Users\kwokt\HLS-Models\Matrix-Multiplication\hls_component\hls_config.cfg --work_dir hls_component </td></tr>
 </table></center><br>
@@ -3434,24 +3434,24 @@ window.onload = function () { addSorting(); }
 <th align="left" width="380">Resolution</th>
 </tr>
 <tr>
-<td align="left">13</td>
-<td align="left">Kernel</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.matrix_multiply.Kernel</td>
-<td align="left">**** Estimated Fmax: 147.93 MHz
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">5</td>
+<td align="left">2</td>
 <td align="left">Kernel</td>
 <td align="left">WARNING</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.matrix_multiply.Kernel</td>
-<td align="left">The II Violation in module 'matrix_multiply' (loop 'VITIS_LOOP_10_1_VITIS_LOOP_11_2'): Unable to schedule 'load' operation 32 bit ('temp_a', <a href="file:///C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component\../mat_mult.cpp#line=10">mat_mult.cpp</a>) on array 'A' due to limited memory ports (II = 67). Please consider using a memory core with more ports or partitioning the array 'A'.
+<td align="left">The II Violation in module 'matrix_multiply' (loop 'VITIS_LOOP_10_1_VITIS_LOOP_11_2'): Unable to schedule 'load' operation 32 bit ('temp_a', <a href="file:///C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component\../mat_mult.cpp#line=10">mat_mult.cpp</a>) on array 'A' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'A'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.matrix_multiply.Kernel</td>
+<td align="left">The II Violation in module 'matrix_multiply' (loop 'VITIS_LOOP_10_1_VITIS_LOOP_11_2'): Unable to schedule 'load' operation 32 bit ('temp_a', <a href="file:///C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component\../mat_mult.cpp#line=10">mat_mult.cpp</a>) on array 'A' due to limited memory ports (II = 98). Please consider using a memory core with more ports or partitioning the array 'A'.
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
@@ -3463,6 +3463,17 @@ window.onload = function () { addSorting(); }
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.matrix_multiply.Kernel</td>
 <td align="left">**** Loop Constraint Status: All loop constraints were NOT satisfied.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.matrix_multiply.Kernel</td>
+<td align="left">The II Violation in module 'matrix_multiply' (loop 'VITIS_LOOP_10_1_VITIS_LOOP_11_2'): Unable to schedule 'load' operation 32 bit ('temp_a', <a href="file:///C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component\../mat_mult.cpp#line=10">mat_mult.cpp</a>) on array 'A' due to limited memory ports (II = 67). Please consider using a memory core with more ports or partitioning the array 'A'.
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
@@ -3489,35 +3500,13 @@ window.onload = function () { addSorting(); }
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">10</td>
+<td align="left">13</td>
 <td align="left">Kernel</td>
-<td align="left">WARNING</td>
+<td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.matrix_multiply.Kernel</td>
-<td align="left">The II Violation in module 'matrix_multiply' (loop 'VITIS_LOOP_10_1_VITIS_LOOP_11_2'): Unable to schedule 'load' operation 32 bit ('temp_a', <a href="file:///C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component\../mat_mult.cpp#line=10">mat_mult.cpp</a>) on array 'A' due to limited memory ports (II = 127). Please consider using a memory core with more ports or partitioning the array 'A'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">4</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.matrix_multiply.Kernel</td>
-<td align="left">The II Violation in module 'matrix_multiply' (loop 'VITIS_LOOP_10_1_VITIS_LOOP_11_2'): Unable to schedule 'load' operation 32 bit ('temp_a', <a href="file:///C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component\../mat_mult.cpp#line=10">mat_mult.cpp</a>) on array 'A' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'A'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">6</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.matrix_multiply.Kernel</td>
-<td align="left">The II Violation in module 'matrix_multiply' (loop 'VITIS_LOOP_10_1_VITIS_LOOP_11_2'): Unable to schedule 'load' operation 32 bit ('temp_a', <a href="file:///C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component\../mat_mult.cpp#line=10">mat_mult.cpp</a>) on array 'A' due to limited memory ports (II = 98). Please consider using a memory core with more ports or partitioning the array 'A'.
+<td align="left">**** Estimated Fmax: 147.93 MHz
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
@@ -3533,24 +3522,24 @@ window.onload = function () { addSorting(); }
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">2</td>
+<td align="left">8</td>
 <td align="left">Kernel</td>
 <td align="left">WARNING</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.matrix_multiply.Kernel</td>
-<td align="left">The II Violation in module 'matrix_multiply' (loop 'VITIS_LOOP_10_1_VITIS_LOOP_11_2'): Unable to schedule 'load' operation 32 bit ('temp_a', <a href="file:///C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component\../mat_mult.cpp#line=10">mat_mult.cpp</a>) on array 'A' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'A'.
+<td align="left">The II Violation in module 'matrix_multiply' (loop 'VITIS_LOOP_10_1_VITIS_LOOP_11_2'): Unable to schedule 'load' operation 32 bit ('temp_a', <a href="file:///C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component\../mat_mult.cpp#line=10">mat_mult.cpp</a>) on array 'A' due to limited memory ports (II = 122). Please consider using a memory core with more ports or partitioning the array 'A'.
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">11</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
+<td align="left">4</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
 <td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.matrix_multiply.Throughput</td>
-<td align="left">Pipelining result : Target II = NA, Final II = 128, Depth = 130, loop 'VITIS_LOOP_10_1_VITIS_LOOP_11_2'
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.matrix_multiply.Kernel</td>
+<td align="left">The II Violation in module 'matrix_multiply' (loop 'VITIS_LOOP_10_1_VITIS_LOOP_11_2'): Unable to schedule 'load' operation 32 bit ('temp_a', <a href="file:///C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component\../mat_mult.cpp#line=10">mat_mult.cpp</a>) on array 'A' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'A'.
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
@@ -3566,13 +3555,24 @@ window.onload = function () { addSorting(); }
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">8</td>
+<td align="left">11</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.matrix_multiply.Throughput</td>
+<td align="left">Pipelining result : Target II = NA, Final II = 128, Depth = 130, loop 'VITIS_LOOP_10_1_VITIS_LOOP_11_2'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">10</td>
 <td align="left">Kernel</td>
 <td align="left">WARNING</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.matrix_multiply.Kernel</td>
-<td align="left">The II Violation in module 'matrix_multiply' (loop 'VITIS_LOOP_10_1_VITIS_LOOP_11_2'): Unable to schedule 'load' operation 32 bit ('temp_a', <a href="file:///C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component\../mat_mult.cpp#line=10">mat_mult.cpp</a>) on array 'A' due to limited memory ports (II = 122). Please consider using a memory core with more ports or partitioning the array 'A'.
+<td align="left">The II Violation in module 'matrix_multiply' (loop 'VITIS_LOOP_10_1_VITIS_LOOP_11_2'): Unable to schedule 'load' operation 32 bit ('temp_a', <a href="file:///C:/Users/kwokt/HLS-Models/Matrix-Multiplication/hls_component\../mat_mult.cpp#line=10">mat_mult.cpp</a>) on array 'A' due to limited memory ports (II = 127). Please consider using a memory core with more ports or partitioning the array 'A'.
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>

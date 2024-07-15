@@ -77581,9 +77581,6 @@ inline bool operator!=(
 
 
 
-
-
-
 void matrix_multiply(int A[256][256], int B[256][256], int C[256][256]);
 # 2 "C:/Users/kwokt/HLS-Models/Matrix-Multiplication/mat_mult.cpp" 2
 
