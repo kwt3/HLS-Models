@@ -150,12 +150,12 @@ Replace `<path_to_binary>` with the path to the RISC-V binary intended for execu
 
 ### 8. **Building and Running Tests**
 
-The Comet repository includes a set of benchmarks for testing. Below are the steps to build and run these tests:
+The Comet repository includes a set of benchmarks for testing. Below are the steps to build and run these tests from the `basic_tests` directory:
 
-#### a. **Navigate to the Tests Directory**
+#### a. **Navigate to the `basic_tests` Directory**
 
 ```bash
-cd <repository_root>/tests
+cd <repository_root>/tests/basic_tests
 ```
 
 #### b. **Build the Tests**
@@ -183,7 +183,7 @@ To add a new test:
 1. Create a new folder in the `tests` directory, named after the binary it will contain:
 
    ```bash
-   mkdir <repository_root>/tests/<test_name>
+   mkdir <repository_root>/tests/basic_tests/<test_name>
    ```
 
 2. Add the source files and a `Makefile` to compile the test. The `Makefile` should generate a binary with the same name as the folder and with the `.riscv32` extension.
